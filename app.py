@@ -1,8 +1,8 @@
 """
 Analytics portfolio - Sadia Yusuf, Chartered Accountant.
 
-One Streamlit app, six projects. Each project opens as a "working paper":
-the question, the work performed, then findings you can filter and re-run.
+One Streamlit app, six projects. Every project opens from a button or a direct link:
+    https://<your-app>.streamlit.app/?project=churn
 
 Run locally:   streamlit run app.py
 Deploy:        push this folder (app.py, requirements.txt, data/, .streamlit/) to GitHub,
@@ -10,6 +10,7 @@ Deploy:        push this folder (app.py, requirements.txt, data/, .streamlit/) t
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import numpy as np
@@ -25,123 +26,218 @@ DATA = Path(__file__).parent / "data"
 # ----------------------------------------------------------------------------
 # Design tokens
 # ----------------------------------------------------------------------------
-INK = "#14213D"      # navy, the colour of audit-file ink
+INK = "#0F1B3D"
 MUTED = "#5B677A"
-RULE = "#D3DAE4"
-PAPER = "#F3F5F8"
-BLUE = "#33689E"
-TEAL = "#0E8F6E"     # the tick mark: checked, recomputed
-AMBER = "#C77A12"    # the exception: flagged, above baseline
-PLUM = "#7B4B94"
+BLUE = "#2F6FDE"
+GREEN = "#2FA66A"
+SAFFRON = "#F2A33A"
+CORAL = "#E4572E"
+VIOLET = "#7C4DDB"
+TEAL = "#14A3A3"
 SLATE = "#8896AB"
-BRICK = "#B5452F"
-PALETTE = [BLUE, TEAL, AMBER, PLUM, SLATE, BRICK, "#2B9BB8", "#8A7B2E"]
+ROSE = "#C2417A"
+PALETTE = [BLUE, GREEN, SAFFRON, VIOLET, CORAL, TEAL, SLATE, ROSE]
 px.defaults.color_discrete_sequence = PALETTE
 
+ICONS = {
+    "turtle": '<path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M12 3v18M5 7l14 10M19 7L5 17"/>',
+    "churn": '<path d="M9 4H5v16h4"/><path d="M16 8l4 4-4 4M20 12H9"/>',
+    "nhs": '<path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z"/>',
+    "market": '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+    "bank": '<path d="M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18"/>',
+    "option": '<path d="M3 4v15h18"/><path d="M6 17l5-5 3 3 6-8"/>',
+}
+PROJECTS = {
+    "turtle": dict(name="Turtle Games", nav="Turtle Games", accent=GREEN,
+                   tag="What makes customers earn loyalty points, and which customers should marketing target?",
+                   tools=["Python", "scikit-learn", "NLP"]),
+    "churn": dict(name="ConnectTel", nav="ConnectTel", accent=CORAL,
+                  tag="Which telecom customers will leave, and what is it worth to keep them?",
+                  tools=["Python", "Statistics", "Ensemble models"]),
+    "nhs": dict(name="NHS Appointments", nav="NHS", accent=BLUE,
+                tag="Is primary-care capacity adequate, and how is it used?",
+                tools=["Python", "Time series", "1.5M rows"]),
+    "market": dict(name="2Market", nav="2Market", accent=VIOLET,
+                   tag="Who are the customers, which advertising channels work, and which products sell?",
+                   tools=["Excel", "SQL", "Tableau", "RFM"]),
+    "bank": dict(name="Banking Transactions", nav="Banking", accent=SAFFRON,
+                 tag="Which transactions deserve a human look, and why?",
+                 tools=["Python", "Z-score", "IQR"]),
+    "option": dict(name="Option Pricing", nav="Options", accent=TEAL,
+                   tag="Can a derivative's fair value be re-derived independently?",
+                   tools=["Python", "NumPy", "SciPy"]),
+}
+ORDER = list(PROJECTS)
+
 st.set_page_config(
-    page_title="Analytics portfolio - Sadia Yusuf",
-    page_icon="📒",
+    page_title="Sadia Yusuf | Analytics portfolio",
+    page_icon="📊",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
-CSS = f"""
+CSS = """
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600&display=swap');
-:root {{ --ink:{INK}; --muted:{MUTED}; --rule:{RULE}; --paper:{PAPER}; --tick:{TEAL}; --flag:{AMBER}; --blue:{BLUE}; }}
-.stApp, .stMarkdown, .stApp p, .stApp label, .stApp li, .stApp input, .stApp button, .stApp textarea, .stApp td, .stApp th {{ font-family: 'Public Sans', system-ui, sans-serif; }}
-.stApp {{ background: var(--paper); color: var(--ink); }}
-.block-container {{ padding-top: 2.2rem; max-width: 1180px; }}
-h1, h2, h3, h4 {{ font-family: 'Newsreader', Georgia, serif !important; color: var(--ink); letter-spacing: -0.01em; }}
-h1 {{ font-weight: 600; font-size: 2.35rem !important; line-height: 1.12 !important; }}
-h2 {{ font-weight: 600; font-size: 1.55rem !important; }}
-h3 {{ font-weight: 600; font-size: 1.25rem !important; }}
-p, li {{ line-height: 1.6; }}
-section[data-testid="stSidebar"] {{ background: #E6EAF0; border-right: 1px solid var(--rule); }}
-section[data-testid="stSidebar"] .block-container {{ padding-top: 1.4rem; }}
-.side-name {{ font-family: 'Newsreader', serif; font-size: 1.35rem; font-weight: 600; margin: 0; }}
-.side-role {{ color: var(--muted); font-size: .88rem; margin: .1rem 0 1rem; }}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+:root { --ink:__INK__; --muted:__MUTED__; --rule:#DDE2EC; --paper:#F6F7FB; --accent:__BLUE__; }
+.stApp, .stApp p, .stApp label, .stApp li, .stApp input, .stApp button, .stApp textarea, .stApp td, .stApp th,
+.stApp [data-baseweb] { font-family: 'DM Sans', system-ui, sans-serif; }
+.stApp { background: var(--paper); color: var(--ink); }
+section[data-testid="stSidebar"], [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"] { display:none !important; }
+header[data-testid="stHeader"] { background: transparent; }
+.block-container { max-width: 1180px; padding-top: 1.4rem; padding-bottom: 4rem; }
+h1, h2, h3, h4, .display { font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif !important; letter-spacing: -0.02em; color: var(--ink); }
+h2 { font-size: 1.65rem !important; line-height: 1.25 !important; padding-top: .6rem !important; }
+h3 { font-size: 1.25rem !important; line-height: 1.3 !important; }
+p, li { line-height: 1.62; }
 
-/* working-paper header */
-.wp-head {{ display:flex; gap:1.1rem; align-items:flex-start; margin-bottom:.4rem; }}
-.wp-ref {{ flex:none; white-space:nowrap; border:1.5px solid var(--ink); padding:.35rem .6rem; font-weight:600; font-size:.95rem;
-          border-radius:3px; background:#fff; margin-top:.55rem; font-variant-numeric: tabular-nums; }}
-.wp-head h1 {{ margin:0; padding:0 !important; }}
-.wp-course {{ color: var(--muted); margin:.3rem 0 0; font-size:.95rem; }}
-.wp-grid {{ display:grid; grid-template-columns: 1fr 1.6fr; gap:0; background:#fff; border:1px solid var(--rule);
-           border-radius:4px; margin:1rem 0 1.4rem; }}
-.wp-grid > div {{ padding:.9rem 1.1rem; border-right:1px solid var(--rule); }}
-.wp-grid > div:nth-child(2) {{ border-right:none; }}
-.wp-tools {{ grid-column: 1 / -1; border-top:1px solid var(--rule); border-right:none !important; padding:.55rem 1.1rem !important; font-size:.88rem; color: var(--muted); }}
-.wp-tools b {{ color: var(--ink); font-weight:600; margin-right:.4rem; }}
-.wp-grid h4 {{ margin:0 0 .35rem; font-size:1.02rem !important; }}
-.wp-grid p, .wp-grid li {{ font-size:.92rem; margin:0; color:#27324a; }}
-.wp-grid ul {{ margin:0; padding-left:1.05rem; }}
-@media (max-width: 900px) {{ .wp-grid {{ grid-template-columns: 1fr; }} .wp-grid > div {{ border-right:none; border-bottom:1px solid var(--rule); }} }}
+@keyframes rise { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform:none; } }
+@keyframes fade { from { opacity:0; } to { opacity:1; } }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes drift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-18px, 14px); } }
 
-/* key figures */
-.kpis {{ display:flex; flex-wrap:wrap; gap:.8rem; margin:.4rem 0 1.1rem; }}
-.kpi {{ flex:1 1 150px; background:#fff; border:1px solid var(--rule); border-left:3px solid var(--blue);
-        border-radius:3px; padding:.65rem .85rem; }}
-.kpi b {{ display:block; font-family:'Newsreader',serif; font-size:1.65rem; font-weight:600; line-height:1.15;
-         font-variant-numeric: tabular-nums; }}
-.kpi span {{ color: var(--muted); font-size:.85rem; }}
+/* brand bar and navigation */
+.brand { display:flex; justify-content:space-between; align-items:center; margin:.2rem 0 .7rem; }
+.brand b { font-family:'Bricolage Grotesque',sans-serif; font-size:1.2rem; letter-spacing:-.01em; }
+.brand span { color: var(--muted); font-size:.88rem; }
+.st-key-navbar { background:#fff; border:1px solid var(--rule); border-radius:16px; padding:.45rem; margin-bottom:1.1rem; }
+.st-key-navbar button { border-radius:11px; border:1px solid transparent; background:transparent; color:var(--ink);
+    min-height:2.5rem; transition: background .2s, transform .15s; }
+.st-key-navbar button p { color: inherit; font-weight:500; font-size:.95rem; }
+.st-key-navbar button:hover { background:#EEF1F8; transform: translateY(-2px); border-color: transparent; color: var(--ink); }
+.st-key-navbar button:active { transform: translateY(0) scale(.98); }
+.st-key-navbar button[data-testid="stBaseButton-primary"] { background: var(--accent); color:#fff; }
+.st-key-navbar button[data-testid="stBaseButton-primary"] p { color:#fff; }
 
-/* findings with tick marks */
-.finds {{ list-style:none; padding:0; margin:.2rem 0 0; }}
-.finds li {{ display:flex; gap:.7rem; padding:.55rem 0; border-bottom:1px solid var(--rule); font-size:.97rem; }}
-.finds li:last-child {{ border-bottom:none; }}
-.mk {{ flex:none; width:1.25rem; text-align:center; font-weight:700; }}
-.mk.v {{ color: var(--tick); }}
-.mk.n {{ color: var(--flag); }}
-.legend {{ font-size:.86rem; color: var(--muted); margin: .2rem 0 .9rem; }}
-.legend .mk {{ display:inline-block; width:auto; margin: 0 .15rem 0 .5rem; }}
-.note {{ color: var(--muted); font-size:.88rem; }}
-.callout {{ background:#fff; border:1px solid var(--rule); border-left:3px solid var(--flag); padding:.7rem 1rem; border-radius:3px; margin:.6rem 0; }}
+/* hero */
+.hero { position:relative; overflow:hidden; background: var(--ink); color:#fff; border-radius:22px; padding:1.9rem 2.1rem 1.7rem;
+    margin: 0 0 1.2rem; animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+.hero::before { content:""; position:absolute; right:-70px; top:-80px; width:300px; height:300px; border-radius:50%;
+    background: var(--accent); opacity:.28; animation: drift 14s ease-in-out infinite; }
+.hero::after { content:""; position:absolute; right:110px; bottom:-120px; width:220px; height:220px; border-radius:50%;
+    background: var(--accent); opacity:.14; animation: drift 18s ease-in-out infinite reverse; }
+.hero > * { position:relative; z-index:1; }
+.hero-top { display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; }
+.hero-ico { width:44px; height:44px; border-radius:13px; background: var(--accent); display:grid; place-items:center; }
+.hero-ico svg { width:25px; height:25px; stroke:#fff; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.chip { font-size:.8rem; padding:.22rem .7rem; border-radius:999px; border:1px solid rgba(255,255,255,.26); color:#E8ECF7; }
+.chip.live { background: rgba(47,166,106,.35); border-color: transparent; }
+.chip.note { background: rgba(242,163,58,.32); border-color: transparent; }
+.hero-title { font-family:'Bricolage Grotesque',sans-serif; font-size: clamp(2.1rem, 4.6vw, 3.3rem); line-height:1.15;
+    font-weight:700; letter-spacing:-.025em; margin:.85rem 0 .35rem; color:#fff !important; padding:.05em 0; }
+.hero-sub { color:#C9D2EA !important; font-size:1.07rem; max-width:44rem; margin:0; }
+.hero-kpis { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:.8rem; margin-top:1.4rem; }
+.hk { background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); border-radius:15px; padding:.75rem .95rem;
+    animation: rise .6s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 90ms + 220ms); }
+.hk b { display:block; font-family:'Bricolage Grotesque',sans-serif; font-size:1.75rem; font-weight:700; color:#fff;
+    font-variant-numeric: tabular-nums; line-height:1.2; }
+.hk span { color:#B9C4E2; font-size:.86rem; }
 
-/* overview index */
-.idx-ref {{ white-space:nowrap; font-weight:600; border:1.5px solid var(--ink); border-radius:3px; padding:.15rem .5rem; background:#fff; display:inline-block; }}
-.idx-title {{ font-family:'Newsreader',serif; font-weight:600; font-size:1.2rem; margin:0; }}
-.idx-q {{ color: var(--muted); font-size:.92rem; margin:.1rem 0 0; }}
-.idx-res {{ font-size:.93rem; margin:0; }}
-.idx-tools {{ color: var(--muted); font-size:.82rem; margin:.25rem 0 0; }}
+/* story cards */
+.story { display:grid; grid-template-columns: repeat(3, 1fr); gap:.9rem; margin:.1rem 0 1.1rem; }
+.sc { background:#fff; border:1px solid var(--rule); border-radius:18px; padding:1.05rem 1.2rem;
+    animation: rise .6s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 100ms + 350ms); }
+.sc h4 { margin:0 0 .45rem; font-size:1.08rem !important; color: var(--accent) !important; }
+.sc p, .sc li { font-size:.94rem; margin:0; color:#27324a; }
+.sc ul { margin:0; padding-left:1.05rem; }
+@media (max-width: 900px) { .story { grid-template-columns: 1fr; } }
+
+/* overview tiles */
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:1.05rem; margin: .4rem 0 1.4rem; }
+@media (max-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+a.tile { display:block; text-decoration:none !important; color: var(--ink) !important; background:#fff; border:1px solid var(--rule);
+    border-radius:20px; padding:1.3rem 1.3rem 1.1rem; position:relative; overflow:hidden;
+    transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s, border-color .28s;
+    animation: rise .65s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 90ms + 250ms); }
+a.tile:hover { transform: translateY(-7px); box-shadow: 0 22px 44px -20px rgba(15,27,61,.4); border-color: var(--c); }
+a.tile:focus-visible { outline: 3px solid var(--c); outline-offset: 3px; }
+a.tile .bar { position:absolute; left:0; top:0; height:6px; width:100%; background: var(--c); transform-origin:left;
+    animation: grow .9s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * 90ms + 450ms); }
+a.tile .ico { width:46px; height:46px; border-radius:14px; background: color-mix(in srgb, var(--c) 14%, white); display:grid; place-items:center; margin-bottom:.8rem; transition: transform .3s; }
+a.tile:hover .ico { transform: rotate(-6deg) scale(1.08); }
+a.tile .ico svg { width:25px; height:25px; stroke: var(--c); fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+a.tile h3 { margin:0 0 .25rem; font-size:1.4rem !important; }
+a.tile .q { color: var(--muted); font-size:.92rem; margin:0 0 .75rem; }
+a.tile .res { font-size:.95rem; margin:0 0 .6rem; font-weight:500; }
+a.tile .tags { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:.85rem; }
+a.tile .tags span { font-size:.76rem; background:#EEF1F8; border-radius:999px; padding:.15rem .6rem; color:#3A4560; }
+a.tile .go { font-weight:700; color: var(--c); display:inline-flex; align-items:center; gap:.4rem; transition: gap .22s; }
+a.tile:hover .go { gap:.8rem; }
+a.tile .go svg { width:18px; height:18px; stroke: var(--c); fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+
+/* body components */
+.kpis { display:flex; flex-wrap:wrap; gap:.8rem; margin:.3rem 0 1rem; }
+.kpi { flex:1 1 150px; background:#fff; border:1px solid var(--rule); border-left:4px solid var(--accent); border-radius:14px; padding:.7rem .95rem;
+    animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
+.kpi b { display:block; font-family:'Bricolage Grotesque',sans-serif; font-size:1.55rem; font-weight:700; line-height:1.2; font-variant-numeric: tabular-nums; }
+.kpi span { color: var(--muted); font-size:.86rem; }
+.lead { font-size:1.05rem; color:#27324a; max-width:50rem; margin:.2rem 0 .8rem; }
+.callout { background:#fff; border:1px solid var(--rule); border-left:4px solid var(--accent); padding:.8rem 1.05rem; border-radius:12px; margin:.6rem 0; animation: fade .5s both; }
+.finds { list-style:none; padding:0; margin:.3rem 0 0; }
+.finds li { display:flex; gap:.7rem; padding:.6rem 0; border-bottom:1px solid var(--rule); font-size:.97rem; }
+.finds li:last-child { border-bottom:none; }
+.mk { flex:none; width:1.3rem; text-align:center; font-weight:700; }
+.mk.v { color: __GREEN__; }
+.mk.n { color: __SAFFRON__; }
+.legend { font-size:.88rem; color: var(--muted); }
+.legend .mk { display:inline-block; width:auto; margin:0 .2rem 0 .6rem; }
+.note { color: var(--muted); font-size:.88rem; }
+.persona { background:#fff; border:1px solid var(--rule); border-top:5px solid var(--c); border-radius:16px; padding:.9rem 1rem; height:100%;
+    transition: transform .25s, box-shadow .25s; animation: rise .5s both; }
+.persona:hover { transform: translateY(-4px); box-shadow: 0 16px 30px -18px rgba(15,27,61,.4); }
+.persona h4 { margin:0 0 .2rem; font-size:1.02rem !important; }
+.persona p { margin:.15rem 0; font-size:.88rem; color:#27324a; }
+.persona .big { font-family:'Bricolage Grotesque',sans-serif; font-size:1.5rem; font-weight:700; }
+.conclusion { background: var(--ink); color:#fff; border-radius:20px; padding:1.4rem 1.6rem; margin:1.4rem 0 1rem; animation: rise .6s both; }
+.conclusion h3 { color:#fff !important; margin:0 0 .5rem; }
+.conclusion p { color:#DDE4F7 !important; margin:.3rem 0; }
 
 /* controls */
-.stTabs [data-baseweb="tab-list"] {{ gap: 1.4rem; border-bottom: 1px solid var(--rule); }}
-.stTabs [data-baseweb="tab"] {{ padding: .55rem 0; font-weight:500; }}
-.stTabs [aria-selected="true"] {{ color: var(--ink); }}
-:focus-visible {{ outline: 2px solid {BLUE} !important; outline-offset: 2px; }}
-.stButton button {{ border-radius: 3px; border:1.5px solid var(--ink); color: var(--ink); background:#fff; font-weight:500; }}
-.stButton button:hover {{ background: var(--ink); color:#fff; border-color: var(--ink); }}
-@media (prefers-reduced-motion: reduce) {{ * {{ transition: none !important; animation: none !important; }} }}
-footer {{ visibility: hidden; }}
+.stTabs [data-baseweb="tab-list"] { gap:.35rem; background:#fff; border:1px solid var(--rule); border-radius:14px; padding:.3rem; flex-wrap:wrap; }
+.stTabs [data-baseweb="tab"] { height:2.4rem; padding:0 1rem; border-radius:10px; transition: background .2s; }
+.stTabs [data-baseweb="tab"]:hover { background:#EEF1F8; }
+.stTabs [data-baseweb="tab"] p { font-weight:500; }
+.stTabs [aria-selected="true"] { background: var(--accent); }
+.stTabs [aria-selected="true"] p { color:#fff; }
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] { display:none; }
+.stTabs [data-baseweb="tab-panel"] { padding-top:1rem; animation: fade .4s both; }
+[data-testid="stPlotlyChart"] { background:#fff; border:1px solid var(--rule); border-radius:18px; padding:.5rem .5rem .1rem; animation: fade .5s both; }
+[data-testid="stExpander"] { background:#fff; border:1px solid var(--rule) !important; border-radius:14px; }
+[data-testid="stExpander"] summary { font-weight:500; }
+[data-testid="stDataFrame"] { border:1px solid var(--rule); border-radius:12px; overflow:hidden; }
+.stButton button { border-radius:11px; border:1.5px solid var(--ink); color: var(--ink); background:#fff; font-weight:500; transition: transform .15s, background .2s; }
+.stButton button:hover { background: var(--ink); color:#fff; transform: translateY(-2px); }
+.stSlider [role="slider"] { background: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent) !important; outline-offset: 2px; }
+footer { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
 """
-st.markdown(CSS, unsafe_allow_html=True)
+st.markdown(CSS.replace("__INK__", INK).replace("__MUTED__", MUTED).replace("__BLUE__", BLUE)
+            .replace("__GREEN__", GREEN).replace("__SAFFRON__", SAFFRON), unsafe_allow_html=True)
 
 
 # ----------------------------------------------------------------------------
-# Small helpers
+# Helpers
 # ----------------------------------------------------------------------------
 def show(fig: go.Figure, height: int = 380, title: str | None = None) -> None:
-    """Apply the house chart style and render it."""
     fig.update_layout(
         height=height,
-        font=dict(family="Public Sans, sans-serif", size=13, color=INK),
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(family="DM Sans, sans-serif", size=13, color=INK),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         colorway=PALETTE,
-        margin=dict(l=10, r=10, t=54 if title else 18, b=10),
+        margin=dict(l=12, r=12, t=58 if title else 20, b=12),
         legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0, title_text=""),
-        hoverlabel=dict(font_family="Public Sans"),
+        hoverlabel=dict(font_family="DM Sans", bgcolor="white"),
     )
     if title:
-        fig.update_layout(title=dict(text=title, x=0, xanchor="left", font=dict(family="Newsreader, serif", size=18)))
-    fig.update_xaxes(showgrid=False, linecolor=RULE, tickcolor=RULE, zeroline=False)
-    fig.update_yaxes(gridcolor="#E3E8EF", linecolor="rgba(0,0,0,0)", zeroline=False)
+        fig.update_layout(title=dict(text=title, x=0.01, xanchor="left", font=dict(family="Bricolage Grotesque, sans-serif", size=18)))
+    fig.update_xaxes(showgrid=False, linecolor="#DDE2EC", tickcolor="#DDE2EC", zeroline=False)
+    fig.update_yaxes(gridcolor="#E9EDF4", linecolor="rgba(0,0,0,0)", zeroline=False)
     try:
         st.plotly_chart(fig, width="stretch")
-    except TypeError:  # older Streamlit
+    except TypeError:
         st.plotly_chart(fig, use_container_width=True)
 
 
@@ -152,44 +248,94 @@ def table(df: pd.DataFrame, **kw) -> None:
         st.dataframe(df, use_container_width=True, hide_index=True, **kw)
 
 
+def sbutton(label: str, **kw) -> bool:
+    try:
+        return st.button(label, width="stretch", **kw)
+    except TypeError:
+        return st.button(label, use_container_width=True, **kw)
+
+
 def kpis(items: list[tuple[str, str]]) -> None:
-    cells = "".join(f'<div class="kpi"><b>{v}</b><span>{k}</span></div>' for k, v in items)
+    cells = "".join(f'<div class="kpi" style="animation-delay:{i*70}ms"><b>{v}</b><span>{k}</span></div>' for i, (k, v) in enumerate(items))
     st.markdown(f'<div class="kpis">{cells}</div>', unsafe_allow_html=True)
 
 
 def finds(items: list[tuple[str, str]]) -> None:
-    """items: ('v'|'n', text). v = recomputed here, n = taken from the project notebook or report."""
-    rows = "".join(
-        f'<li><span class="mk {k}">{"✓" if k == "v" else "△"}</span><span>{t}</span></li>' for k, t in items
-    )
+    rows = "".join(f'<li><span class="mk {k}">{"✓" if k == "v" else "△"}</span><span>{t}</span></li>' for k, t in items)
     st.markdown(f'<ul class="finds">{rows}</ul>', unsafe_allow_html=True)
 
 
 def legend() -> None:
+    st.markdown('<p class="legend">Marks:<span class="mk v">✓</span>recomputed live from the data in this app'
+                f'<span class="mk n">△</span>carried over from the project notebook or report</p>', unsafe_allow_html=True)
+
+
+def lead(text: str) -> None:
+    st.markdown(f'<p class="lead">{text}</p>', unsafe_allow_html=True)
+
+
+def how(text: str, title: str = "How to read this") -> None:
+    with st.expander(title):
+        st.markdown(text)
+
+
+def callout(html: str) -> None:
+    st.markdown(f'<div class="callout">{html}</div>', unsafe_allow_html=True)
+
+
+def conclusion(title: str, paragraphs: list[str]) -> None:
+    body = "".join(f"<p>{p}</p>" for p in paragraphs)
+    st.markdown(f'<div class="conclusion"><h3>{title}</h3>{body}</div>', unsafe_allow_html=True)
+
+
+def go_to(key: str) -> None:
+    st.session_state["page"] = key
+
+
+def navbar(active: str) -> None:
+    st.markdown('<div class="brand"><b>Sadia Yusuf, CA</b><span>Financial data analytics portfolio</span></div>', unsafe_allow_html=True)
+    with st.container(key="navbar"):
+        cols = st.columns(len(ORDER) + 1)
+        with cols[0]:
+            sbutton("Overview", key="nav_overview", type="primary" if active == "overview" else "secondary", on_click=go_to, args=("overview",))
+        for c, k in zip(cols[1:], ORDER):
+            with c:
+                sbutton(PROJECTS[k]["nav"], key=f"nav_{k}", type="primary" if active == k else "secondary", on_click=go_to, args=(k,))
+
+
+def hero(key: str, kpi_items: list[tuple[str, str]], live: bool, subtitle: str | None = None) -> None:
+    p = PROJECTS[key]
+    chips = "".join(f'<span class="chip">{t}</span>' for t in p["tools"])
+    src = '<span class="chip live">Live data</span>' if live else '<span class="chip note">Figures from notebook</span>'
+    ks = "".join(f'<div class="hk" style="--i:{i}"><b>{v}</b><span>{k}</span></div>' for i, (k, v) in enumerate(kpi_items))
     st.markdown(
-        '<p class="legend">Tick marks:<span class="mk v">✓</span>recomputed live from the data in this app'
-        '<span class="mk n">△</span>taken from the project notebook or report (raw data not bundled)</p>',
-        unsafe_allow_html=True,
-    )
+        f"""<style>:root {{ --accent: {p['accent']}; }}</style>
+<section class="hero">
+  <div class="hero-top"><span class="hero-ico"><svg viewBox="0 0 24 24">{ICONS[key]}</svg></span>{src}{chips}</div>
+  <div class="hero-title">{p['name']}</div>
+  <p class="hero-sub">{subtitle or p['tag']}</p>
+  <div class="hero-kpis">{ks}</div>
+</section>""", unsafe_allow_html=True)
 
 
-def workpaper(ref: str, title: str, course: str, objective: str, performed: list[str], tools: str) -> None:
-    lis = "".join(f"<li>{p}</li>" for p in performed)
+def story(question: str, did: list[str], found: str) -> None:
+    lis = "".join(f"<li>{d}</li>" for d in did)
     st.markdown(
-        f"""
-<div class="wp-head"><div class="wp-ref">{ref}</div><div><h1>{title}</h1><p class="wp-course">{course}</p></div></div>
-<div class="wp-grid">
-  <div><h4>Objective</h4><p>{objective}</p></div>
-  <div><h4>Work performed</h4><ul>{lis}</ul></div>
-  <div class="wp-tools"><b>Tools</b>{tools}</div>
-</div>""",
-        unsafe_allow_html=True,
-    )
+        f"""<div class="story">
+<div class="sc" style="--i:0"><h4>The question</h4><p>{question}</p></div>
+<div class="sc" style="--i:1"><h4>What I did</h4><ul>{lis}</ul></div>
+<div class="sc" style="--i:2"><h4>What I found</h4><p>{found}</p></div></div>""", unsafe_allow_html=True)
 
 
-def conclusion(text: str) -> None:
-    st.markdown("### Conclusion")
-    st.markdown(text)
+def next_project(key: str) -> None:
+    i = ORDER.index(key)
+    nxt = ORDER[(i + 1) % len(ORDER)]
+    st.markdown("---")
+    c1, c2, c3 = st.columns([1, 1, 1])
+    with c1:
+        sbutton("Back to overview", key="bk_overview", on_click=go_to, args=("overview",))
+    with c3:
+        sbutton(f"Next project: {PROJECTS[nxt]['nav']}", key="bk_next", on_click=go_to, args=(nxt,))
 
 
 def pct(x: float, d: int = 1) -> str:
@@ -197,7 +343,7 @@ def pct(x: float, d: int = 1) -> str:
 
 
 # ----------------------------------------------------------------------------
-# Data loaders (cached)
+# Data loaders
 # ----------------------------------------------------------------------------
 @st.cache_data(show_spinner=False)
 def load_turtle() -> pd.DataFrame:
@@ -231,10 +377,8 @@ def load_marketing() -> pd.DataFrame:
     d = pd.read_csv(DATA / "marketing.csv")
     d = d[~d["Marital_Status"].isin(["Absurd", "YOLO"])].copy()
     d["Age band"] = pd.cut(d["Average Age"], [0, 34, 44, 54, 64, 120], labels=["Under 35", "35-44", "45-54", "55-64", "65+"])
-    d["Income tier"] = pd.cut(
-        d["Income"], [-1, 10_000, 25_000, 50_000, 75_000, 100_000, 1e9],
-        labels=["Under 10K", "10-25K", "25-50K", "50-75K", "75-100K", "100K+"],
-    )
+    d["Income tier"] = pd.cut(d["Income"], [-1, 10_000, 25_000, 50_000, 75_000, 100_000, 1e9],
+                              labels=["Under 10K", "10-25K", "25-50K", "50-75K", "75-100K", "100K+"])
     return d
 
 
@@ -247,12 +391,24 @@ def load_bank() -> tuple[pd.DataFrame, pd.DataFrame]:
 
 
 # ----------------------------------------------------------------------------
-# Pricing maths (option page + overview)
+# Pricing maths
 # ----------------------------------------------------------------------------
 def bs_call(S, K, T, r, sig):
     d1 = (np.log(S / K) + (r + 0.5 * sig**2) * T) / (sig * np.sqrt(T))
     d2 = d1 - sig * np.sqrt(T)
     return S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2)
+
+
+def bs_greeks(S, K, T, r, sig):
+    d1 = (np.log(S / K) + (r + 0.5 * sig**2) * T) / (sig * np.sqrt(T))
+    d2 = d1 - sig * np.sqrt(T)
+    return dict(
+        delta=norm.cdf(d1),
+        gamma=norm.pdf(d1) / (S * sig * np.sqrt(T)),
+        vega=S * norm.pdf(d1) * np.sqrt(T) / 100,
+        theta=(-S * norm.pdf(d1) * sig / (2 * np.sqrt(T)) - r * K * np.exp(-r * T) * norm.cdf(d2)) / 365,
+        rho=K * T * np.exp(-r * T) * norm.cdf(d2) / 100,
+    )
 
 
 def binomial_call(S, K, T, r, sig, N):
@@ -277,93 +433,6 @@ def mc_payoffs(S, K, T, r, sig, n, seed):
 def mc_call(S, K, T, r, sig, n, seed):
     pay = mc_payoffs(S, K, T, r, sig, n, seed)
     return float(pay.mean()), float(pay.std(ddof=1) / np.sqrt(n))
-
-
-# ============================================================================
-# PAGES
-# ============================================================================
-PAGES = {
-    "overview": "Overview",
-    "turtle": "Turtle Games: loyalty and segments",
-    "churn": "ConnectTel: customer churn",
-    "nhs": "NHS: appointment capacity",
-    "market": "2Market: customers and channels",
-    "bank": "Banking: transaction anomalies",
-    "option": "Options: three-way price check",
-}
-REFS = {"turtle": "WP 1", "churn": "WP 2", "nhs": "WP 3", "market": "WP 4", "bank": "WP 5", "option": "WP 6"}
-
-
-def go_to(key: str) -> None:
-    st.session_state["page"] = key
-
-
-# ----------------------------------------------------------------------------
-# Overview
-# ----------------------------------------------------------------------------
-def page_overview() -> None:
-    t = load_turtle()
-    r2 = stats.linregress(t["spending_score"], t["loyalty_points"]).rvalue ** 2
-    ar = load_ar()
-    modes = ar.pivot_table(index="appointment_month", columns="appointment_mode", values="count_of_appointments", aggfunc="sum")
-    tel = modes["Telephone"] / modes.sum(axis=1) * 100
-    nc = load_nc()
-    gp = nc.loc[nc.service_setting == "General Practice", "count_of_appointments"].sum() / nc["count_of_appointments"].sum() * 100
-    m = load_marketing()
-    top = m[m.RFM_segment.isin(["Champions", "Big Spenders"])]
-    ig = m.loc[m.Instagram_ad == 1, "Total_Spending"].mean() / m.loc[m.Instagram_ad == 0, "Total_Spending"].mean()
-    bt, ba = load_bank()
-    done = bt[bt.status == "completed"]
-    bs = bs_call(1400, 1500, 1, 0.065, 0.28)
-    bn = binomial_call(1400, 1500, 1, 0.065, 0.28, 1000)
-    mc, _ = mc_call(1400, 1500, 1, 0.065, 0.28, 1_000_000, 42)
-
-    st.markdown(
-        """
-<h1>Six analytics projects, from raw data to a decision</h1>
-<p style="font-size:1.08rem;max-width:46rem;margin-top:.6rem">
-By Sadia Yusuf, Chartered Accountant moving into financial data analytics. Each project opens as a working paper:
-the question it answers, the work performed, then findings you can filter and re-run yourself.</p>
-""",
-        unsafe_allow_html=True,
-    )
-    legend()
-    st.markdown("---")
-
-    rows = [
-        ("turtle", "Turtle Games", "What drives customer loyalty, and which customers should marketing target?",
-         f"Spending score alone explains {r2:.0%} of loyalty points. Five customer segments separate cleanly.",
-         "Python, regression, decision trees, k-means, NLP"),
-        ("churn", "ConnectTel", "Which telecom customers will leave, and what is it worth to keep them?",
-         "26.5% of customers churned, about 30% of annual revenue. Contract type is the strongest driver.",
-         "Python, statistical tests, ensemble models, cost-benefit"),
-        ("nhs", "NHS appointments", "Is primary-care capacity adequate, and how is it used?",
-         f"{gp:.0f}% of appointments are in General Practice. Telephone went from {tel.iloc[0]:.0f}% to {tel.max():.0f}% of the mix.",
-         "Python, time series, 1.5M rows reduced to monthly views"),
-        ("market", "2Market", "Who are the customers, which channels work, which products sell?",
-         f"Champions and Big Spenders are {len(top)/len(m):.0%} of customers and {top.Total_Spending.sum()/m.Total_Spending.sum():.0%} of spend. "
-         f"Instagram responders spend {ig:.1f}x non-responders.",
-         "Excel, SQL, Tableau, RFM segmentation"),
-        ("bank", "Banking transactions", "Which transactions need a human to look at them?",
-         f"{int(ba.shape[0])} of {len(done):,} completed transactions flagged ({ba.shape[0]/len(done):.1%}) using two outlier tests, a velocity check and a dormant-account check.",
-         "Python, z-score and IQR, rolling windows"),
-        ("option", "Option pricing", "Can a derivative's fair value be re-derived independently?",
-         f"Black-Scholes {bs:,.2f}, binomial {bn:,.2f}, Monte Carlo {mc:,.2f}. The three agree to within {max(abs(bn-bs),abs(mc-bs)):.2f}.",
-         "Python, NumPy, SciPy"),
-    ]
-    for key, name, q, res, tools in rows:
-        c1, c2, c3, c4 = st.columns([0.55, 2.7, 3.2, 0.9], vertical_alignment="center")
-        c1.markdown(f'<span class="idx-ref">{REFS[key]}</span>', unsafe_allow_html=True)
-        c2.markdown(f'<p class="idx-title">{name}</p><p class="idx-q">{q}</p>', unsafe_allow_html=True)
-        c3.markdown(f'<p class="idx-res">{res}</p><p class="idx-tools">{tools}</p>', unsafe_allow_html=True)
-        c4.button("Open", key=f"open_{key}", on_click=go_to, args=(key,))
-        st.markdown('<hr style="margin:.5rem 0;border:none;border-top:1px solid #D3DAE4">', unsafe_allow_html=True)
-
-    st.markdown(
-        '<p class="note">Datasets for the banking and option-pricing projects are generated or illustrative; no client data appears anywhere in this app. '
-        "The Turtle Games, NHS and 2Market projects use the public or course-provided datasets named on each page.</p>",
-        unsafe_allow_html=True,
-    )
 
 
 # ----------------------------------------------------------------------------
@@ -420,7 +489,7 @@ def page_turtle() -> None:
 
     workpaper(
         REFS["turtle"], "Turtle Games: loyalty and customer segments",
-        "LSE project 3 · Advanced Analytics for Organisational Impact",
+        "Advanced Analytics for Organisational Impact",
         "Turtle Games sells games, toys and books worldwide. Marketing wants to know how customers earn loyalty points, "
         "which groups to target, and what reviews say about products.",
         ["Cleaned 2,000 customer records and fitted simple linear regressions",
@@ -435,6 +504,7 @@ def page_turtle() -> None:
 
     # --- regression
     with tabs[0]:
+        tab_note("turtle", 0)
         labels = {"spending_score": "Spending score (1-100)", "remuneration": "Annual income (£k)", "age": "Age (years)"}
         r2s = {k: stats.linregress(t[k], t["loyalty_points"]).rvalue ** 2 for k in labels}
         c1, c2 = st.columns([1, 2.2])
@@ -462,6 +532,7 @@ def page_turtle() -> None:
 
     # --- decision tree
     with tabs[1]:
+        tab_note("turtle", 1)
         c1, c2 = st.columns([1, 2])
         with c1:
             depth = st.slider("Maximum depth", 1, 12, 4)
@@ -478,7 +549,7 @@ def page_turtle() -> None:
             st.markdown(f"Predicted loyalty points: **{pred:,.0f}**")
         with c2:
             curve = turtle_tree_curve().melt("depth", var_name="Data", value_name="R²")
-            fig = px.line(curve, x="depth", y="R²", color="Data", markers=True, color_discrete_map={"Train": BLUE, "Test": AMBER})
+            fig = px.line(curve, x="depth", y="R²", color="Data", markers=True, color_discrete_map={"Train": BLUE, "Test": SAFFRON})
             fig.add_vline(x=depth, line_dash="dot", line_color=INK)
             fig.update_xaxes(dtick=1, title="Tree depth")
             show(fig, 300, "Train and test fit as the tree grows")
@@ -490,6 +561,7 @@ def page_turtle() -> None:
 
     # --- clustering
     with tabs[2]:
+        tab_note("turtle", 2)
         kc = turtle_k_curve()
         k = st.slider("Number of segments (k)", 2, 10, 5)
         c1, c2 = st.columns(2)
@@ -521,6 +593,7 @@ def page_turtle() -> None:
 
     # --- NLP
     with tabs[3]:
+        tab_note("turtle", 3)
         d = turtle_sentiment()
         col = st.radio("Analyse", ["review", "summary"], horizontal=True, format_func=lambda s: "Full reviews" if s == "review" else "Review summaries")
         n = st.slider("Words to show", 5, 30, 15)
@@ -593,7 +666,7 @@ TEST_CHURNERS = 374
 def page_churn() -> None:
     workpaper(
         REFS["churn"], "ConnectTel: who will leave, and what is it worth to keep them",
-        "LSE project 4 · Capstone",
+        "Capstone",
         "A UK telecom provider loses a quarter of its customers. Predict who is likely to leave and "
         "show what a retention programme is worth in pounds, not accuracy points.",
         ["Cleaned 7,043 customer records and tested every feature against churn (chi-square, Cramér's V)",
@@ -604,13 +677,14 @@ def page_churn() -> None:
     )
     legend()
     st.caption("The customer file is not bundled with this app, so the figures below are carried over from the capstone notebook. The economics calculator re-computes live.")
-    kpis([("Customers", "7,043"), ("Churned", "1,869 (26.5%)"), ("Annual revenue lost", "£1.67M"), ("Share of revenue", "30.5%")])
     tabs = st.tabs(["Why customers leave", "Who is worth keeping", "Model and lift", "Retention economics"])
 
     with tabs[0]:
+
+        tab_note("churn", 0)
         f = st.selectbox("Churn rate by", list(CHURN_FACTORS))
         d = pd.DataFrame({"Group": list(CHURN_FACTORS[f]), "Churn rate": list(CHURN_FACTORS[f].values())})
-        fig = go.Figure(go.Bar(x=d["Group"], y=d["Churn rate"], marker_color=[AMBER if v > CHURN_BASE else TEAL for v in d["Churn rate"]],
+        fig = go.Figure(go.Bar(x=d["Group"], y=d["Churn rate"], marker_color=[SAFFRON if v > CHURN_BASE else TEAL for v in d["Churn rate"]],
                                text=[f"{v:.1f}%" for v in d["Churn rate"]], textposition="outside"))
         fig.add_hline(y=CHURN_BASE, line_dash="dash", line_color=INK, annotation_text="Overall 26.5%", annotation_position="top right")
         fig.update_yaxes(range=[0, max(60, d["Churn rate"].max() * 1.2)], ticksuffix="%")
@@ -624,6 +698,8 @@ def page_churn() -> None:
                ("n", "68.7% of fibre customers are month-to-month, so part of fibre's high churn is really contract mix. The notebook flags this as a confound and tests it in the multivariate model.")])
 
     with tabs[1]:
+
+        tab_note("churn", 1)
         tiers = pd.DataFrame({"Tier": ["Bronze", "Silver", "Gold", "Platinum"], "Customers": [1761, 1773, 1751, 1758],
                               "Avg CLV (£)": [159.6, 323.0, 446.4, 1313.9], "Share of CLV": [7.1, 14.5, 19.8, 58.5], "Churn rate": [30, 40, 30, 10]})
         c1, c2 = st.columns(2)
@@ -632,7 +708,7 @@ def page_churn() -> None:
             fig.update_yaxes(ticksuffix="%", range=[0, 70])
             show(fig, 320, "Share of lifetime value")
         with c2:
-            fig = go.Figure(go.Bar(x=tiers["Tier"], y=tiers["Churn rate"], marker_color=[AMBER if v > CHURN_BASE else TEAL for v in tiers["Churn rate"]],
+            fig = go.Figure(go.Bar(x=tiers["Tier"], y=tiers["Churn rate"], marker_color=[SAFFRON if v > CHURN_BASE else TEAL for v in tiers["Churn rate"]],
                                    text=[f"{v}%" for v in tiers["Churn rate"]], textposition="outside"))
             fig.update_yaxes(ticksuffix="%", range=[0, 55])
             show(fig, 320, "Churn rate by value tier")
@@ -647,12 +723,14 @@ def page_churn() -> None:
                ("n", "The most urgent group is 279 new, high-spending customers who churn at 74%. They are few, but they are paying £84 a month.")])
 
     with tabs[2]:
+
+        tab_note("churn", 2)
         comp = pd.DataFrame({"Model": ["Logistic regression", "Decision tree", "Random forest", "Neural network"],
                              "Accuracy": [.798, .801, .799, .794], "Recall (churn)": [.551, .543, .513, .545], "ROC-AUC": [.839, .835, .840, .840]})
         c1, c2 = st.columns([1.1, 1])
         with c1:
             long = comp.melt("Model", var_name="Metric", value_name="Score")
-            fig = px.bar(long, x="Model", y="Score", color="Metric", barmode="group", color_discrete_sequence=[SLATE, AMBER, BLUE])
+            fig = px.bar(long, x="Model", y="Score", color="Metric", barmode="group", color_discrete_sequence=[SLATE, SAFFRON, BLUE])
             fig.update_yaxes(range=[0.4, 0.9])
             show(fig, 340, "Four models, one ceiling")
         with c2:
@@ -668,7 +746,7 @@ def page_churn() -> None:
         fig = go.Figure()
         fig.add_bar(x=dec["Decile"], y=dec["Churn rate"], name="Churn rate in decile",
                     marker_color=[BLUE if d <= n else "#C9D3E0" for d in dec["Decile"]])
-        fig.add_scatter(x=dec["Decile"], y=dec["Captured"], name="Cumulative share of churners caught", mode="lines+markers", line=dict(color=AMBER, width=3))
+        fig.add_scatter(x=dec["Decile"], y=dec["Captured"], name="Cumulative share of churners caught", mode="lines+markers", line=dict(color=SAFFRON, width=3))
         fig.update_xaxes(dtick=1, title="Risk decile (1 = highest risk)")
         fig.update_yaxes(ticksuffix="%")
         show(fig, 360, "Lift: the riskiest 30% of customers hold 65% of churners")
@@ -676,6 +754,8 @@ def page_churn() -> None:
                ("n", "The ensemble does not beat logistic regression on ROC-AUC (0.841 vs 0.842) but does on precision-recall (0.648 vs 0.634) and is more stable. It was chosen on expected cost, not accuracy.")])
 
     with tabs[3]:
+
+        tab_note("churn", 3)
         st.markdown("Change the assumptions and see which operating point saves the most. Defaults match the notebook.")
         c1, c2, c3 = st.columns(3)
         offer = c1.slider("Cost of a retention offer (£)", 10, 150, 50, step=5)
@@ -720,7 +800,7 @@ def page_churn() -> None:
 def page_nhs() -> None:
     workpaper(
         REFS["nhs"], "NHS: is primary-care capacity adequate?",
-        "LSE project 2 · Data Analytics using Python",
+        "Data Analytics using Python",
         "NHS England must decide between adding capacity and using what it has better. "
         "Work out how appointments changed through COVID-19, where they happen, and whether staffing should grow.",
         ["Cleaned three NHS datasets (about 1.5M rows) and removed 21,604 duplicate rows",
@@ -739,6 +819,8 @@ def page_nhs() -> None:
     share = modes.div(modes.sum(axis=1), axis=0) * 100
 
     with tabs[0]:
+
+        tab_note("nhs", 0)
         view = st.radio("Show", ["Total appointments", "By mode (count)", "By mode (share of month)"], horizontal=True)
         if view == "Total appointments":
             fig = px.area(tot, x="date", y="count_of_appointments", color_discrete_sequence=[BLUE], labels={"count_of_appointments": "Appointments", "date": ""})
@@ -750,7 +832,7 @@ def page_nhs() -> None:
         fig.add_vline(x=pd.Timestamp("2020-03-01"), line_dash="dot", line_color=INK)
         fig.add_annotation(x=pd.Timestamp("2020-03-01"), y=1, yref="paper", text="First lockdown", showarrow=False, xanchor="left", yanchor="top")
         for a, b in [("2020-10-01", "2021-02-28"), ("2021-12-01", "2022-02-28")]:
-            fig.add_vrect(x0=a, x1=b, fillcolor=AMBER, opacity=0.12, line_width=0)
+            fig.add_vrect(x0=a, x1=b, fillcolor=SAFFRON, opacity=0.12, line_width=0)
         show(fig, 400, "Appointments per month, January 2020 to June 2022 (amber: restriction periods noted in the report)")
         tel0, telmax = share["Telephone"].iloc[0], share["Telephone"].max()
         f2f0, f2f_apr = share["Face-to-Face"].iloc[0], share.loc["2020-04", "Face-to-Face"]
@@ -759,13 +841,15 @@ def page_nhs() -> None:
                ("v", "Volume dips line up with the first lockdown and the winter restriction periods.")])
 
     with tabs[1]:
+
+        tab_note("nhs", 1)
         post = tot[tot["appointment_month"] >= "2021-08"].copy()
         c1, c2 = st.columns(2)
         k = c1.slider("Benchmark: mean plus this many standard deviations", 0.0, 2.0, 1.0, step=0.25)
         up = c2.slider("What if the benchmark were this much higher (%)", 0, 20, 0, step=1)
         thr = (post["count_of_appointments"].mean() + k * post["count_of_appointments"].std()) * (1 + up / 100)
         post["over"] = post["count_of_appointments"] > thr
-        fig = go.Figure(go.Bar(x=post["date"], y=post["count_of_appointments"], marker_color=[AMBER if o else BLUE for o in post["over"]]))
+        fig = go.Figure(go.Bar(x=post["date"], y=post["count_of_appointments"], marker_color=[SAFFRON if o else BLUE for o in post["over"]]))
         fig.add_hline(y=thr, line_dash="dash", line_color=INK, annotation_text=f"Benchmark {thr/1e6:.1f}M", annotation_position="top left")
         fig.update_yaxes(range=[0, post["count_of_appointments"].max() * 1.15])
         show(fig, 380, "Monthly appointments since August 2021 against the capacity benchmark")
@@ -776,12 +860,14 @@ def page_nhs() -> None:
                ("v", "Raising the benchmark by 5 to 10% removes the peak-month breaches, which is the basis for the report's modest-uplift staffing recommendation.")])
 
     with tabs[2]:
+
+        tab_note("nhs", 2)
         view = st.selectbox("View", ["Attendance (did not attend rate)", "Provider type", "Booking lead time", "Appointment length"])
         if view.startswith("Attendance"):
             s = ar.pivot_table(index="appointment_month", columns="appointment_status", values="count_of_appointments", aggfunc="sum")
             d = (s["DNA"] / s.sum(axis=1) * 100).reset_index(name="DNA %")
             d["date"] = pd.to_datetime(d["appointment_month"])
-            fig = px.line(d, x="date", y="DNA %", markers=True, color_discrete_sequence=[AMBER])
+            fig = px.line(d, x="date", y="DNA %", markers=True, color_discrete_sequence=[SAFFRON])
             fig.update_yaxes(range=[0, max(8, d["DNA %"].max() * 1.2)], ticksuffix="%")
             show(fig, 340, "Share of booked appointments missed")
             st.markdown(f"Did-not-attend rate has stayed between **{d['DNA %'].min():.1f}%** and **{d['DNA %'].max():.1f}%** throughout, with no pandemic-sized shift.")
@@ -801,7 +887,7 @@ def page_nhs() -> None:
             tb = tb.div(tb.sum(axis=1), axis=0) * 100
             long = tb.sum(axis=1) * 0 + tb[["15  to 21 Days", "22  to 28 Days", "More than 28 Days"]].sum(axis=1)
             long.index = pd.to_datetime(long.index)
-            fig = go.Figure(go.Scatter(x=long.index, y=long.values, mode="lines+markers", line=dict(color=AMBER, width=3)))
+            fig = go.Figure(go.Scatter(x=long.index, y=long.values, mode="lines+markers", line=dict(color=SAFFRON, width=3)))
             fig.update_yaxes(ticksuffix="%", rangemode="tozero")
             show(fig, 300, "Share of appointments booked more than 14 days ahead")
             m = tb.reset_index().melt("appointment_month", var_name="Lead time", value_name="%")
@@ -814,13 +900,15 @@ def page_nhs() -> None:
             d = ad.groupby("actual_duration")["count_of_appointments"].sum()
             order = ["1-5 Minutes", "6-10 Minutes", "11-15 Minutes", "16-20 Minutes", "21-30 Minutes", "31-60 Minutes", "Unknown / Data Quality"]
             d = (d.reindex(order) / d.sum() * 100)
-            fig = go.Figure(go.Bar(x=d.index, y=d.values, marker_color=[AMBER if i.startswith("Unknown") else BLUE for i in d.index],
+            fig = go.Figure(go.Bar(x=d.index, y=d.values, marker_color=[SAFFRON if i.startswith("Unknown") else BLUE for i in d.index],
                                    text=[f"{v:.0f}%" for v in d.values], textposition="outside"))
             fig.update_yaxes(ticksuffix="%", range=[0, 30])
             show(fig, 340, "How long appointments last (December 2021 to June 2022)")
             st.markdown("A quarter of appointments have no recorded duration. That data-quality gap limits capacity planning more than any modelling choice.")
 
     with tabs[3]:
+
+        tab_note("nhs", 3)
         setting = nc.groupby("service_setting")["count_of_appointments"].sum().sort_values()
         c1, c2 = st.columns(2)
         with c1:
@@ -830,7 +918,7 @@ def page_nhs() -> None:
             show(fig, 300, "Service setting (August 2021 to June 2022)")
         with c2:
             ctx = nc.groupby("context_type")["count_of_appointments"].sum()
-            fig = go.Figure(go.Pie(labels=ctx.index, values=ctx.values, hole=0.55, marker_colors=[BLUE, AMBER, SLATE], textinfo="percent"))
+            fig = go.Figure(go.Pie(labels=ctx.index, values=ctx.values, hole=0.55, marker_colors=[BLUE, SAFFRON, SLATE], textinfo="percent"))
             show(fig, 300, "Context type")
         nmax = st.slider("National categories to show", 5, 18, 10)
         cat = nc.groupby("national_category")["count_of_appointments"].sum().sort_values().tail(nmax)
@@ -846,9 +934,11 @@ def page_nhs() -> None:
                ("v", "Outside General Practice, monthly volumes are small and uneven, which suggests those services are run reactively.")])
 
     with tabs[4]:
+
+        tab_note("nhs", 4)
         n = st.slider("Hashtags to show", 5, 30, 15)
         d = tags.head(n).iloc[::-1]
-        fig = go.Figure(go.Bar(x=d["count"], y=d["hashtag"], orientation="h", marker_color=PLUM))
+        fig = go.Figure(go.Bar(x=d["count"], y=d["hashtag"], orientation="h", marker_color=VIOLET))
         show(fig, 90 + 24 * n, "Most frequent hashtags on UK healthcare tweets")
         st.caption("Counting all tweets rather than only retweeted or favourited ones avoids over-weighting popular posts, at the cost of more noise.")
 
@@ -869,7 +959,7 @@ CHANNELS = {"Bulkmail_ad": "Bulk mail", "Twitter_ad": "Twitter", "Instagram_ad":
 def page_market() -> None:
     workpaper(
         REFS["market"], "2Market: who buys, what they buy, and which channels work",
-        "LSE project 1 · Business analytics",
+        "Business analytics",
         "A multi-country retailer wants to know who its customers are, which advertising channels influence spend, and which products carry the business.",
         ["Cleaned 2,212 customers in Excel: bad birth years, an income outlier, 47 duplicates, wrong data types",
          "Engineered age bands, income tiers and spend metrics in PostgreSQL",
@@ -894,6 +984,8 @@ def page_market() -> None:
     tabs = st.tabs(["Customers", "Products", "RFM segments", "Ad channels"])
 
     with tabs[0]:
+
+        tab_note("market", 0)
         dim = st.selectbox("Average spend by", ["Age band", "Income tier", "Education", "Marital_Status", "Country"], format_func=lambda s: s.replace("_", " "))
         g = f.groupby(dim, observed=True).agg(Customers=("ID", "size"), Spend=("Total_Spending", "mean")).reset_index()
         if dim == "Country":
@@ -907,6 +999,8 @@ def page_market() -> None:
         show(fig, 420, "Income against spend: spend rises with income, then flattens")
 
     with tabs[1]:
+
+        tab_note("market", 1)
         c1, c2 = st.columns([1, 1])
         by = c1.selectbox("Split by", ["Country", "Education", "Marital_Status", "Age band", "Income tier"], format_func=lambda s: s.replace("_", " "))
         as_share = c2.radio("Show", ["Share of category spend", "Dollars"], horizontal=True)
@@ -923,6 +1017,8 @@ def page_market() -> None:
         st.markdown(f"**{tot.index[0]}** and **{tot.index[1].lower()}** are the two biggest categories here, together **{tot.iloc[:2].sum()/tot.sum():.0%}** of spend.")
 
     with tabs[2]:
+
+        tab_note("market", 2)
         seg = f.groupby("RFM_segment").agg(Customers=("ID", "size"), Spend=("Total_Spending", "sum"), Avg=("Total_Spending", "mean")).reset_index()
         seg["Customers %"] = seg["Customers"] / seg["Customers"].sum() * 100
         seg["Spend %"] = seg["Spend"] / seg["Spend"].sum() * 100
@@ -938,6 +1034,8 @@ def page_market() -> None:
                ("v", "Hibernating customers average a tiny fraction of that spend, which makes them a reactivation target rather than a loss-making group.")])
 
     with tabs[3]:
+
+        tab_note("market", 3)
         rows = []
         for c, name in CHANNELS.items():
             r, n = f.loc[f[c] == 1, "Total_Spending"], f.loc[f[c] == 0, "Total_Spending"]
@@ -987,6 +1085,8 @@ def page_bank() -> None:
     tabs = st.tabs(["Spending patterns", "Anomaly lab", "Method"])
 
     with tabs[0]:
+
+        tab_note("bank", 0)
         c1, c2 = st.columns(2)
         ch = c1.multiselect("Channel", sorted(t.channel.unique()), default=sorted(t.channel.unique()))
         cat = c2.multiselect("Category", sorted(t.category.unique()), default=sorted(t.category.unique()))
@@ -1009,10 +1109,12 @@ def page_bank() -> None:
             with c2:
                 n = st.slider("Merchants to show", 5, 20, 10)
                 ms = d.groupby("merchant")["amount"].sum().sort_values().tail(n)
-                fig = go.Figure(go.Bar(x=ms.values, y=ms.index, orientation="h", marker_color=PLUM))
+                fig = go.Figure(go.Bar(x=ms.values, y=ms.index, orientation="h", marker_color=VIOLET))
                 show(fig, 340 if n <= 12 else 40 + 26 * n, "Top merchants")
 
     with tabs[1]:
+
+        tab_note("bank", 1)
         st.markdown("Move the thresholds and watch the flagged list change. The project's settings are z-score 3, IQR multiplier 3, both tests required.")
         c1, c2, c3 = st.columns(3)
         zt = c1.slider("Z-score threshold", 2.0, 5.0, 3.0, step=0.1)
@@ -1035,9 +1137,9 @@ def page_bank() -> None:
         ok = done[~done.flagged]
         fig.add_scatter(x=ok.datetime, y=ok.amount, mode="markers", name="Not flagged", marker=dict(color=SLATE, size=5, opacity=0.45))
         fl = done[done.amount_flag]
-        fig.add_scatter(x=fl.datetime, y=fl.amount, mode="markers", name="Amount outlier", marker=dict(color=AMBER, size=9, line=dict(color=INK, width=1)))
+        fig.add_scatter(x=fl.datetime, y=fl.amount, mode="markers", name="Amount outlier", marker=dict(color=SAFFRON, size=9, line=dict(color=INK, width=1)))
         ot = done[done.other_flag & ~done.amount_flag]
-        fig.add_scatter(x=ot.datetime, y=ot.amount, mode="markers", name="Velocity or dormant", marker=dict(color=PLUM, size=9, symbol="diamond", line=dict(color=INK, width=1)))
+        fig.add_scatter(x=ot.datetime, y=ot.amount, mode="markers", name="Velocity or dormant", marker=dict(color=VIOLET, size=9, symbol="diamond", line=dict(color=INK, width=1)))
         fig.add_hline(y=min(z_hi, iqr_hi) if not mode.startswith("Both") else max(z_hi, iqr_hi), line_dash="dash", line_color=INK,
                       annotation_text="Amount threshold", annotation_position="top left")
         fig.update_yaxes(title="Amount (₹)")
@@ -1052,6 +1154,8 @@ def page_bank() -> None:
         st.caption("Velocity and dormant-account flags are taken from the original pipeline run; only the amount rules are recomputed here.")
 
     with tabs[2]:
+
+        tab_note("bank", 2)
         st.markdown("""
 **Why two outlier tests.** A z-score assumes a roughly bell-shaped distribution, but transaction amounts are skewed, so a few very large items inflate the standard deviation. The IQR test does not depend on the mean. Requiring both cuts false positives; z-score alone flags 57 completed transactions here, the pair flags 50.
 
@@ -1122,12 +1226,13 @@ def page_option() -> None:
     fmt["Difference vs Black-Scholes"] = fmt["Difference vs Black-Scholes"].map(lambda v: "-" if v == 0 else f"{v:+.4f}")
     table(fmt)
     kind = "teal" if inside else "amber"
-    st.markdown(f'<div class="callout" style="border-left-color:{TEAL if inside else AMBER}">Monte Carlo 95% interval: <b>₹{lo:,.4f} to ₹{hi:,.4f}</b>. '
+    st.markdown(f'<div class="callout" style="border-left-color:{TEAL if inside else SAFFRON}">Monte Carlo 95% interval: <b>₹{lo:,.4f} to ₹{hi:,.4f}</b>. '
                 f'Black-Scholes is <b>{"inside" if inside else "outside"}</b> it. '
                 f'{"The three methods reconcile." if inside and abs(bn - bs) < 0.5 else "Something does not reconcile: raise the steps or paths, or look for a modelling difference."}</div>', unsafe_allow_html=True)
 
     tabs = st.tabs(["Convergence", "Sensitivity", "Payoff"])
     with tabs[0]:
+        tab_note("option", 0)
         bc = bin_curve(S, K, T, r, sig)
         fig = go.Figure()
         fig.add_scatter(x=bc.steps, y=bc.price, mode="lines+markers", name="Binomial", line=dict(color=BLUE, width=2.5), marker=dict(size=5))
@@ -1150,6 +1255,8 @@ def page_option() -> None:
         st.markdown(f"Going from about {int(i10.paths):,} to {int(i100.paths):,} paths cuts the standard error from **{i10.se:.2f}** to **{i100.se:.2f}**, a factor of about {i10.se/i100.se:.1f}, not ten. Halving the error takes four times the simulations.")
 
     with tabs[1]:
+
+        tab_note("option", 1)
         shocks = [("Volatility +5 points", dict(sig=sig + 0.05)), ("Volatility -5 points", dict(sig=max(sig - 0.05, 0.01))),
                   ("Risk-free rate +1.5 points", dict(r=r + 0.015)), ("Risk-free rate -1.5 points", dict(r=max(r - 0.015, 0))),
                   ("Expiry +1 year", dict(T=T + 1)), ("Spot +7%", dict(S=S * 1.07)), ("Spot -7%", dict(S=S * 0.93))]
@@ -1159,13 +1266,15 @@ def page_option() -> None:
             a.update(kw)
             rows.append((lab, bs_call(**a) - bs))
         sens = pd.DataFrame(rows, columns=["Change", "Impact (₹)"]).sort_values("Impact (₹)", key=abs)
-        fig = go.Figure(go.Bar(x=sens["Impact (₹)"], y=sens["Change"], orientation="h", marker_color=[TEAL if v > 0 else BRICK for v in sens["Impact (₹)"]],
+        fig = go.Figure(go.Bar(x=sens["Impact (₹)"], y=sens["Change"], orientation="h", marker_color=[TEAL if v > 0 else CORAL for v in sens["Impact (₹)"]],
                                text=[f"{v:+,.1f}" for v in sens["Impact (₹)"]], textposition="outside"))
         fig.update_xaxes(title="Change in price (₹)")
         show(fig, 380, "How much the price moves when one input moves")
         st.markdown("Volatility moves the price most per unit of change, and it is the input most often accepted from a client without challenge. That gap between how much an input matters and how much it is tested is the audit point.")
 
     with tabs[2]:
+
+        tab_note("option", 2)
         spots = np.linspace(S * 0.5, S * 1.5, 120)
         fig = go.Figure()
         fig.add_scatter(x=spots, y=np.maximum(spots - K, 0), name="Value at expiry", line=dict(color=SLATE, width=2, dash="dot"))
@@ -1180,27 +1289,192 @@ def page_option() -> None:
                "Limits: European exercise only, no dividends, and constant volatility and interest rate.")
 
 
+
+
+# ----------------------------------------------------------------------------
+# Page-level meta (hero KPIs and headline finding, all computed from bundled data)
+# ----------------------------------------------------------------------------
+@st.cache_data(show_spinner=False)
+def meta() -> dict:
+    t = load_turtle()
+    r2 = stats.linregress(t["spending_score"], t["loyalty_points"]).rvalue ** 2
+    r2i = stats.linregress(t["remuneration"], t["loyalty_points"]).rvalue ** 2
+    ar = load_ar()
+    modes = ar.pivot_table(index="appointment_month", columns="appointment_mode", values="count_of_appointments", aggfunc="sum")
+    tel = modes["Telephone"] / modes.sum(axis=1) * 100
+    nc = load_nc()
+    gp = nc.loc[nc.service_setting == "General Practice", "count_of_appointments"].sum() / nc["count_of_appointments"].sum() * 100
+    m = load_marketing()
+    top = m[m.RFM_segment.isin(["Champions", "Big Spenders"])]
+    ig = m.loc[m.Instagram_ad == 1, "Total_Spending"].mean() / m.loc[m.Instagram_ad == 0, "Total_Spending"].mean()
+    bt, ba = load_bank()
+    done = bt[bt.status == "completed"]
+    bs = bs_call(1400, 1500, 1, 0.065, 0.28)
+    bn = binomial_call(1400, 1500, 1, 0.065, 0.28, 1000)
+    mc, _ = mc_call(1400, 1500, 1, 0.065, 0.28, 1_000_000, 42)
+    gap = max(abs(bn - bs), abs(mc - bs))
+    return {
+        "turtle": dict(
+            k=[("Customers", f"{len(t):,}"), ("Spending score explains", f"{r2:.0%}"), ("Income explains", f"{r2i:.0%}"), ("Customer segments", "5")],
+            found=f"Spending score alone explains {r2:.0%} of loyalty points and income {r2i:.0%}; age explains almost nothing. Five customer segments separate cleanly.",
+            short=f"Spending score alone explains {r2:.0%} of loyalty points. Five customer segments separate cleanly."),
+        "churn": dict(
+            k=[("Customers", "7,043"), ("Churned", "26.5%"), ("Annual revenue lost", "£1.67M"), ("Share of revenue", "30.5%")],
+            found="A quarter of customers leave, taking about 30% of revenue with them. Contract type is the strongest driver, and targeting by expected cost beats targeting by accuracy.",
+            short="26.5% of customers churned, about 30% of annual revenue. Contract type is the strongest driver."),
+        "nhs": dict(
+            k=[("Rows analysed", "1.5M"), ("In General Practice", f"{gp:.0f}%"),
+               ("Telephone, first month", f"{tel.iloc[0]:.0f}%"), ("Telephone, peak", f"{tel.max():.0f}%")],
+            found=f"General Practice carries {gp:.0f}% of appointments. Telephone consultations grew from {tel.iloc[0]:.0f}% to a peak of {tel.max():.0f}% of the mix after the first lockdown.",
+            short=f"{gp:.0f}% of appointments are in General Practice. Telephone went from {tel.iloc[0]:.0f}% to {tel.max():.0f}% of the mix."),
+        "market": dict(
+            k=[("Customers", f"{len(m):,}"), ("Champions + Big Spenders", f"{len(top)/len(m):.0%}"), ("Their share of spend", f"{top.Total_Spending.sum()/m.Total_Spending.sum():.0%}"), ("Instagram responders spend", f"{ig:.1f}x")],
+            found=f"Champions and Big Spenders are {len(top)/len(m):.0%} of customers but {top.Total_Spending.sum()/m.Total_Spending.sum():.0%} of spend, and Instagram responders spend {ig:.1f}x non-responders.",
+            short=f"Champions and Big Spenders are {len(top)/len(m):.0%} of customers and {top.Total_Spending.sum()/m.Total_Spending.sum():.0%} of spend. Instagram responders spend {ig:.1f}x."),
+        "bank": dict(
+            k=[("Completed transactions", f"{len(done):,}"), ("Flagged for review", f"{ba.shape[0]}"), ("Flag rate", f"{ba.shape[0]/len(done):.1%}"), ("Rules combined", "4")],
+            found=f"{ba.shape[0]} of {len(done):,} completed transactions ({ba.shape[0]/len(done):.1%}) are flagged using two outlier tests, a velocity check and a dormant-account check.",
+            short=f"{ba.shape[0]} of {len(done):,} completed transactions flagged ({ba.shape[0]/len(done):.1%}) by four rules."),
+        "option": dict(
+            k=[("Black-Scholes", f"{bs:,.2f}"), ("Binomial tree", f"{bn:,.2f}"), ("Monte Carlo", f"{mc:,.2f}"), ("Largest gap", f"{gap:.2f}")],
+            found=f"Three independent methods give {bs:,.2f}, {bn:,.2f} and {mc:,.2f} for the same option, so the price is verified, not just calculated.",
+            short=f"Black-Scholes {bs:,.2f}, binomial {bn:,.2f}, Monte Carlo {mc:,.2f}. They agree to within {gap:.2f}."),
+    }
+
+
+SLUG = {"WP 1": "turtle", "WP 2": "churn", "WP 3": "nhs", "WP 4": "market", "WP 5": "bank", "WP 6": "option"}
+REFS = {v: k for k, v in SLUG.items()}
+
+
+def workpaper(ref: str, title: str, course: str, objective: str, performed: list[str], tools: str) -> None:
+    """Page header: hero banner, then question / what I did / what I found."""
+    key = SLUG[ref]
+    info = meta()[key]
+    hero(key, info["k"], live=key != "churn")
+    story(objective, performed, info["found"])
+    legend()
+
+
+def conclusion_page(text: str) -> None:
+    if text:
+        _conclusion_card("Conclusion", [text])
+    else:
+        st.markdown("### What it adds up to")
+
+
+# the page bodies below call conclusion(text); keep their signature
+_conclusion_card = conclusion
+
+
+def conclusion(text: str) -> None:  # noqa: F811
+    conclusion_page(text)
+
+
+TAB_NOTES = {
+    ("turtle", 0): "Each dot is one customer. Pick a factor and see how tightly loyalty points follow it: the closer the dots hug the line, the more that factor explains. R² is the share of the variation it accounts for.",
+    ("turtle", 1): "A decision tree predicts points by asking a chain of yes/no questions. Too shallow misses patterns; too deep memorises noise. Watch the test line to find the sweet spot, then try a customer of your own.",
+    ("turtle", 2): "Segmentation groups similar customers. The two curves help choose how many groups; the table then says who each group is and how many points they earn.",
+    ("turtle", 3): "Every review is scored from -1 (negative) to +1 (positive). See the words customers use most, the happiest and unhappiest reviews, and search for any topic.",
+    ("churn", 0): "Each bar is the share of customers in a group who left. Bars above the dashed line churn faster than the company average.",
+    ("churn", 1): "Not every customer is worth the same. These views show how much lifetime value sits in each tier, and where the risk is concentrated.",
+    ("churn", 2): "A good model ranks customers by risk. Compare the models, then see how much of the churn is caught by contacting only the riskiest customers.",
+    ("churn", 3): "Set what a lost customer costs and what a retention offer costs. The chart shows which targeting strategy saves the most money, not which is most accurate.",
+    ("nhs", 0): "Monthly appointment volume, with the first lockdown marked. Switch the view to see how the mix of consultation modes shifted.",
+    ("nhs", 1): "Does demand ever exceed a planning benchmark? Move the threshold to see which months go over.",
+    ("nhs", 2): "Who is seen, how, and by whom: missed appointments, healthcare professionals and appointment timing.",
+    ("nhs", 3): "Where care is delivered and for what: service settings and clinical categories, with and without General Practice.",
+    ("nhs", 4): "What the public said on Twitter about the NHS: the most common hashtags in the sampled posts.",
+    ("market", 0): "Who the customers are. Open the filter to slice by country, education and marital status; every chart updates.",
+    ("market", 1): "Which product categories carry spend, split by any customer attribute.",
+    ("market", 2): "RFM scores every customer on recency, frequency and monetary value. Compare each segment's share of customers with its share of spend.",
+    ("market", 3): "Did customers who responded to an ad channel spend more? Compare responders with non-responders, channel by channel.",
+    ("bank", 0): "Where the money goes: spend by month, category and merchant.",
+    ("bank", 1): "Change the thresholds and rules and watch the flagged transactions change. Download the flagged list as a CSV.",
+    ("bank", 2): "Why each rule exists, and what it can and cannot catch.",
+    ("option", 0): "As the binomial tree gets more steps and the Monte Carlo more paths, both should settle on the Black-Scholes price. Change the inputs on the left to test it.",
+    ("option", 1): "Which input moves the option price most? See the effect of a change in each, plus the Greeks.",
+    ("option", 2): "The payoff at expiry against the value today, as the spot price moves.",
+}
+
+
+def tab_note(key: str, i: int) -> None:
+    t = TAB_NOTES.get((key, i))
+    if t:
+        lead(t)
+
+
+# ----------------------------------------------------------------------------
+# Overview
+# ----------------------------------------------------------------------------
+def page_overview() -> None:
+    info = meta()
+    tiles = ""
+    for i, k in enumerate(ORDER):
+        p = PROJECTS[k]
+        tags = "".join(f"<span>{x}</span>" for x in p["tools"])
+        tiles += f"""<a class="tile" href="?project={k}" target="_self" style="--c:{p['accent']};--i:{i}">
+<div class="bar"></div><div class="ico"><svg viewBox="0 0 24 24">{ICONS[k]}</svg></div>
+<h3>{p['name']}</h3><p class="q">{p['tag']}</p><p class="res">{info[k]['short']}</p>
+<div class="tags">{tags}</div>
+<span class="go">Open project <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>"""
+    st.markdown(
+        f"""<style>:root {{ --accent: {BLUE}; }}</style>
+<section class="hero">
+  <div class="hero-top"><span class="chip">Chartered Accountant</span><span class="chip">New Delhi</span><span class="chip live">6 projects</span></div>
+  <div class="hero-title">From raw data to a decision</div>
+  <p class="hero-sub">Six analytics projects across retail, telecom, healthcare, marketing, banking and derivatives. Pick one to explore: every chart is interactive and every number is traceable to its data.</p>
+</section>
+<div class="grid">{tiles}</div>""", unsafe_allow_html=True)
+
+    legend()
+    st.markdown("## The portfolio at a glance")
+    lead("A first look at the data behind three of the projects. Open any project for the full story.")
+    c1, c2, c3 = st.columns(3)
+    t = load_turtle()
+    with c1:
+        fig = px.scatter(t, x="spending_score", y="loyalty_points", color="loyalty_points", color_continuous_scale=["#CFE9DB", GREEN, INK], opacity=.7)
+        fig.update_layout(coloraxis_showscale=False)
+        fig.update_xaxes(title="Spending score"); fig.update_yaxes(title="Loyalty points")
+        show(fig, 300, "Turtle Games: spend drives points")
+    with c2:
+        ar = load_ar()
+        modes = ar.pivot_table(index="appointment_month", columns="appointment_mode", values="count_of_appointments", aggfunc="sum")
+        share = (modes.div(modes.sum(axis=1), axis=0) * 100).drop(columns=[c for c in ["Unknown"] if c in modes.columns])
+        d = share.reset_index().melt("appointment_month", var_name="Mode", value_name="%")
+        fig = px.area(d, x="appointment_month", y="%", color="Mode")
+        fig.update_xaxes(title="", nticks=6); fig.update_yaxes(title="% of month")
+        show(fig, 300, "NHS: how care is delivered")
+    with c3:
+        Ks = np.linspace(1000, 1800, 60)
+        fig = go.Figure()
+        fig.add_scatter(x=Ks, y=np.maximum(1400 - Ks, 0) * 0 + bs_call(1400, Ks, 1, 0.065, 0.28), name="Call price today", line=dict(color=TEAL, width=3), fill="tozeroy", fillcolor="rgba(20,163,163,.12)")
+        fig.update_xaxes(title="Strike"); fig.update_yaxes(title="Option price")
+        show(fig, 300, "Options: price falls as strike rises")
+
+    st.markdown("## What I bring")
+    st.markdown(
+        """<div class="story">
+<div class="sc" style="--i:0"><h4>Finance first</h4><p>Chartered Accountant training means I check numbers before I trust them: reconciling, testing assumptions and asking what a result is worth in money.</p></div>
+<div class="sc" style="--i:1"><h4>Analysis end to end</h4><ul><li>Cleaning and SQL</li><li>Statistics and modelling</li><li>Dashboards and storytelling</li></ul></div>
+<div class="sc" style="--i:2"><h4>Honest about evidence</h4><p>Every finding is marked: ✓ recomputed live here, or △ carried over from the original notebook. Datasets for banking and options are generated or illustrative.</p></div></div>""",
+        unsafe_allow_html=True)
+
+
 # ----------------------------------------------------------------------------
 # Router
 # ----------------------------------------------------------------------------
 ROUTES = {"overview": page_overview, "turtle": page_turtle, "churn": page_churn, "nhs": page_nhs,
           "market": page_market, "bank": page_bank, "option": page_option}
-
-# Deep links: https://<your-app>.streamlit.app/?project=churn opens that project directly,
-# so each button on a personal website can point at its own project.
 ALIASES = {"lse3": "turtle", "lse4": "churn", "lse2": "nhs", "lse1": "market",
            "banking": "bank", "options": "option", "option-pricing": "option", "home": "overview"}
 if "page" not in st.session_state:
     wanted = str(st.query_params.get("project", "overview")).lower()
     wanted = ALIASES.get(wanted, wanted)
     st.session_state["page"] = wanted if wanted in ROUTES else "overview"
-
-with st.sidebar:
-    st.markdown('<p class="side-name">Sadia Yusuf, CA</p><p class="side-role">Financial data analytics portfolio</p>', unsafe_allow_html=True)
-    st.radio("Go to", list(PAGES), label_visibility="collapsed", format_func=lambda k: (f"{REFS[k]}  {PAGES[k]}" if k in REFS else PAGES[k]), key="page")
-    st.markdown('<p class="note" style="margin-top:1.4rem">Built with Python and Streamlit. Charts are interactive: hover, zoom, and use the controls above each one.</p>', unsafe_allow_html=True)
-
 if st.query_params.get("project") != st.session_state["page"]:
     st.query_params["project"] = st.session_state["page"]
 
+navbar(st.session_state["page"])
 ROUTES[st.session_state["page"]]()
+if st.session_state["page"] != "overview":
+    next_project(st.session_state["page"])
