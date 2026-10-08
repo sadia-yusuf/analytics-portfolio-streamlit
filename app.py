@@ -44,6 +44,7 @@ ICONS = {
     "churn": '<path d="M9 4H5v16h4"/><path d="M16 8l4 4-4 4M20 12H9"/>',
     "nhs": '<path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z"/>',
     "market": '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+    "dmart": '<path d="M4 20V9M9 20V4M14 20v-8M19 20V6"/><path d="M2 14h20" stroke-dasharray="2 2"/>',
     "bank": '<path d="M3 10l9-6 9 6M5 10v8M10 10v8M14 10v8M19 10v8M3 20h18"/>',
     "option": '<path d="M3 4v15h18"/><path d="M6 17l5-5 3 3 6-8"/>',
 }
@@ -63,6 +64,9 @@ PROJECTS = {
     "bank": dict(name="Banking Transactions", nav="Banking", accent=SAFFRON,
                  tag="Which transactions deserve a human look, and why?",
                  tools=["Python", "Z-score", "IQR"]),
+    "dmart": dict(name="DMart DCF Valuation", nav="DMart DCF", accent=ROSE,
+                  tag="Is India's biggest value retailer worth its share price?",
+                  tools=["Excel", "DCF", "Comps"]),
     "option": dict(name="Option Pricing", nav="Options", accent=TEAL,
                    tag="Can a derivative's fair value be re-derived independently?",
                    tools=["Python", "NumPy", "SciPy"]),
@@ -1335,6 +1339,7 @@ def meta() -> dict:
             k=[("Completed transactions", f"{len(done):,}"), ("Flagged for review", f"{ba.shape[0]}"), ("Flag rate", f"{ba.shape[0]/len(done):.1%}"), ("Rules combined", "4")],
             found=f"{ba.shape[0]} of {len(done):,} completed transactions ({ba.shape[0]/len(done):.1%}) are flagged using two outlier tests, a velocity check and a dormant-account check.",
             short=f"{ba.shape[0]} of {len(done):,} completed transactions flagged ({ba.shape[0]/len(done):.1%}) by four rules."),
+        "dmart": dict(k=[], found="", short="DCF says about ₹716 to ₹1,411 a share; the market pays ₹4,348. Peers imply ₹1,159 to ₹4,215."),
         "option": dict(
             k=[("Black-Scholes", f"{bs:,.2f}"), ("Binomial tree", f"{bn:,.2f}"), ("Monte Carlo", f"{mc:,.2f}"), ("Largest gap", f"{gap:.2f}")],
             found=f"Three independent methods give {bs:,.2f}, {bn:,.2f} and {mc:,.2f} for the same option, so the price is verified, not just calculated.",
@@ -1371,6 +1376,11 @@ def conclusion(text: str) -> None:  # noqa: F811
 
 
 TAB_NOTES = {
+    ("dmart", 0): "Every valuation method on one chart. Each bar is the range of values one method gives; the dashed line is what the market charges today.",
+    ("dmart", 1): "What the model expects from DMart over the next five years: sales, profit, store count and free cash flow.",
+    ("dmart", 2): "How DMart is priced against six listed retail peers. Pick a multiple to compare, then see what each one implies for DMart's share price.",
+    ("dmart", 3): "Change the discount rate and terminal growth and watch the value per share move. The last number to watch: what growth the market price would need.",
+    ("dmart", 4): "A plain-English account of why a cash-flow model and the market disagree, and what would have to change to close the gap.",
     ("turtle", 0): "Each dot is one customer. Pick a factor and see how tightly loyalty points follow it: the closer the dots hug the line, the more that factor explains. R² is the share of the variation it accounts for.",
     ("turtle", 1): "A decision tree predicts points by asking a chain of yes/no questions. Too shallow misses patterns; too deep memorises noise. Watch the test line to find the sweet spot, then try a customer of your own.",
     ("turtle", 2): "Segmentation groups similar customers. The two curves help choose how many groups; the table then says who each group is and how many points they earn.",
@@ -1420,9 +1430,9 @@ def page_overview() -> None:
     st.markdown(
         f"""<style>:root {{ --accent: {BLUE}; }}</style>
 <section class="hero">
-  <div class="hero-top"><span class="chip">Chartered Accountant</span><span class="chip">New Delhi</span><span class="chip live">6 projects</span></div>
+  <div class="hero-top"><span class="chip">Chartered Accountant</span><span class="chip">New Delhi</span><span class="chip live">7 projects</span></div>
   <div class="hero-title">From raw data to a decision</div>
-  <p class="hero-sub">Six analytics projects across retail, telecom, healthcare, marketing, banking and derivatives. Pick one to explore: every chart is interactive and every number is traceable to its data.</p>
+  <p class="hero-sub">Seven analytics projects across retail, telecom, healthcare, marketing, banking, valuation and derivatives. Pick one to explore: every chart is interactive and every number is traceable to its data.</p>
 </section>
 <div class="grid">{tiles}</div>""", unsafe_allow_html=True)
 
@@ -1463,10 +1473,199 @@ def page_overview() -> None:
 # ----------------------------------------------------------------------------
 # Router
 # ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+# DMart DCF valuation
+# ----------------------------------------------------------------------------
+DM_PRICE = 4347.80
+DM_FCFF = [1147.23, 2202.56, 3001.97, 4075.79, 4920.06]  # FY26-FY30, Rs crore, from the valuation deck
+DM_SHARES = 65.073
+DM_NET_ADJ = 358.2 + 3.26 - 448.64  # cash + investments - overdraft
+FOOTBALL = [  # label, low, high (Rs per share)
+    ("Comps", 1158.79, 4215.37), ("DCF Bear", 715.65, 980.79), ("DCF Base", 801.72, 1152.93),
+    ("DCF Bull", 916.52, 1411.14), ("52-week range", 3340.00, 5484.85)]
+PREMIUM = {"DCF Bear": 343, "DCF Base": 278, "DCF Bull": 210}  # as shown on the model's football field
+PROJ = pd.DataFrame({  # valuation deck, financial projections table (Rs crore)
+    "Year": ["FY26E", "FY27E", "FY28E", "FY29E", "FY30E"],
+    "Revenue": [75435.21, 94337.17, 116007.51, 142231.70, 173828.64],
+    "EBITDA": [6228.22, 8063.92, 10171.42, 12726.29, 15809.05],
+    "Net profit": [3480.86, 5056.85, 6446.19, 8136.95, 10178.52],
+    "Stores": [465, 520, 580, 645, 715]})
+HIST = pd.DataFrame({"Year": ["FY21", "FY22", "FY23", "FY24", "FY25"],
+                     "Revenue": [24143.1, 30976.3, 42839.6, 50788.8, 59358.1],
+                     "Net profit": [1099.43, 1492.4, 2378.34, 2535.61, 2707.45]})
+DEC = {"EV/Revenue": (4.4, 1.9), "EV/EBITDA": (58.4, 16.3), "P/E": (100.6, 100.6)}  # DMart, peer median, as in the deck
+COMPS = pd.DataFrame({
+    "Company": ["Avenue Supermarts (DMart)", "Vishal Mega Mart", "V-Mart Retail", "Shoppers Stop", "Electronics Mart", "Spencer's Retail", "Osia Hyper Retail"],
+    "Share price (Rs)": [4347.80, 142.05, 758.00, 519.05, 119.45, 55.80, 11.75],
+    "EV/Revenue": [4.4, 6.10, 2.01, 1.91, 0.98, 1.10, 0.23],
+    "EV/EBITDA": [58.4, 41.1, 16.3, 11.3, 16.0, 57.7, 4.3],
+    "P/E": [100.6, 101.3, 112.9, 319.6, 42.0, None, 8.0]})
+
+
+def dcf_value(wacc: float, g: float) -> dict:
+    pv = sum(f / (1 + wacc) ** (i + 1) for i, f in enumerate(DM_FCFF))
+    tv = DM_FCFF[-1] * (1 + g) / (wacc - g)
+    pv_tv = tv / (1 + wacc) ** 5
+    ev = pv + pv_tv
+    eq = ev + DM_NET_ADJ
+    return dict(pv=pv, tv=tv, pv_tv=pv_tv, ev=ev, eq=eq, ps=eq / DM_SHARES)
+
+
+def implied_growth(wacc: float):
+    lo, hi = 0.0, wacc - 0.002
+    if dcf_value(wacc, hi)["ps"] < DM_PRICE:
+        return None
+    for _ in range(60):
+        mid = (lo + hi) / 2
+        lo, hi = (mid, hi) if dcf_value(wacc, mid)["ps"] < DM_PRICE else (lo, mid)
+    return (lo + hi) / 2
+
+
+def page_dmart() -> None:
+    hero("dmart", [("Market price", f"₹{DM_PRICE:,.0f}"), ("DCF base case", "₹802-1,153"), ("Intrinsic value (deck)", "₹1,127"),
+                   ("Sales FY25 to FY30E", "₹59k to ₹174k Cr")], live=False,
+         subtitle="Is India's biggest value retailer worth its share price? A DCF and a peer comparison, side by side.")
+    story("Avenue Supermarts (DMart) trades at about 4x what a cash-flow model says it is worth. Is the model too cautious, or the market too hopeful?",
+          ["Forecast five years of sales, margins, capex and working capital from FY21 to FY25 history",
+           "Built free cash flow to the firm (FCFF) and discounted it at a WACC of about 10%",
+           "Valued DMart against six listed retail peers on EV/Revenue, EV/EBITDA and P/E",
+           "Put every method on one football-field chart next to the market price"],
+          f"DCF values the shares at roughly ₹716 to ₹1,411 against a market price of ₹{DM_PRICE:,.0f}. Peers imply ₹1,159 to ₹4,215. The market is paying for a long runway that a cautious DCF does not credit.")
+    st.markdown('<p class="legend">Marks: figures on this page come from the project workbook, deck and report in the GitHub repo. The calculator re-runs the model\'s FCFF live.</p>', unsafe_allow_html=True)
+    tabs = st.tabs(["Football field", "Growth outlook", "Peer comparison", "DCF calculator", "Why the gap"])
+
+    with tabs[0]:
+        tab_note("dmart", 0)
+        c1, c2 = st.columns([1.5, 1])
+        with c1:
+            show_gap = st.toggle("Show how far the market price sits above each DCF case", value=True)
+            fig = go.Figure()
+            cols = [SLATE, CORAL, SAFFRON, GREEN, VIOLET]
+            for (name, lo, hi), c in zip(FOOTBALL, cols):
+                fig.add_trace(go.Bar(x=[name], y=[hi - lo], base=[lo], marker_color=c, name=name, showlegend=False,
+                                     hovertemplate=f"{name}<br>₹{lo:,.0f} to ₹{hi:,.0f}<extra></extra>"))
+                fig.add_annotation(x=name, y=hi, text=f"₹{hi:,.0f}", showarrow=False, yshift=12, font=dict(size=12))
+                fig.add_annotation(x=name, y=lo, text=f"₹{lo:,.0f}", showarrow=False, yshift=-12, font=dict(size=12))
+                if show_gap and name in PREMIUM:
+                    fig.add_annotation(x=name, y=hi, text=f"market +{PREMIUM[name]}%", showarrow=False, yshift=32,
+                                       font=dict(size=12, color=CORAL), bgcolor="#FDEDE8")
+            fig.add_hline(y=DM_PRICE, line_dash="dash", line_color=CORAL)
+            fig.add_annotation(x="DCF Base", y=DM_PRICE, text=f"<b>Current market price ₹{DM_PRICE:,.2f}</b>", showarrow=False, yshift=14, font=dict(color=CORAL, size=13))
+            fig.update_layout(barmode="overlay")
+            fig.update_yaxes(title="₹ per share", range=[0, 6200])
+            show(fig, 470, "Valuation summary: every method against the market")
+        with c2:
+            st.image("assets/dmart_football_field.png", caption="Football field exactly as built in the Excel model")
+            how("Each bar is the range of values one method produces. **DCF** bars come from bear, base and bull forecasts. **Comps** applies peer multiples to DMart's own sales, EBITDA and profit. **52-week** is where the share has actually traded. The dashed line is today's price.", "How to read a football field")
+
+    with tabs[1]:
+        tab_note("dmart", 1)
+        kpis([("Sales, FY25 to FY30E", f"{173828.64 / 59358.1:.1f}x"), ("Sales FY30E", "₹173,829 Cr"), ("EBITDA FY30E", "₹15,809 Cr"), ("Stores, FY25 to FY30E", "415 to 715")])
+        c1, c2 = st.columns(2)
+        with c1:
+            fig = go.Figure()
+            fig.add_bar(x=HIST["Year"], y=HIST["Revenue"], name="Actual", marker_color=SLATE)
+            fig.add_bar(x=PROJ["Year"], y=PROJ["Revenue"], name="Forecast", marker_color=VIOLET)
+            fig.update_yaxes(title="₹ crore")
+            show(fig, 380, "Sales: five years of history, five of forecast")
+        with c2:
+            fig = go.Figure()
+            fig.add_bar(x=HIST["Year"], y=HIST["Net profit"], name="Actual", marker_color=SLATE)
+            fig.add_bar(x=PROJ["Year"], y=PROJ["Net profit"], name="Forecast", marker_color=GREEN)
+            fig.update_yaxes(title="₹ crore")
+            show(fig, 380, "Net profit: actual and forecast")
+        c1, c2 = st.columns(2)
+        with c1:
+            m = PROJ.assign(**{"EBITDA margin": PROJ["EBITDA"] / PROJ["Revenue"] * 100, "Net margin": PROJ["Net profit"] / PROJ["Revenue"] * 100})
+            fig = go.Figure()
+            fig.add_scatter(x=m["Year"], y=m["EBITDA margin"], name="EBITDA margin", mode="lines+markers", line=dict(color=TEAL, width=3))
+            fig.add_scatter(x=m["Year"], y=m["Net margin"], name="Net margin", mode="lines+markers", line=dict(color=SAFFRON, width=3))
+            fig.update_yaxes(title="% of sales", range=[0, 12])
+            show(fig, 320, "Forecast margins stay in a narrow band")
+        with c2:
+            fig = go.Figure(go.Bar(x=PROJ["Year"], y=PROJ["Stores"], marker_color=VIOLET, text=PROJ["Stores"], textposition="outside"))
+            fig.update_yaxes(title="Stores", range=[0, 820])
+            show(fig, 320, "Store count: 50 to 70 openings a year")
+        fcff = pd.DataFrame({"Year": ["FY26E", "FY27E", "FY28E", "FY29E", "FY30E"], "FCFF": DM_FCFF})
+        fig = px.area(fcff, x="Year", y="FCFF", markers=True, color_discrete_sequence=[TEAL])
+        fig.update_yaxes(title="₹ crore")
+        show(fig, 300, "Free cash flow to the firm is small now and grows fast")
+        st.caption("Why FCFF starts small: DMart spends most of its operating cash building new stores.")
+
+    with tabs[2]:
+        tab_note("dmart", 2)
+        metric = st.radio("Compare on", ["EV/EBITDA", "EV/Revenue", "P/E"], horizontal=True)
+        d = COMPS.dropna(subset=[metric])
+        fig = go.Figure(go.Bar(x=d["Company"], y=d[metric], marker_color=[VIOLET if i == 0 else SLATE for i in range(len(d))],
+                               text=[f"{v:.1f}x" for v in d[metric]], textposition="outside"))
+        med = DEC[metric][1]
+        fig.add_hline(y=med, line_dash="dash", line_color=INK, annotation_text=f"Peer median {med:.1f}x (as in the deck)", annotation_position="top right")
+        fig.update_yaxes(title=metric)
+        show(fig, 380, f"{metric}: DMart against its peers")
+        imp = pd.DataFrame({"Method": ["EV/EBITDA", "EV/Revenue", "P/E"], "Implied value (Rs)": [1158.79, 1800.54, 4215.38]})
+        fig = go.Figure(go.Bar(x=imp["Method"], y=imp["Implied value (Rs)"], marker_color=TEAL, text=[f"₹{v:,.0f}" for v in imp["Implied value (Rs)"]], textposition="outside"))
+        fig.add_hline(y=DM_PRICE, line_dash="dash", line_color=CORAL, annotation_text="Market price", annotation_position="top left")
+        fig.update_yaxes(title="₹ per share", range=[0, 5200])
+        show(fig, 340, "What each peer multiple says DMart is worth")
+        table(COMPS.round(2).fillna("n/m"))
+        st.caption("Source: Screener.in, as used in the valuation deck. n/m = not meaningful (negative earnings).")
+
+    with tabs[3]:
+        tab_note("dmart", 3)
+        c1, c2 = st.columns([1, 2])
+        with c1:
+            wacc = st.slider("WACC (discount rate)", 8.0, 13.0, 10.107, 0.001, format="%.2f%%") / 100
+            g = st.slider("Terminal growth", 2.0, 6.0, 5.0, 0.1, format="%.1f%%") / 100
+            r = dcf_value(wacc, g)
+            kpis([("Value per share", f"₹{r['ps']:,.0f}"), ("Market price", f"₹{DM_PRICE:,.0f}"), ("Market premium", f"{DM_PRICE / r['ps'] - 1:+.0%}")])
+            ig = implied_growth(wacc)
+            if ig is None:
+                callout(f"At a {wacc:.1%} discount rate, <b>no terminal growth rate below the discount rate</b> reaches the market price on these cash flows.")
+            else:
+                callout(f"At a {wacc:.1%} discount rate the market price needs terminal growth of <b>{ig:.1%}</b> forever on these cash flows.")
+        with c2:
+            fig = go.Figure(go.Waterfall(x=["PV of FY26-30 cash flows", "PV of terminal value", "Cash less debt", "Equity value"],
+                                         measure=["relative", "relative", "relative", "total"],
+                                         y=[r["pv"], r["pv_tv"], DM_NET_ADJ, 0],
+                                         increasing=dict(marker_color=TEAL), decreasing=dict(marker_color=CORAL), totals=dict(marker_color=INK),
+                                         connector=dict(line=dict(color="#C9D3E0"))))
+            fig.update_yaxes(title="₹ crore")
+            show(fig, 340, "Where the value comes from")
+            w = np.arange(0.08, 0.1301, 0.005); gg = np.arange(0.03, 0.0601, 0.005)
+            z = [[dcf_value(a, b)["ps"] for b in gg] for a in w]
+            fig = go.Figure(go.Heatmap(z=z, x=[f"{b:.1%}" for b in gg], y=[f"{a:.1%}" for a in w], colorscale=[[0, "#F3D9D2"], [1, "#2FA66A"]],
+                                       text=[[f"₹{v:,.0f}" for v in row] for row in z], texttemplate="%{text}", hovertemplate="WACC %{y}, growth %{x}: %{text}<extra></extra>"))
+            fig.update_xaxes(title="Terminal growth", type="category"); fig.update_yaxes(title="WACC", autorange="reversed", type="category")
+            show(fig, 420, "Value per share across WACC and terminal growth")
+        callout(f"The terminal value is <b>{r['pv_tv'] / r['ev']:.0%}</b> of enterprise value, which is why small changes to WACC or growth move the answer so much.")
+        st.caption("The calculator uses the FCFF forecast from the valuation deck. At the deck's WACC (about 10.1%) and terminal growth of 5.0% it reproduces the ₹1,127 per share.")
+
+    with tabs[4]:
+        tab_note("dmart", 4)
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown("### Why the DCF is low")
+            st.markdown("- Terminal growth is held near long-run GDP, so the model never assumes DMart outgrows the economy forever\n"
+                        "- A firm discount rate makes distant cash flows worth less today\n"
+                        "- Free cash flow is small in the forecast years because new stores absorb most operating cash\n"
+                        "- The terminal value is most of the total, so small input changes swing the result")
+        with c2:
+            st.markdown("### Why the market pays more")
+            st.markdown("- Everyday-low-price model: low promotion cost, steady footfall and high volumes\n"
+                        "- Owning most stores keeps rent low and supports margins of 8 to 9%\n"
+                        "- A scarce, hard-to-copy business: EV/EBITDA of 58x against a peer median of 16x, and EV/Revenue of 4.4x against 1.9x\n"
+                        "- Investors are paying for a long runway of store additions")
+        st.markdown("### What would close the gap")
+        st.markdown("Faster store openings with unchanged unit economics, EBITDA margin above 9%, stronger FCFF conversion, a lower perceived risk (so a lower WACC), "
+                    "or profitable DMart Ready growth that does not erode the price advantage.")
+        _conclusion_card("Conclusion", ["On cash flows alone DMart looks expensive: the base case is a fraction of today's price. The market is paying for execution and duration that sit outside a cautious DCF. "
+                                  "The useful output is not a verdict but a map: which assumptions would have to hold for the price to make sense."])
+
+
 ROUTES = {"overview": page_overview, "turtle": page_turtle, "churn": page_churn, "nhs": page_nhs,
-          "market": page_market, "bank": page_bank, "option": page_option}
+          "market": page_market, "bank": page_bank, "option": page_option, "dmart": page_dmart}
 ALIASES = {"lse3": "turtle", "lse4": "churn", "lse2": "nhs", "lse1": "market",
-           "banking": "bank", "options": "option", "option-pricing": "option", "home": "overview"}
+           "banking": "bank", "options": "option", "option-pricing": "option", "home": "overview", "dcf": "dmart", "dmart-dcf": "dmart", "valuation": "dmart"}
 if "page" not in st.session_state:
     wanted = str(st.query_params.get("project", "overview")).lower()
     wanted = ALIASES.get(wanted, wanted)
