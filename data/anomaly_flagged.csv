@@ -1,0 +1,59 @@
+transaction_id,account_id,datetime,merchant,category,amount,status,channel,_is_anomaly,month,date,amount_zscore,_outlier_zscore,_outlier_iqr,_flag_amount_outlier,_flag_velocity,_flag_dormant_spike,_any_flag,flag_reasons
+TXN000440,ACC0001,2023-09-03 01:37:46,IndiGo Airlines,Travel,18652.3,completed,Net Banking,none,2023-09,2023-09-03,4.2,True,True,True,False,False,True,amount_outlier
+TXN001576,ACC0003,2024-07-21 19:13:29,Ola,Travel,16946.84,completed,Debit Card,none,2024-07,2024-07-21,3.73,True,True,True,False,False,True,amount_outlier
+TXN001839,ACC0004,2023-06-04 01:08:19,IRCTC,Travel,15902.43,completed,Debit Card,none,2023-06,2023-06-04,3.44,True,True,True,False,False,True,amount_outlier
+TXN001564,ACC0004,2024-03-25 01:35:31,IndiGo Airlines,Travel,16305.07,completed,UPI,none,2024-03,2024-03-25,3.55,True,True,True,False,False,True,amount_outlier
+TXN000013,ACC0005,2023-08-09 00:16:41,Ola,Travel,15908.42,completed,UPI,none,2023-08,2023-08-09,3.44,True,True,True,False,False,True,amount_outlier
+TXN001879,ACC0006,2023-08-11 10:12:38,IRCTC,Travel,15828.96,completed,UPI,none,2023-08,2023-08-11,3.42,True,True,True,False,False,True,amount_outlier
+TXN_BURST_0,ACC0006,2023-09-14 14:00:00,Paytm Mall,Online Shopping,935.78,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.72,False,False,False,False,True,True,dormant_spike
+TXN_BURST_1,ACC0006,2023-09-14 14:03:00,Paytm Mall,Online Shopping,1039.0,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.69,False,False,False,False,True,True,dormant_spike
+TXN_BURST_2,ACC0006,2023-09-14 14:06:00,Paytm Mall,Online Shopping,605.69,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.81,False,False,False,False,True,True,dormant_spike
+TXN_BURST_3,ACC0006,2023-09-14 14:09:00,Paytm Mall,Online Shopping,894.43,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.73,False,False,False,False,True,True,dormant_spike
+TXN_BURST_4,ACC0006,2023-09-14 14:12:00,Paytm Mall,Online Shopping,768.05,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.76,False,False,False,False,True,True,dormant_spike
+TXN_BURST_5,ACC0006,2023-09-14 14:15:00,Paytm Mall,Online Shopping,1025.95,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.69,False,False,False,True,True,True,"velocity, dormant_spike"
+TXN_BURST_6,ACC0006,2023-09-14 14:18:00,Paytm Mall,Online Shopping,647.4,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.8,False,False,False,True,True,True,"velocity, dormant_spike"
+TXN_BURST_7,ACC0006,2023-09-14 14:21:00,Paytm Mall,Online Shopping,914.54,completed,UPI,velocity_burst,2023-09,2023-09-14,-0.72,False,False,False,True,True,True,"velocity, dormant_spike"
+TXN000562,ACC0007,2023-11-06 21:23:39,Uber,Travel,14973.94,completed,Net Banking,none,2023-11,2023-11-06,3.18,True,True,True,False,False,True,amount_outlier
+TXN000263,ACC0009,2024-09-13 01:44:57,IndiGo Airlines,Travel,17742.03,completed,Debit Card,none,2024-09,2024-09-13,3.95,True,True,True,False,False,True,amount_outlier
+TXN001965,ACC0010,2023-11-08 11:17:38,IRCTC,Travel,16388.44,completed,UPI,none,2023-11,2023-11-08,3.57,True,True,True,False,False,True,amount_outlier
+TXN001320,ACC0012,2023-11-24 19:53:06,IndiGo Airlines,Travel,17167.44,completed,UPI,none,2023-11,2023-11-24,3.79,True,True,True,False,False,True,amount_outlier
+TXN001085,ACC0012,2024-10-09 21:17:40,IRCTC,Travel,17691.89,completed,Debit Card,none,2024-10,2024-10-09,3.93,True,True,True,False,False,True,amount_outlier
+TXN000707,ACC0013,2024-05-15 07:35:23,IndiGo Airlines,Travel,15716.78,completed,UPI,none,2024-05,2024-05-15,3.39,True,True,True,False,False,True,amount_outlier
+TXN000560,ACC0015,2023-03-30 14:48:15,IRCTC,Travel,15569.79,completed,Net Banking,none,2023-03,2023-03-30,3.35,True,True,True,False,False,True,amount_outlier
+TXN001294,ACC0015,2023-07-26 03:55:56,IRCTC,Travel,17483.87,completed,UPI,none,2023-07,2023-07-26,3.88,True,True,True,False,False,True,amount_outlier
+TXN000438,ACC0015,2024-03-23 07:20:24,MakeMyTrip,Travel,15098.58,completed,Debit Card,none,2024-03,2024-03-23,3.21,True,True,True,False,False,True,amount_outlier
+TXN001936,ACC0015,2024-07-28 17:30:11,IndiGo Airlines,Travel,16663.49,completed,Debit Card,none,2024-07,2024-07-28,3.65,True,True,True,False,False,True,amount_outlier
+TXN000201,ACC0017,2023-09-24 09:53:15,IRCTC,Travel,18972.31,completed,Debit Card,none,2023-09,2023-09-24,4.29,True,True,True,False,False,True,amount_outlier
+TXN000649,ACC0017,2023-11-06 12:54:16,IRCTC,Travel,19437.44,completed,UPI,none,2023-11,2023-11-06,4.42,True,True,True,False,False,True,amount_outlier
+TXN000091,ACC0017,2023-11-30 13:08:36,IRCTC,Travel,17068.12,completed,UPI,none,2023-11,2023-11-30,3.76,True,True,True,False,False,True,amount_outlier
+TXN001586,ACC0017,2024-06-25 01:29:45,Ola,Travel,16909.56,completed,UPI,none,2024-06,2024-06-25,3.72,True,True,True,False,False,True,amount_outlier
+TXN001778,ACC0019,2023-05-31 18:33:16,IndiGo Airlines,Travel,17375.87,completed,Debit Card,none,2023-05,2023-05-31,3.85,True,True,True,False,False,True,amount_outlier
+TXN000371,ACC0019,2024-02-04 06:16:40,Ola,Travel,16607.76,completed,NEFT,none,2024-02,2024-02-04,3.63,True,True,True,False,False,True,amount_outlier
+TXN001523,ACC0020,2023-09-03 20:15:37,Ola,Travel,16748.85,completed,UPI,none,2023-09,2023-09-03,3.67,True,True,True,False,False,True,amount_outlier
+TXN001786,ACC0022,2023-02-12 23:52:59,MakeMyTrip,Travel,17264.71,completed,Debit Card,none,2023-02,2023-02-12,3.82,True,True,True,False,False,True,amount_outlier
+TXN001521,ACC0023,2023-04-23 21:55:15,Ola,Travel,17495.14,completed,Debit Card,none,2023-04,2023-04-23,3.88,True,True,True,False,False,True,amount_outlier
+TXN000335,ACC0024,2024-06-18 19:04:24,IRCTC,Travel,18233.11,completed,UPI,none,2024-06,2024-06-18,4.08,True,True,True,False,False,True,amount_outlier
+TXN000425,ACC0024,2024-12-11 21:58:58,Uber,Travel,16186.53,completed,NEFT,none,2024-12,2024-12-11,3.52,True,True,True,False,False,True,amount_outlier
+TXN000748,ACC0026,2024-02-27 01:55:25,Ola,Travel,19854.04,completed,UPI,none,2024-02,2024-02-27,4.53,True,True,True,False,False,True,amount_outlier
+TXN000127,ACC0029,2024-07-03 05:31:12,Uber,Travel,15983.49,completed,Net Banking,none,2024-07,2024-07-03,3.46,True,True,True,False,False,True,amount_outlier
+TXN000847,ACC0031,2023-03-02 16:36:02,MakeMyTrip,Travel,15941.88,completed,UPI,none,2023-03,2023-03-02,3.45,True,True,True,False,False,True,amount_outlier
+TXN001909,ACC0031,2024-10-15 17:54:04,IRCTC,Travel,17281.73,completed,UPI,none,2024-10,2024-10-15,3.82,True,True,True,False,False,True,amount_outlier
+TXN000525,ACC0032,2023-09-20 00:54:11,IndiGo Airlines,Travel,17610.67,completed,UPI,none,2023-09,2023-09-20,3.91,True,True,True,False,False,True,amount_outlier
+TXN001179,ACC0034,2023-07-10 04:25:28,MakeMyTrip,Travel,16781.66,completed,UPI,none,2023-07,2023-07-10,3.68,True,True,True,False,False,True,amount_outlier
+TXN001731,ACC0035,2023-03-03 20:34:51,Ola,Travel,16550.21,completed,UPI,none,2023-03,2023-03-03,3.62,True,True,True,False,False,True,amount_outlier
+TXN001090,ACC0035,2024-12-26 07:40:03,MakeMyTrip,Travel,18989.87,completed,Net Banking,none,2024-12,2024-12-26,4.29,True,True,True,False,False,True,amount_outlier
+TXN000231,ACC0036,2023-05-19 07:40:31,Ola,Travel,15632.0,completed,Debit Card,none,2023-05,2023-05-19,3.36,True,True,True,False,False,True,amount_outlier
+TXN001415,ACC0036,2024-07-30 20:09:09,Ola,Travel,15869.12,completed,UPI,none,2024-07,2024-07-30,3.43,True,True,True,False,False,True,amount_outlier
+TXN001582,ACC0036,2024-11-19 13:18:54,Ola,Travel,17588.12,completed,UPI,none,2024-11,2024-11-19,3.91,True,True,True,False,False,True,amount_outlier
+TXN001272,ACC0037,2023-06-01 23:00:24,Uber,Travel,16621.48,completed,Net Banking,none,2023-06,2023-06-01,3.64,True,True,True,False,False,True,amount_outlier
+TXN001357,ACC0037,2023-08-07 14:48:14,Uber,Travel,15010.47,completed,Debit Card,none,2023-08,2023-08-07,3.19,True,True,True,False,False,True,amount_outlier
+TXN000182,ACC0037,2023-09-11 06:35:40,Uber,Travel,19150.11,completed,Debit Card,none,2023-09,2023-09-11,4.34,True,True,True,False,False,True,amount_outlier
+TXN001747,ACC0040,2024-02-06 16:09:04,Ola,Travel,19174.44,completed,UPI,none,2024-02,2024-02-06,4.35,True,True,True,False,False,True,amount_outlier
+TXN000464,ACC0041,2023-05-05 06:18:21,MakeMyTrip,Travel,17857.75,completed,UPI,none,2023-05,2023-05-05,3.98,True,True,True,False,False,True,amount_outlier
+TXN001038,ACC0043,2024-07-12 22:41:18,MakeMyTrip,Travel,14995.38,completed,Net Banking,none,2024-07,2024-07-12,3.19,True,True,True,False,False,True,amount_outlier
+TXN001608,ACC0045,2024-03-04 23:56:12,IRCTC,Travel,18701.56,completed,UPI,none,2024-03,2024-03-04,4.21,True,True,True,False,False,True,amount_outlier
+TXN001258,ACC0047,2024-04-15 20:54:14,Ola,Travel,17491.01,completed,UPI,none,2024-04,2024-04-15,3.88,True,True,True,False,False,True,amount_outlier
+TXN000884,ACC0049,2023-03-30 06:42:19,IRCTC,Travel,17327.71,completed,UPI,none,2023-03,2023-03-30,3.83,True,True,True,False,False,True,amount_outlier
+TXN001981,ACC0049,2024-06-10 06:59:12,Ola,Travel,15487.22,completed,NEFT,none,2024-06,2024-06-10,3.32,True,True,True,False,False,True,amount_outlier
+TXN001310,ACC0050,2023-03-06 04:03:43,MakeMyTrip,Travel,19660.29,completed,Net Banking,none,2023-03,2023-03-06,4.48,True,True,True,False,False,True,amount_outlier
+TXN001515,ACC0050,2024-09-17 11:39:32,Ola,Travel,18880.89,completed,UPI,none,2024-09,2024-09-17,4.26,True,True,True,False,False,True,amount_outlier

@@ -1,0 +1,2014 @@
+transaction_id,account_id,datetime,merchant,category,amount,status,channel,_is_anomaly
+TXN001794,ACC0018,1/1/2023 2:29,Zomato,Food & Dining,400.24,failed,Net Banking,none
+TXN000526,ACC0034,1/2/2023 7:22,DMart,Retail,570.3,completed,UPI,none
+TXN001203,ACC0030,1/2/2023 8:36,McDonald's,Food & Dining,674.03,completed,UPI,none
+TXN000652,ACC0032,1/2/2023 9:53,Paytm Mall,Online Shopping,903.48,completed,Debit Card,none
+TXN001847,ACC0028,1/3/2023 1:16,Myntra,Retail,1880.34,completed,UPI,none
+TXN001685,ACC0039,1/3/2023 2:18,Fortis Hospital,Healthcare,2633.61,completed,Debit Card,none
+TXN000656,ACC0038,1/3/2023 4:31,Airtel,Utilities,728.44,completed,Net Banking,none
+TXN000071,ACC0023,1/3/2023 6:56,Apollo Pharmacy,Healthcare,6068.52,completed,UPI,none
+TXN001728,ACC0020,1/4/2023 1:09,BSES Yamuna,Utilities,2917.46,completed,NEFT,none
+TXN000597,ACC0013,1/4/2023 5:21,BSES Yamuna,Utilities,1384.24,reversed,UPI,none
+TXN001340,ACC0044,1/4/2023 7:15,SBI ATM,ATM Withdrawal,2305.95,completed,Debit Card,none
+TXN001327,ACC0018,1/4/2023 7:52,Starbucks,Food & Dining,371.2,completed,UPI,none
+TXN001052,ACC0003,1/4/2023 9:45,Reliance Digital,Retail,3323.48,failed,NEFT,none
+TXN001924,ACC0020,1/4/2023 11:37,Swiggy,Food & Dining,808.38,completed,UPI,none
+TXN001522,ACC0007,1/4/2023 21:19,Starbucks,Food & Dining,1231.15,completed,UPI,none
+TXN000419,ACC0011,1/5/2023 21:01,Zomato,Food & Dining,787.99,completed,UPI,none
+TXN000855,ACC0021,1/6/2023 0:03,NDMC,Utilities,1795.03,completed,Debit Card,none
+TXN001557,ACC0003,1/6/2023 13:39,Reliance Digital,Retail,1272.93,completed,UPI,none
+TXN001319,ACC0032,1/6/2023 13:50,Ola,Travel,11552.72,completed,UPI,none
+TXN000949,ACC0028,1/6/2023 18:21,Café Coffee Day,Food & Dining,124.5,completed,Net Banking,none
+TXN001855,ACC0019,1/6/2023 23:52,Snapdeal,Online Shopping,4282.34,completed,Debit Card,none
+TXN001598,ACC0038,1/7/2023 3:39,MakeMyTrip,Travel,4536.23,completed,NEFT,none
+TXN000180,ACC0014,1/7/2023 8:33,MakeMyTrip,Travel,2654.25,completed,UPI,none
+TXN001574,ACC0048,1/8/2023 0:47,ICICI ATM,ATM Withdrawal,7261.1,completed,Debit Card,none
+TXN000047,ACC0032,1/8/2023 17:05,Nykaa,Online Shopping,3599.53,completed,UPI,none
+TXN000502,ACC0034,1/9/2023 0:28,Flipkart,Retail,3156.38,completed,Debit Card,none
+TXN000814,ACC0047,1/9/2023 11:13,MakeMyTrip,Travel,13087.92,completed,Net Banking,none
+TXN001957,ACC0034,1/9/2023 23:07,Swiggy,Food & Dining,1429.94,completed,Net Banking,none
+TXN001447,ACC0019,1/10/2023 1:55,Jio,Utilities,1174.93,failed,UPI,none
+TXN000212,ACC0007,1/10/2023 5:39,Amazon,Retail,205.91,completed,UPI,none
+TXN001629,ACC0024,1/10/2023 9:11,Flipkart,Retail,3555.71,completed,NEFT,none
+TXN001460,ACC0016,1/10/2023 21:43,Starbucks,Food & Dining,384.95,failed,UPI,none
+TXN001915,ACC0027,1/11/2023 19:40,Nykaa,Online Shopping,1025.72,reversed,UPI,none
+TXN001697,ACC0045,1/12/2023 8:06,Starbucks,Food & Dining,767.98,completed,Debit Card,none
+TXN001882,ACC0004,1/12/2023 10:29,DMart,Retail,428.55,completed,Debit Card,none
+TXN000544,ACC0032,1/12/2023 11:02,Amazon,Retail,2188.16,failed,UPI,none
+TXN000515,ACC0039,1/12/2023 17:05,Zomato,Food & Dining,945.09,completed,NEFT,none
+TXN001701,ACC0015,1/13/2023 1:17,HDFC ATM,ATM Withdrawal,1190.55,completed,UPI,none
+TXN001687,ACC0037,1/13/2023 5:53,Amazon Pay,Online Shopping,5696.24,completed,UPI,none
+TXN000209,ACC0012,1/13/2023 10:36,Amazon,Retail,3328,completed,Debit Card,none
+TXN000048,ACC0022,1/13/2023 11:53,DMart,Retail,4226.88,completed,Net Banking,none
+TXN001467,ACC0041,1/13/2023 14:00,McDonald's,Food & Dining,743.29,completed,Net Banking,none
+TXN001682,ACC0050,1/13/2023 14:04,Starbucks,Food & Dining,1132.64,completed,UPI,none
+TXN000320,ACC0041,1/13/2023 22:04,Ola,Travel,4166.48,completed,Debit Card,none
+TXN000270,ACC0038,1/14/2023 0:28,Myntra,Retail,3095.45,failed,Net Banking,none
+TXN001003,ACC0025,1/14/2023 1:49,Myntra,Retail,3320.54,completed,Debit Card,none
+TXN001133,ACC0048,1/14/2023 23:49,Amazon Pay,Online Shopping,1177.59,completed,Debit Card,none
+TXN000918,ACC0021,1/15/2023 12:52,Ola,Travel,10428.14,completed,Net Banking,none
+TXN001016,ACC0050,1/15/2023 16:16,Reliance Digital,Retail,818.73,completed,Debit Card,none
+TXN000011,ACC0045,1/15/2023 20:59,Paytm Mall,Online Shopping,5801.96,completed,UPI,none
+TXN001277,ACC0022,1/16/2023 9:37,BSES Yamuna,Utilities,2551.6,completed,Debit Card,none
+TXN000961,ACC0048,1/16/2023 13:04,Indraprastha Gas,Utilities,991.67,completed,Debit Card,none
+TXN000084,ACC0050,1/16/2023 13:20,Flipkart,Retail,2063.69,completed,NEFT,none
+TXN000793,ACC0029,1/16/2023 18:28,Swiggy,Food & Dining,933.51,completed,Net Banking,none
+TXN001318,ACC0031,1/16/2023 22:49,Amazon,Retail,2405.61,completed,Debit Card,none
+TXN000553,ACC0041,1/17/2023 6:35,Amazon Pay,Online Shopping,3065.04,completed,UPI,none
+TXN000688,ACC0033,1/17/2023 9:54,Reliance Digital,Retail,4726.7,completed,Debit Card,none
+TXN000993,ACC0029,1/17/2023 21:57,Uber,Travel,4250.16,failed,UPI,none
+TXN000426,ACC0026,1/18/2023 2:46,Myntra,Retail,1163.12,completed,UPI,none
+TXN001946,ACC0050,1/18/2023 15:05,Flipkart,Retail,4550.02,completed,UPI,none
+TXN001614,ACC0026,1/19/2023 9:52,Starbucks,Food & Dining,114.97,completed,Debit Card,none
+TXN001789,ACC0037,1/19/2023 11:10,McDonald's,Food & Dining,296.09,completed,Debit Card,none
+TXN001577,ACC0016,1/19/2023 16:00,Amazon Pay,Online Shopping,4011.83,completed,UPI,none
+TXN000835,ACC0041,1/19/2023 16:39,Max Healthcare,Healthcare,1654.07,completed,UPI,none
+TXN000913,ACC0030,1/20/2023 21:02,Zomato,Food & Dining,722.6,reversed,UPI,none
+TXN000858,ACC0007,1/20/2023 21:04,Café Coffee Day,Food & Dining,1106.71,failed,UPI,none
+TXN000864,ACC0012,1/21/2023 0:58,Indraprastha Gas,Utilities,1788.26,completed,Debit Card,none
+TXN001283,ACC0039,1/21/2023 1:29,Apollo Pharmacy,Healthcare,7332.65,completed,Net Banking,none
+TXN001434,ACC0006,1/21/2023 9:30,SBI ATM,ATM Withdrawal,7217.68,completed,UPI,none
+TXN000677,ACC0047,1/21/2023 11:46,Axis ATM,ATM Withdrawal,8974.77,completed,UPI,none
+TXN000282,ACC0037,1/21/2023 18:24,ICICI ATM,ATM Withdrawal,6171.29,completed,NEFT,none
+TXN000130,ACC0015,1/21/2023 21:31,Café Coffee Day,Food & Dining,278.48,completed,Debit Card,none
+TXN001147,ACC0048,1/22/2023 4:11,Jio,Utilities,2904.03,completed,Debit Card,none
+TXN001520,ACC0006,1/22/2023 7:06,Airtel,Utilities,2426.2,completed,UPI,none
+TXN000101,ACC0032,1/23/2023 2:45,Snapdeal,Online Shopping,3236.85,completed,UPI,none
+TXN000251,ACC0012,1/23/2023 16:59,IndiGo Airlines,Travel,6829.42,completed,Debit Card,none
+TXN000150,ACC0037,1/23/2023 17:02,Myntra,Retail,4820.72,completed,UPI,none
+TXN001590,ACC0021,1/23/2023 20:18,SBI ATM,ATM Withdrawal,9987.38,completed,UPI,none
+TXN000593,ACC0042,1/24/2023 3:02,SBI ATM,ATM Withdrawal,7023.78,completed,Debit Card,none
+TXN001005,ACC0045,1/24/2023 12:37,Reliance Digital,Retail,2522.61,failed,UPI,none
+TXN000658,ACC0023,1/24/2023 17:27,Nykaa,Online Shopping,2460.53,completed,Net Banking,none
+TXN000493,ACC0036,1/25/2023 0:43,McDonald's,Food & Dining,1499.36,completed,Net Banking,none
+TXN001395,ACC0031,1/25/2023 2:12,Zomato,Food & Dining,813.63,completed,UPI,none
+TXN000778,ACC0019,1/25/2023 6:58,Flipkart,Retail,1721.32,completed,NEFT,none
+TXN001910,ACC0003,1/25/2023 16:38,Ola,Travel,9130.49,completed,UPI,none
+TXN001619,ACC0023,1/25/2023 18:52,MakeMyTrip,Travel,14303.31,failed,UPI,none
+TXN001844,ACC0032,1/26/2023 3:02,Myntra,Retail,1202.67,completed,NEFT,none
+TXN000441,ACC0013,1/26/2023 7:52,Jio,Utilities,2768,failed,UPI,none
+TXN000958,ACC0015,1/26/2023 8:57,Myntra,Retail,3300.45,completed,UPI,none
+TXN001903,ACC0018,1/27/2023 0:39,Flipkart,Retail,4746.96,completed,Debit Card,none
+TXN000642,ACC0009,1/27/2023 6:29,Reliance Digital,Retail,4921.12,reversed,UPI,none
+TXN000288,ACC0032,1/27/2023 21:08,Axis ATM,ATM Withdrawal,7990.51,completed,Debit Card,none
+TXN000005,ACC0003,1/29/2023 2:33,Airtel,Utilities,1456.15,completed,UPI,none
+TXN001245,ACC0017,1/29/2023 11:13,Indraprastha Gas,Utilities,1245.84,completed,UPI,none
+TXN001740,ACC0014,1/31/2023 0:18,Café Coffee Day,Food & Dining,454.54,completed,UPI,none
+TXN001591,ACC0011,1/31/2023 16:54,Jio,Utilities,972.18,completed,Debit Card,none
+TXN000007,ACC0007,1/31/2023 21:39,Reliance Digital,Retail,2312.73,completed,UPI,none
+TXN000300,ACC0041,2/1/2023 13:13,Amazon,Retail,3361.72,completed,UPI,none
+TXN001951,ACC0044,2/2/2023 3:49,Flipkart,Retail,218.86,completed,Net Banking,none
+TXN000627,ACC0040,2/2/2023 23:13,Nykaa,Online Shopping,2237.84,completed,UPI,none
+TXN001143,ACC0040,2/3/2023 4:04,Nykaa,Online Shopping,2750.04,completed,Debit Card,none
+TXN001738,ACC0012,2/3/2023 9:26,DMart,Retail,1685.51,completed,NEFT,none
+TXN000445,ACC0017,2/3/2023 13:51,Nykaa,Online Shopping,5996.96,completed,UPI,none
+TXN001605,ACC0020,2/4/2023 1:04,MakeMyTrip,Travel,4765.44,completed,UPI,none
+TXN001607,ACC0044,2/5/2023 9:57,Reliance Digital,Retail,2429.66,completed,UPI,none
+TXN000449,ACC0007,2/6/2023 0:04,Amazon,Retail,855.68,completed,UPI,none
+TXN001270,ACC0050,2/6/2023 20:09,McDonald's,Food & Dining,1112.75,completed,UPI,none
+TXN000336,ACC0031,2/7/2023 4:28,Reliance Digital,Retail,849.7,completed,NEFT,none
+TXN001341,ACC0019,2/7/2023 21:54,SBI ATM,ATM Withdrawal,4111.57,completed,Debit Card,none
+TXN000010,ACC0040,2/8/2023 23:10,Axis ATM,ATM Withdrawal,6134,completed,UPI,none
+TXN001671,ACC0032,2/12/2023 11:43,McDonald's,Food & Dining,675.75,reversed,NEFT,none
+TXN000125,ACC0033,2/12/2023 14:34,BSES Yamuna,Utilities,1080.53,completed,Debit Card,none
+TXN000058,ACC0010,2/12/2023 17:55,IRCTC,Travel,5587.43,failed,Debit Card,none
+TXN000054,ACC0039,2/12/2023 19:36,SBI ATM,ATM Withdrawal,9593.79,completed,Debit Card,none
+TXN001786,ACC0022,2/12/2023 23:52,MakeMyTrip,Travel,17264.71,completed,Debit Card,none
+TXN001563,ACC0014,2/13/2023 4:48,NDMC,Utilities,2893.28,completed,Debit Card,none
+TXN001507,ACC0033,2/13/2023 5:14,IndiGo Airlines,Travel,13888.44,completed,NEFT,none
+TXN001488,ACC0032,2/13/2023 18:45,Flipkart,Retail,2200.14,completed,Net Banking,none
+TXN001063,ACC0039,2/14/2023 7:53,McDonald's,Food & Dining,1084.48,completed,UPI,none
+TXN001081,ACC0036,2/15/2023 1:20,Meesho,Online Shopping,2005.72,completed,UPI,none
+TXN001790,ACC0018,2/15/2023 11:13,Axis ATM,ATM Withdrawal,9201.12,completed,UPI,none
+TXN000804,ACC0012,2/15/2023 14:20,MakeMyTrip,Travel,636.15,completed,Net Banking,none
+TXN001996,ACC0023,2/16/2023 5:55,ICICI ATM,ATM Withdrawal,8897.31,completed,Debit Card,none
+TXN001091,ACC0023,2/16/2023 8:04,McDonald's,Food & Dining,1425.24,completed,Debit Card,none
+TXN001771,ACC0047,2/16/2023 8:16,Amazon,Retail,2752.75,completed,Debit Card,none
+TXN000698,ACC0032,2/16/2023 10:53,IndiGo Airlines,Travel,7183.25,completed,Net Banking,none
+TXN001584,ACC0037,2/16/2023 22:55,IRCTC,Travel,11208.31,completed,Debit Card,none
+TXN000596,ACC0008,2/17/2023 13:30,Myntra,Retail,1766.02,completed,UPI,none
+TXN000615,ACC0017,2/17/2023 15:15,Flipkart,Retail,3850.04,reversed,Net Banking,none
+TXN000163,ACC0047,2/17/2023 19:37,Ola,Travel,19011.48,failed,Debit Card,none
+TXN000028,ACC0036,2/17/2023 20:41,DMart,Retail,4320.12,completed,Net Banking,none
+TXN000242,ACC0044,2/19/2023 11:04,Snapdeal,Online Shopping,3086.43,completed,UPI,none
+TXN000653,ACC0016,2/19/2023 15:47,Uber,Travel,11348.4,completed,UPI,none
+TXN000605,ACC0032,2/19/2023 19:27,Nykaa,Online Shopping,2672.03,failed,Net Banking,none
+TXN002000,ACC0032,2/19/2023 23:43,Axis ATM,ATM Withdrawal,9003.74,completed,Debit Card,none
+TXN000089,ACC0013,2/20/2023 7:09,McDonald's,Food & Dining,1278.97,completed,UPI,none
+TXN000220,ACC0006,2/21/2023 0:49,Myntra,Retail,796.26,failed,UPI,none
+TXN001372,ACC0022,2/21/2023 11:39,SBI ATM,ATM Withdrawal,8115.43,completed,Debit Card,none
+TXN001550,ACC0047,2/22/2023 3:46,DMart,Retail,4924.36,completed,NEFT,none
+TXN000536,ACC0019,2/22/2023 12:52,Meesho,Online Shopping,5010.98,completed,UPI,none
+TXN000963,ACC0025,2/23/2023 2:49,Reliance Digital,Retail,890.57,completed,UPI,none
+TXN001898,ACC0032,2/23/2023 4:43,SBI ATM,ATM Withdrawal,1223.88,failed,UPI,none
+TXN001642,ACC0044,2/23/2023 10:41,Reliance Digital,Retail,1487.75,completed,Debit Card,none
+TXN001867,ACC0002,2/24/2023 13:38,DMart,Retail,1643.87,completed,UPI,none
+TXN000824,ACC0046,2/24/2023 19:01,Café Coffee Day,Food & Dining,863.69,completed,UPI,none
+TXN000223,ACC0042,2/25/2023 0:57,McDonald's,Food & Dining,157.06,completed,UPI,none
+TXN001391,ACC0018,2/25/2023 8:36,Nykaa,Online Shopping,5877.48,completed,UPI,none
+TXN000647,ACC0035,2/26/2023 5:42,Swiggy,Food & Dining,486.06,completed,NEFT,none
+TXN000248,ACC0013,2/26/2023 10:41,SBI ATM,ATM Withdrawal,9940.03,completed,UPI,none
+TXN000118,ACC0050,2/26/2023 19:37,Airtel,Utilities,629.56,completed,UPI,none
+TXN001388,ACC0032,2/26/2023 23:49,BSES Yamuna,Utilities,1310.63,completed,NEFT,none
+TXN000024,ACC0017,2/27/2023 11:10,Swiggy,Food & Dining,307.32,completed,Debit Card,none
+TXN000243,ACC0008,2/27/2023 18:22,Indraprastha Gas,Utilities,1004.63,completed,Debit Card,none
+TXN001132,ACC0041,2/28/2023 1:12,DMart,Retail,673.02,completed,Net Banking,none
+TXN001753,ACC0024,2/28/2023 15:08,BSES Yamuna,Utilities,2119.27,completed,UPI,none
+TXN001967,ACC0021,2/28/2023 15:39,Nykaa,Online Shopping,5192.63,completed,Net Banking,none
+TXN001452,ACC0047,2/28/2023 16:09,Zomato,Food & Dining,1328.48,failed,NEFT,none
+TXN000550,ACC0003,3/1/2023 5:22,DMart,Retail,3871.04,completed,NEFT,none
+TXN001376,ACC0036,3/1/2023 9:47,Ola,Travel,14384.16,completed,Net Banking,none
+TXN001623,ACC0039,3/1/2023 16:16,Paytm Mall,Online Shopping,4417.17,completed,UPI,none
+TXN000874,ACC0010,3/1/2023 16:56,BSES Yamuna,Utilities,2413.29,completed,Debit Card,none
+TXN001466,ACC0017,3/1/2023 17:20,Reliance Digital,Retail,2690.9,reversed,Debit Card,none
+TXN000845,ACC0011,3/2/2023 3:57,DMart,Retail,3790.48,completed,Debit Card,none
+TXN000678,ACC0020,3/2/2023 12:05,Uber,Travel,13611.48,completed,UPI,none
+TXN001781,ACC0015,3/2/2023 13:08,Amazon,Retail,2719.12,failed,Debit Card,none
+TXN000867,ACC0050,3/2/2023 16:32,MakeMyTrip,Travel,3060.12,completed,NEFT,none
+TXN000847,ACC0031,3/2/2023 16:36,MakeMyTrip,Travel,15941.88,completed,UPI,none
+TXN000276,ACC0016,3/3/2023 11:24,Flipkart,Retail,664.05,completed,Debit Card,none
+TXN001731,ACC0035,3/3/2023 20:34,Ola,Travel,16550.21,completed,UPI,none
+TXN001396,ACC0019,3/4/2023 6:57,BSES Yamuna,Utilities,562.85,completed,Net Banking,none
+TXN001205,ACC0045,3/4/2023 14:22,Paytm Mall,Online Shopping,5531.22,reversed,Debit Card,none
+TXN001030,ACC0027,3/4/2023 14:26,DMart,Retail,2999.73,completed,UPI,none
+TXN000471,ACC0004,3/4/2023 23:08,Flipkart,Retail,4909.65,completed,NEFT,none
+TXN000211,ACC0044,3/5/2023 10:32,McDonald's,Food & Dining,1215.52,failed,NEFT,none
+TXN000329,ACC0028,3/6/2023 0:46,Reliance Digital,Retail,500.2,completed,Debit Card,none
+TXN001310,ACC0050,3/6/2023 4:03,MakeMyTrip,Travel,19660.29,completed,Net Banking,none
+TXN000319,ACC0042,3/7/2023 3:15,Airtel,Utilities,1503.74,completed,Debit Card,none
+TXN000164,ACC0019,3/8/2023 0:16,Reliance Digital,Retail,2791.25,completed,Net Banking,none
+TXN001621,ACC0015,3/8/2023 1:43,DMart,Retail,1919.79,completed,UPI,none
+TXN001712,ACC0025,3/8/2023 4:42,Paytm Mall,Online Shopping,3259.9,completed,Net Banking,none
+TXN000141,ACC0022,3/8/2023 23:17,NDMC,Utilities,1951.47,completed,Debit Card,none
+TXN001197,ACC0009,3/9/2023 1:06,Zomato,Food & Dining,220.11,completed,Debit Card,none
+TXN001279,ACC0021,3/9/2023 4:35,MakeMyTrip,Travel,13599.7,completed,UPI,none
+TXN000191,ACC0026,3/9/2023 5:37,Airtel,Utilities,2308.55,completed,UPI,none
+TXN001450,ACC0003,3/9/2023 9:12,Amazon,Retail,2698.5,completed,Debit Card,none
+TXN001127,ACC0043,3/10/2023 15:56,Snapdeal,Online Shopping,5227.1,completed,UPI,none
+TXN000620,ACC0001,3/11/2023 9:10,Myntra,Retail,1032.78,completed,UPI,none
+TXN001869,ACC0044,3/12/2023 10:42,NDMC,Utilities,2547.91,completed,Debit Card,none
+TXN000859,ACC0035,3/12/2023 18:49,DMart,Retail,391.63,completed,Debit Card,none
+TXN001645,ACC0012,3/13/2023 1:51,NDMC,Utilities,2827.55,completed,UPI,none
+TXN000981,ACC0043,3/13/2023 3:37,Flipkart,Retail,3712.99,completed,Debit Card,none
+TXN000872,ACC0028,3/13/2023 14:59,Amazon,Retail,2784.14,completed,NEFT,none
+TXN001212,ACC0036,3/13/2023 15:44,Axis ATM,ATM Withdrawal,5104.9,completed,NEFT,none
+TXN000463,ACC0001,3/13/2023 16:37,Starbucks,Food & Dining,999.95,failed,UPI,none
+TXN001328,ACC0040,3/14/2023 1:08,Snapdeal,Online Shopping,4570.2,completed,Net Banking,none
+TXN001339,ACC0016,3/14/2023 1:12,Café Coffee Day,Food & Dining,603.07,completed,Debit Card,none
+TXN001176,ACC0028,3/14/2023 18:54,ICICI ATM,ATM Withdrawal,8836.04,completed,NEFT,none
+TXN000675,ACC0036,3/14/2023 20:43,Swiggy,Food & Dining,475.44,completed,Debit Card,none
+TXN000027,ACC0048,3/15/2023 1:55,HDFC ATM,ATM Withdrawal,5821.97,completed,UPI,none
+TXN000731,ACC0044,3/15/2023 22:54,Café Coffee Day,Food & Dining,1367.75,completed,UPI,none
+TXN001848,ACC0005,3/16/2023 1:55,Nykaa,Online Shopping,5576.72,completed,Net Banking,none
+TXN000628,ACC0008,3/16/2023 9:18,BSES Yamuna,Utilities,2838.71,completed,NEFT,none
+TXN000400,ACC0044,3/16/2023 19:56,Zomato,Food & Dining,926.4,completed,Debit Card,none
+TXN000532,ACC0015,3/16/2023 21:08,Starbucks,Food & Dining,302.14,completed,Debit Card,none
+TXN001092,ACC0036,3/16/2023 21:47,HDFC ATM,ATM Withdrawal,6849.57,completed,Debit Card,none
+TXN000016,ACC0015,3/17/2023 8:27,Ola,Travel,10693.29,completed,UPI,none
+TXN001349,ACC0025,3/17/2023 10:57,Swiggy,Food & Dining,1087.43,completed,UPI,none
+TXN001269,ACC0009,3/18/2023 11:50,Nykaa,Online Shopping,2405.48,completed,Debit Card,none
+TXN001487,ACC0036,3/18/2023 18:03,Jio,Utilities,1965.46,completed,UPI,none
+TXN000935,ACC0019,3/18/2023 19:44,Paytm Mall,Online Shopping,3189.9,failed,Net Banking,none
+TXN000519,ACC0022,3/19/2023 9:41,Café Coffee Day,Food & Dining,1422.63,failed,UPI,none
+TXN001999,ACC0015,3/19/2023 23:01,Axis ATM,ATM Withdrawal,6634.54,reversed,NEFT,none
+TXN000931,ACC0018,3/20/2023 9:54,Airtel,Utilities,2229.11,completed,UPI,none
+TXN001569,ACC0008,3/20/2023 18:29,Meesho,Online Shopping,5125.25,completed,UPI,none
+TXN000549,ACC0029,3/21/2023 7:35,IndiGo Airlines,Travel,2785.48,completed,Debit Card,none
+TXN000065,ACC0010,3/21/2023 8:01,Café Coffee Day,Food & Dining,494.85,completed,Net Banking,none
+TXN001583,ACC0007,3/21/2023 10:37,Apollo Pharmacy,Healthcare,4994.2,completed,Net Banking,none
+TXN001537,ACC0044,3/22/2023 8:38,Myntra,Retail,2483.14,completed,Debit Card,none
+TXN000291,ACC0009,3/22/2023 17:56,Amazon Pay,Online Shopping,2752.92,completed,Net Banking,none
+TXN000454,ACC0028,3/22/2023 21:50,Swiggy,Food & Dining,536.61,completed,Debit Card,none
+TXN001900,ACC0030,3/23/2023 12:59,NDMC,Utilities,2831.7,completed,UPI,none
+TXN001777,ACC0049,3/24/2023 4:28,Nykaa,Online Shopping,3791.19,completed,UPI,none
+TXN001866,ACC0022,3/25/2023 6:51,Amazon Pay,Online Shopping,1850.2,completed,UPI,none
+TXN001093,ACC0019,3/25/2023 22:31,Ola,Travel,12782.51,completed,Debit Card,none
+TXN001476,ACC0017,3/26/2023 8:46,Uber,Travel,4331.41,completed,UPI,none
+TXN000895,ACC0021,3/26/2023 17:38,Swiggy,Food & Dining,1442.42,completed,NEFT,none
+TXN000477,ACC0027,3/27/2023 14:24,Reliance Digital,Retail,1586.65,reversed,UPI,none
+TXN001745,ACC0001,3/27/2023 23:39,Flipkart,Retail,2750.53,completed,Net Banking,none
+TXN000722,ACC0008,3/28/2023 0:59,Apollo Pharmacy,Healthcare,969.03,completed,UPI,none
+TXN000521,ACC0001,3/28/2023 4:22,SBI ATM,ATM Withdrawal,5052.29,completed,Net Banking,none
+TXN000105,ACC0022,3/28/2023 13:43,Max Healthcare,Healthcare,1832.92,completed,UPI,none
+TXN000586,ACC0012,3/28/2023 20:46,Snapdeal,Online Shopping,4287.95,completed,NEFT,none
+TXN000241,ACC0043,3/29/2023 5:32,Zomato,Food & Dining,1451.17,reversed,Debit Card,none
+TXN001098,ACC0016,3/29/2023 12:43,NDMC,Utilities,630.83,completed,UPI,none
+TXN001594,ACC0040,3/29/2023 20:04,Amazon,Retail,2353,completed,UPI,none
+TXN001451,ACC0025,3/29/2023 23:48,Paytm Mall,Online Shopping,5312.56,completed,UPI,none
+TXN000884,ACC0049,3/30/2023 6:42,IRCTC,Travel,17327.71,completed,UPI,none
+TXN000560,ACC0015,3/30/2023 14:48,IRCTC,Travel,15569.79,completed,Net Banking,none
+TXN001763,ACC0046,3/30/2023 21:42,HDFC ATM,ATM Withdrawal,3607.64,completed,Debit Card,none
+TXN000657,ACC0045,3/31/2023 17:25,Zomato,Food & Dining,1254.26,completed,Debit Card,none
+TXN001639,ACC0037,3/31/2023 18:05,IRCTC,Travel,9873.92,completed,UPI,none
+TXN001525,ACC0026,3/31/2023 20:30,Starbucks,Food & Dining,1029.32,completed,NEFT,none
+TXN001593,ACC0044,4/1/2023 15:19,Reliance Digital,Retail,268.53,completed,UPI,none
+TXN000999,ACC0029,4/2/2023 16:05,Snapdeal,Online Shopping,327.75,completed,Debit Card,none
+TXN000572,ACC0040,4/3/2023 3:46,MakeMyTrip,Travel,18009.42,failed,NEFT,none
+TXN001027,ACC0037,4/3/2023 4:10,Swiggy,Food & Dining,1111.88,failed,Debit Card,none
+TXN001276,ACC0007,4/3/2023 18:34,Snapdeal,Online Shopping,3895.85,completed,UPI,none
+TXN000520,ACC0045,4/5/2023 12:48,MedPlus,Healthcare,3113.73,completed,UPI,none
+TXN000856,ACC0032,4/6/2023 7:29,Starbucks,Food & Dining,248.62,completed,UPI,none
+TXN001672,ACC0023,4/7/2023 10:01,Uber,Travel,7716.74,completed,Net Banking,none
+TXN000218,ACC0030,4/8/2023 2:08,Swiggy,Food & Dining,1335.55,completed,UPI,none
+TXN000762,ACC0034,4/8/2023 20:26,Flipkart,Retail,4475.16,completed,UPI,none
+TXN000633,ACC0023,4/9/2023 12:46,Starbucks,Food & Dining,1372.85,completed,UPI,none
+TXN000430,ACC0045,4/9/2023 22:25,Meesho,Online Shopping,4277.21,completed,Net Banking,none
+TXN001486,ACC0007,4/10/2023 3:59,DMart,Retail,3105.65,completed,Debit Card,none
+TXN001938,ACC0050,4/10/2023 8:04,IndiGo Airlines,Travel,6226.69,completed,Debit Card,none
+TXN001141,ACC0006,4/10/2023 10:59,Amazon,Retail,966.8,completed,Net Banking,none
+TXN001177,ACC0038,4/10/2023 13:35,Nykaa,Online Shopping,731.09,completed,Debit Card,none
+TXN000785,ACC0042,4/12/2023 3:24,Swiggy,Food & Dining,1248.77,completed,UPI,none
+TXN001768,ACC0042,4/13/2023 2:15,Max Healthcare,Healthcare,277.69,completed,UPI,none
+TXN001490,ACC0030,4/14/2023 17:31,DMart,Retail,3004.28,completed,Debit Card,none
+TXN000228,ACC0044,4/15/2023 8:04,Meesho,Online Shopping,2271.83,reversed,UPI,none
+TXN001647,ACC0009,4/15/2023 14:24,Amazon,Retail,4708.45,completed,Debit Card,none
+TXN000945,ACC0025,4/16/2023 9:48,Myntra,Retail,858.69,completed,UPI,none
+TXN001249,ACC0006,4/17/2023 7:21,Amazon Pay,Online Shopping,5401.69,completed,UPI,none
+TXN000045,ACC0025,4/17/2023 7:34,Indraprastha Gas,Utilities,2525.28,failed,Debit Card,none
+TXN000808,ACC0014,4/17/2023 12:08,IRCTC,Travel,6312.29,completed,Net Banking,none
+TXN001061,ACC0009,4/18/2023 9:44,Swiggy,Food & Dining,219.2,completed,NEFT,none
+TXN001650,ACC0017,4/18/2023 9:45,Reliance Digital,Retail,3153.92,completed,UPI,none
+TXN001624,ACC0032,4/18/2023 19:55,Café Coffee Day,Food & Dining,641.89,completed,UPI,none
+TXN000651,ACC0048,4/18/2023 22:06,Myntra,Retail,2135.4,completed,UPI,none
+TXN000298,ACC0026,4/20/2023 8:25,Airtel,Utilities,1635.94,completed,UPI,none
+TXN001201,ACC0015,4/20/2023 11:36,Myntra,Retail,2158.59,completed,NEFT,none
+TXN000630,ACC0024,4/20/2023 20:56,Zomato,Food & Dining,365.15,completed,NEFT,none
+TXN001159,ACC0047,4/21/2023 1:29,Amazon,Retail,1163.03,completed,UPI,none
+TXN001049,ACC0034,4/21/2023 23:15,Indraprastha Gas,Utilities,878.53,completed,UPI,none
+TXN000002,ACC0036,4/22/2023 10:35,Myntra,Retail,4357.65,completed,UPI,none
+TXN001521,ACC0023,4/23/2023 21:55,Ola,Travel,17495.14,completed,Debit Card,none
+TXN000925,ACC0007,4/24/2023 10:09,Café Coffee Day,Food & Dining,825.59,completed,Debit Card,none
+TXN000915,ACC0044,4/25/2023 0:26,ICICI ATM,ATM Withdrawal,2898.73,completed,Debit Card,none
+TXN000229,ACC0034,4/25/2023 0:46,Amazon Pay,Online Shopping,2800.11,completed,Debit Card,none
+TXN000795,ACC0030,4/25/2023 8:08,Meesho,Online Shopping,4066.55,completed,Net Banking,none
+TXN000377,ACC0005,4/25/2023 16:39,Meesho,Online Shopping,3272.24,completed,Debit Card,none
+TXN001907,ACC0032,4/25/2023 20:58,HDFC ATM,ATM Withdrawal,1611.34,completed,Debit Card,none
+TXN000711,ACC0006,4/25/2023 22:14,Paytm Mall,Online Shopping,3139.34,completed,Debit Card,none
+TXN001440,ACC0020,4/26/2023 4:25,Starbucks,Food & Dining,1026.37,completed,Net Banking,none
+TXN001462,ACC0028,4/26/2023 18:27,Flipkart,Retail,4091.51,completed,Debit Card,none
+TXN000126,ACC0006,4/26/2023 22:19,ICICI ATM,ATM Withdrawal,5885.64,completed,Debit Card,none
+TXN001322,ACC0017,4/27/2023 0:14,Café Coffee Day,Food & Dining,1368.19,completed,Debit Card,none
+TXN001149,ACC0021,4/27/2023 9:26,Amazon Pay,Online Shopping,2730.01,completed,Net Banking,none
+TXN000053,ACC0032,4/27/2023 21:39,Amazon,Retail,2323.29,completed,UPI,none
+TXN000325,ACC0003,4/27/2023 23:57,Starbucks,Food & Dining,814.15,completed,UPI,none
+TXN001686,ACC0017,4/28/2023 8:00,BSES Yamuna,Utilities,1958.59,completed,NEFT,none
+TXN001239,ACC0025,4/28/2023 15:51,Nykaa,Online Shopping,1830.45,completed,Debit Card,none
+TXN000971,ACC0018,4/28/2023 22:13,MakeMyTrip,Travel,9744.49,completed,UPI,none
+TXN000987,ACC0019,4/29/2023 19:48,Axis ATM,ATM Withdrawal,6279.42,completed,Net Banking,none
+TXN001255,ACC0036,4/30/2023 16:56,DMart,Retail,226.13,failed,Net Banking,none
+TXN000146,ACC0008,4/30/2023 19:59,Fortis Hospital,Healthcare,1003.26,completed,Net Banking,none
+TXN000967,ACC0048,5/1/2023 5:28,Amazon Pay,Online Shopping,1232.61,completed,Debit Card,none
+TXN000878,ACC0042,5/2/2023 0:33,Flipkart,Retail,3763.38,completed,UPI,none
+TXN001944,ACC0040,5/2/2023 9:58,Amazon,Retail,1965.93,completed,Debit Card,none
+TXN001977,ACC0029,5/2/2023 17:45,Zomato,Food & Dining,1073.57,completed,UPI,none
+TXN000170,ACC0012,5/3/2023 6:13,Amazon Pay,Online Shopping,5449.17,completed,UPI,none
+TXN001463,ACC0017,5/4/2023 1:17,Flipkart,Retail,3050.91,completed,NEFT,none
+TXN001514,ACC0016,5/4/2023 20:19,Airtel,Utilities,2399.3,completed,UPI,none
+TXN000266,ACC0049,5/5/2023 5:06,Flipkart,Retail,934.32,completed,Debit Card,none
+TXN000464,ACC0041,5/5/2023 6:18,MakeMyTrip,Travel,17857.75,completed,UPI,none
+TXN000725,ACC0030,5/5/2023 18:59,Amazon Pay,Online Shopping,5022.1,completed,Debit Card,none
+TXN000153,ACC0012,5/6/2023 17:49,Snapdeal,Online Shopping,3664.68,completed,UPI,none
+TXN001058,ACC0002,5/7/2023 2:33,HDFC ATM,ATM Withdrawal,9355.35,completed,NEFT,none
+TXN001609,ACC0009,5/7/2023 5:19,Swiggy,Food & Dining,1038.98,completed,UPI,none
+TXN000255,ACC0043,5/7/2023 5:25,Starbucks,Food & Dining,767.37,completed,Debit Card,none
+TXN001445,ACC0028,5/7/2023 12:49,Snapdeal,Online Shopping,1451.87,completed,UPI,none
+TXN000621,ACC0033,5/8/2023 4:12,Snapdeal,Online Shopping,4013.64,completed,Net Banking,none
+TXN001865,ACC0023,5/8/2023 7:28,MedPlus,Healthcare,4875.16,completed,Debit Card,none
+TXN001035,ACC0011,5/8/2023 20:16,Myntra,Retail,4048.76,completed,UPI,none
+TXN001312,ACC0035,5/9/2023 21:56,IndiGo Airlines,Travel,16164.44,failed,Debit Card,none
+TXN000062,ACC0046,5/10/2023 2:08,DMart,Retail,1230.03,completed,Debit Card,none
+TXN000346,ACC0034,5/10/2023 20:07,Amazon,Retail,3411.31,completed,Debit Card,none
+TXN001528,ACC0028,5/11/2023 7:20,SBI ATM,ATM Withdrawal,8306.32,completed,Debit Card,none
+TXN001051,ACC0044,5/11/2023 9:56,Starbucks,Food & Dining,105.54,completed,NEFT,none
+TXN001071,ACC0033,5/11/2023 12:10,DMart,Retail,4904.03,completed,UPI,none
+TXN000134,ACC0044,5/11/2023 21:30,Reliance Digital,Retail,3046.22,failed,Net Banking,none
+TXN000038,ACC0021,5/12/2023 2:10,McDonald's,Food & Dining,708.15,completed,Debit Card,none
+TXN001835,ACC0018,5/12/2023 22:36,Starbucks,Food & Dining,214,completed,UPI,none
+TXN001084,ACC0025,5/13/2023 8:07,Flipkart,Retail,2058.78,completed,UPI,none
+TXN001851,ACC0032,5/13/2023 15:15,Swiggy,Food & Dining,1035.7,completed,NEFT,none
+TXN001494,ACC0040,5/13/2023 16:56,Myntra,Retail,4122.09,completed,UPI,none
+TXN001278,ACC0004,5/13/2023 19:36,Flipkart,Retail,1630.59,failed,Debit Card,none
+TXN001274,ACC0018,5/14/2023 2:04,Jio,Utilities,2259.84,completed,Net Banking,none
+TXN001139,ACC0022,5/14/2023 21:44,SBI ATM,ATM Withdrawal,3586.62,completed,UPI,none
+TXN001301,ACC0014,5/14/2023 23:43,Amazon,Retail,360.45,completed,Debit Card,none
+TXN001942,ACC0046,5/15/2023 5:43,Snapdeal,Online Shopping,2562.51,completed,Net Banking,none
+TXN001726,ACC0035,5/15/2023 9:33,Airtel,Utilities,2119.17,reversed,UPI,none
+TXN001661,ACC0001,5/15/2023 12:49,NDMC,Utilities,2201.51,completed,UPI,none
+TXN001088,ACC0034,5/16/2023 3:18,McDonald's,Food & Dining,872.36,reversed,UPI,none
+TXN001512,ACC0004,5/16/2023 10:33,Ola,Travel,11215.05,completed,UPI,none
+TXN000962,ACC0036,5/16/2023 14:33,Reliance Digital,Retail,2373.84,completed,UPI,none
+TXN001894,ACC0029,5/16/2023 20:16,Amazon Pay,Online Shopping,4048.28,completed,UPI,none
+TXN000390,ACC0012,5/16/2023 20:25,Café Coffee Day,Food & Dining,1099.65,completed,Net Banking,none
+TXN001012,ACC0035,5/17/2023 5:29,Apollo Pharmacy,Healthcare,853.57,completed,Debit Card,none
+TXN000853,ACC0026,5/18/2023 1:43,ICICI ATM,ATM Withdrawal,3590.92,completed,Net Banking,none
+TXN000235,ACC0014,5/18/2023 10:00,Myntra,Retail,4441.81,completed,UPI,none
+TXN001216,ACC0039,5/18/2023 22:15,Axis ATM,ATM Withdrawal,6723.46,completed,NEFT,none
+TXN000497,ACC0024,5/18/2023 22:42,Starbucks,Food & Dining,1461.39,completed,Debit Card,none
+TXN001050,ACC0050,5/19/2023 2:28,Starbucks,Food & Dining,166.11,reversed,Net Banking,none
+TXN000231,ACC0036,5/19/2023 7:40,Ola,Travel,15632,completed,Debit Card,none
+TXN000302,ACC0023,5/19/2023 8:16,Swiggy,Food & Dining,959.51,failed,UPI,none
+TXN000423,ACC0013,5/19/2023 8:17,Airtel,Utilities,1620.8,completed,NEFT,none
+TXN001104,ACC0001,5/19/2023 8:46,Swiggy,Food & Dining,220.56,completed,Debit Card,none
+TXN000837,ACC0030,5/19/2023 20:59,Zomato,Food & Dining,697.95,failed,Debit Card,none
+TXN000408,ACC0037,5/19/2023 21:10,Zomato,Food & Dining,1360.12,completed,Debit Card,none
+TXN001670,ACC0026,5/20/2023 1:32,Flipkart,Retail,2951.73,completed,Debit Card,none
+TXN000609,ACC0006,5/20/2023 2:40,Axis ATM,ATM Withdrawal,4340.53,completed,UPI,none
+TXN001657,ACC0032,5/20/2023 9:09,Zomato,Food & Dining,594.21,completed,Debit Card,none
+TXN000492,ACC0025,5/20/2023 20:45,MedPlus,Healthcare,2737.3,completed,UPI,none
+TXN001812,ACC0039,5/21/2023 9:54,McDonald's,Food & Dining,125.84,completed,UPI,none
+TXN001309,ACC0015,5/21/2023 10:00,MedPlus,Healthcare,1732.24,completed,UPI,none
+TXN001516,ACC0028,5/22/2023 2:41,DMart,Retail,2881.9,completed,UPI,none
+TXN001169,ACC0020,5/22/2023 12:58,Snapdeal,Online Shopping,1498.57,completed,UPI,none
+TXN001838,ACC0018,5/22/2023 20:44,Swiggy,Food & Dining,192.64,reversed,Net Banking,none
+TXN000838,ACC0021,5/22/2023 22:11,IRCTC,Travel,13501.26,completed,UPI,none
+TXN001238,ACC0035,5/23/2023 13:37,Amazon,Retail,1104.25,completed,NEFT,none
+TXN000887,ACC0019,5/23/2023 23:38,Reliance Digital,Retail,3633.83,completed,UPI,none
+TXN001780,ACC0035,5/24/2023 7:53,Flipkart,Retail,765.73,completed,UPI,none
+TXN001108,ACC0026,5/24/2023 15:22,DMart,Retail,1837.52,completed,UPI,none
+TXN000103,ACC0026,5/24/2023 21:39,Zomato,Food & Dining,280.25,completed,UPI,none
+TXN000979,ACC0009,5/25/2023 11:16,ICICI ATM,ATM Withdrawal,8387.64,completed,UPI,none
+TXN000664,ACC0045,5/26/2023 3:39,Swiggy,Food & Dining,324.32,completed,Net Banking,none
+TXN000773,ACC0020,5/26/2023 16:01,Amazon Pay,Online Shopping,1165.75,completed,UPI,none
+TXN000592,ACC0030,5/26/2023 23:53,Axis ATM,ATM Withdrawal,9466.96,completed,UPI,none
+TXN001530,ACC0007,5/27/2023 0:11,McDonald's,Food & Dining,618,completed,UPI,none
+TXN000411,ACC0023,5/27/2023 5:10,Café Coffee Day,Food & Dining,1166.66,completed,Net Banking,none
+TXN000286,ACC0046,5/28/2023 7:45,BSES Yamuna,Utilities,2015.63,completed,NEFT,none
+TXN000350,ACC0003,5/28/2023 15:35,Paytm Mall,Online Shopping,671.67,completed,UPI,none
+TXN000283,ACC0030,5/28/2023 20:30,Flipkart,Retail,3214.16,completed,Debit Card,none
+TXN000097,ACC0042,5/29/2023 13:40,Starbucks,Food & Dining,517.14,completed,Net Banking,none
+TXN000755,ACC0021,5/29/2023 15:01,Fortis Hospital,Healthcare,2101.66,completed,UPI,none
+TXN000506,ACC0019,5/29/2023 19:14,Myntra,Retail,4283.27,completed,Debit Card,none
+TXN000970,ACC0010,5/29/2023 23:47,MedPlus,Healthcare,7502.18,completed,Net Banking,none
+TXN000437,ACC0031,5/31/2023 7:52,Flipkart,Retail,2126.94,failed,Net Banking,none
+TXN000989,ACC0042,5/31/2023 15:29,Max Healthcare,Healthcare,2943.42,completed,Debit Card,none
+TXN001778,ACC0019,5/31/2023 18:33,IndiGo Airlines,Travel,17375.87,completed,Debit Card,none
+TXN000247,ACC0028,5/31/2023 23:48,Café Coffee Day,Food & Dining,908.06,reversed,UPI,none
+TXN001187,ACC0041,6/1/2023 0:49,Starbucks,Food & Dining,113.19,completed,Debit Card,none
+TXN001193,ACC0015,6/1/2023 12:17,Café Coffee Day,Food & Dining,283.42,completed,UPI,none
+TXN001047,ACC0018,6/1/2023 18:56,DMart,Retail,4647.99,completed,UPI,none
+TXN000279,ACC0038,6/1/2023 19:35,Meesho,Online Shopping,5008.59,completed,UPI,none
+TXN001272,ACC0037,6/1/2023 23:00,Uber,Travel,16621.48,completed,Net Banking,none
+TXN000267,ACC0028,6/2/2023 4:06,Café Coffee Day,Food & Dining,998.76,completed,UPI,none
+TXN001839,ACC0004,6/4/2023 1:08,IRCTC,Travel,15902.43,completed,Debit Card,none
+TXN000687,ACC0030,6/4/2023 3:21,Max Healthcare,Healthcare,242.16,completed,Net Banking,none
+TXN000117,ACC0038,6/4/2023 18:12,Swiggy,Food & Dining,954.87,completed,NEFT,none
+TXN000626,ACC0017,6/5/2023 3:41,Axis ATM,ATM Withdrawal,7103.02,completed,UPI,none
+TXN001286,ACC0003,6/5/2023 5:34,Meesho,Online Shopping,825.93,completed,Debit Card,none
+TXN000139,ACC0027,6/5/2023 9:45,Paytm Mall,Online Shopping,2954.49,failed,Debit Card,none
+TXN001457,ACC0024,6/5/2023 11:09,Fortis Hospital,Healthcare,2993.53,completed,Debit Card,none
+TXN001644,ACC0016,6/5/2023 12:57,Reliance Digital,Retail,2684.86,completed,Net Banking,none
+TXN001901,ACC0027,6/6/2023 20:38,Max Healthcare,Healthcare,2117.54,completed,UPI,none
+TXN001758,ACC0043,6/7/2023 17:03,DMart,Retail,1753.33,completed,Net Banking,none
+TXN000809,ACC0034,6/8/2023 1:17,Myntra,Retail,1766.15,completed,UPI,none
+TXN001592,ACC0048,6/8/2023 5:21,Uber,Travel,517.66,completed,UPI,none
+TXN000314,ACC0022,6/8/2023 10:38,Nykaa,Online Shopping,606.99,reversed,NEFT,none
+TXN001759,ACC0014,6/8/2023 10:40,DMart,Retail,4996.95,reversed,Debit Card,none
+TXN000483,ACC0019,6/8/2023 13:02,Starbucks,Food & Dining,1162.29,completed,Net Banking,none
+TXN000145,ACC0002,6/9/2023 8:46,Airtel,Utilities,1633.22,completed,UPI,none
+TXN000422,ACC0017,6/10/2023 0:14,Axis ATM,ATM Withdrawal,8685.66,completed,UPI,none
+TXN000074,ACC0002,6/10/2023 6:07,Amazon,Retail,4144.93,completed,UPI,none
+TXN000901,ACC0039,6/10/2023 12:03,Airtel,Utilities,1091.79,completed,NEFT,none
+TXN000933,ACC0027,6/11/2023 5:32,Café Coffee Day,Food & Dining,1139.22,completed,UPI,none
+TXN000662,ACC0012,6/11/2023 20:32,ICICI ATM,ATM Withdrawal,9978.61,completed,UPI,none
+TXN001600,ACC0016,6/12/2023 5:59,Amazon Pay,Online Shopping,315.4,completed,Debit Card,none
+TXN000207,ACC0021,6/12/2023 18:38,Axis ATM,ATM Withdrawal,4891.01,completed,Debit Card,none
+TXN001802,ACC0042,6/12/2023 21:20,Nykaa,Online Shopping,4434.85,reversed,UPI,none
+TXN000008,ACC0004,6/13/2023 2:14,Axis ATM,ATM Withdrawal,2640.12,completed,Debit Card,none
+TXN001119,ACC0024,6/13/2023 11:15,Café Coffee Day,Food & Dining,834.54,failed,Debit Card,none
+TXN001287,ACC0050,6/13/2023 23:17,Swiggy,Food & Dining,716.61,completed,Debit Card,none
+TXN001438,ACC0040,6/14/2023 7:31,Café Coffee Day,Food & Dining,1052.06,completed,UPI,none
+TXN000974,ACC0042,6/14/2023 18:15,Max Healthcare,Healthcare,560.33,failed,UPI,none
+TXN000144,ACC0029,6/14/2023 21:16,DMart,Retail,3199.88,completed,Debit Card,none
+TXN001615,ACC0002,6/15/2023 1:11,BSES Yamuna,Utilities,755.99,completed,UPI,none
+TXN000475,ACC0043,6/15/2023 7:55,Starbucks,Food & Dining,420.15,completed,UPI,none
+TXN000155,ACC0032,6/15/2023 22:59,Myntra,Retail,4493.85,completed,Debit Card,none
+TXN000898,ACC0049,6/16/2023 7:12,McDonald's,Food & Dining,462.2,completed,Debit Card,none
+TXN001704,ACC0018,6/16/2023 7:55,MakeMyTrip,Travel,5741.24,completed,Debit Card,none
+TXN000951,ACC0023,6/16/2023 19:39,Jio,Utilities,1951.89,failed,Debit Card,none
+TXN001087,ACC0039,6/17/2023 22:22,Jio,Utilities,581.22,completed,NEFT,none
+TXN000404,ACC0027,6/17/2023 23:10,Ola,Travel,8024.55,completed,UPI,none
+TXN001046,ACC0023,6/18/2023 3:07,Axis ATM,ATM Withdrawal,7329.52,failed,Debit Card,none
+TXN001453,ACC0029,6/19/2023 2:04,Reliance Digital,Retail,3843.33,completed,NEFT,none
+TXN000563,ACC0031,6/19/2023 6:41,MakeMyTrip,Travel,5535.5,completed,Net Banking,none
+TXN000019,ACC0006,6/19/2023 11:46,Paytm Mall,Online Shopping,4906.29,completed,UPI,none
+TXN000268,ACC0025,6/19/2023 12:54,Café Coffee Day,Food & Dining,181.84,completed,Debit Card,none
+TXN000376,ACC0048,6/20/2023 0:32,DMart,Retail,4223.13,completed,UPI,none
+TXN000275,ACC0005,6/20/2023 9:41,Reliance Digital,Retail,626.08,completed,Net Banking,none
+TXN000485,ACC0048,6/20/2023 23:43,DMart,Retail,1425.48,completed,UPI,none
+TXN001833,ACC0016,6/21/2023 9:26,DMart,Retail,3299.65,completed,Debit Card,none
+TXN001037,ACC0003,6/21/2023 9:32,ICICI ATM,ATM Withdrawal,7053.8,completed,Debit Card,none
+TXN000865,ACC0037,6/22/2023 6:04,Nykaa,Online Shopping,754.38,failed,Debit Card,none
+TXN001405,ACC0004,6/22/2023 6:50,Flipkart,Retail,3971.88,completed,UPI,none
+TXN000909,ACC0035,6/22/2023 19:21,Apollo Pharmacy,Healthcare,2103.16,completed,UPI,none
+TXN001503,ACC0031,6/22/2023 22:33,Paytm Mall,Online Shopping,411.28,completed,Net Banking,none
+TXN001064,ACC0040,6/23/2023 12:42,Apollo Pharmacy,Healthcare,3134.29,completed,Net Banking,none
+TXN000482,ACC0004,6/23/2023 20:25,Meesho,Online Shopping,1581.87,completed,Debit Card,none
+TXN001824,ACC0045,6/23/2023 21:58,Axis ATM,ATM Withdrawal,9007.62,completed,UPI,none
+TXN001678,ACC0020,6/24/2023 0:52,Reliance Digital,Retail,578.73,completed,UPI,none
+TXN001760,ACC0043,6/24/2023 12:22,Ola,Travel,10264.33,completed,Debit Card,none
+TXN001930,ACC0024,6/24/2023 17:36,Myntra,Retail,3238.73,completed,UPI,none
+TXN001337,ACC0027,6/26/2023 4:11,Airtel,Utilities,2633.37,completed,UPI,none
+TXN001545,ACC0014,6/26/2023 5:11,Swiggy,Food & Dining,251.52,completed,UPI,none
+TXN001618,ACC0040,6/26/2023 14:32,Reliance Digital,Retail,1906.99,completed,UPI,none
+TXN001985,ACC0017,6/26/2023 21:41,Amazon,Retail,3243.44,completed,UPI,none
+TXN000116,ACC0004,6/27/2023 0:57,Meesho,Online Shopping,1366.15,completed,Debit Card,none
+TXN000988,ACC0019,6/27/2023 4:53,MakeMyTrip,Travel,9132.53,completed,Net Banking,none
+TXN000817,ACC0015,6/27/2023 6:52,Meesho,Online Shopping,2252.77,completed,UPI,none
+TXN001825,ACC0020,6/27/2023 19:50,Zomato,Food & Dining,671.19,completed,Debit Card,none
+TXN001029,ACC0017,6/28/2023 1:27,DMart,Retail,807.86,completed,UPI,none
+TXN000307,ACC0008,6/28/2023 20:45,Reliance Digital,Retail,4514.72,completed,NEFT,none
+TXN001161,ACC0038,6/29/2023 5:40,Amazon Pay,Online Shopping,3026.22,completed,Debit Card,none
+TXN000188,ACC0047,6/29/2023 17:03,Meesho,Online Shopping,1575.76,completed,Debit Card,none
+TXN001813,ACC0029,6/30/2023 0:16,Zomato,Food & Dining,880.87,completed,Debit Card,none
+TXN001057,ACC0006,6/30/2023 6:51,Paytm Mall,Online Shopping,589.86,completed,Net Banking,none
+TXN001225,ACC0017,6/30/2023 13:41,ICICI ATM,ATM Withdrawal,3885.96,reversed,NEFT,none
+TXN001818,ACC0011,7/3/2023 2:29,McDonald's,Food & Dining,544.56,completed,Debit Card,none
+TXN001426,ACC0035,7/3/2023 9:56,Axis ATM,ATM Withdrawal,7650.51,completed,Debit Card,none
+TXN001895,ACC0035,7/3/2023 14:24,McDonald's,Food & Dining,861.32,completed,Net Banking,none
+TXN000200,ACC0030,7/3/2023 20:52,Nykaa,Online Shopping,3905.94,completed,NEFT,none
+TXN000801,ACC0043,7/4/2023 12:18,Meesho,Online Shopping,4512.82,completed,Net Banking,none
+TXN001145,ACC0041,7/4/2023 15:47,Jio,Utilities,2686.87,completed,Net Banking,none
+TXN000634,ACC0025,7/6/2023 22:29,Myntra,Retail,1842.12,completed,UPI,none
+TXN000839,ACC0048,7/8/2023 4:13,DMart,Retail,3383.89,completed,Net Banking,none
+TXN000843,ACC0007,7/8/2023 18:45,Snapdeal,Online Shopping,780.31,completed,UPI,none
+TXN000249,ACC0046,7/8/2023 21:22,Flipkart,Retail,2139.87,completed,Net Banking,none
+TXN001948,ACC0049,7/9/2023 11:26,Reliance Digital,Retail,2831.38,completed,Debit Card,none
+TXN001356,ACC0017,7/9/2023 14:05,Snapdeal,Online Shopping,5846.36,completed,UPI,none
+TXN001185,ACC0017,7/9/2023 16:07,Myntra,Retail,4492.07,completed,UPI,none
+TXN001194,ACC0028,7/9/2023 22:56,ICICI ATM,ATM Withdrawal,4285.43,completed,UPI,none
+TXN001179,ACC0034,7/10/2023 4:25,MakeMyTrip,Travel,16781.66,completed,UPI,none
+TXN000494,ACC0031,7/10/2023 9:00,Swiggy,Food & Dining,632.97,completed,UPI,none
+TXN000213,ACC0022,7/11/2023 4:56,Max Healthcare,Healthcare,4034.44,completed,Debit Card,none
+TXN000690,ACC0012,7/11/2023 5:03,Indraprastha Gas,Utilities,1985.35,completed,UPI,none
+TXN000964,ACC0037,7/11/2023 21:12,McDonald's,Food & Dining,1127.1,completed,UPI,none
+TXN001767,ACC0007,7/11/2023 21:37,SBI ATM,ATM Withdrawal,3263.62,completed,UPI,none
+TXN001741,ACC0015,7/12/2023 7:02,Flipkart,Retail,4099.79,completed,Debit Card,none
+TXN001386,ACC0034,7/12/2023 7:36,Uber,Travel,14668.79,completed,UPI,none
+TXN000832,ACC0026,7/12/2023 21:25,Airtel,Utilities,1584.24,reversed,Net Banking,none
+TXN001202,ACC0028,7/13/2023 14:37,Amazon Pay,Online Shopping,361.55,failed,UPI,none
+TXN000806,ACC0035,7/13/2023 18:15,Myntra,Retail,2255.14,completed,Net Banking,none
+TXN001235,ACC0020,7/14/2023 3:15,Swiggy,Food & Dining,524.59,completed,NEFT,none
+TXN000023,ACC0049,7/14/2023 15:16,Amazon,Retail,2138.41,reversed,UPI,none
+TXN001905,ACC0001,7/14/2023 15:34,Swiggy,Food & Dining,532.31,completed,UPI,none
+TXN000507,ACC0011,7/15/2023 5:54,Amazon,Retail,295.02,completed,Debit Card,none
+TXN000943,ACC0016,7/15/2023 11:27,Airtel,Utilities,756.32,completed,Debit Card,none
+TXN000064,ACC0050,7/15/2023 23:59,Jio,Utilities,2232.23,failed,UPI,none
+TXN000897,ACC0020,7/16/2023 17:02,DMart,Retail,2650.21,completed,Net Banking,none
+TXN000458,ACC0008,7/17/2023 8:17,Amazon Pay,Online Shopping,3755.04,completed,UPI,none
+TXN001616,ACC0030,7/17/2023 19:05,Indraprastha Gas,Utilities,894.26,completed,NEFT,none
+TXN000190,ACC0025,7/17/2023 23:08,Amazon Pay,Online Shopping,2175.59,completed,UPI,none
+TXN001477,ACC0039,7/18/2023 2:55,Amazon,Retail,2204.67,completed,Net Banking,none
+TXN001268,ACC0031,7/18/2023 13:26,HDFC ATM,ATM Withdrawal,6485.21,completed,Debit Card,none
+TXN001808,ACC0024,7/19/2023 1:02,Reliance Digital,Retail,4461.53,completed,Debit Card,none
+TXN001183,ACC0012,7/19/2023 17:13,McDonald's,Food & Dining,1270.24,completed,UPI,none
+TXN001302,ACC0002,7/19/2023 17:50,Myntra,Retail,3537.24,completed,UPI,none
+TXN001001,ACC0041,7/20/2023 3:46,Uber,Travel,4532.55,completed,UPI,none
+TXN000937,ACC0031,7/20/2023 10:50,Amazon,Retail,4214.62,reversed,UPI,none
+TXN001331,ACC0035,7/20/2023 12:45,Swiggy,Food & Dining,805,completed,Debit Card,none
+TXN001464,ACC0015,7/20/2023 14:02,ICICI ATM,ATM Withdrawal,2585.75,completed,Debit Card,none
+TXN001585,ACC0049,7/20/2023 16:04,Swiggy,Food & Dining,1169.94,completed,UPI,none
+TXN001534,ACC0023,7/20/2023 23:21,Swiggy,Food & Dining,220.75,completed,Debit Card,none
+TXN001800,ACC0007,7/21/2023 2:51,Uber,Travel,4169.9,completed,NEFT,none
+TXN001613,ACC0008,7/21/2023 14:40,Paytm Mall,Online Shopping,5046.84,completed,Debit Card,none
+TXN000513,ACC0026,7/21/2023 17:39,SBI ATM,ATM Withdrawal,7640.96,completed,UPI,none
+TXN001056,ACC0030,7/21/2023 19:48,Axis ATM,ATM Withdrawal,2084.34,completed,NEFT,none
+TXN001230,ACC0041,7/22/2023 7:47,Reliance Digital,Retail,3188.24,completed,NEFT,none
+TXN000916,ACC0012,7/22/2023 10:30,Flipkart,Retail,771.3,completed,UPI,none
+TXN000623,ACC0049,7/22/2023 20:18,Airtel,Utilities,1362.71,reversed,Debit Card,none
+TXN000379,ACC0047,7/22/2023 22:05,Axis ATM,ATM Withdrawal,5657.02,completed,UPI,none
+TXN000480,ACC0001,7/23/2023 11:04,Starbucks,Food & Dining,1286.18,completed,NEFT,none
+TXN001735,ACC0011,7/23/2023 15:07,Myntra,Retail,3356.33,completed,UPI,none
+TXN000746,ACC0025,7/23/2023 19:20,NDMC,Utilities,1092.31,completed,Net Banking,none
+TXN001381,ACC0010,7/23/2023 20:22,Axis ATM,ATM Withdrawal,3168.97,completed,UPI,none
+TXN001281,ACC0016,7/25/2023 15:36,Swiggy,Food & Dining,1276,reversed,Net Banking,none
+TXN001662,ACC0009,7/26/2023 0:27,MedPlus,Healthcare,538.96,completed,Debit Card,none
+TXN000113,ACC0031,7/26/2023 3:21,Amazon Pay,Online Shopping,757.33,completed,NEFT,none
+TXN000382,ACC0034,7/26/2023 3:43,Starbucks,Food & Dining,1430.74,completed,Debit Card,none
+TXN001251,ACC0045,7/26/2023 3:53,MedPlus,Healthcare,3583.47,completed,UPI,none
+TXN001294,ACC0015,7/26/2023 3:55,IRCTC,Travel,17483.87,completed,UPI,none
+TXN000600,ACC0023,7/26/2023 3:57,Airtel,Utilities,507.85,completed,NEFT,none
+TXN000517,ACC0027,7/26/2023 8:40,Myntra,Retail,1991.65,completed,Debit Card,none
+TXN000997,ACC0006,7/26/2023 11:59,Zomato,Food & Dining,1478.41,completed,Debit Card,none
+TXN000739,ACC0013,7/27/2023 1:48,SBI ATM,ATM Withdrawal,6020.86,completed,UPI,none
+TXN001468,ACC0027,7/27/2023 8:50,Uber,Travel,10336.21,completed,UPI,none
+TXN001871,ACC0014,7/28/2023 0:47,MakeMyTrip,Travel,14822.13,completed,Debit Card,none
+TXN001352,ACC0010,7/28/2023 10:56,Zomato,Food & Dining,1224.57,failed,Debit Card,none
+TXN000710,ACC0031,7/28/2023 11:29,Snapdeal,Online Shopping,3637.85,completed,Debit Card,none
+TXN000326,ACC0019,7/28/2023 13:41,IRCTC,Travel,12187.69,completed,UPI,none
+TXN000293,ACC0038,7/29/2023 4:47,DMart,Retail,3194.7,completed,Net Banking,none
+TXN001836,ACC0019,7/29/2023 11:01,Myntra,Retail,3533.8,completed,Net Banking,none
+TXN001472,ACC0011,7/29/2023 11:50,Starbucks,Food & Dining,399.24,completed,Net Banking,none
+TXN001935,ACC0013,7/30/2023 0:00,DMart,Retail,4149.35,completed,Debit Card,none
+TXN000121,ACC0012,7/30/2023 4:53,Myntra,Retail,4704.03,completed,Debit Card,none
+TXN000682,ACC0016,7/30/2023 14:00,Max Healthcare,Healthcare,4601.01,completed,NEFT,none
+TXN000457,ACC0007,7/31/2023 12:32,Apollo Pharmacy,Healthcare,5242.38,completed,UPI,none
+TXN001906,ACC0014,7/31/2023 14:22,Zomato,Food & Dining,1003.19,completed,NEFT,none
+TXN000478,ACC0020,8/1/2023 0:19,Amazon Pay,Online Shopping,3922.03,completed,UPI,none
+TXN001298,ACC0003,8/1/2023 6:54,Amazon,Retail,879.3,failed,Debit Card,none
+TXN000579,ACC0002,8/1/2023 8:41,ICICI ATM,ATM Withdrawal,7597.03,completed,Debit Card,none
+TXN001325,ACC0042,8/1/2023 9:37,Airtel,Utilities,838.1,completed,Debit Card,none
+TXN000756,ACC0042,8/1/2023 15:15,Myntra,Retail,4171.99,completed,Debit Card,none
+TXN001100,ACC0016,8/1/2023 21:01,Apollo Pharmacy,Healthcare,6381.81,completed,NEFT,none
+TXN001518,ACC0048,8/1/2023 23:02,IRCTC,Travel,11404.12,completed,UPI,none
+TXN001042,ACC0002,8/3/2023 2:35,Nykaa,Online Shopping,1426.83,completed,UPI,none
+TXN001681,ACC0049,8/3/2023 4:10,Snapdeal,Online Shopping,3652.09,completed,Debit Card,none
+TXN000456,ACC0007,8/5/2023 0:29,DMart,Retail,1840.66,completed,Debit Card,none
+TXN001207,ACC0032,8/5/2023 4:06,Meesho,Online Shopping,739.72,completed,UPI,none
+TXN000049,ACC0008,8/6/2023 3:53,Starbucks,Food & Dining,557.31,completed,NEFT,none
+TXN001620,ACC0009,8/6/2023 9:20,Myntra,Retail,2112.81,completed,UPI,none
+TXN000151,ACC0023,8/6/2023 15:16,Paytm Mall,Online Shopping,787.4,completed,UPI,none
+TXN001357,ACC0037,8/7/2023 14:48,Uber,Travel,15010.47,completed,Debit Card,none
+TXN000277,ACC0040,8/7/2023 19:01,Meesho,Online Shopping,983.03,reversed,NEFT,none
+TXN001285,ACC0017,8/7/2023 23:19,DMart,Retail,1738.57,reversed,UPI,none
+TXN000552,ACC0009,8/8/2023 1:16,MakeMyTrip,Travel,14760.67,completed,Debit Card,none
+TXN000947,ACC0048,8/8/2023 3:52,MedPlus,Healthcare,2870.68,completed,Net Banking,none
+TXN000013,ACC0005,8/9/2023 0:16,Ola,Travel,15908.42,completed,UPI,none
+TXN001363,ACC0009,8/9/2023 0:53,McDonald's,Food & Dining,298.58,completed,Debit Card,none
+TXN001423,ACC0015,8/9/2023 9:19,Myntra,Retail,3412.43,completed,UPI,none
+TXN001385,ACC0012,8/10/2023 18:38,Axis ATM,ATM Withdrawal,1142.54,completed,UPI,none
+TXN000574,ACC0031,8/11/2023 8:29,Nykaa,Online Shopping,2161.84,completed,Net Banking,none
+TXN001879,ACC0006,8/11/2023 10:12,IRCTC,Travel,15828.96,completed,UPI,none
+TXN000750,ACC0033,8/12/2023 0:55,Nykaa,Online Shopping,2694.06,completed,UPI,none
+TXN000486,ACC0015,8/12/2023 12:36,Ola,Travel,1845.65,completed,UPI,none
+TXN001226,ACC0006,8/12/2023 17:16,SBI ATM,ATM Withdrawal,3306.63,completed,UPI,none
+TXN001321,ACC0004,8/13/2023 12:05,Starbucks,Food & Dining,678.85,completed,UPI,none
+TXN000849,ACC0006,8/13/2023 20:35,SBI ATM,ATM Withdrawal,7490.19,completed,Debit Card,none
+TXN000009,ACC0034,8/13/2023 22:48,Flipkart,Retail,3920.64,failed,Debit Card,none
+TXN001303,ACC0022,8/14/2023 7:49,Swiggy,Food & Dining,107.49,failed,UPI,none
+TXN000455,ACC0042,8/14/2023 8:20,ICICI ATM,ATM Withdrawal,6178.2,completed,UPI,none
+TXN000093,ACC0003,8/14/2023 14:38,Flipkart,Retail,2591.19,completed,Net Banking,none
+TXN001371,ACC0036,8/15/2023 13:49,Myntra,Retail,4681.35,completed,Debit Card,none
+TXN001345,ACC0049,8/15/2023 15:05,Flipkart,Retail,2677.99,completed,Debit Card,none
+TXN001821,ACC0026,8/15/2023 15:24,DMart,Retail,665.37,completed,UPI,none
+TXN000106,ACC0007,8/16/2023 18:20,Café Coffee Day,Food & Dining,187.28,completed,Debit Card,none
+TXN000667,ACC0002,8/17/2023 2:39,BSES Yamuna,Utilities,1078.69,completed,NEFT,none
+TXN000753,ACC0022,8/17/2023 17:48,Reliance Digital,Retail,3704.83,completed,UPI,none
+TXN000718,ACC0042,8/17/2023 21:19,Amazon,Retail,2191.16,completed,UPI,none
+TXN000638,ACC0049,8/18/2023 2:47,IRCTC,Travel,11431.31,completed,Net Banking,none
+TXN000876,ACC0012,8/19/2023 15:10,Reliance Digital,Retail,4887.76,completed,UPI,none
+TXN000119,ACC0020,8/19/2023 16:30,SBI ATM,ATM Withdrawal,7161.14,completed,UPI,none
+TXN000459,ACC0034,8/20/2023 4:42,Amazon,Retail,4699.42,completed,Debit Card,none
+TXN001792,ACC0002,8/20/2023 6:36,Café Coffee Day,Food & Dining,526.11,completed,Debit Card,none
+TXN001399,ACC0041,8/20/2023 10:00,HDFC ATM,ATM Withdrawal,1255.04,completed,UPI,none
+TXN000767,ACC0016,8/20/2023 10:40,Indraprastha Gas,Utilities,2831.88,completed,Net Banking,none
+TXN000312,ACC0021,8/20/2023 11:45,Myntra,Retail,4457.24,completed,UPI,none
+TXN001524,ACC0001,8/20/2023 16:48,Meesho,Online Shopping,3914.32,completed,UPI,none
+TXN001940,ACC0036,8/21/2023 16:17,Axis ATM,ATM Withdrawal,7086.1,completed,Net Banking,none
+TXN001209,ACC0038,8/21/2023 18:55,NDMC,Utilities,2342.66,completed,Debit Card,none
+TXN000978,ACC0003,8/21/2023 19:44,Swiggy,Food & Dining,579.12,completed,Debit Card,none
+TXN000983,ACC0012,8/22/2023 6:25,Paytm Mall,Online Shopping,5378.82,completed,UPI,none
+TXN000131,ACC0031,8/22/2023 6:36,Café Coffee Day,Food & Dining,1108.05,completed,Debit Card,none
+TXN000582,ACC0011,8/22/2023 23:33,HDFC ATM,ATM Withdrawal,1480.13,completed,Debit Card,none
+TXN000087,ACC0050,8/23/2023 6:40,HDFC ATM,ATM Withdrawal,9394.56,completed,UPI,none
+TXN000530,ACC0033,8/23/2023 16:28,Amazon Pay,Online Shopping,5231.6,completed,UPI,none
+TXN001643,ACC0009,8/24/2023 4:54,Fortis Hospital,Healthcare,4178.47,completed,UPI,none
+TXN001073,ACC0036,8/24/2023 5:44,Café Coffee Day,Food & Dining,535.67,completed,UPI,none
+TXN001500,ACC0014,8/24/2023 7:32,Fortis Hospital,Healthcare,2712.23,completed,NEFT,none
+TXN001739,ACC0008,8/24/2023 20:11,Myntra,Retail,2250.11,completed,Net Banking,none
+TXN001031,ACC0035,8/25/2023 3:21,DMart,Retail,3571.51,completed,Debit Card,none
+TXN000523,ACC0015,8/25/2023 5:43,Amazon,Retail,2283.3,completed,Debit Card,none
+TXN000912,ACC0044,8/25/2023 12:25,Jio,Utilities,2871.3,completed,Net Banking,none
+TXN001546,ACC0043,8/25/2023 13:53,Zomato,Food & Dining,1295.53,completed,UPI,none
+TXN000717,ACC0016,8/25/2023 20:49,Reliance Digital,Retail,4989.2,completed,UPI,none
+TXN001439,ACC0047,8/26/2023 0:29,Café Coffee Day,Food & Dining,857.87,completed,Net Banking,none
+TXN001513,ACC0036,8/26/2023 7:12,BSES Yamuna,Utilities,1885.81,completed,Debit Card,none
+TXN001454,ACC0018,8/26/2023 10:42,Amazon,Retail,4933.12,completed,Net Banking,none
+TXN001754,ACC0034,8/26/2023 14:46,Airtel,Utilities,989.17,completed,UPI,none
+TXN000503,ACC0040,8/27/2023 7:08,Swiggy,Food & Dining,848.01,completed,UPI,none
+TXN000643,ACC0001,8/27/2023 19:23,Jio,Utilities,568.13,completed,NEFT,none
+TXN000465,ACC0033,8/28/2023 1:30,Reliance Digital,Retail,1305.2,completed,Net Banking,none
+TXN000407,ACC0042,8/28/2023 1:41,Myntra,Retail,2062.34,completed,Net Banking,none
+TXN000239,ACC0037,8/28/2023 16:40,Flipkart,Retail,790.26,completed,UPI,none
+TXN001934,ACC0016,8/28/2023 17:21,IndiGo Airlines,Travel,13884.26,completed,UPI,none
+TXN000866,ACC0015,8/29/2023 11:39,Reliance Digital,Retail,4049.78,completed,UPI,none
+TXN001317,ACC0035,8/30/2023 0:08,IRCTC,Travel,5510.57,completed,UPI,none
+TXN001708,ACC0013,8/30/2023 21:54,Myntra,Retail,550.25,completed,Net Banking,none
+TXN001669,ACC0018,8/31/2023 5:01,DMart,Retail,1161.68,completed,Debit Card,none
+TXN001916,ACC0047,8/31/2023 5:49,Flipkart,Retail,2258.5,completed,UPI,none
+TXN000537,ACC0023,8/31/2023 16:45,ICICI ATM,ATM Withdrawal,5635.05,completed,UPI,none
+TXN000281,ACC0023,8/31/2023 22:26,McDonald's,Food & Dining,655.77,completed,Debit Card,none
+TXN001221,ACC0033,9/1/2023 6:27,Flipkart,Retail,2895.6,completed,UPI,none
+TXN001750,ACC0035,9/1/2023 12:28,Nykaa,Online Shopping,582.86,completed,UPI,none
+TXN000631,ACC0024,9/1/2023 23:17,IRCTC,Travel,3955.25,completed,NEFT,none
+TXN000001,ACC0008,9/2/2023 0:03,Café Coffee Day,Food & Dining,356.81,completed,UPI,none
+TXN000960,ACC0023,9/2/2023 0:58,BSES Yamuna,Utilities,1386.37,completed,NEFT,none
+TXN001970,ACC0034,9/2/2023 1:51,Myntra,Retail,3161.04,completed,UPI,none
+TXN000143,ACC0030,9/2/2023 6:31,Amazon,Retail,1687.7,completed,Net Banking,none
+TXN001860,ACC0019,9/2/2023 8:00,Swiggy,Food & Dining,1263.58,completed,UPI,none
+TXN001078,ACC0050,9/2/2023 8:16,ICICI ATM,ATM Withdrawal,3517.9,completed,UPI,none
+TXN000791,ACC0029,9/2/2023 12:24,Starbucks,Food & Dining,838.59,completed,Debit Card,none
+TXN000364,ACC0020,9/2/2023 13:28,Snapdeal,Online Shopping,3914.61,completed,UPI,none
+TXN000440,ACC0001,9/3/2023 1:37,IndiGo Airlines,Travel,18652.3,completed,Net Banking,none
+TXN001968,ACC0036,9/3/2023 4:01,Paytm Mall,Online Shopping,2040.84,reversed,UPI,none
+TXN001106,ACC0046,9/3/2023 4:45,Ola,Travel,11302.41,completed,Net Banking,none
+TXN000575,ACC0016,9/3/2023 15:27,ICICI ATM,ATM Withdrawal,6140.46,completed,NEFT,none
+TXN001080,ACC0029,9/3/2023 16:50,Zomato,Food & Dining,716.52,completed,UPI,none
+TXN001007,ACC0035,9/3/2023 17:28,DMart,Retail,4770.85,completed,Debit Card,none
+TXN000152,ACC0001,9/3/2023 17:53,Max Healthcare,Healthcare,5690.78,completed,UPI,none
+TXN001523,ACC0020,9/3/2023 20:15,Ola,Travel,16748.85,completed,UPI,none
+TXN000740,ACC0049,9/3/2023 22:12,Amazon,Retail,4533.27,completed,UPI,none
+TXN000632,ACC0044,9/3/2023 22:35,Snapdeal,Online Shopping,1510.95,completed,Net Banking,none
+TXN001359,ACC0022,9/4/2023 6:02,Starbucks,Food & Dining,999.88,completed,UPI,none
+TXN001718,ACC0040,9/4/2023 14:09,Swiggy,Food & Dining,626.34,completed,Net Banking,none
+TXN001983,ACC0001,9/5/2023 7:44,Café Coffee Day,Food & Dining,701.05,completed,Debit Card,none
+TXN001772,ACC0045,9/6/2023 2:51,Swiggy,Food & Dining,878.48,completed,UPI,none
+TXN000914,ACC0039,9/6/2023 9:59,Ola,Travel,12342.83,completed,Debit Card,none
+TXN001707,ACC0032,9/6/2023 10:36,Flipkart,Retail,3785.64,completed,UPI,none
+TXN001817,ACC0013,9/7/2023 0:32,Meesho,Online Shopping,4568.83,completed,NEFT,none
+TXN001180,ACC0015,9/7/2023 2:38,Café Coffee Day,Food & Dining,1425.66,completed,UPI,none
+TXN000679,ACC0004,9/7/2023 11:49,Myntra,Retail,1930.28,reversed,UPI,none
+TXN000724,ACC0004,9/7/2023 19:04,Myntra,Retail,2277.3,completed,NEFT,none
+TXN000424,ACC0003,9/8/2023 3:55,DMart,Retail,346.64,completed,Debit Card,none
+TXN001787,ACC0009,9/9/2023 5:37,DMart,Retail,1211.03,completed,UPI,none
+TXN000334,ACC0021,9/9/2023 15:03,Café Coffee Day,Food & Dining,773.27,failed,Debit Card,none
+TXN001254,ACC0031,9/9/2023 19:10,IRCTC,Travel,4714.46,completed,Net Banking,none
+TXN001573,ACC0016,9/9/2023 22:35,McDonald's,Food & Dining,204.06,completed,UPI,none
+TXN000347,ACC0035,9/10/2023 14:33,Starbucks,Food & Dining,598.36,completed,Debit Card,none
+TXN000182,ACC0037,9/11/2023 6:35,Uber,Travel,19150.11,completed,Debit Card,none
+TXN000780,ACC0046,9/11/2023 12:35,MakeMyTrip,Travel,1548.56,completed,UPI,none
+TXN001471,ACC0033,9/11/2023 15:45,IRCTC,Travel,4791.29,completed,Debit Card,none
+TXN001939,ACC0018,9/11/2023 22:57,Café Coffee Day,Food & Dining,785.59,completed,Debit Card,none
+TXN000473,ACC0001,9/12/2023 0:02,Nykaa,Online Shopping,1709.84,completed,UPI,none
+TXN001852,ACC0036,9/12/2023 4:34,Uber,Travel,14233.54,completed,Debit Card,none
+TXN001986,ACC0042,9/12/2023 4:54,DMart,Retail,4032.77,completed,UPI,none
+TXN000305,ACC0019,9/12/2023 13:07,Airtel,Utilities,2926.87,completed,UPI,none
+TXN001929,ACC0037,9/12/2023 16:01,IRCTC,Travel,6979.44,completed,Debit Card,none
+TXN000244,ACC0047,9/12/2023 19:29,DMart,Retail,4824.06,completed,NEFT,none
+TXN000742,ACC0023,9/13/2023 0:43,Amazon Pay,Online Shopping,1246.63,completed,Debit Card,none
+TXN001324,ACC0030,9/13/2023 5:18,Café Coffee Day,Food & Dining,119.1,completed,Net Banking,none
+TXN000781,ACC0038,9/13/2023 11:49,Jio,Utilities,2505.99,completed,NEFT,none
+TXN001561,ACC0019,9/13/2023 18:10,Paytm Mall,Online Shopping,1680.52,completed,UPI,none
+TXN001773,ACC0028,9/14/2023 7:35,BSES Yamuna,Utilities,1860.5,completed,Debit Card,none
+TXN001519,ACC0014,9/14/2023 9:59,Amazon,Retail,1575.97,completed,UPI,none
+TXN001257,ACC0031,9/14/2023 12:34,NDMC,Utilities,2583.94,failed,Debit Card,none
+TXN_BURST_0,ACC0006,9/14/2023 14:00,Paytm Mall,Online Shopping,935.78,completed,UPI,velocity_burst
+TXN_BURST_1,ACC0006,9/14/2023 14:03,Paytm Mall,Online Shopping,1039,completed,UPI,velocity_burst
+TXN_BURST_2,ACC0006,9/14/2023 14:06,Paytm Mall,Online Shopping,605.69,completed,UPI,velocity_burst
+TXN_BURST_3,ACC0006,9/14/2023 14:09,Paytm Mall,Online Shopping,894.43,completed,UPI,velocity_burst
+TXN_BURST_4,ACC0006,9/14/2023 14:12,Paytm Mall,Online Shopping,768.05,completed,UPI,velocity_burst
+TXN_BURST_5,ACC0006,9/14/2023 14:15,Paytm Mall,Online Shopping,1025.95,completed,UPI,velocity_burst
+TXN_BURST_6,ACC0006,9/14/2023 14:18,Paytm Mall,Online Shopping,647.4,completed,UPI,velocity_burst
+TXN_BURST_7,ACC0006,9/14/2023 14:21,Paytm Mall,Online Shopping,914.54,completed,UPI,velocity_burst
+TXN001815,ACC0007,9/14/2023 18:30,IndiGo Airlines,Travel,5417.9,completed,UPI,none
+TXN001364,ACC0006,9/15/2023 1:03,MakeMyTrip,Travel,8607.6,completed,UPI,none
+TXN000345,ACC0046,9/15/2023 6:46,MakeMyTrip,Travel,12451.55,completed,UPI,none
+TXN001220,ACC0022,9/15/2023 14:38,Starbucks,Food & Dining,523.19,reversed,Net Banking,none
+TXN001978,ACC0018,9/15/2023 18:25,Snapdeal,Online Shopping,641.58,completed,UPI,none
+TXN000025,ACC0001,9/15/2023 20:12,DMart,Retail,1856.34,completed,Debit Card,none
+TXN001355,ACC0021,9/17/2023 10:03,DMart,Retail,4397.19,completed,UPI,none
+TXN001008,ACC0028,9/17/2023 12:10,MedPlus,Healthcare,3317.33,completed,UPI,none
+TXN001677,ACC0045,9/17/2023 19:11,Max Healthcare,Healthcare,7021.14,failed,UPI,none
+TXN001368,ACC0016,9/18/2023 3:15,IndiGo Airlines,Travel,13853.08,reversed,Debit Card,none
+TXN000078,ACC0003,9/18/2023 16:03,Amazon,Retail,3772.22,completed,UPI,none
+TXN001538,ACC0049,9/18/2023 21:05,NDMC,Utilities,1669.62,failed,UPI,none
+TXN001408,ACC0012,9/19/2023 2:37,Paytm Mall,Online Shopping,3425.89,completed,UPI,none
+TXN000167,ACC0030,9/19/2023 4:02,Reliance Digital,Retail,3534.54,completed,UPI,none
+TXN000790,ACC0030,9/19/2023 17:03,NDMC,Utilities,848.14,completed,NEFT,none
+TXN000525,ACC0032,9/20/2023 0:54,IndiGo Airlines,Travel,17610.67,completed,UPI,none
+TXN000535,ACC0005,9/20/2023 2:12,Café Coffee Day,Food & Dining,324.65,completed,Debit Card,none
+TXN001011,ACC0033,9/20/2023 6:02,Amazon Pay,Online Shopping,1151.48,completed,Net Banking,none
+TXN001764,ACC0037,9/20/2023 12:44,DMart,Retail,2412.67,completed,Debit Card,none
+TXN000114,ACC0004,9/21/2023 11:09,Nykaa,Online Shopping,5825.98,completed,UPI,none
+TXN000601,ACC0034,9/21/2023 18:48,Zomato,Food & Dining,494.69,completed,UPI,none
+TXN000714,ACC0004,9/22/2023 1:43,Amazon,Retail,4880.86,failed,Debit Card,none
+TXN001421,ACC0016,9/22/2023 15:42,DMart,Retail,207.58,completed,Debit Card,none
+TXN001509,ACC0023,9/22/2023 16:00,Max Healthcare,Healthcare,3308.81,completed,Net Banking,none
+TXN001181,ACC0018,9/22/2023 19:13,HDFC ATM,ATM Withdrawal,4640.42,completed,Net Banking,none
+TXN001248,ACC0046,9/22/2023 20:46,IndiGo Airlines,Travel,4071.81,completed,Debit Card,none
+TXN001458,ACC0037,9/23/2023 0:41,Apollo Pharmacy,Healthcare,3703.36,completed,Debit Card,none
+TXN000250,ACC0045,9/23/2023 3:58,Amazon Pay,Online Shopping,2108.02,completed,UPI,none
+TXN001666,ACC0022,9/23/2023 21:59,McDonald's,Food & Dining,911.69,completed,Debit Card,none
+TXN000356,ACC0012,9/24/2023 5:09,ICICI ATM,ATM Withdrawal,8941.75,completed,NEFT,none
+TXN000201,ACC0017,9/24/2023 9:53,IRCTC,Travel,18972.31,completed,Debit Card,none
+TXN001637,ACC0011,9/24/2023 20:31,Amazon Pay,Online Shopping,1438.21,completed,UPI,none
+TXN000138,ACC0026,9/25/2023 3:38,Jio,Utilities,2469.47,completed,UPI,none
+TXN001358,ACC0032,9/25/2023 20:57,MakeMyTrip,Travel,2699.54,completed,Net Banking,none
+TXN001497,ACC0045,9/27/2023 3:15,NDMC,Utilities,2543.53,failed,NEFT,none
+TXN001604,ACC0031,9/27/2023 11:02,Myntra,Retail,969.48,completed,UPI,none
+TXN001189,ACC0011,9/27/2023 12:38,Uber,Travel,12020.91,completed,NEFT,none
+TXN001993,ACC0044,9/27/2023 13:05,ICICI ATM,ATM Withdrawal,7808.01,completed,Net Banking,none
+TXN000056,ACC0005,9/27/2023 14:52,Amazon,Retail,1694.78,completed,Net Banking,none
+TXN001990,ACC0047,9/27/2023 17:14,Apollo Pharmacy,Healthcare,7001.83,completed,UPI,none
+TXN001184,ACC0023,9/28/2023 1:33,Paytm Mall,Online Shopping,1391.67,completed,UPI,none
+TXN000559,ACC0002,9/28/2023 3:21,Airtel,Utilities,1448.07,completed,UPI,none
+TXN001501,ACC0004,9/28/2023 6:55,Café Coffee Day,Food & Dining,573.94,completed,Debit Card,none
+TXN000712,ACC0047,9/28/2023 19:05,Myntra,Retail,4087.64,completed,NEFT,none
+TXN000406,ACC0024,9/29/2023 4:12,DMart,Retail,1296.74,completed,UPI,none
+TXN001628,ACC0007,9/29/2023 9:50,McDonald's,Food & Dining,843.05,completed,UPI,none
+TXN001389,ACC0050,9/29/2023 18:12,Flipkart,Retail,225.51,completed,Debit Card,none
+TXN001854,ACC0008,9/29/2023 20:56,NDMC,Utilities,675.59,completed,Debit Card,none
+TXN000036,ACC0008,9/30/2023 2:01,DMart,Retail,1058.35,completed,UPI,none
+TXN000641,ACC0013,9/30/2023 3:05,Starbucks,Food & Dining,1322.35,completed,Debit Card,none
+TXN000873,ACC0014,9/30/2023 9:24,Flipkart,Retail,2542.96,failed,UPI,none
+TXN000185,ACC0026,9/30/2023 12:12,Myntra,Retail,1047.33,completed,Net Banking,none
+TXN000165,ACC0026,9/30/2023 18:36,ICICI ATM,ATM Withdrawal,4008.2,completed,UPI,none
+TXN001015,ACC0025,9/30/2023 19:02,Café Coffee Day,Food & Dining,100.88,failed,Net Banking,none
+TXN000487,ACC0029,10/1/2023 7:09,Meesho,Online Shopping,4442.47,completed,Net Banking,none
+TXN000412,ACC0046,10/2/2023 0:27,IRCTC,Travel,1624.13,completed,NEFT,none
+TXN000917,ACC0017,10/2/2023 6:20,Paytm Mall,Online Shopping,1951.45,completed,UPI,none
+TXN000528,ACC0013,10/2/2023 9:01,Snapdeal,Online Shopping,3112.96,completed,Debit Card,none
+TXN000650,ACC0047,10/2/2023 18:50,McDonald's,Food & Dining,1183,completed,Debit Card,none
+TXN001952,ACC0039,10/2/2023 18:54,BSES Yamuna,Utilities,717.58,completed,UPI,none
+TXN001296,ACC0036,10/2/2023 19:10,Myntra,Retail,1027.74,completed,Debit Card,none
+TXN001721,ACC0042,10/2/2023 20:51,McDonald's,Food & Dining,396.52,completed,UPI,none
+TXN000067,ACC0013,10/3/2023 2:01,Max Healthcare,Healthcare,3546.15,completed,UPI,none
+TXN000862,ACC0016,10/3/2023 9:00,Ola,Travel,4428.55,completed,UPI,none
+TXN000758,ACC0028,10/3/2023 20:33,Starbucks,Food & Dining,465.87,completed,UPI,none
+TXN000779,ACC0025,10/4/2023 19:37,Paytm Mall,Online Shopping,4658.51,completed,NEFT,none
+TXN001532,ACC0005,10/5/2023 14:56,NDMC,Utilities,2062.57,completed,Debit Card,none
+TXN001943,ACC0036,10/6/2023 4:53,Meesho,Online Shopping,5171.02,completed,UPI,none
+TXN000561,ACC0039,10/6/2023 7:10,Apollo Pharmacy,Healthcare,4264.37,completed,UPI,none
+TXN000772,ACC0039,10/6/2023 8:59,ICICI ATM,ATM Withdrawal,9789.05,failed,UPI,none
+TXN000732,ACC0029,10/6/2023 19:49,Reliance Digital,Retail,1894.89,completed,Net Banking,none
+TXN000547,ACC0010,10/7/2023 2:38,Swiggy,Food & Dining,857.27,completed,UPI,none
+TXN001121,ACC0028,10/7/2023 22:54,Myntra,Retail,2170.87,completed,Net Banking,none
+TXN001095,ACC0021,10/8/2023 2:04,Swiggy,Food & Dining,644.14,failed,UPI,none
+TXN001748,ACC0021,10/8/2023 21:04,Nykaa,Online Shopping,3728.83,reversed,Debit Card,none
+TXN001989,ACC0049,10/8/2023 23:13,Uber,Travel,8749.21,completed,Debit Card,none
+TXN000043,ACC0032,10/10/2023 7:08,HDFC ATM,ATM Withdrawal,1874.59,completed,UPI,none
+TXN001398,ACC0037,10/11/2023 6:09,Uber,Travel,2319.31,completed,Net Banking,none
+TXN000923,ACC0039,10/11/2023 7:38,Café Coffee Day,Food & Dining,1070.09,completed,Debit Card,none
+TXN001886,ACC0039,10/11/2023 18:14,BSES Yamuna,Utilities,2084.54,completed,UPI,none
+TXN001459,ACC0044,10/13/2023 0:03,Myntra,Retail,3886.24,completed,UPI,none
+TXN001917,ACC0001,10/13/2023 2:20,MakeMyTrip,Travel,11379.07,completed,UPI,none
+TXN001446,ACC0006,10/13/2023 3:31,Myntra,Retail,4996.72,completed,Debit Card,none
+TXN001111,ACC0033,10/13/2023 4:16,MakeMyTrip,Travel,9678.67,completed,Net Banking,none
+TXN001631,ACC0045,10/13/2023 12:50,Amazon,Retail,3774.1,completed,Debit Card,none
+TXN000385,ACC0013,10/14/2023 4:57,Starbucks,Food & Dining,389.79,completed,UPI,none
+TXN000269,ACC0039,10/14/2023 16:07,IRCTC,Travel,8849.89,completed,NEFT,none
+TXN001548,ACC0013,10/14/2023 20:40,Myntra,Retail,4686.33,completed,UPI,none
+TXN000929,ACC0029,10/15/2023 10:38,Fortis Hospital,Healthcare,5222.48,completed,Net Banking,none
+TXN000704,ACC0047,10/16/2023 12:33,HDFC ATM,ATM Withdrawal,5174.33,completed,Debit Card,none
+TXN001215,ACC0041,10/16/2023 18:57,Snapdeal,Online Shopping,3388.03,completed,NEFT,none
+TXN001192,ACC0025,10/16/2023 19:44,Amazon Pay,Online Shopping,2602.66,completed,UPI,none
+TXN001043,ACC0030,10/17/2023 10:24,Reliance Digital,Retail,2069.68,completed,UPI,none
+TXN001067,ACC0008,10/18/2023 6:28,Swiggy,Food & Dining,696.82,completed,UPI,none
+TXN000826,ACC0011,10/18/2023 12:40,MedPlus,Healthcare,1805.2,completed,Net Banking,none
+TXN000783,ACC0008,10/18/2023 17:13,Amazon,Retail,3069.63,completed,Debit Card,none
+TXN000619,ACC0012,10/18/2023 17:16,Amazon Pay,Online Shopping,2215.24,completed,NEFT,none
+TXN001097,ACC0004,10/18/2023 17:20,Reliance Digital,Retail,3360.32,completed,UPI,none
+TXN001243,ACC0036,10/18/2023 19:31,Reliance Digital,Retail,2378.46,completed,Debit Card,none
+TXN001316,ACC0013,10/18/2023 21:44,NDMC,Utilities,2965.87,completed,UPI,none
+TXN000508,ACC0005,10/18/2023 23:08,BSES Yamuna,Utilities,2694.96,completed,UPI,none
+TXN000172,ACC0048,10/21/2023 15:20,NDMC,Utilities,2327.56,reversed,NEFT,none
+TXN000702,ACC0027,10/22/2023 11:45,Zomato,Food & Dining,949.99,completed,Debit Card,none
+TXN001568,ACC0003,10/22/2023 16:30,SBI ATM,ATM Withdrawal,1160.5,completed,UPI,none
+TXN000504,ACC0035,10/22/2023 17:11,Café Coffee Day,Food & Dining,1446.12,completed,Net Banking,none
+TXN001805,ACC0035,10/23/2023 1:47,Fortis Hospital,Healthcare,2745.3,completed,Debit Card,none
+TXN001449,ACC0045,10/23/2023 4:21,Reliance Digital,Retail,3086.66,completed,NEFT,none
+TXN000854,ACC0006,10/23/2023 6:32,Indraprastha Gas,Utilities,2801.34,completed,UPI,none
+TXN001168,ACC0027,10/24/2023 21:52,Starbucks,Food & Dining,631.11,completed,Net Banking,none
+TXN000589,ACC0020,10/24/2023 22:04,Flipkart,Retail,605.91,completed,Debit Card,none
+TXN001694,ACC0045,10/25/2023 7:34,Amazon Pay,Online Shopping,4688.96,completed,NEFT,none
+TXN001863,ACC0044,10/25/2023 10:02,ICICI ATM,ATM Withdrawal,7417.25,completed,UPI,none
+TXN001407,ACC0034,10/26/2023 1:39,Nykaa,Online Shopping,5270.32,completed,NEFT,none
+TXN001219,ACC0007,10/26/2023 11:43,DMart,Retail,3630.57,completed,NEFT,none
+TXN000098,ACC0020,10/26/2023 19:07,Swiggy,Food & Dining,788.96,completed,Debit Card,none
+TXN001719,ACC0018,10/27/2023 9:36,Amazon Pay,Online Shopping,1076.53,completed,UPI,none
+TXN000985,ACC0030,10/28/2023 11:35,Flipkart,Retail,1857.27,failed,NEFT,none
+TXN001913,ACC0001,10/28/2023 20:59,Starbucks,Food & Dining,1221.1,failed,UPI,none
+TXN000881,ACC0024,10/29/2023 4:13,Fortis Hospital,Healthcare,257.35,completed,UPI,none
+TXN001556,ACC0012,10/30/2023 15:46,Axis ATM,ATM Withdrawal,5687.46,completed,Debit Card,none
+TXN000453,ACC0024,10/31/2023 13:20,Swiggy,Food & Dining,1368.49,completed,NEFT,none
+TXN001307,ACC0002,11/1/2023 7:39,Apollo Pharmacy,Healthcare,562.18,completed,UPI,none
+TXN001782,ACC0008,11/1/2023 11:30,Ola,Travel,6287.6,failed,NEFT,none
+TXN000222,ACC0020,11/1/2023 13:08,Fortis Hospital,Healthcare,824.9,completed,Net Banking,none
+TXN000959,ACC0043,11/2/2023 4:23,Paytm Mall,Online Shopping,2063.94,completed,NEFT,none
+TXN001465,ACC0033,11/2/2023 10:30,NDMC,Utilities,2015.51,completed,Net Banking,none
+TXN001437,ACC0007,11/3/2023 13:26,Café Coffee Day,Food & Dining,1025.9,completed,Debit Card,none
+TXN001571,ACC0024,11/4/2023 7:16,MakeMyTrip,Travel,7673.02,completed,Net Banking,none
+TXN000877,ACC0034,11/4/2023 19:37,Paytm Mall,Online Shopping,4522.95,completed,Debit Card,none
+TXN000879,ACC0027,11/5/2023 0:22,Zomato,Food & Dining,265.53,completed,Net Banking,none
+TXN000306,ACC0032,11/5/2023 20:11,Café Coffee Day,Food & Dining,1024.42,completed,UPI,none
+TXN000649,ACC0017,11/6/2023 12:54,IRCTC,Travel,19437.44,completed,UPI,none
+TXN001679,ACC0047,11/6/2023 17:58,HDFC ATM,ATM Withdrawal,4961.34,completed,UPI,none
+TXN001210,ACC0006,11/6/2023 20:57,McDonald's,Food & Dining,973.87,completed,UPI,none
+TXN000562,ACC0007,11/6/2023 21:23,Uber,Travel,14973.94,completed,Net Banking,none
+TXN001602,ACC0021,11/7/2023 0:58,Myntra,Retail,4788.89,completed,Debit Card,none
+TXN001416,ACC0042,11/7/2023 1:44,Meesho,Online Shopping,3144.51,completed,Debit Card,none
+TXN001674,ACC0040,11/7/2023 16:40,Café Coffee Day,Food & Dining,1317.87,completed,Debit Card,none
+TXN001883,ACC0040,11/8/2023 0:50,ICICI ATM,ATM Withdrawal,7856.25,completed,UPI,none
+TXN001965,ACC0010,11/8/2023 11:17,IRCTC,Travel,16388.44,completed,UPI,none
+TXN001611,ACC0019,11/10/2023 4:27,Flipkart,Retail,4169.14,completed,UPI,none
+TXN001260,ACC0049,11/10/2023 9:06,SBI ATM,ATM Withdrawal,4451.81,completed,Debit Card,none
+TXN000670,ACC0027,11/10/2023 20:44,HDFC ATM,ATM Withdrawal,1556.97,completed,Net Banking,none
+TXN000567,ACC0049,11/11/2023 5:17,Paytm Mall,Online Shopping,5763.44,completed,Debit Card,none
+TXN000299,ACC0029,11/11/2023 6:09,Ola,Travel,7829.82,completed,NEFT,none
+TXN001837,ACC0034,11/11/2023 15:02,DMart,Retail,1040.97,completed,Debit Card,none
+TXN000696,ACC0045,11/11/2023 15:27,ICICI ATM,ATM Withdrawal,3282.72,completed,NEFT,none
+TXN000784,ACC0027,11/12/2023 12:28,IndiGo Airlines,Travel,1545.88,completed,Net Banking,none
+TXN001110,ACC0033,11/12/2023 15:03,ICICI ATM,ATM Withdrawal,8935.38,completed,UPI,none
+TXN001549,ACC0034,11/13/2023 1:44,Flipkart,Retail,3445.48,completed,Debit Card,none
+TXN000540,ACC0039,11/13/2023 7:26,McDonald's,Food & Dining,1260.42,completed,Net Banking,none
+TXN000587,ACC0013,11/13/2023 21:25,Zomato,Food & Dining,662.64,completed,UPI,none
+TXN001173,ACC0030,11/14/2023 15:31,Amazon,Retail,3863.82,completed,Net Banking,none
+TXN000387,ACC0041,11/14/2023 15:36,Flipkart,Retail,1608.75,completed,UPI,none
+TXN000059,ACC0024,11/14/2023 17:28,Café Coffee Day,Food & Dining,328.11,completed,UPI,none
+TXN000343,ACC0041,11/15/2023 15:37,NDMC,Utilities,2021.32,completed,UPI,none
+TXN001897,ACC0041,11/15/2023 19:37,BSES Yamuna,Utilities,2927.44,completed,UPI,none
+TXN000548,ACC0001,11/16/2023 2:04,McDonald's,Food & Dining,865.36,completed,NEFT,none
+TXN001964,ACC0010,11/16/2023 2:33,McDonald's,Food & Dining,1341.22,completed,Debit Card,none
+TXN000394,ACC0039,11/16/2023 9:42,McDonald's,Food & Dining,596.68,completed,Debit Card,none
+TXN001762,ACC0018,11/16/2023 17:36,ICICI ATM,ATM Withdrawal,9943.96,reversed,Net Banking,none
+TXN000614,ACC0013,11/16/2023 21:30,Fortis Hospital,Healthcare,2057.54,completed,Net Banking,none
+TXN001062,ACC0003,11/16/2023 23:04,Uber,Travel,14117.59,completed,Debit Card,none
+TXN000052,ACC0023,11/17/2023 2:35,Zomato,Food & Dining,135.49,completed,UPI,none
+TXN001601,ACC0028,11/17/2023 9:23,DMart,Retail,1012.79,completed,Debit Card,none
+TXN000542,ACC0032,11/17/2023 14:39,DMart,Retail,2173.25,completed,Debit Card,none
+TXN000297,ACC0037,11/17/2023 17:06,DMart,Retail,1154.51,completed,UPI,none
+TXN000831,ACC0019,11/17/2023 21:41,Zomato,Food & Dining,1384.11,completed,UPI,none
+TXN001122,ACC0041,11/17/2023 22:55,Zomato,Food & Dining,713.23,completed,Debit Card,none
+TXN001927,ACC0040,11/18/2023 4:41,Zomato,Food & Dining,211.46,completed,Debit Card,none
+TXN000341,ACC0044,11/18/2023 6:40,Café Coffee Day,Food & Dining,173.16,completed,Debit Card,none
+TXN001256,ACC0022,11/18/2023 8:28,Zomato,Food & Dining,1002.66,completed,Debit Card,none
+TXN000198,ACC0017,11/18/2023 13:38,Airtel,Utilities,2952.97,completed,Debit Card,none
+TXN000444,ACC0047,11/19/2023 5:41,Airtel,Utilities,2876.93,completed,UPI,none
+TXN001200,ACC0010,11/19/2023 9:52,Flipkart,Retail,3387.68,reversed,Debit Card,none
+TXN001651,ACC0036,11/19/2023 10:24,Flipkart,Retail,3888.32,completed,Debit Card,none
+TXN001495,ACC0029,11/19/2023 10:49,Ola,Travel,9314.85,completed,Debit Card,none
+TXN001077,ACC0047,11/19/2023 14:34,Swiggy,Food & Dining,1003.83,completed,Debit Card,none
+TXN001380,ACC0043,11/19/2023 14:53,Amazon,Retail,4367.83,completed,UPI,none
+TXN000665,ACC0030,11/19/2023 21:30,Amazon Pay,Online Shopping,4235.31,completed,UPI,none
+TXN000369,ACC0035,11/20/2023 16:04,Starbucks,Food & Dining,634.26,reversed,UPI,none
+TXN000965,ACC0041,11/21/2023 7:47,Flipkart,Retail,1899.51,completed,Debit Card,none
+TXN000427,ACC0001,11/21/2023 14:02,Reliance Digital,Retail,4203.89,completed,Net Banking,none
+TXN001853,ACC0040,11/21/2023 18:08,Indraprastha Gas,Utilities,1249.71,completed,Debit Card,none
+TXN000823,ACC0010,11/21/2023 23:02,Zomato,Food & Dining,542.54,completed,UPI,none
+TXN000107,ACC0035,11/22/2023 1:08,Flipkart,Retail,2347.58,completed,UPI,none
+TXN000566,ACC0017,11/22/2023 6:12,Ola,Travel,4164.45,completed,UPI,none
+TXN001888,ACC0028,11/22/2023 6:52,DMart,Retail,3188.28,completed,UPI,none
+TXN000413,ACC0024,11/22/2023 6:59,Fortis Hospital,Healthcare,1488.89,completed,Net Banking,none
+TXN000889,ACC0010,11/22/2023 10:05,DMart,Retail,2361.13,completed,Debit Card,none
+TXN000645,ACC0026,11/23/2023 6:22,Amazon Pay,Online Shopping,2170.62,completed,UPI,none
+TXN001336,ACC0031,11/23/2023 21:05,MakeMyTrip,Travel,9006.77,completed,UPI,none
+TXN001320,ACC0012,11/24/2023 19:53,IndiGo Airlines,Travel,17167.44,completed,UPI,none
+TXN000396,ACC0027,11/25/2023 9:33,Myntra,Retail,3675.07,failed,UPI,none
+TXN000726,ACC0007,11/25/2023 21:24,Paytm Mall,Online Shopping,2049.74,completed,Net Banking,none
+TXN000624,ACC0006,11/26/2023 7:53,Axis ATM,ATM Withdrawal,6375.63,completed,UPI,none
+TXN000232,ACC0005,11/26/2023 17:13,Zomato,Food & Dining,353.37,completed,UPI,none
+TXN001676,ACC0023,11/26/2023 20:01,Fortis Hospital,Healthcare,1974.1,completed,Net Banking,none
+TXN000197,ACC0014,11/26/2023 20:49,Flipkart,Retail,4126.24,completed,UPI,none
+TXN000607,ACC0038,11/27/2023 18:02,Apollo Pharmacy,Healthcare,5984.5,completed,UPI,none
+TXN000625,ACC0004,11/28/2023 5:34,Apollo Pharmacy,Healthcare,7101.87,completed,UPI,none
+TXN001264,ACC0007,11/28/2023 9:11,Meesho,Online Shopping,5759.63,completed,UPI,none
+TXN001448,ACC0005,11/28/2023 13:03,Zomato,Food & Dining,1167.92,completed,Net Banking,none
+TXN001551,ACC0048,11/28/2023 16:24,Snapdeal,Online Shopping,5022.13,completed,UPI,none
+TXN000290,ACC0034,11/28/2023 20:05,McDonald's,Food & Dining,890.22,completed,Debit Card,none
+TXN001539,ACC0026,11/29/2023 1:12,HDFC ATM,ATM Withdrawal,6264.93,failed,UPI,none
+TXN000940,ACC0038,11/29/2023 2:11,Amazon Pay,Online Shopping,2733.3,failed,UPI,none
+TXN001827,ACC0050,11/29/2023 14:54,Myntra,Retail,4816,completed,UPI,none
+TXN000381,ACC0007,11/29/2023 17:35,Apollo Pharmacy,Healthcare,5188.92,completed,UPI,none
+TXN000392,ACC0018,11/29/2023 18:31,Amazon Pay,Online Shopping,3741.63,completed,UPI,none
+TXN000091,ACC0017,11/30/2023 13:08,IRCTC,Travel,17068.12,completed,UPI,none
+TXN001589,ACC0007,11/30/2023 22:04,DMart,Retail,239.1,completed,UPI,none
+TXN000777,ACC0019,12/1/2023 1:26,Reliance Digital,Retail,2008.05,completed,Debit Card,none
+TXN000518,ACC0002,12/1/2023 2:02,Fortis Hospital,Healthcare,2314.55,completed,UPI,none
+TXN000498,ACC0039,12/1/2023 3:11,Swiggy,Food & Dining,270.84,completed,UPI,none
+TXN001714,ACC0029,12/1/2023 20:07,Swiggy,Food & Dining,1267.48,completed,UPI,none
+TXN000348,ACC0004,12/2/2023 14:51,NDMC,Utilities,911.77,completed,UPI,none
+TXN000303,ACC0013,12/3/2023 15:07,ICICI ATM,ATM Withdrawal,7122.05,completed,Debit Card,none
+TXN000841,ACC0013,12/3/2023 15:41,NDMC,Utilities,1789.19,completed,UPI,none
+TXN000815,ACC0026,12/3/2023 16:03,Amazon,Retail,391.09,reversed,NEFT,none
+TXN001291,ACC0022,12/4/2023 2:30,IRCTC,Travel,3375.33,completed,Net Banking,none
+TXN001418,ACC0047,12/4/2023 8:00,Starbucks,Food & Dining,1472.91,completed,UPI,none
+TXN001562,ACC0015,12/4/2023 10:09,McDonald's,Food & Dining,1062.35,completed,UPI,none
+TXN000415,ACC0005,12/4/2023 19:59,Café Coffee Day,Food & Dining,307.18,completed,NEFT,none
+TXN000173,ACC0018,12/5/2023 12:08,Starbucks,Food & Dining,1282.37,completed,UPI,none
+TXN000187,ACC0050,12/5/2023 14:14,McDonald's,Food & Dining,654.74,completed,UPI,none
+TXN001076,ACC0037,12/6/2023 3:03,Café Coffee Day,Food & Dining,914.04,failed,Debit Card,none
+TXN000194,ACC0028,12/6/2023 14:34,Snapdeal,Online Shopping,5248.52,completed,UPI,none
+TXN000851,ACC0036,12/7/2023 1:58,Reliance Digital,Retail,1435.9,completed,Debit Card,none
+TXN001572,ACC0018,12/7/2023 3:17,SBI ATM,ATM Withdrawal,7528.51,failed,Debit Card,none
+TXN000648,ACC0047,12/7/2023 7:49,MakeMyTrip,Travel,12232.8,completed,UPI,none
+TXN001374,ACC0006,12/7/2023 11:00,Swiggy,Food & Dining,1092.15,completed,Net Banking,none
+TXN001751,ACC0021,12/7/2023 18:17,Airtel,Utilities,2563.04,completed,Debit Card,none
+TXN000246,ACC0033,12/7/2023 23:45,Amazon,Retail,3509.73,completed,Debit Card,none
+TXN001652,ACC0032,12/8/2023 10:08,Amazon,Retail,3862.39,completed,Debit Card,none
+TXN001665,ACC0013,12/8/2023 18:21,IndiGo Airlines,Travel,4350.98,completed,UPI,none
+TXN001797,ACC0014,12/9/2023 16:38,Paytm Mall,Online Shopping,573.42,completed,UPI,none
+TXN000693,ACC0021,12/9/2023 16:57,Apollo Pharmacy,Healthcare,392.54,completed,Net Banking,none
+TXN001397,ACC0013,12/10/2023 4:20,DMart,Retail,286.2,completed,NEFT,none
+TXN001330,ACC0035,12/11/2023 2:40,McDonald's,Food & Dining,246.52,completed,NEFT,none
+TXN001872,ACC0004,12/11/2023 3:02,HDFC ATM,ATM Withdrawal,8436.42,completed,UPI,none
+TXN001428,ACC0033,12/11/2023 4:55,Airtel,Utilities,538.16,completed,UPI,none
+TXN001053,ACC0009,12/11/2023 8:02,Flipkart,Retail,3700.21,completed,UPI,none
+TXN001060,ACC0033,12/12/2023 0:53,Swiggy,Food & Dining,1099.05,completed,Net Banking,none
+TXN001442,ACC0049,12/12/2023 5:05,SBI ATM,ATM Withdrawal,1819.33,completed,NEFT,none
+TXN001429,ACC0026,12/12/2023 9:04,Myntra,Retail,3583.57,completed,Debit Card,none
+TXN001504,ACC0025,12/12/2023 14:59,McDonald's,Food & Dining,254.68,completed,Debit Card,none
+TXN000460,ACC0005,12/12/2023 15:08,Flipkart,Retail,4953,completed,Debit Card,none
+TXN001048,ACC0004,12/12/2023 23:20,Café Coffee Day,Food & Dining,1069.52,failed,UPI,none
+TXN001756,ACC0036,12/13/2023 5:54,Reliance Digital,Retail,4702.34,completed,UPI,none
+TXN000420,ACC0050,12/13/2023 7:18,Max Healthcare,Healthcare,4040.14,completed,NEFT,none
+TXN001711,ACC0005,12/13/2023 7:47,NDMC,Utilities,1673.26,completed,UPI,none
+TXN000120,ACC0049,12/13/2023 20:25,Myntra,Retail,1874.57,completed,NEFT,none
+TXN001889,ACC0013,12/14/2023 0:19,Zomato,Food & Dining,418.01,completed,Net Banking,none
+TXN001443,ACC0027,12/14/2023 13:27,MedPlus,Healthcare,4830.91,completed,UPI,none
+TXN000092,ACC0001,12/14/2023 22:17,SBI ATM,ATM Withdrawal,2865.05,completed,UPI,none
+TXN001979,ACC0011,12/15/2023 23:13,IRCTC,Travel,5657.21,completed,UPI,none
+TXN000765,ACC0042,12/17/2023 6:11,Snapdeal,Online Shopping,800.39,completed,UPI,none
+TXN000354,ACC0043,12/17/2023 12:17,Snapdeal,Online Shopping,5413.96,completed,UPI,none
+TXN001734,ACC0025,12/17/2023 18:57,Swiggy,Food & Dining,1148.36,completed,UPI,none
+TXN000215,ACC0045,12/17/2023 22:02,HDFC ATM,ATM Withdrawal,3624.96,completed,Net Banking,none
+TXN000361,ACC0012,12/19/2023 2:24,Zomato,Food & Dining,1246.96,completed,UPI,none
+TXN001675,ACC0001,12/20/2023 3:44,Reliance Digital,Retail,3306.41,completed,UPI,none
+TXN000927,ACC0025,12/20/2023 3:59,IRCTC,Travel,5533.1,completed,NEFT,none
+TXN000224,ACC0019,12/20/2023 16:49,DMart,Retail,2500.54,completed,Debit Card,none
+TXN001850,ACC0028,12/20/2023 21:36,Flipkart,Retail,2969.17,completed,UPI,none
+TXN001247,ACC0014,12/20/2023 23:31,Ola,Travel,6016.28,completed,UPI,none
+TXN001502,ACC0041,12/21/2023 0:03,Meesho,Online Shopping,3883.71,reversed,Debit Card,none
+TXN001074,ACC0027,12/21/2023 1:23,Café Coffee Day,Food & Dining,459.68,completed,Debit Card,none
+TXN001417,ACC0037,12/21/2023 11:53,Starbucks,Food & Dining,1291.09,completed,UPI,none
+TXN000888,ACC0005,12/22/2023 0:49,Myntra,Retail,4711.64,reversed,Debit Card,none
+TXN001962,ACC0006,12/22/2023 7:55,ICICI ATM,ATM Withdrawal,2305.81,completed,Net Banking,none
+TXN000175,ACC0049,12/22/2023 12:03,Starbucks,Food & Dining,901.4,completed,UPI,none
+TXN001627,ACC0002,12/23/2023 0:19,Amazon,Retail,3406.04,completed,UPI,none
+TXN001191,ACC0019,12/23/2023 8:49,Meesho,Online Shopping,2025.27,completed,UPI,none
+TXN001329,ACC0006,12/23/2023 13:16,Reliance Digital,Retail,1276.51,completed,UPI,none
+TXN000768,ACC0047,12/24/2023 11:54,Starbucks,Food & Dining,1230.8,completed,UPI,none
+TXN001044,ACC0037,12/24/2023 11:56,Myntra,Retail,899.02,completed,Net Banking,none
+TXN000434,ACC0019,12/24/2023 12:55,DMart,Retail,3096.77,completed,UPI,none
+TXN001859,ACC0003,12/25/2023 0:18,Nykaa,Online Shopping,5469.18,completed,Net Banking,none
+TXN000450,ACC0001,12/25/2023 17:25,IndiGo Airlines,Travel,13802.78,completed,UPI,none
+TXN000706,ACC0009,12/25/2023 22:35,Reliance Digital,Retail,3562.94,completed,Debit Card,none
+TXN001798,ACC0009,12/26/2023 1:41,IRCTC,Travel,5283.16,completed,NEFT,none
+TXN000315,ACC0021,12/26/2023 9:37,Flipkart,Retail,718.13,completed,NEFT,none
+TXN000240,ACC0033,12/26/2023 15:27,Café Coffee Day,Food & Dining,223.98,completed,Debit Card,none
+TXN001834,ACC0005,12/26/2023 15:42,Max Healthcare,Healthcare,6005.83,completed,Net Banking,none
+TXN000034,ACC0025,12/27/2023 11:41,Fortis Hospital,Healthcare,3103.81,reversed,UPI,none
+TXN000661,ACC0020,12/27/2023 12:16,Myntra,Retail,4744.43,completed,UPI,none
+TXN001433,ACC0044,12/27/2023 14:01,Amazon,Retail,1717.3,completed,UPI,none
+TXN001806,ACC0050,12/27/2023 19:34,BSES Yamuna,Utilities,2850.44,reversed,UPI,none
+TXN000692,ACC0014,12/27/2023 20:32,McDonald's,Food & Dining,986.78,completed,Net Banking,none
+TXN001154,ACC0019,12/28/2023 0:44,HDFC ATM,ATM Withdrawal,4269.9,completed,Debit Card,none
+TXN001343,ACC0004,12/28/2023 13:09,Max Healthcare,Healthcare,1206.04,completed,UPI,none
+TXN000233,ACC0039,12/28/2023 14:03,Amazon Pay,Online Shopping,4076.94,completed,UPI,none
+TXN000510,ACC0007,12/28/2023 23:57,SBI ATM,ATM Withdrawal,8063.76,completed,Net Banking,none
+TXN000708,ACC0019,12/29/2023 1:11,Café Coffee Day,Food & Dining,1289.94,completed,NEFT,none
+TXN001378,ACC0029,12/29/2023 13:50,Myntra,Retail,719.21,completed,Debit Card,none
+TXN001702,ACC0020,12/29/2023 15:57,MedPlus,Healthcare,5020.74,completed,Debit Card,none
+TXN001138,ACC0042,12/29/2023 17:18,Meesho,Online Shopping,4503.03,completed,Debit Card,none
+TXN000996,ACC0034,12/29/2023 17:26,Flipkart,Retail,4295.02,failed,UPI,none
+TXN000158,ACC0034,12/30/2023 0:49,Reliance Digital,Retail,2590.84,completed,Debit Card,none
+TXN001300,ACC0019,12/30/2023 4:42,Reliance Digital,Retail,4019.78,completed,Debit Card,none
+TXN000629,ACC0012,12/31/2023 3:03,Amazon,Retail,1351.95,completed,NEFT,none
+TXN001517,ACC0032,12/31/2023 6:39,SBI ATM,ATM Withdrawal,6065.31,completed,UPI,none
+TXN001829,ACC0020,12/31/2023 9:41,Café Coffee Day,Food & Dining,280.34,completed,Net Banking,none
+TXN001544,ACC0042,12/31/2023 17:04,Uber,Travel,2959.65,completed,Debit Card,none
+TXN000451,ACC0047,1/1/2024 15:07,Flipkart,Retail,2810.27,completed,UPI,none
+TXN001636,ACC0040,1/1/2024 16:39,NDMC,Utilities,1017.29,completed,Debit Card,none
+TXN001578,ACC0009,1/1/2024 22:12,Amazon Pay,Online Shopping,1984.93,completed,UPI,none
+TXN000774,ACC0042,1/1/2024 22:19,HDFC ATM,ATM Withdrawal,6175.55,completed,UPI,none
+TXN001164,ACC0014,1/2/2024 0:19,HDFC ATM,ATM Withdrawal,8514.09,completed,UPI,none
+TXN001634,ACC0014,1/2/2024 6:32,Swiggy,Food & Dining,204.53,completed,NEFT,none
+TXN000073,ACC0017,1/2/2024 11:56,Flipkart,Retail,4217.43,completed,UPI,none
+TXN001114,ACC0034,1/2/2024 12:12,McDonald's,Food & Dining,828.19,completed,Net Banking,none
+TXN001393,ACC0044,1/2/2024 20:10,Starbucks,Food & Dining,130.78,completed,Debit Card,none
+TXN000991,ACC0039,1/3/2024 8:19,Flipkart,Retail,1921.96,completed,Debit Card,none
+TXN000705,ACC0033,1/3/2024 16:04,IndiGo Airlines,Travel,14045.75,completed,Debit Card,none
+TXN001158,ACC0026,1/3/2024 22:27,Airtel,Utilities,2084.72,failed,NEFT,none
+TXN001884,ACC0024,1/4/2024 13:25,Flipkart,Retail,4248,failed,Debit Card,none
+TXN001680,ACC0011,1/5/2024 10:05,Jio,Utilities,1607.13,completed,Net Banking,none
+TXN000311,ACC0025,1/5/2024 12:52,Myntra,Retail,2840.44,failed,UPI,none
+TXN000123,ACC0014,1/5/2024 20:46,Meesho,Online Shopping,4943.08,failed,UPI,none
+TXN001059,ACC0006,1/5/2024 23:34,Nykaa,Online Shopping,3758.72,completed,Net Banking,none
+TXN000975,ACC0004,1/6/2024 15:23,Amazon,Retail,1214.87,completed,NEFT,none
+TXN001722,ACC0023,1/6/2024 17:00,Meesho,Online Shopping,3887.32,completed,UPI,none
+TXN001196,ACC0002,1/7/2024 16:34,Jio,Utilities,1581.92,completed,Debit Card,none
+TXN000031,ACC0049,1/7/2024 16:44,IRCTC,Travel,19652.28,reversed,NEFT,none
+TXN000499,ACC0006,1/8/2024 2:29,Meesho,Online Shopping,1110.37,completed,UPI,none
+TXN000512,ACC0010,1/8/2024 7:32,HDFC ATM,ATM Withdrawal,5051.05,completed,Debit Card,none
+TXN000684,ACC0028,1/9/2024 6:34,BSES Yamuna,Utilities,2724.78,completed,UPI,none
+TXN000583,ACC0005,1/9/2024 14:38,McDonald's,Food & Dining,334.3,completed,Debit Card,none
+TXN000491,ACC0036,1/9/2024 21:17,HDFC ATM,ATM Withdrawal,7585.52,completed,Net Banking,none
+TXN000538,ACC0046,1/10/2024 17:42,Amazon Pay,Online Shopping,5020.27,completed,Net Banking,none
+TXN000068,ACC0025,1/11/2024 7:01,HDFC ATM,ATM Withdrawal,5469.05,completed,UPI,none
+TXN001022,ACC0032,1/11/2024 11:06,Paytm Mall,Online Shopping,3651.04,completed,NEFT,none
+TXN000256,ACC0043,1/11/2024 22:51,SBI ATM,ATM Withdrawal,8401.54,failed,UPI,none
+TXN001178,ACC0024,1/11/2024 22:56,Swiggy,Food & Dining,595.01,completed,Debit Card,none
+TXN001796,ACC0015,1/12/2024 6:36,Starbucks,Food & Dining,353.15,completed,Debit Card,none
+TXN001409,ACC0024,1/13/2024 23:55,McDonald's,Food & Dining,321.95,completed,UPI,none
+TXN001570,ACC0007,1/14/2024 2:14,Jio,Utilities,2701.67,completed,UPI,none
+TXN000802,ACC0034,1/14/2024 5:25,Snapdeal,Online Shopping,480.82,completed,Net Banking,none
+TXN000875,ACC0010,1/14/2024 13:32,Myntra,Retail,1362.83,reversed,NEFT,none
+TXN001478,ACC0022,1/14/2024 16:40,Jio,Utilities,910.98,completed,UPI,none
+TXN000899,ACC0042,1/14/2024 20:33,Axis ATM,ATM Withdrawal,1821.93,failed,Net Banking,none
+TXN000941,ACC0006,1/15/2024 2:31,Café Coffee Day,Food & Dining,192.48,completed,Debit Card,none
+TXN001770,ACC0040,1/15/2024 11:59,Zomato,Food & Dining,926.16,completed,UPI,none
+TXN000524,ACC0041,1/16/2024 3:19,Reliance Digital,Retail,3143.8,completed,UPI,none
+TXN000775,ACC0019,1/16/2024 13:25,Starbucks,Food & Dining,1143.3,completed,UPI,none
+TXN000906,ACC0032,1/17/2024 9:41,Amazon,Retail,1332.78,completed,Debit Card,none
+TXN001896,ACC0013,1/17/2024 17:27,Myntra,Retail,3408.15,completed,NEFT,none
+TXN000433,ACC0039,1/18/2024 2:55,Airtel,Utilities,555.07,completed,Debit Card,none
+TXN000789,ACC0008,1/18/2024 3:30,ICICI ATM,ATM Withdrawal,8762.47,completed,NEFT,none
+TXN000577,ACC0036,1/18/2024 4:10,Flipkart,Retail,3589.56,completed,Debit Card,none
+TXN001861,ACC0013,1/18/2024 6:14,Starbucks,Food & Dining,219.88,completed,Debit Card,none
+TXN000730,ACC0044,1/18/2024 7:01,Flipkart,Retail,3290.99,completed,UPI,none
+TXN001282,ACC0005,1/18/2024 18:53,Snapdeal,Online Shopping,1618.49,completed,UPI,none
+TXN001265,ACC0005,1/19/2024 0:25,NDMC,Utilities,681.44,completed,Debit Card,none
+TXN001333,ACC0001,1/19/2024 14:57,Meesho,Online Shopping,3028.28,completed,UPI,none
+TXN000812,ACC0044,1/19/2024 16:33,Nykaa,Online Shopping,3753.78,completed,NEFT,none
+TXN000848,ACC0022,1/20/2024 6:34,Flipkart,Retail,2022.74,reversed,Debit Card,none
+TXN000490,ACC0003,1/20/2024 11:29,DMart,Retail,1658.92,completed,Debit Card,none
+TXN001382,ACC0016,1/20/2024 12:08,Indraprastha Gas,Utilities,1444.49,completed,UPI,none
+TXN000885,ACC0020,1/20/2024 12:34,Paytm Mall,Online Shopping,5010.85,completed,UPI,none
+TXN000723,ACC0014,1/20/2024 12:37,McDonald's,Food & Dining,892.19,completed,UPI,none
+TXN001204,ACC0050,1/20/2024 22:38,Airtel,Utilities,2380.84,completed,Debit Card,none
+TXN000489,ACC0006,1/21/2024 17:20,Amazon Pay,Online Shopping,3665.46,completed,UPI,none
+TXN000236,ACC0008,1/22/2024 5:56,Amazon Pay,Online Shopping,2861.77,failed,UPI,none
+TXN001172,ACC0013,1/22/2024 14:29,Paytm Mall,Online Shopping,4615.98,completed,UPI,none
+TXN000435,ACC0008,1/22/2024 20:42,IRCTC,Travel,11924.36,completed,Debit Card,none
+TXN001252,ACC0049,1/23/2024 0:19,Ola,Travel,6442.84,completed,Debit Card,none
+TXN001566,ACC0004,1/23/2024 9:21,Nykaa,Online Shopping,3968.97,completed,Debit Card,none
+TXN001403,ACC0030,1/23/2024 20:32,Amazon,Retail,2317.9,completed,UPI,none
+TXN000752,ACC0016,1/23/2024 20:52,Starbucks,Food & Dining,1495.14,completed,UPI,none
+TXN001369,ACC0009,1/24/2024 3:50,McDonald's,Food & Dining,1136.42,completed,Debit Card,none
+TXN001641,ACC0024,1/24/2024 22:36,NDMC,Utilities,2915.45,completed,UPI,none
+TXN001663,ACC0008,1/25/2024 23:49,Meesho,Online Shopping,747.6,completed,UPI,none
+TXN000234,ACC0001,1/26/2024 3:10,McDonald's,Food & Dining,1019.43,completed,UPI,none
+TXN001146,ACC0020,1/26/2024 9:54,Apollo Pharmacy,Healthcare,2797.06,completed,Debit Card,none
+TXN001625,ACC0019,1/26/2024 10:28,Reliance Digital,Retail,2050.26,completed,UPI,none
+TXN000431,ACC0042,1/26/2024 12:50,MakeMyTrip,Travel,10262.17,completed,UPI,none
+TXN001969,ACC0001,1/27/2024 9:32,DMart,Retail,893.48,failed,UPI,none
+TXN001688,ACC0027,1/27/2024 10:14,NDMC,Utilities,2786.11,failed,UPI,none
+TXN001469,ACC0034,1/27/2024 12:07,IRCTC,Travel,10368.62,completed,Debit Card,none
+TXN000799,ACC0032,1/27/2024 12:22,Zomato,Food & Dining,202.21,completed,UPI,none
+TXN000294,ACC0027,1/27/2024 16:54,Café Coffee Day,Food & Dining,595.93,completed,UPI,none
+TXN000733,ACC0021,1/28/2024 6:24,MakeMyTrip,Travel,9185.04,completed,Net Banking,none
+TXN001461,ACC0008,1/28/2024 12:13,McDonald's,Food & Dining,1358.34,completed,Debit Card,none
+TXN001259,ACC0022,1/28/2024 20:17,Myntra,Retail,4982.22,completed,UPI,none
+TXN000021,ACC0041,1/29/2024 0:32,Amazon,Retail,4126.47,completed,Debit Card,none
+TXN000797,ACC0022,1/29/2024 13:37,Reliance Digital,Retail,2662.3,completed,Net Banking,none
+TXN001406,ACC0044,1/29/2024 20:17,MedPlus,Healthcare,6608.31,completed,UPI,none
+TXN000189,ACC0028,1/30/2024 1:04,Amazon,Retail,2077.61,failed,NEFT,none
+TXN000061,ACC0003,1/30/2024 1:05,Snapdeal,Online Shopping,5666.35,reversed,NEFT,none
+TXN000617,ACC0010,1/30/2024 2:09,Starbucks,Food & Dining,1038.05,completed,UPI,none
+TXN001413,ACC0049,1/30/2024 16:12,Airtel,Utilities,666.71,completed,Debit Card,none
+TXN000938,ACC0035,1/30/2024 18:04,Paytm Mall,Online Shopping,5312.15,completed,NEFT,none
+TXN001807,ACC0015,1/31/2024 5:35,Jio,Utilities,1946.21,failed,UPI,none
+TXN001715,ACC0001,2/1/2024 13:44,Swiggy,Food & Dining,685.83,completed,Debit Card,none
+TXN001899,ACC0030,2/1/2024 22:16,BSES Yamuna,Utilities,1864.65,completed,UPI,none
+TXN001553,ACC0005,2/2/2024 6:43,McDonald's,Food & Dining,625.53,failed,UPI,none
+TXN001348,ACC0041,2/2/2024 8:20,ICICI ATM,ATM Withdrawal,3833.57,completed,UPI,none
+TXN001749,ACC0047,2/2/2024 15:42,Reliance Digital,Retail,4988.07,completed,Debit Card,none
+TXN001527,ACC0038,2/2/2024 21:45,NDMC,Utilities,2647.83,completed,UPI,none
+TXN001271,ACC0047,2/3/2024 2:10,NDMC,Utilities,798.18,completed,Net Banking,none
+TXN000017,ACC0032,2/3/2024 11:33,Amazon,Retail,1708.91,failed,UPI,none
+TXN000803,ACC0046,2/3/2024 13:14,Indraprastha Gas,Utilities,1845.99,completed,UPI,none
+TXN001700,ACC0039,2/4/2024 2:51,Nykaa,Online Shopping,5902.79,completed,UPI,none
+TXN000371,ACC0019,2/4/2024 6:16,Ola,Travel,16607.76,completed,NEFT,none
+TXN001955,ACC0022,2/4/2024 9:43,Meesho,Online Shopping,5780.36,completed,Net Banking,none
+TXN001638,ACC0024,2/4/2024 9:56,Amazon,Retail,4352.3,completed,UPI,none
+TXN001234,ACC0050,2/4/2024 16:52,ICICI ATM,ATM Withdrawal,7425.11,completed,UPI,none
+TXN001716,ACC0013,2/4/2024 20:38,McDonald's,Food & Dining,418.49,completed,Net Banking,none
+TXN001131,ACC0001,2/5/2024 0:09,Flipkart,Retail,4286.05,completed,UPI,none
+TXN000680,ACC0030,2/5/2024 9:59,Starbucks,Food & Dining,1468.19,completed,Debit Card,none
+TXN000399,ACC0043,2/5/2024 11:16,Uber,Travel,8054.16,completed,UPI,none
+TXN000479,ACC0018,2/6/2024 0:39,Zomato,Food & Dining,599.97,completed,Debit Card,none
+TXN001747,ACC0040,2/6/2024 16:09,Ola,Travel,19174.44,completed,UPI,none
+TXN000666,ACC0011,2/6/2024 19:05,Flipkart,Retail,568.68,completed,NEFT,none
+TXN001727,ACC0007,2/6/2024 21:40,BSES Yamuna,Utilities,542.3,completed,Debit Card,none
+TXN001648,ACC0035,2/7/2024 1:05,Café Coffee Day,Food & Dining,1480.44,completed,UPI,none
+TXN000896,ACC0003,2/7/2024 5:52,Amazon Pay,Online Shopping,5993.12,completed,UPI,none
+TXN001103,ACC0006,2/7/2024 5:56,McDonald's,Food & Dining,972.78,completed,UPI,none
+TXN001862,ACC0042,2/9/2024 15:39,Starbucks,Food & Dining,1185.44,completed,UPI,none
+TXN000262,ACC0045,2/10/2024 4:58,Amazon Pay,Online Shopping,2429.01,completed,UPI,none
+TXN000891,ACC0031,2/10/2024 13:20,DMart,Retail,293.35,completed,UPI,none
+TXN000701,ACC0035,2/10/2024 18:42,DMart,Retail,4796.63,completed,UPI,none
+TXN000543,ACC0006,2/11/2024 17:44,Café Coffee Day,Food & Dining,1106.24,completed,UPI,none
+TXN001892,ACC0050,2/11/2024 19:39,Ola,Travel,1779.75,completed,NEFT,none
+TXN001069,ACC0040,2/11/2024 19:56,Zomato,Food & Dining,232.16,completed,Debit Card,none
+TXN000316,ACC0043,2/11/2024 21:05,Starbucks,Food & Dining,1125.92,completed,Debit Card,none
+TXN000782,ACC0020,2/12/2024 4:07,Airtel,Utilities,2529.87,completed,Net Banking,none
+TXN001171,ACC0019,2/12/2024 5:11,Zomato,Food & Dining,280.26,completed,UPI,none
+TXN000100,ACC0008,2/12/2024 5:45,Fortis Hospital,Healthcare,1282.85,completed,UPI,none
+TXN001136,ACC0004,2/12/2024 15:45,Flipkart,Retail,1854.06,completed,NEFT,none
+TXN001273,ACC0042,2/13/2024 2:28,Nykaa,Online Shopping,5938.54,completed,Net Banking,none
+TXN001083,ACC0035,2/13/2024 15:42,Paytm Mall,Online Shopping,5358.42,completed,UPI,none
+TXN001885,ACC0011,2/13/2024 16:06,Axis ATM,ATM Withdrawal,4350.83,completed,UPI,none
+TXN001558,ACC0021,2/14/2024 3:56,Max Healthcare,Healthcare,4070.51,completed,Debit Card,none
+TXN001292,ACC0031,2/14/2024 16:59,Nykaa,Online Shopping,927.98,completed,Net Banking,none
+TXN000208,ACC0001,2/14/2024 17:58,Swiggy,Food & Dining,719.22,failed,UPI,none
+TXN001933,ACC0032,2/14/2024 19:07,Reliance Digital,Retail,1732.43,completed,NEFT,none
+TXN000757,ACC0031,2/15/2024 9:19,BSES Yamuna,Utilities,2361.84,completed,Debit Card,none
+TXN001489,ACC0027,2/15/2024 20:52,Fortis Hospital,Healthcare,3403.46,completed,NEFT,none
+TXN000541,ACC0003,2/15/2024 21:48,Nykaa,Online Shopping,5194.96,completed,Debit Card,none
+TXN001236,ACC0024,2/15/2024 22:27,MedPlus,Healthcare,3653.34,completed,Debit Card,none
+TXN000969,ACC0029,2/15/2024 23:47,Axis ATM,ATM Withdrawal,5035.12,completed,UPI,none
+TXN001242,ACC0017,2/16/2024 8:07,SBI ATM,ATM Withdrawal,7844.18,completed,Debit Card,none
+TXN000811,ACC0001,2/17/2024 9:24,Zomato,Food & Dining,816.49,failed,NEFT,none
+TXN001484,ACC0019,2/17/2024 13:29,Zomato,Food & Dining,767.27,completed,Debit Card,none
+TXN001431,ACC0012,2/17/2024 13:50,Meesho,Online Shopping,402.82,completed,UPI,none
+TXN000108,ACC0017,2/18/2024 17:44,Zomato,Food & Dining,889.55,completed,Debit Card,none
+TXN000871,ACC0044,2/18/2024 20:46,Apollo Pharmacy,Healthcare,2679.66,completed,UPI,none
+TXN000903,ACC0012,2/18/2024 22:16,Indraprastha Gas,Utilities,2975.71,completed,Net Banking,none
+TXN000461,ACC0026,2/19/2024 5:45,MedPlus,Healthcare,3052.31,completed,Net Banking,none
+TXN000594,ACC0020,2/19/2024 22:58,Nykaa,Online Shopping,1258.27,completed,UPI,none
+TXN000863,ACC0005,2/20/2024 1:04,Flipkart,Retail,4581.44,completed,UPI,none
+TXN001470,ACC0028,2/20/2024 1:34,Amazon Pay,Online Shopping,480.23,failed,Net Banking,none
+TXN001908,ACC0035,2/20/2024 4:07,Axis ATM,ATM Withdrawal,8544.65,completed,UPI,none
+TXN000301,ACC0040,2/20/2024 4:52,Indraprastha Gas,Utilities,596.07,completed,Debit Card,none
+TXN001588,ACC0048,2/21/2024 3:49,Paytm Mall,Online Shopping,2040.36,completed,Net Banking,none
+TXN000142,ACC0020,2/21/2024 6:43,Reliance Digital,Retail,2403.15,completed,Debit Card,none
+TXN001222,ACC0003,2/21/2024 15:36,Nykaa,Online Shopping,2998.58,completed,Debit Card,none
+TXN001150,ACC0048,2/22/2024 9:15,Amazon,Retail,3399.32,completed,UPI,none
+TXN000204,ACC0023,2/22/2024 16:49,McDonald's,Food & Dining,453.51,completed,Debit Card,none
+TXN001784,ACC0045,2/23/2024 1:34,Paytm Mall,Online Shopping,3456.87,completed,UPI,none
+TXN001765,ACC0019,2/23/2024 4:42,MakeMyTrip,Travel,2513.55,completed,Debit Card,none
+TXN001911,ACC0033,2/23/2024 13:45,Meesho,Online Shopping,5565.03,completed,Debit Card,none
+TXN001126,ACC0024,2/23/2024 14:26,Max Healthcare,Healthcare,5143.51,completed,UPI,none
+TXN001237,ACC0027,2/25/2024 8:44,Café Coffee Day,Food & Dining,390.98,completed,Debit Card,none
+TXN001710,ACC0030,2/25/2024 21:12,Reliance Digital,Retail,269.46,completed,UPI,none
+TXN000637,ACC0021,2/26/2024 14:14,Uber,Travel,11837.63,completed,Debit Card,none
+TXN001653,ACC0005,2/26/2024 19:57,Apollo Pharmacy,Healthcare,7485.48,completed,UPI,none
+TXN000225,ACC0044,2/26/2024 23:14,Meesho,Online Shopping,4054.63,completed,Debit Card,none
+TXN000748,ACC0026,2/27/2024 1:55,Ola,Travel,19854.04,completed,UPI,none
+TXN000910,ACC0028,2/27/2024 9:22,Nykaa,Online Shopping,2141.04,completed,UPI,none
+TXN000953,ACC0003,2/27/2024 20:24,Max Healthcare,Healthcare,2877.75,completed,Debit Card,none
+TXN001925,ACC0045,2/27/2024 20:37,Amazon,Retail,3442.19,completed,Debit Card,none
+TXN000902,ACC0029,2/28/2024 2:04,Nykaa,Online Shopping,5116.57,completed,UPI,none
+TXN001208,ACC0014,2/28/2024 21:37,Indraprastha Gas,Utilities,1175.87,completed,Debit Card,none
+TXN001384,ACC0025,2/29/2024 10:49,MakeMyTrip,Travel,2977.15,completed,Net Banking,none
+TXN001788,ACC0014,2/29/2024 19:00,ICICI ATM,ATM Withdrawal,6838.72,completed,Net Banking,none
+TXN000674,ACC0021,3/1/2024 9:17,McDonald's,Food & Dining,402.75,completed,NEFT,none
+TXN000472,ACC0016,3/1/2024 9:58,ICICI ATM,ATM Withdrawal,4556.85,reversed,UPI,none
+TXN000332,ACC0043,3/1/2024 20:32,Zomato,Food & Dining,331.41,completed,Debit Card,none
+TXN001350,ACC0048,3/2/2024 10:23,Axis ATM,ATM Withdrawal,6116.25,completed,Debit Card,none
+TXN000304,ACC0005,3/2/2024 11:29,Myntra,Retail,258.12,completed,UPI,none
+TXN001034,ACC0020,3/2/2024 14:56,Zomato,Food & Dining,538.87,completed,Debit Card,none
+TXN000950,ACC0027,3/2/2024 21:44,BSES Yamuna,Utilities,1210.15,reversed,UPI,none
+TXN001021,ACC0013,3/3/2024 1:48,Apollo Pharmacy,Healthcare,4045.27,completed,Net Banking,none
+TXN001102,ACC0039,3/3/2024 2:13,DMart,Retail,1258.1,completed,Net Banking,none
+TXN001361,ACC0011,3/3/2024 8:26,Zomato,Food & Dining,437.23,completed,UPI,none
+TXN001485,ACC0020,3/3/2024 9:20,HDFC ATM,ATM Withdrawal,7775.35,completed,Debit Card,none
+TXN001823,ACC0025,3/3/2024 16:58,Starbucks,Food & Dining,1002.11,completed,UPI,none
+TXN000040,ACC0046,3/4/2024 5:21,Reliance Digital,Retail,2455.73,failed,Debit Card,none
+TXN001410,ACC0038,3/4/2024 5:38,Max Healthcare,Healthcare,6156.16,completed,UPI,none
+TXN001706,ACC0023,3/4/2024 6:24,Café Coffee Day,Food & Dining,150.05,completed,UPI,none
+TXN000842,ACC0007,3/4/2024 14:46,Meesho,Online Shopping,2543.72,completed,UPI,none
+TXN001115,ACC0023,3/4/2024 16:23,Nykaa,Online Shopping,2057.61,completed,UPI,none
+TXN001608,ACC0045,3/4/2024 23:56,IRCTC,Travel,18701.56,completed,UPI,none
+TXN000738,ACC0003,3/6/2024 6:37,Reliance Digital,Retail,235.2,completed,Debit Card,none
+TXN000557,ACC0042,3/6/2024 14:21,Axis ATM,ATM Withdrawal,9974.64,completed,UPI,none
+TXN000822,ACC0050,3/7/2024 16:22,Paytm Mall,Online Shopping,2455.88,completed,UPI,none
+TXN000171,ACC0017,3/8/2024 11:55,IRCTC,Travel,11971.14,completed,Debit Card,none
+TXN001335,ACC0009,3/8/2024 21:09,Amazon,Retail,3123.34,completed,Debit Card,none
+TXN001130,ACC0017,3/9/2024 2:55,Zomato,Food & Dining,635.48,completed,UPI,none
+TXN000436,ACC0024,3/9/2024 11:30,Reliance Digital,Retail,1326.34,completed,Debit Card,none
+TXN000322,ACC0031,3/9/2024 22:21,Nykaa,Online Shopping,2163.51,completed,Debit Card,none
+TXN001587,ACC0038,3/10/2024 8:43,Jio,Utilities,997.07,completed,Debit Card,none
+TXN001231,ACC0005,3/10/2024 11:04,Axis ATM,ATM Withdrawal,8582.18,completed,UPI,none
+TXN000715,ACC0023,3/11/2024 16:51,Jio,Utilities,2836.82,completed,Debit Card,none
+TXN000545,ACC0009,3/11/2024 22:12,Ola,Travel,4836.05,completed,UPI,none
+TXN000671,ACC0043,3/12/2024 3:33,Reliance Digital,Retail,2245.38,completed,UPI,none
+TXN000673,ACC0037,3/12/2024 10:02,Indraprastha Gas,Utilities,2156.99,completed,UPI,none
+TXN001028,ACC0007,3/12/2024 10:02,Swiggy,Food & Dining,377.47,completed,UPI,none
+TXN000186,ACC0023,3/12/2024 17:58,Café Coffee Day,Food & Dining,981.69,completed,Debit Card,none
+TXN000761,ACC0001,3/13/2024 4:00,Café Coffee Day,Food & Dining,455.06,completed,Debit Card,none
+TXN000936,ACC0029,3/13/2024 7:32,Reliance Digital,Retail,2427.2,completed,NEFT,none
+TXN001267,ACC0008,3/13/2024 14:11,Zomato,Food & Dining,886.07,completed,Debit Card,none
+TXN000295,ACC0002,3/13/2024 15:16,Café Coffee Day,Food & Dining,115.44,completed,UPI,none
+TXN000374,ACC0014,3/14/2024 8:31,Meesho,Online Shopping,1994.26,completed,UPI,none
+TXN001980,ACC0004,3/14/2024 19:04,IRCTC,Travel,9262.35,completed,Debit Card,none
+TXN001456,ACC0043,3/14/2024 22:26,DMart,Retail,1588.13,completed,Debit Card,none
+TXN001717,ACC0038,3/15/2024 14:31,Zomato,Food & Dining,757.05,completed,UPI,none
+TXN000230,ACC0012,3/15/2024 19:03,Paytm Mall,Online Shopping,5955.16,completed,Debit Card,none
+TXN001305,ACC0031,3/15/2024 22:14,Flipkart,Retail,1839.53,completed,Debit Card,none
+TXN001113,ACC0017,3/16/2024 3:55,Reliance Digital,Retail,4619.63,completed,Debit Card,none
+TXN001959,ACC0039,3/16/2024 22:16,Snapdeal,Online Shopping,1539.53,completed,UPI,none
+TXN000800,ACC0042,3/17/2024 12:15,Flipkart,Retail,458.39,completed,UPI,none
+TXN000581,ACC0050,3/17/2024 14:56,Myntra,Retail,2326.68,completed,Debit Card,none
+TXN000238,ACC0047,3/18/2024 5:40,Nykaa,Online Shopping,2844.3,completed,Debit Card,none
+TXN000227,ACC0049,3/18/2024 7:08,Swiggy,Food & Dining,1276.63,reversed,UPI,none
+TXN000763,ACC0042,3/18/2024 22:13,Ola,Travel,5487,completed,UPI,none
+TXN001040,ACC0037,3/19/2024 7:32,Swiggy,Food & Dining,1481.2,completed,UPI,none
+TXN000894,ACC0016,3/20/2024 2:04,NDMC,Utilities,2863.43,failed,UPI,none
+TXN000219,ACC0050,3/20/2024 10:42,Indraprastha Gas,Utilities,2223.66,completed,UPI,none
+TXN001175,ACC0043,3/20/2024 11:57,Snapdeal,Online Shopping,4160.61,completed,UPI,none
+TXN000389,ACC0046,3/21/2024 2:27,Ola,Travel,9286.64,completed,UPI,none
+TXN000162,ACC0021,3/21/2024 2:31,Myntra,Retail,1377.68,completed,UPI,none
+TXN000203,ACC0012,3/21/2024 11:59,McDonald's,Food & Dining,282.12,completed,Net Banking,none
+TXN000177,ACC0013,3/21/2024 14:20,ICICI ATM,ATM Withdrawal,8872.32,failed,Net Banking,none
+TXN000570,ACC0020,3/22/2024 0:16,Nykaa,Online Shopping,4709.88,completed,UPI,none
+TXN000077,ACC0050,3/22/2024 1:14,Airtel,Utilities,1134.21,completed,UPI,none
+TXN000957,ACC0010,3/22/2024 5:46,SBI ATM,ATM Withdrawal,1131.82,reversed,UPI,none
+TXN001306,ACC0026,3/22/2024 12:47,Uber,Travel,3696.67,completed,Debit Card,none
+TXN000438,ACC0015,3/23/2024 7:20,MakeMyTrip,Travel,15098.58,completed,Debit Card,none
+TXN000308,ACC0004,3/23/2024 19:53,Ola,Travel,2867.04,completed,NEFT,none
+TXN000094,ACC0017,3/24/2024 3:35,HDFC ATM,ATM Withdrawal,8889.88,completed,UPI,none
+TXN000749,ACC0022,3/24/2024 5:35,McDonald's,Food & Dining,1135.56,completed,UPI,none
+TXN000184,ACC0029,3/24/2024 11:15,ICICI ATM,ATM Withdrawal,4614.22,completed,Net Banking,none
+TXN001383,ACC0035,3/24/2024 13:01,Fortis Hospital,Healthcare,5532.02,failed,UPI,none
+TXN001564,ACC0004,3/25/2024 1:35,IndiGo Airlines,Travel,16305.07,completed,UPI,none
+TXN000727,ACC0044,3/25/2024 3:47,SBI ATM,ATM Withdrawal,4547.22,completed,Debit Card,none
+TXN000169,ACC0021,3/25/2024 4:10,Myntra,Retail,3714.68,completed,Debit Card,none
+TXN001032,ACC0043,3/25/2024 5:30,Café Coffee Day,Food & Dining,254.1,completed,Net Banking,none
+TXN000216,ACC0017,3/25/2024 12:00,Myntra,Retail,703.66,reversed,UPI,none
+TXN001633,ACC0030,3/26/2024 1:59,Zomato,Food & Dining,1427.27,completed,UPI,none
+TXN000818,ACC0032,3/26/2024 10:40,ICICI ATM,ATM Withdrawal,7711.46,completed,UPI,none
+TXN001045,ACC0024,3/26/2024 18:04,ICICI ATM,ATM Withdrawal,6748.05,failed,UPI,none
+TXN001873,ACC0003,3/27/2024 5:21,McDonald's,Food & Dining,245.71,completed,UPI,none
+TXN001995,ACC0021,3/27/2024 6:26,Max Healthcare,Healthcare,6361.31,completed,UPI,none
+TXN001819,ACC0022,3/27/2024 12:48,Myntra,Retail,3637.41,completed,UPI,none
+TXN000685,ACC0004,3/27/2024 23:53,Paytm Mall,Online Shopping,3734.08,completed,UPI,none
+TXN001596,ACC0001,3/28/2024 10:59,Flipkart,Retail,294.48,completed,Net Banking,none
+TXN000734,ACC0049,3/28/2024 17:51,Reliance Digital,Retail,268.79,completed,Net Banking,none
+TXN000966,ACC0021,3/28/2024 19:08,IndiGo Airlines,Travel,1260.63,failed,Debit Card,none
+TXN000735,ACC0032,3/28/2024 23:18,Meesho,Online Shopping,4653.05,completed,Debit Card,none
+TXN001218,ACC0045,3/29/2024 0:41,Swiggy,Food & Dining,1321.03,completed,Net Banking,none
+TXN001987,ACC0026,3/29/2024 2:30,Meesho,Online Shopping,542.13,completed,UPI,none
+TXN000488,ACC0023,3/30/2024 2:26,Swiggy,Food & Dining,854.73,completed,UPI,none
+TXN000349,ACC0027,3/30/2024 6:00,Reliance Digital,Retail,4378.78,completed,NEFT,none
+TXN001803,ACC0032,3/30/2024 9:14,Meesho,Online Shopping,707.27,completed,UPI,none
+TXN001664,ACC0006,3/30/2024 10:14,Amazon Pay,Online Shopping,3489.58,reversed,Debit Card,none
+TXN000057,ACC0030,3/30/2024 18:48,Nykaa,Online Shopping,1287.25,completed,Debit Card,none
+TXN000004,ACC0049,3/30/2024 19:58,Apollo Pharmacy,Healthcare,3569.17,completed,UPI,none
+TXN001367,ACC0007,4/1/2024 3:05,McDonald's,Food & Dining,1221.64,completed,Debit Card,none
+TXN000713,ACC0046,4/1/2024 5:35,Axis ATM,ATM Withdrawal,7315.64,completed,NEFT,none
+TXN000744,ACC0009,4/1/2024 23:40,Myntra,Retail,3876.66,completed,Debit Card,none
+TXN001153,ACC0048,4/2/2024 1:06,Amazon,Retail,2144.01,completed,Debit Card,none
+TXN001326,ACC0042,4/2/2024 9:06,Paytm Mall,Online Shopping,1952.32,completed,UPI,none
+TXN001640,ACC0045,4/2/2024 12:12,Myntra,Retail,4006.45,completed,Net Banking,none
+TXN000340,ACC0006,4/2/2024 17:59,Swiggy,Food & Dining,1180.6,completed,Debit Card,none
+TXN001699,ACC0002,4/3/2024 22:32,Reliance Digital,Retail,3810.34,failed,NEFT,none
+TXN001156,ACC0006,4/4/2024 2:11,Indraprastha Gas,Utilities,1274.66,completed,UPI,none
+TXN001729,ACC0024,4/4/2024 5:09,Flipkart,Retail,1747.74,completed,NEFT,none
+TXN000952,ACC0025,4/4/2024 6:31,Indraprastha Gas,Utilities,824.64,completed,NEFT,none
+TXN001373,ACC0042,4/4/2024 11:48,Ola,Travel,6113.65,completed,Debit Card,none
+TXN001432,ACC0001,4/4/2024 11:50,Café Coffee Day,Food & Dining,1314.47,completed,UPI,none
+TXN001213,ACC0010,4/4/2024 19:08,Myntra,Retail,3901.88,failed,Debit Card,none
+TXN000911,ACC0004,4/4/2024 22:33,Jio,Utilities,1075.8,completed,UPI,none
+TXN000429,ACC0038,4/5/2024 10:24,Starbucks,Food & Dining,669.95,completed,UPI,none
+TXN001174,ACC0043,4/5/2024 22:07,Flipkart,Retail,1366.14,completed,Debit Card,none
+TXN000259,ACC0018,4/6/2024 7:42,MedPlus,Healthcare,4960.6,completed,UPI,none
+TXN001072,ACC0042,4/6/2024 11:51,McDonald's,Food & Dining,896.92,reversed,Debit Card,none
+TXN000595,ACC0037,4/6/2024 22:23,DMart,Retail,2743.43,completed,UPI,none
+TXN001656,ACC0037,4/7/2024 1:58,Airtel,Utilities,1233.49,completed,UPI,none
+TXN000333,ACC0019,4/7/2024 3:27,Ola,Travel,6325.15,completed,UPI,none
+TXN001182,ACC0049,4/8/2024 16:38,Amazon,Retail,1096.51,completed,UPI,none
+TXN000639,ACC0037,4/9/2024 0:00,DMart,Retail,563.17,completed,Debit Card,none
+TXN000924,ACC0040,4/9/2024 1:40,Max Healthcare,Healthcare,3772.11,completed,UPI,none
+TXN000954,ACC0002,4/9/2024 5:44,Paytm Mall,Online Shopping,4064.21,completed,Debit Card,none
+TXN000253,ACC0010,4/9/2024 12:12,Max Healthcare,Healthcare,5412.06,completed,UPI,none
+TXN000501,ACC0004,4/10/2024 1:00,Starbucks,Food & Dining,1200.69,completed,Net Banking,none
+TXN000050,ACC0030,4/11/2024 12:53,Café Coffee Day,Food & Dining,372.13,completed,UPI,none
+TXN001809,ACC0009,4/11/2024 18:53,Swiggy,Food & Dining,987.6,completed,Net Banking,none
+TXN001858,ACC0029,4/11/2024 20:38,Zomato,Food & Dining,1304.91,failed,UPI,none
+TXN001904,ACC0043,4/12/2024 1:03,Apollo Pharmacy,Healthcare,3905.72,completed,UPI,none
+TXN001375,ACC0004,4/12/2024 2:45,McDonald's,Food & Dining,847.91,failed,UPI,none
+TXN000968,ACC0020,4/12/2024 6:21,Flipkart,Retail,1369.35,completed,Net Banking,none
+TXN001881,ACC0047,4/12/2024 19:45,Reliance Digital,Retail,3749.72,completed,Debit Card,none
+TXN000546,ACC0028,4/12/2024 21:11,Myntra,Retail,1811.23,completed,Debit Card,none
+TXN000446,ACC0018,4/13/2024 11:26,Snapdeal,Online Shopping,2908.89,completed,UPI,none
+TXN000469,ACC0041,4/13/2024 13:18,Nykaa,Online Shopping,4056.95,completed,Debit Card,none
+TXN001019,ACC0023,4/13/2024 13:26,Zomato,Food & Dining,1080.49,completed,Debit Card,none
+TXN000788,ACC0050,4/13/2024 13:39,Jio,Utilities,781.48,failed,UPI,none
+TXN000442,ACC0023,4/14/2024 5:12,SBI ATM,ATM Withdrawal,2044.2,completed,NEFT,none
+TXN000026,ACC0017,4/15/2024 13:47,Starbucks,Food & Dining,213.19,completed,Debit Card,none
+TXN001258,ACC0047,4/15/2024 20:54,Ola,Travel,17491.01,completed,UPI,none
+TXN000287,ACC0008,4/16/2024 10:53,Meesho,Online Shopping,2394.95,completed,UPI,none
+TXN001725,ACC0045,4/16/2024 11:08,Swiggy,Food & Dining,1206.57,completed,Debit Card,none
+TXN001878,ACC0020,4/16/2024 13:35,HDFC ATM,ATM Withdrawal,6068.78,completed,Net Banking,none
+TXN001365,ACC0006,4/16/2024 18:08,Starbucks,Food & Dining,920.21,completed,NEFT,none
+TXN000022,ACC0042,4/16/2024 18:12,Café Coffee Day,Food & Dining,1069.41,completed,UPI,none
+TXN000039,ACC0019,4/17/2024 10:57,Nykaa,Online Shopping,4417.98,completed,Debit Card,none
+TXN000280,ACC0041,4/18/2024 3:07,Indraprastha Gas,Utilities,1354.19,completed,UPI,none
+TXN000787,ACC0048,4/18/2024 10:46,Ola,Travel,16857.65,failed,UPI,none
+TXN000245,ACC0026,4/18/2024 17:42,Zomato,Food & Dining,441.81,completed,Net Banking,none
+TXN001949,ACC0050,4/18/2024 19:07,Amazon Pay,Online Shopping,3519.43,completed,UPI,none
+TXN001526,ACC0043,4/18/2024 23:42,Zomato,Food & Dining,530.81,completed,NEFT,none
+TXN001511,ACC0025,4/19/2024 0:48,Airtel,Utilities,1626.34,completed,Debit Card,none
+TXN000821,ACC0027,4/19/2024 6:24,MakeMyTrip,Travel,10758.61,completed,Debit Card,none
+TXN000470,ACC0012,4/19/2024 7:47,McDonald's,Food & Dining,1473.6,completed,NEFT,none
+TXN001655,ACC0043,4/19/2024 20:16,NDMC,Utilities,2965.96,completed,Net Banking,none
+TXN000260,ACC0044,4/20/2024 9:30,Myntra,Retail,791.47,completed,UPI,none
+TXN000296,ACC0039,4/20/2024 21:15,Indraprastha Gas,Utilities,2202.44,completed,UPI,none
+TXN001117,ACC0035,4/21/2024 1:52,IndiGo Airlines,Travel,13211.43,completed,NEFT,none
+TXN000509,ACC0005,4/22/2024 18:29,Amazon,Retail,3490.13,completed,UPI,none
+TXN000037,ACC0022,4/22/2024 22:42,McDonald's,Food & Dining,614.8,completed,NEFT,none
+TXN001304,ACC0043,4/23/2024 6:14,Myntra,Retail,3596.17,completed,UPI,none
+TXN001224,ACC0004,4/24/2024 11:48,Paytm Mall,Online Shopping,1264.01,completed,Net Banking,none
+TXN001730,ACC0017,4/24/2024 18:07,Ola,Travel,4654.68,completed,Debit Card,none
+TXN000257,ACC0015,4/24/2024 21:48,Axis ATM,ATM Withdrawal,9343.31,failed,UPI,none
+TXN000893,ACC0010,4/25/2024 0:35,Nykaa,Online Shopping,3018.81,failed,Net Banking,none
+TXN000676,ACC0019,4/25/2024 9:13,Reliance Digital,Retail,3007.23,completed,UPI,none
+TXN000264,ACC0024,4/25/2024 18:24,Café Coffee Day,Food & Dining,1368.25,completed,UPI,none
+TXN000447,ACC0037,4/26/2024 4:33,Amazon,Retail,1092.91,completed,Debit Card,none
+TXN001342,ACC0007,4/26/2024 11:24,Paytm Mall,Online Shopping,5315.6,completed,Net Banking,none
+TXN001009,ACC0002,4/27/2024 1:09,Amazon,Retail,268.99,completed,UPI,none
+TXN000416,ACC0011,4/27/2024 17:21,Myntra,Retail,4565.38,completed,Net Banking,none
+TXN001346,ACC0027,4/27/2024 20:56,IndiGo Airlines,Travel,4614.63,completed,UPI,none
+TXN001630,ACC0021,4/28/2024 17:03,ICICI ATM,ATM Withdrawal,8355.33,completed,UPI,none
+TXN001775,ACC0038,4/28/2024 17:07,IndiGo Airlines,Travel,1340.99,reversed,UPI,none
+TXN000844,ACC0037,4/28/2024 18:10,Meesho,Online Shopping,4327.64,completed,UPI,none
+TXN000063,ACC0026,4/29/2024 2:41,Indraprastha Gas,Utilities,1297.44,completed,Net Banking,none
+TXN000075,ACC0017,4/29/2024 14:30,Apollo Pharmacy,Healthcare,3091.01,failed,Debit Card,none
+TXN000995,ACC0041,4/29/2024 23:51,Amazon,Retail,3190.18,completed,UPI,none
+TXN000147,ACC0033,4/30/2024 5:44,Airtel,Utilities,2110,reversed,Net Banking,none
+TXN001123,ACC0001,5/1/2024 8:32,Zomato,Food & Dining,1121.18,completed,Net Banking,none
+TXN000110,ACC0040,5/1/2024 9:25,Flipkart,Retail,2877.16,completed,UPI,none
+TXN000088,ACC0047,5/1/2024 18:10,Swiggy,Food & Dining,772.52,completed,Debit Card,none
+TXN000819,ACC0039,5/1/2024 19:33,Jio,Utilities,2089.11,completed,Debit Card,none
+TXN001140,ACC0006,5/2/2024 21:58,Amazon,Retail,1042.78,failed,Debit Card,none
+TXN000051,ACC0030,5/3/2024 0:45,Flipkart,Retail,2678.24,completed,UPI,none
+TXN000833,ACC0016,5/3/2024 1:32,MedPlus,Healthcare,5984.69,completed,UPI,none
+TXN000921,ACC0002,5/3/2024 12:43,Airtel,Utilities,2089.08,completed,UPI,none
+TXN001195,ACC0032,5/3/2024 20:43,Swiggy,Food & Dining,181.59,completed,UPI,none
+TXN001360,ACC0041,5/4/2024 11:42,McDonald's,Food & Dining,1413.28,completed,UPI,none
+TXN001954,ACC0047,5/4/2024 21:37,Meesho,Online Shopping,3945.46,completed,UPI,none
+TXN000905,ACC0019,5/4/2024 23:19,Airtel,Utilities,1941.22,completed,UPI,none
+TXN000764,ACC0045,5/5/2024 11:20,Paytm Mall,Online Shopping,2046.57,completed,UPI,none
+TXN001696,ACC0016,5/5/2024 20:17,Myntra,Retail,4929,completed,NEFT,none
+TXN000115,ACC0002,5/6/2024 12:42,Myntra,Retail,4140.14,completed,Debit Card,none
+TXN001779,ACC0036,5/6/2024 15:10,McDonald's,Food & Dining,1009.31,completed,Debit Card,none
+TXN000443,ACC0021,5/8/2024 4:16,Paytm Mall,Online Shopping,1092.96,completed,UPI,none
+TXN000042,ACC0018,5/8/2024 10:29,BSES Yamuna,Utilities,1292.31,completed,Net Banking,none
+TXN001332,ACC0021,5/8/2024 11:04,Amazon Pay,Online Shopping,2574.92,completed,UPI,none
+TXN000982,ACC0026,5/8/2024 14:37,Myntra,Retail,4981.88,completed,UPI,none
+TXN000904,ACC0032,5/8/2024 17:27,Amazon,Retail,4499.49,completed,UPI,none
+TXN001960,ACC0036,5/8/2024 18:08,MakeMyTrip,Travel,5844.06,completed,UPI,none
+TXN000481,ACC0041,5/9/2024 8:08,Myntra,Retail,1260.09,completed,UPI,none
+TXN000214,ACC0021,5/9/2024 11:05,Café Coffee Day,Food & Dining,309.41,completed,UPI,none
+TXN000003,ACC0002,5/9/2024 14:46,Axis ATM,ATM Withdrawal,9446.97,reversed,Debit Card,none
+TXN001492,ACC0037,5/9/2024 20:01,Axis ATM,ATM Withdrawal,1403.93,completed,UPI,none
+TXN000796,ACC0040,5/9/2024 20:36,Airtel,Utilities,636.83,completed,UPI,none
+TXN000720,ACC0027,5/10/2024 2:02,Café Coffee Day,Food & Dining,255.69,completed,UPI,none
+TXN001054,ACC0044,5/10/2024 7:09,Amazon,Retail,3656.53,completed,UPI,none
+TXN000081,ACC0018,5/10/2024 9:13,Airtel,Utilities,2923.26,completed,Debit Card,none
+TXN001599,ACC0047,5/10/2024 18:38,Amazon Pay,Online Shopping,2429.72,completed,UPI,none
+TXN001695,ACC0043,5/10/2024 22:12,Flipkart,Retail,3191.18,completed,UPI,none
+TXN001733,ACC0042,5/10/2024 22:41,Myntra,Retail,3193.96,completed,UPI,none
+TXN000944,ACC0021,5/10/2024 23:22,Axis ATM,ATM Withdrawal,5133.73,completed,Net Banking,none
+TXN000111,ACC0034,5/11/2024 0:24,Jio,Utilities,2114.79,completed,NEFT,none
+TXN000827,ACC0042,5/11/2024 1:50,Apollo Pharmacy,Healthcare,7037.59,completed,Debit Card,none
+TXN000285,ACC0010,5/11/2024 3:16,Reliance Digital,Retail,2950.6,completed,Debit Card,none
+TXN000351,ACC0050,5/11/2024 10:46,Nykaa,Online Shopping,2874.67,completed,UPI,none
+TXN000990,ACC0033,5/11/2024 12:24,Fortis Hospital,Healthcare,6962.69,completed,Debit Card,none
+TXN001404,ACC0047,5/11/2024 18:21,Axis ATM,ATM Withdrawal,9132.56,completed,UPI,none
+TXN000771,ACC0009,5/12/2024 9:04,Café Coffee Day,Food & Dining,434.69,completed,Debit Card,none
+TXN000681,ACC0032,5/12/2024 20:19,Snapdeal,Online Shopping,5915.49,completed,UPI,none
+TXN001822,ACC0031,5/13/2024 5:20,ICICI ATM,ATM Withdrawal,6920.96,completed,UPI,none
+TXN000564,ACC0042,5/13/2024 13:40,Meesho,Online Shopping,3904.63,completed,Debit Card,none
+TXN001877,ACC0001,5/13/2024 13:49,Zomato,Food & Dining,811.69,completed,Debit Card,none
+TXN000161,ACC0002,5/13/2024 18:16,Zomato,Food & Dining,690.85,reversed,UPI,none
+TXN001791,ACC0017,5/13/2024 19:16,Reliance Digital,Retail,4819,completed,UPI,none
+TXN000946,ACC0021,5/13/2024 20:06,IndiGo Airlines,Travel,5458.05,completed,Debit Card,none
+TXN001887,ACC0009,5/14/2024 1:50,Flipkart,Retail,1560.31,completed,UPI,none
+TXN000694,ACC0012,5/15/2024 5:01,Flipkart,Retail,4602.89,completed,Debit Card,none
+TXN000707,ACC0013,5/15/2024 7:35,IndiGo Airlines,Travel,15716.78,completed,UPI,none
+TXN001842,ACC0018,5/15/2024 18:21,IRCTC,Travel,12100.86,completed,Net Banking,none
+TXN000409,ACC0049,5/15/2024 21:58,Zomato,Food & Dining,1257.39,completed,NEFT,none
+TXN000977,ACC0030,5/16/2024 0:38,Amazon,Retail,1637.23,completed,Net Banking,none
+TXN000035,ACC0016,5/16/2024 4:51,Indraprastha Gas,Utilities,2229.74,completed,Debit Card,none
+TXN001475,ACC0036,5/16/2024 13:06,Uber,Travel,10342.42,completed,NEFT,none
+TXN001971,ACC0021,5/17/2024 4:45,Amazon,Retail,3793.2,completed,UPI,none
+TXN000604,ACC0044,5/17/2024 8:14,Swiggy,Food & Dining,789.6,completed,UPI,none
+TXN000955,ACC0017,5/17/2024 18:54,Axis ATM,ATM Withdrawal,6764.03,reversed,UPI,none
+TXN000709,ACC0013,5/18/2024 6:54,Flipkart,Retail,1630.76,completed,Debit Card,none
+TXN001555,ACC0033,5/18/2024 18:47,Flipkart,Retail,3028.48,completed,Net Banking,none
+TXN000310,ACC0010,5/19/2024 4:29,Starbucks,Food & Dining,319.29,completed,Debit Card,none
+TXN001849,ACC0002,5/19/2024 20:22,Airtel,Utilities,2360.43,failed,UPI,none
+TXN000410,ACC0022,5/19/2024 22:29,Café Coffee Day,Food & Dining,1459.04,reversed,Debit Card,none
+TXN001742,ACC0019,5/20/2024 6:27,Max Healthcare,Healthcare,2802.2,completed,NEFT,none
+TXN001068,ACC0049,5/20/2024 12:45,IRCTC,Travel,1527.84,completed,Debit Card,none
+TXN001659,ACC0042,5/20/2024 15:53,Uber,Travel,3670.06,completed,UPI,none
+TXN000217,ACC0010,5/21/2024 0:53,Starbucks,Food & Dining,1083.45,completed,UPI,none
+TXN000030,ACC0023,5/21/2024 22:39,MakeMyTrip,Travel,2712.73,completed,UPI,none
+TXN001055,ACC0019,5/22/2024 10:07,Indraprastha Gas,Utilities,1500.82,failed,Debit Card,none
+TXN000886,ACC0013,5/22/2024 10:53,Swiggy,Food & Dining,757.17,completed,UPI,none
+TXN001024,ACC0030,5/22/2024 16:17,ICICI ATM,ATM Withdrawal,8005.86,completed,Debit Card,none
+TXN000669,ACC0048,5/22/2024 20:31,Snapdeal,Online Shopping,2046.67,completed,UPI,none
+TXN000015,ACC0035,5/23/2024 0:01,Ola,Travel,11444.25,reversed,Net Banking,none
+TXN000700,ACC0031,5/23/2024 8:46,Airtel,Utilities,500.08,completed,UPI,none
+TXN001918,ACC0026,5/23/2024 10:18,MedPlus,Healthcare,6426.13,failed,Debit Card,none
+TXN000606,ACC0026,5/23/2024 14:09,Snapdeal,Online Shopping,4496.57,completed,UPI,none
+TXN000747,ACC0012,5/23/2024 18:46,IndiGo Airlines,Travel,9764.25,completed,Debit Card,none
+TXN001128,ACC0003,5/23/2024 20:20,Starbucks,Food & Dining,1054.41,completed,Net Banking,none
+TXN000928,ACC0046,5/24/2024 15:24,Meesho,Online Shopping,2033.51,completed,Net Banking,none
+TXN001932,ACC0028,5/25/2024 18:29,Starbucks,Food & Dining,610.01,completed,Debit Card,none
+TXN001937,ACC0034,5/25/2024 21:47,Fortis Hospital,Healthcare,7135.65,completed,NEFT,none
+TXN000816,ACC0027,5/26/2024 0:09,Starbucks,Food & Dining,350.73,completed,Debit Card,none
+TXN001244,ACC0016,5/26/2024 3:46,Amazon,Retail,2979.82,completed,Debit Card,none
+TXN001988,ACC0044,5/26/2024 10:36,Max Healthcare,Healthcare,5694.36,completed,Debit Card,none
+TXN001217,ACC0007,5/27/2024 14:16,NDMC,Utilities,1131.91,completed,Net Banking,none
+TXN000383,ACC0012,5/28/2024 2:14,MakeMyTrip,Travel,556.96,completed,UPI,none
+TXN000339,ACC0020,5/28/2024 5:32,Reliance Digital,Retail,361.35,failed,UPI,none
+TXN001673,ACC0022,5/28/2024 20:24,Zomato,Food & Dining,1413.86,completed,UPI,none
+TXN001737,ACC0002,5/28/2024 20:27,Snapdeal,Online Shopping,2397.51,completed,NEFT,none
+TXN001124,ACC0024,5/29/2024 6:25,Café Coffee Day,Food & Dining,1350.91,completed,Debit Card,none
+TXN000719,ACC0022,5/29/2024 18:30,MakeMyTrip,Travel,18839.83,reversed,UPI,none
+TXN001893,ACC0019,5/30/2024 4:24,Zomato,Food & Dining,1083.68,completed,UPI,none
+TXN001394,ACC0014,5/30/2024 22:55,Swiggy,Food & Dining,1074.44,completed,Debit Card,none
+TXN001135,ACC0002,5/31/2024 7:45,DMart,Retail,2838.49,completed,UPI,none
+TXN001950,ACC0029,5/31/2024 16:00,Amazon Pay,Online Shopping,2223.14,completed,UPI,none
+TXN001724,ACC0029,5/31/2024 20:31,IRCTC,Travel,14639.37,completed,Debit Card,none
+TXN000258,ACC0046,6/1/2024 17:32,DMart,Retail,3163.29,failed,Debit Card,none
+TXN001535,ACC0023,6/1/2024 22:10,Snapdeal,Online Shopping,1011,completed,NEFT,none
+TXN001070,ACC0031,6/2/2024 8:59,Airtel,Utilities,2113.09,completed,UPI,none
+TXN001227,ACC0050,6/3/2024 15:44,Meesho,Online Shopping,1391.49,completed,UPI,none
+TXN001559,ACC0018,6/4/2024 17:23,Uber,Travel,10104.18,completed,Debit Card,none
+TXN000041,ACC0031,6/5/2024 16:59,SBI ATM,ATM Withdrawal,4853.66,reversed,UPI,none
+TXN001347,ACC0008,6/5/2024 19:10,Meesho,Online Shopping,2883.59,completed,Debit Card,none
+TXN000555,ACC0022,6/6/2024 11:01,Flipkart,Retail,521.47,completed,Debit Card,none
+TXN000357,ACC0013,6/6/2024 12:20,Café Coffee Day,Food & Dining,1035.09,completed,Net Banking,none
+TXN001732,ACC0019,6/6/2024 13:08,Jio,Utilities,2028.94,completed,Debit Card,none
+TXN001890,ACC0025,6/6/2024 20:55,ICICI ATM,ATM Withdrawal,4937.4,completed,UPI,none
+TXN001810,ACC0013,6/7/2024 7:02,Apollo Pharmacy,Healthcare,6881.23,completed,UPI,none
+TXN000082,ACC0003,6/7/2024 14:22,Café Coffee Day,Food & Dining,1075.7,completed,NEFT,none
+TXN001603,ACC0046,6/8/2024 11:36,Max Healthcare,Healthcare,4454.56,completed,UPI,none
+TXN001082,ACC0048,6/8/2024 13:37,Amazon,Retail,1692.83,completed,Debit Card,none
+TXN000271,ACC0003,6/9/2024 2:02,NDMC,Utilities,2735.48,completed,UPI,none
+TXN001023,ACC0020,6/9/2024 5:41,Axis ATM,ATM Withdrawal,5378.34,completed,UPI,none
+TXN001668,ACC0016,6/9/2024 9:27,Café Coffee Day,Food & Dining,404.11,failed,Net Banking,none
+TXN001832,ACC0017,6/9/2024 13:19,SBI ATM,ATM Withdrawal,2044.16,completed,NEFT,none
+TXN000102,ACC0022,6/9/2024 19:29,Paytm Mall,Online Shopping,1887.96,completed,Debit Card,none
+TXN001981,ACC0049,6/10/2024 6:59,Ola,Travel,15487.22,completed,NEFT,none
+TXN000342,ACC0023,6/10/2024 19:28,HDFC ATM,ATM Withdrawal,2304.69,completed,UPI,none
+TXN001945,ACC0006,6/10/2024 21:07,Uber,Travel,2357.42,completed,UPI,none
+TXN001683,ACC0002,6/11/2024 18:18,Indraprastha Gas,Utilities,2940.2,completed,UPI,none
+TXN001912,ACC0027,6/12/2024 3:54,Flipkart,Retail,4324.07,completed,UPI,none
+TXN000124,ACC0039,6/13/2024 18:50,MedPlus,Healthcare,6569.48,completed,Debit Card,none
+TXN000484,ACC0014,6/13/2024 22:52,Axis ATM,ATM Withdrawal,4608.48,completed,Debit Card,none
+TXN001928,ACC0041,6/14/2024 9:39,Starbucks,Food & Dining,561.96,completed,NEFT,none
+TXN000360,ACC0011,6/14/2024 11:00,Reliance Digital,Retail,1708.88,completed,Debit Card,none
+TXN000721,ACC0043,6/15/2024 19:43,Uber,Travel,14820.13,completed,Debit Card,none
+TXN001419,ACC0043,6/16/2024 3:19,Reliance Digital,Retail,1727.3,completed,UPI,none
+TXN001033,ACC0031,6/16/2024 16:19,McDonald's,Food & Dining,311.77,completed,Net Banking,none
+TXN001757,ACC0039,6/17/2024 5:18,McDonald's,Food & Dining,850.82,completed,Debit Card,none
+TXN000386,ACC0033,6/17/2024 16:07,Myntra,Retail,4250.84,completed,UPI,none
+TXN000976,ACC0005,6/18/2024 4:17,Axis ATM,ATM Withdrawal,7930.19,reversed,UPI,none
+TXN000335,ACC0024,6/18/2024 19:04,IRCTC,Travel,18233.11,completed,UPI,none
+TXN000192,ACC0050,6/19/2024 10:55,IndiGo Airlines,Travel,19833.77,failed,Debit Card,none
+TXN000066,ACC0049,6/20/2024 6:32,Axis ATM,ATM Withdrawal,2149.21,completed,Net Banking,none
+TXN000055,ACC0037,6/20/2024 8:33,Starbucks,Food & Dining,892.45,completed,UPI,none
+TXN001831,ACC0032,6/20/2024 11:23,Airtel,Utilities,761.59,completed,Debit Card,none
+TXN000160,ACC0007,6/20/2024 14:11,Max Healthcare,Healthcare,5138.16,failed,UPI,none
+TXN000825,ACC0024,6/21/2024 1:46,Amazon Pay,Online Shopping,1699.64,completed,UPI,none
+TXN001713,ACC0028,6/21/2024 3:09,Reliance Digital,Retail,2551.67,completed,UPI,none
+TXN000611,ACC0039,6/21/2024 6:32,DMart,Retail,4395.54,completed,UPI,none
+TXN001816,ACC0048,6/21/2024 12:47,McDonald's,Food & Dining,1499.49,completed,UPI,none
+TXN000352,ACC0036,6/21/2024 16:48,Reliance Digital,Retail,4005.7,completed,Net Banking,none
+TXN001828,ACC0008,6/23/2024 17:34,MedPlus,Healthcare,5276.85,completed,Net Banking,none
+TXN001586,ACC0017,6/25/2024 1:29,Ola,Travel,16909.56,completed,UPI,none
+TXN000890,ACC0039,6/26/2024 9:03,Swiggy,Food & Dining,1108.64,completed,UPI,none
+TXN001580,ACC0014,6/27/2024 7:39,Flipkart,Retail,2750.39,completed,Debit Card,none
+TXN000584,ACC0001,6/27/2024 20:19,IRCTC,Travel,11316.41,completed,UPI,none
+TXN001720,ACC0021,6/27/2024 20:20,Meesho,Online Shopping,5596.9,completed,UPI,none
+TXN000353,ACC0020,6/28/2024 2:07,Zomato,Food & Dining,321.14,completed,UPI,none
+TXN000070,ACC0016,6/28/2024 2:31,ICICI ATM,ATM Withdrawal,5437.23,completed,Debit Card,none
+TXN001241,ACC0046,6/28/2024 8:25,Ola,Travel,11355.3,completed,UPI,none
+TXN000154,ACC0035,6/28/2024 11:48,MedPlus,Healthcare,6916.33,reversed,Net Banking,none
+TXN000221,ACC0008,6/28/2024 22:05,Zomato,Food & Dining,1409.28,completed,Net Banking,none
+TXN000210,ACC0029,6/29/2024 9:56,HDFC ATM,ATM Withdrawal,2833.31,completed,Debit Card,none
+TXN001540,ACC0010,6/29/2024 21:50,Starbucks,Food & Dining,829.14,completed,Net Banking,none
+TXN_DORM_0,ACC0011,7/1/2024 0:00,Swiggy,Retail,2608.6,completed,UPI,dormant_spike
+TXN_DORM_1,ACC0011,7/1/2024 2:00,Amazon,Food & Dining,3064.2,completed,UPI,dormant_spike
+TXN_DORM_2,ACC0011,7/1/2024 4:00,Swiggy,Retail,3688.9,completed,UPI,dormant_spike
+TXN_DORM_3,ACC0011,7/1/2024 6:00,Swiggy,Retail,2942.43,completed,UPI,dormant_spike
+TXN_DORM_4,ACC0011,7/1/2024 8:00,Swiggy,Food & Dining,3660.13,completed,UPI,dormant_spike
+TXN000695,ACC0025,7/1/2024 9:05,NDMC,Utilities,2750.66,completed,Debit Card,none
+TXN000199,ACC0019,7/2/2024 4:48,McDonald's,Food & Dining,279.83,completed,UPI,none
+TXN000421,ACC0047,7/2/2024 6:02,McDonald's,Food & Dining,942.96,completed,Debit Card,none
+TXN000127,ACC0029,7/3/2024 5:31,Uber,Travel,15983.49,completed,Net Banking,none
+TXN000883,ACC0030,7/3/2024 8:16,Snapdeal,Online Shopping,2904.26,completed,Net Banking,none
+TXN000644,ACC0042,7/3/2024 9:49,Apollo Pharmacy,Healthcare,4705.53,completed,UPI,none
+TXN000618,ACC0009,7/3/2024 13:35,Amazon,Retail,4294.31,reversed,Net Banking,none
+TXN000313,ACC0018,7/4/2024 7:56,Nykaa,Online Shopping,5537.88,completed,Debit Card,none
+TXN001010,ACC0038,7/4/2024 21:09,SBI ATM,ATM Withdrawal,5136.07,completed,Debit Card,none
+TXN000395,ACC0014,7/5/2024 14:06,McDonald's,Food & Dining,938.17,completed,UPI,none
+TXN001288,ACC0005,7/5/2024 20:11,MedPlus,Healthcare,7113.68,failed,NEFT,none
+TXN000274,ACC0017,7/6/2024 1:21,Reliance Digital,Retail,3376.83,completed,Debit Card,none
+TXN001922,ACC0020,7/6/2024 10:37,IRCTC,Travel,13915.69,completed,UPI,none
+TXN000558,ACC0004,7/6/2024 10:56,Ola,Travel,14279.37,completed,UPI,none
+TXN001510,ACC0005,7/7/2024 7:07,Paytm Mall,Online Shopping,3975.97,completed,Net Banking,none
+TXN001974,ACC0035,7/7/2024 11:35,HDFC ATM,ATM Withdrawal,5964.9,reversed,Debit Card,none
+TXN001266,ACC0005,7/7/2024 19:27,Zomato,Food & Dining,1460.12,completed,NEFT,none
+TXN001785,ACC0030,7/7/2024 22:26,Nykaa,Online Shopping,5303.64,completed,Debit Card,none
+TXN001493,ACC0008,7/8/2024 2:39,Uber,Travel,9094.92,completed,Debit Card,none
+TXN001953,ACC0014,7/8/2024 6:01,IRCTC,Travel,11651.71,completed,UPI,none
+TXN000686,ACC0012,7/8/2024 6:57,Myntra,Retail,4265.06,completed,Debit Card,none
+TXN001567,ACC0018,7/8/2024 10:17,Meesho,Online Shopping,3428.4,completed,NEFT,none
+TXN000069,ACC0012,7/8/2024 12:39,DMart,Retail,4545.83,completed,NEFT,none
+TXN000495,ACC0032,7/9/2024 9:04,Amazon Pay,Online Shopping,1832.43,completed,UPI,none
+TXN000588,ACC0044,7/9/2024 11:53,HDFC ATM,ATM Withdrawal,7665.08,completed,Debit Card,none
+TXN000716,ACC0029,7/9/2024 18:34,HDFC ATM,ATM Withdrawal,8341.92,completed,UPI,none
+TXN000323,ACC0010,7/10/2024 13:05,DMart,Retail,3288.15,completed,UPI,none
+TXN001387,ACC0015,7/11/2024 2:03,Amazon,Retail,1925.81,completed,UPI,none
+TXN001698,ACC0050,7/11/2024 7:44,BSES Yamuna,Utilities,2319.41,completed,Debit Card,none
+TXN001914,ACC0049,7/11/2024 9:21,DMart,Retail,2085.25,completed,Debit Card,none
+TXN001425,ACC0024,7/11/2024 16:34,Flipkart,Retail,3432.88,completed,UPI,none
+TXN000697,ACC0031,7/11/2024 17:52,Airtel,Utilities,1983.65,completed,UPI,none
+TXN001783,ACC0006,7/11/2024 23:05,HDFC ATM,ATM Withdrawal,8705.32,completed,UPI,none
+TXN001148,ACC0032,7/12/2024 0:14,Myntra,Retail,3213.75,completed,Net Banking,none
+TXN001427,ACC0014,7/12/2024 4:57,MakeMyTrip,Travel,10887.37,reversed,UPI,none
+TXN000776,ACC0025,7/12/2024 6:53,Amazon,Retail,1977.11,failed,Net Banking,none
+TXN001038,ACC0043,7/12/2024 22:41,MakeMyTrip,Travel,14995.38,completed,Net Banking,none
+TXN000585,ACC0029,7/12/2024 23:05,Flipkart,Retail,3405.25,completed,UPI,none
+TXN000104,ACC0017,7/13/2024 8:55,McDonald's,Food & Dining,1389.22,completed,UPI,none
+TXN001284,ACC0048,7/15/2024 6:48,Snapdeal,Online Shopping,1986.19,completed,Debit Card,none
+TXN000265,ACC0039,7/15/2024 17:18,Airtel,Utilities,2627.94,completed,Net Banking,none
+TXN000178,ACC0049,7/16/2024 0:29,Axis ATM,ATM Withdrawal,1474.15,completed,Debit Card,none
+TXN000157,ACC0023,7/16/2024 3:59,DMart,Retail,1024.06,completed,NEFT,none
+TXN001250,ACC0036,7/16/2024 12:13,IndiGo Airlines,Travel,11909.02,reversed,UPI,none
+TXN001275,ACC0033,7/16/2024 23:47,Café Coffee Day,Food & Dining,729.44,completed,Debit Card,none
+TXN001424,ACC0046,7/17/2024 3:17,Zomato,Food & Dining,351.52,completed,Net Banking,none
+TXN001094,ACC0049,7/17/2024 4:45,Axis ATM,ATM Withdrawal,8530.57,completed,UPI,none
+TXN001353,ACC0041,7/17/2024 10:34,Nykaa,Online Shopping,3658.19,completed,UPI,none
+TXN000452,ACC0036,7/18/2024 0:15,HDFC ATM,ATM Withdrawal,1173.95,completed,Debit Card,none
+TXN001997,ACC0026,7/18/2024 6:37,HDFC ATM,ATM Withdrawal,5798.81,completed,Net Banking,none
+TXN000109,ACC0004,7/18/2024 10:12,DMart,Retail,3049.24,completed,Debit Card,none
+TXN001134,ACC0019,7/18/2024 15:29,Fortis Hospital,Healthcare,789.11,completed,Debit Card,none
+TXN000321,ACC0012,7/18/2024 15:33,Flipkart,Retail,4231.83,completed,Debit Card,none
+TXN000998,ACC0005,7/18/2024 20:51,Swiggy,Food & Dining,344.7,completed,Debit Card,none
+TXN000095,ACC0039,7/19/2024 6:41,Paytm Mall,Online Shopping,4888.75,completed,NEFT,none
+TXN000636,ACC0005,7/19/2024 18:49,Café Coffee Day,Food & Dining,917.05,failed,UPI,none
+TXN000205,ACC0039,7/20/2024 15:38,ICICI ATM,ATM Withdrawal,5062.48,completed,Debit Card,none
+TXN000391,ACC0025,7/20/2024 18:22,HDFC ATM,ATM Withdrawal,7492.54,completed,Debit Card,none
+TXN000699,ACC0027,7/20/2024 19:22,HDFC ATM,ATM Withdrawal,3864.36,completed,UPI,none
+TXN001261,ACC0031,7/21/2024 19:11,NDMC,Utilities,1340.4,completed,Debit Card,none
+TXN001576,ACC0003,7/21/2024 19:13,Ola,Travel,16946.84,completed,Debit Card,none
+TXN001923,ACC0027,7/22/2024 18:28,Zomato,Food & Dining,1268.72,completed,Debit Card,none
+TXN000014,ACC0048,7/22/2024 20:20,Nykaa,Online Shopping,2186.12,completed,UPI,none
+TXN001297,ACC0049,7/22/2024 20:59,Zomato,Food & Dining,1146.11,completed,Net Banking,none
+TXN000355,ACC0048,7/24/2024 15:19,DMart,Retail,3716.65,completed,Net Banking,none
+TXN001444,ACC0043,7/25/2024 5:56,Meesho,Online Shopping,4197.91,completed,NEFT,none
+TXN000261,ACC0042,7/25/2024 19:00,BSES Yamuna,Utilities,1918.28,reversed,Debit Card,none
+TXN000006,ACC0014,7/26/2024 18:41,Reliance Digital,Retail,4722.57,completed,UPI,none
+TXN001253,ACC0004,7/26/2024 19:55,Starbucks,Food & Dining,646.53,completed,UPI,none
+TXN000076,ACC0044,7/27/2024 2:55,Starbucks,Food & Dining,216.9,completed,UPI,none
+TXN000466,ACC0005,7/27/2024 8:06,Zomato,Food & Dining,1051.47,completed,Net Banking,none
+TXN000327,ACC0045,7/28/2024 3:55,Ola,Travel,1641.74,completed,Debit Card,none
+TXN000363,ACC0023,7/28/2024 7:56,Zomato,Food & Dining,959.29,completed,Debit Card,none
+TXN001936,ACC0015,7/28/2024 17:30,IndiGo Airlines,Travel,16663.49,completed,Debit Card,none
+TXN000309,ACC0036,7/29/2024 5:58,Zomato,Food & Dining,551.1,completed,UPI,none
+TXN000590,ACC0047,7/29/2024 14:01,Max Healthcare,Healthcare,6931.38,completed,Debit Card,none
+TXN001415,ACC0036,7/30/2024 20:09,Ola,Travel,15869.12,completed,UPI,none
+TXN000556,ACC0049,7/30/2024 21:48,Axis ATM,ATM Withdrawal,5910.27,completed,Debit Card,none
+TXN000044,ACC0033,7/31/2024 16:47,Indraprastha Gas,Utilities,2351.92,completed,UPI,none
+TXN001299,ACC0033,8/1/2024 7:12,Zomato,Food & Dining,1356.59,completed,UPI,none
+TXN001018,ACC0007,8/1/2024 7:53,Paytm Mall,Online Shopping,1022.77,completed,UPI,none
+TXN000403,ACC0020,8/1/2024 19:37,Amazon,Retail,1860.21,completed,Debit Card,none
+TXN000751,ACC0034,8/2/2024 3:07,DMart,Retail,3521.84,completed,Debit Card,none
+TXN001793,ACC0047,8/2/2024 6:48,ICICI ATM,ATM Withdrawal,7757.3,completed,Net Banking,none
+TXN001362,ACC0034,8/2/2024 22:23,BSES Yamuna,Utilities,1124.9,completed,UPI,none
+TXN000402,ACC0024,8/3/2024 16:26,Max Healthcare,Healthcare,3265.2,completed,UPI,none
+TXN000994,ACC0014,8/4/2024 3:14,ICICI ATM,ATM Withdrawal,9414.04,failed,Debit Card,none
+TXN001351,ACC0049,8/4/2024 6:11,Amazon,Retail,3429.7,completed,Debit Card,none
+TXN000934,ACC0038,8/4/2024 10:24,Indraprastha Gas,Utilities,2748.53,failed,Debit Card,none
+TXN000337,ACC0022,8/4/2024 21:25,Reliance Digital,Retail,414.06,completed,UPI,none
+TXN000522,ACC0027,8/4/2024 23:56,Amazon,Retail,2590.59,completed,Net Banking,none
+TXN000578,ACC0021,8/5/2024 2:31,Myntra,Retail,3198.15,completed,Debit Card,none
+TXN001206,ACC0031,8/5/2024 12:17,Snapdeal,Online Shopping,1055.67,completed,Debit Card,none
+TXN001499,ACC0027,8/5/2024 15:27,Reliance Digital,Retail,2098.3,completed,UPI,none
+TXN001649,ACC0007,8/5/2024 20:14,Myntra,Retail,3470.3,completed,UPI,none
+TXN001840,ACC0011,8/6/2024 3:39,Café Coffee Day,Food & Dining,315.07,completed,UPI,none
+TXN000029,ACC0040,8/6/2024 8:49,Jio,Utilities,2851.31,completed,Net Banking,none
+TXN000529,ACC0046,8/6/2024 11:54,Ola,Travel,10668.26,completed,UPI,none
+TXN000324,ACC0046,8/6/2024 17:57,IndiGo Airlines,Travel,1066.89,completed,UPI,none
+TXN000602,ACC0015,8/6/2024 21:28,Starbucks,Food & Dining,1187.87,completed,Debit Card,none
+TXN001874,ACC0036,8/6/2024 23:24,Ola,Travel,4584.98,completed,UPI,none
+TXN000830,ACC0026,8/7/2024 3:36,Flipkart,Retail,2234.1,reversed,UPI,none
+TXN000358,ACC0003,8/8/2024 7:40,McDonald's,Food & Dining,1061.61,completed,Net Banking,none
+TXN001155,ACC0050,8/8/2024 14:38,Jio,Utilities,2786.87,completed,Debit Card,none
+TXN000565,ACC0045,8/8/2024 23:11,Airtel,Utilities,963.43,completed,Net Banking,none
+TXN001199,ACC0044,8/9/2024 0:27,Axis ATM,ATM Withdrawal,2812.59,completed,UPI,none
+TXN000330,ACC0004,8/9/2024 3:40,BSES Yamuna,Utilities,1553.12,completed,UPI,none
+TXN000840,ACC0002,8/9/2024 15:17,ICICI ATM,ATM Withdrawal,7581.26,reversed,Debit Card,none
+TXN000786,ACC0035,8/10/2024 5:29,Fortis Hospital,Healthcare,4913.64,completed,Net Banking,none
+TXN001743,ACC0030,8/10/2024 13:58,Axis ATM,ATM Withdrawal,4154.23,completed,Debit Card,none
+TXN001941,ACC0039,8/10/2024 19:57,Amazon Pay,Online Shopping,3084.11,completed,Debit Card,none
+TXN000370,ACC0014,8/10/2024 21:37,Swiggy,Food & Dining,690.02,reversed,UPI,none
+TXN000571,ACC0035,8/10/2024 22:01,Café Coffee Day,Food & Dining,1330.86,completed,UPI,none
+TXN000273,ACC0044,8/11/2024 6:13,Zomato,Food & Dining,1052.18,completed,UPI,none
+TXN001973,ACC0039,8/11/2024 14:22,Nykaa,Online Shopping,1788.42,completed,NEFT,none
+TXN000852,ACC0021,8/11/2024 19:50,Paytm Mall,Online Shopping,1877.5,completed,NEFT,none
+TXN001036,ACC0050,8/11/2024 20:18,Meesho,Online Shopping,4612.27,completed,Debit Card,none
+TXN001919,ACC0018,8/12/2024 1:45,IndiGo Airlines,Travel,14306.22,completed,UPI,none
+TXN001480,ACC0005,8/13/2024 23:42,Café Coffee Day,Food & Dining,574.83,completed,Net Banking,none
+TXN000892,ACC0013,8/14/2024 1:11,Reliance Digital,Retail,2897.29,completed,Debit Card,none
+TXN001595,ACC0031,8/14/2024 9:29,Nykaa,Online Shopping,4137.26,completed,NEFT,none
+TXN001984,ACC0045,8/14/2024 10:25,Paytm Mall,Online Shopping,3202.7,completed,Debit Card,none
+TXN001065,ACC0029,8/14/2024 10:38,Starbucks,Food & Dining,1119.79,completed,UPI,none
+TXN001921,ACC0012,8/14/2024 15:29,Zomato,Food & Dining,115.35,reversed,UPI,none
+TXN001705,ACC0023,8/14/2024 15:46,Starbucks,Food & Dining,411.65,completed,Debit Card,none
+TXN000829,ACC0015,8/15/2024 2:46,Max Healthcare,Healthcare,586.93,completed,Net Banking,none
+TXN001473,ACC0007,8/15/2024 13:14,Starbucks,Food & Dining,640.2,completed,UPI,none
+TXN001280,ACC0016,8/15/2024 23:51,Swiggy,Food & Dining,636.11,completed,Debit Card,none
+TXN001482,ACC0035,8/16/2024 1:50,McDonald's,Food & Dining,358.9,completed,NEFT,none
+TXN001311,ACC0029,8/16/2024 10:51,IndiGo Airlines,Travel,17229.38,failed,UPI,none
+TXN001041,ACC0031,8/16/2024 11:20,Max Healthcare,Healthcare,3081.25,failed,UPI,none
+TXN001263,ACC0019,8/16/2024 22:14,Indraprastha Gas,Utilities,2313.7,completed,UPI,none
+TXN001125,ACC0036,8/18/2024 4:38,Amazon,Retail,3302.55,completed,Net Banking,none
+TXN001622,ACC0028,8/18/2024 15:59,Amazon,Retail,2444.21,completed,NEFT,none
+TXN000365,ACC0006,8/18/2024 21:21,Uber,Travel,13792.55,completed,NEFT,none
+TXN000468,ACC0033,8/19/2024 11:26,Café Coffee Day,Food & Dining,169.97,reversed,Net Banking,none
+TXN001626,ACC0003,8/19/2024 22:18,HDFC ATM,ATM Withdrawal,2790.25,completed,UPI,none
+TXN001099,ACC0039,8/20/2024 1:53,Meesho,Online Shopping,4559.25,completed,Debit Card,none
+TXN001118,ACC0050,8/20/2024 21:48,Airtel,Utilities,1364.14,completed,Net Banking,none
+TXN000505,ACC0002,8/21/2024 11:07,Nykaa,Online Shopping,3862.67,completed,Debit Card,none
+TXN000226,ACC0028,8/21/2024 15:12,BSES Yamuna,Utilities,1733.19,completed,UPI,none
+TXN001116,ACC0024,8/21/2024 19:10,Flipkart,Retail,3696.77,completed,Debit Card,none
+TXN000922,ACC0047,8/22/2024 3:32,Myntra,Retail,3877.98,completed,UPI,none
+TXN001315,ACC0028,8/23/2024 3:32,Uber,Travel,4466.55,completed,UPI,none
+TXN001667,ACC0002,8/23/2024 5:26,McDonald's,Food & Dining,1108.93,completed,Debit Card,none
+TXN001660,ACC0032,8/23/2024 6:38,Amazon Pay,Online Shopping,4459.29,completed,NEFT,none
+TXN000080,ACC0016,8/23/2024 7:21,SBI ATM,ATM Withdrawal,3904.18,failed,NEFT,none
+TXN000659,ACC0020,8/23/2024 11:22,Swiggy,Food & Dining,531.86,completed,UPI,none
+TXN000195,ACC0042,8/23/2024 16:52,NDMC,Utilities,2243.68,completed,Net Banking,none
+TXN000603,ACC0040,8/24/2024 2:38,Amazon Pay,Online Shopping,4661.41,completed,Debit Card,none
+TXN000474,ACC0044,8/24/2024 15:34,MedPlus,Healthcare,6870.61,completed,Net Banking,none
+TXN000533,ACC0004,8/24/2024 21:00,Paytm Mall,Online Shopping,424.91,completed,UPI,none
+TXN000580,ACC0046,8/25/2024 0:54,Fortis Hospital,Healthcare,7439.82,completed,Debit Card,none
+TXN000663,ACC0019,8/25/2024 10:54,BSES Yamuna,Utilities,952.96,completed,UPI,none
+TXN001746,ACC0038,8/26/2024 5:19,Swiggy,Food & Dining,201.29,completed,UPI,none
+TXN001536,ACC0050,8/26/2024 20:11,Meesho,Online Shopping,3110.54,completed,UPI,none
+TXN000599,ACC0032,8/26/2024 21:42,Snapdeal,Online Shopping,3511.43,completed,Net Banking,none
+TXN000202,ACC0018,8/27/2024 13:35,Indraprastha Gas,Utilities,686.74,reversed,Debit Card,none
+TXN001597,ACC0005,8/27/2024 23:19,ICICI ATM,ATM Withdrawal,7494.19,completed,UPI,none
+TXN001377,ACC0049,8/29/2024 1:08,HDFC ATM,ATM Withdrawal,5422.67,failed,UPI,none
+TXN001776,ACC0041,8/29/2024 3:28,Max Healthcare,Healthcare,2819.14,reversed,Debit Card,none
+TXN000942,ACC0026,8/29/2024 7:57,Café Coffee Day,Food & Dining,1149.36,completed,UPI,none
+TXN000640,ACC0001,8/29/2024 17:22,Myntra,Retail,3055.27,completed,Debit Card,none
+TXN001552,ACC0048,8/30/2024 0:18,Nykaa,Online Shopping,3715.97,failed,UPI,none
+TXN001166,ACC0022,8/30/2024 22:08,Myntra,Retail,1460.05,completed,Net Banking,none
+TXN000112,ACC0021,8/31/2024 3:53,Apollo Pharmacy,Healthcare,258.77,completed,Debit Card,none
+TXN000418,ACC0026,8/31/2024 7:45,Amazon,Retail,4755.74,completed,Net Banking,none
+TXN000012,ACC0044,8/31/2024 8:42,Amazon,Retail,3906.77,completed,Net Banking,none
+TXN000338,ACC0031,8/31/2024 10:41,Paytm Mall,Online Shopping,1850.11,completed,UPI,none
+TXN000090,ACC0031,9/1/2024 12:56,Jio,Utilities,2532.25,failed,Debit Card,none
+TXN001229,ACC0001,9/1/2024 15:19,Jio,Utilities,2409.01,completed,UPI,none
+TXN001414,ACC0046,9/1/2024 16:42,IndiGo Airlines,Travel,12103.4,completed,NEFT,none
+TXN000388,ACC0039,9/2/2024 10:04,Meesho,Online Shopping,2267.77,completed,Debit Card,none
+TXN000375,ACC0046,9/2/2024 11:36,Paytm Mall,Online Shopping,4106.49,failed,UPI,none
+TXN001392,ACC0008,9/2/2024 19:26,Amazon Pay,Online Shopping,5891.87,completed,Debit Card,none
+TXN000086,ACC0006,9/3/2024 10:22,NDMC,Utilities,2777.32,completed,Debit Card,none
+TXN000318,ACC0008,9/3/2024 15:04,Zomato,Food & Dining,881.26,completed,Net Banking,none
+TXN001703,ACC0027,9/4/2024 7:01,Jio,Utilities,1717.02,completed,Debit Card,none
+TXN001246,ACC0040,9/4/2024 9:45,BSES Yamuna,Utilities,2209.69,reversed,Debit Card,none
+TXN000292,ACC0004,9/4/2024 12:32,Jio,Utilities,2045.13,completed,UPI,none
+TXN000148,ACC0003,9/4/2024 16:03,Amazon Pay,Online Shopping,3444.82,completed,Debit Card,none
+TXN001992,ACC0029,9/5/2024 0:36,Apollo Pharmacy,Healthcare,5862.56,completed,UPI,none
+TXN000284,ACC0015,9/6/2024 4:18,Reliance Digital,Retail,4129.93,completed,UPI,none
+TXN001975,ACC0004,9/6/2024 8:35,IRCTC,Travel,7951.24,completed,UPI,none
+TXN001581,ACC0013,9/6/2024 9:22,Paytm Mall,Online Shopping,585.37,completed,UPI,none
+TXN000986,ACC0011,9/6/2024 11:30,Amazon,Retail,3388.83,completed,Debit Card,none
+TXN000794,ACC0049,9/6/2024 12:08,Paytm Mall,Online Shopping,3997.86,completed,UPI,none
+TXN001162,ACC0004,9/6/2024 12:24,Amazon,Retail,1188.26,completed,UPI,none
+TXN000980,ACC0032,9/6/2024 20:06,Reliance Digital,Retail,3975.23,completed,Debit Card,none
+TXN001658,ACC0018,9/6/2024 21:23,Myntra,Retail,4903.93,completed,Net Banking,none
+TXN000948,ACC0045,9/7/2024 2:20,Max Healthcare,Healthcare,6983.01,completed,NEFT,none
+TXN001313,ACC0040,9/7/2024 12:45,Jio,Utilities,532.53,completed,UPI,none
+TXN001025,ACC0021,9/8/2024 1:19,Nykaa,Online Shopping,2001.41,completed,UPI,none
+TXN001295,ACC0026,9/8/2024 3:33,HDFC ATM,ATM Withdrawal,5658.67,completed,NEFT,none
+TXN001875,ACC0032,9/8/2024 8:33,Amazon Pay,Online Shopping,3314.19,completed,Debit Card,none
+TXN000635,ACC0015,9/8/2024 9:23,MakeMyTrip,Travel,2780.01,completed,Debit Card,none
+TXN000373,ACC0030,9/8/2024 14:35,Reliance Digital,Retail,663.37,completed,UPI,none
+TXN000366,ACC0025,9/8/2024 15:35,Myntra,Retail,3531.92,completed,UPI,none
+TXN001198,ACC0029,9/8/2024 22:48,Flipkart,Retail,3043.92,completed,UPI,none
+TXN000655,ACC0007,9/9/2024 20:30,NDMC,Utilities,2591.25,completed,UPI,none
+TXN001188,ACC0018,9/10/2024 0:48,McDonald's,Food & Dining,1270.57,completed,Debit Card,none
+TXN001547,ACC0043,9/10/2024 20:54,NDMC,Utilities,575.73,completed,UPI,none
+TXN000149,ACC0003,9/11/2024 9:56,Apollo Pharmacy,Healthcare,6439.35,completed,UPI,none
+TXN001755,ACC0041,9/11/2024 18:13,MedPlus,Healthcare,1578.7,completed,NEFT,none
+TXN000263,ACC0009,9/13/2024 1:44,IndiGo Airlines,Travel,17742.03,completed,Debit Card,none
+TXN000972,ACC0042,9/13/2024 4:54,Amazon,Retail,1434.33,completed,UPI,none
+TXN001931,ACC0010,9/13/2024 17:23,Meesho,Online Shopping,5010.27,completed,Debit Card,none
+TXN001338,ACC0015,9/13/2024 19:20,Meesho,Online Shopping,2147.57,completed,UPI,none
+TXN001474,ACC0035,9/13/2024 19:48,DMart,Retail,1580.26,completed,UPI,none
+TXN001289,ACC0010,9/14/2024 13:59,DMart,Retail,470.4,reversed,UPI,none
+TXN000728,ACC0042,9/14/2024 18:25,Café Coffee Day,Food & Dining,114.69,completed,Net Banking,none
+TXN001961,ACC0036,9/14/2024 19:06,Flipkart,Retail,2530.72,completed,NEFT,none
+TXN000193,ACC0034,9/14/2024 19:33,ICICI ATM,ATM Withdrawal,4130.28,completed,UPI,none
+TXN000428,ACC0036,9/15/2024 1:57,Amazon Pay,Online Shopping,4666.86,completed,UPI,none
+TXN001926,ACC0015,9/15/2024 2:58,Max Healthcare,Healthcare,4335.93,completed,NEFT,none
+TXN000020,ACC0028,9/15/2024 18:09,Snapdeal,Online Shopping,2148.77,completed,UPI,none
+TXN001151,ACC0009,9/15/2024 23:42,Zomato,Food & Dining,1303.3,completed,Debit Card,none
+TXN000672,ACC0036,9/16/2024 7:02,NDMC,Utilities,724.79,completed,Debit Card,none
+TXN001232,ACC0049,9/16/2024 11:16,Zomato,Food & Dining,1469.57,completed,UPI,none
+TXN000608,ACC0034,9/16/2024 15:33,Jio,Utilities,1726.91,completed,NEFT,none
+TXN001515,ACC0050,9/17/2024 11:39,Ola,Travel,18880.89,completed,UPI,none
+TXN000736,ACC0003,9/17/2024 13:21,DMart,Retail,259.24,completed,UPI,none
+TXN000810,ACC0001,9/17/2024 15:52,Meesho,Online Shopping,1279.7,completed,UPI,none
+TXN000920,ACC0014,9/18/2024 4:05,Café Coffee Day,Food & Dining,1301.65,completed,Debit Card,none
+TXN001354,ACC0006,9/18/2024 14:32,DMart,Retail,2717.29,completed,Debit Card,none
+TXN000448,ACC0022,9/19/2024 3:05,McDonald's,Food & Dining,1122.69,completed,Net Banking,none
+TXN000660,ACC0032,9/19/2024 10:52,Airtel,Utilities,2282.11,completed,UPI,none
+TXN000654,ACC0003,9/19/2024 20:56,DMart,Retail,3608.55,completed,NEFT,none
+TXN001841,ACC0044,9/20/2024 6:12,Paytm Mall,Online Shopping,3833.81,completed,UPI,none
+TXN001891,ACC0023,9/20/2024 8:12,Reliance Digital,Retail,384.48,completed,UPI,none
+TXN001211,ACC0021,9/20/2024 8:42,Starbucks,Food & Dining,584.77,completed,Debit Card,none
+TXN000467,ACC0031,9/20/2024 19:58,Zomato,Food & Dining,352.43,completed,Net Banking,none
+TXN000085,ACC0009,9/20/2024 23:09,HDFC ATM,ATM Withdrawal,1290.84,completed,Debit Card,none
+TXN001902,ACC0046,9/21/2024 15:45,Flipkart,Retail,1459.93,failed,Debit Card,none
+TXN001994,ACC0048,9/22/2024 5:38,Amazon,Retail,1263.65,completed,UPI,none
+TXN001920,ACC0001,9/22/2024 14:12,McDonald's,Food & Dining,1114.59,completed,Debit Card,none
+TXN001857,ACC0043,9/22/2024 17:27,Snapdeal,Online Shopping,5963.72,completed,Net Banking,none
+TXN001826,ACC0041,9/23/2024 4:48,Swiggy,Food & Dining,1394.65,completed,UPI,none
+TXN000393,ACC0047,9/23/2024 5:03,Zomato,Food & Dining,229.2,completed,NEFT,none
+TXN001801,ACC0022,9/23/2024 15:38,Amazon,Retail,2309.35,completed,UPI,none
+TXN001769,ACC0016,9/24/2024 17:27,Reliance Digital,Retail,4024.2,completed,UPI,none
+TXN001744,ACC0049,9/24/2024 22:38,Flipkart,Retail,4181.71,completed,UPI,none
+TXN000168,ACC0017,9/25/2024 4:15,Myntra,Retail,4818.07,completed,Debit Card,none
+TXN001390,ACC0037,9/25/2024 15:40,Café Coffee Day,Food & Dining,603.88,completed,UPI,none
+TXN001820,ACC0042,9/25/2024 21:10,Snapdeal,Online Shopping,4128.5,completed,UPI,none
+TXN000511,ACC0029,9/26/2024 0:00,Meesho,Online Shopping,877.83,completed,UPI,none
+TXN001543,ACC0042,9/27/2024 5:43,Zomato,Food & Dining,1198.31,completed,Net Banking,none
+TXN001020,ACC0043,9/27/2024 6:12,Amazon Pay,Online Shopping,3004.9,completed,Debit Card,none
+TXN001966,ACC0029,9/27/2024 11:58,Reliance Digital,Retail,2260.74,completed,Debit Card,none
+TXN001617,ACC0021,9/27/2024 22:08,McDonald's,Food & Dining,302.32,failed,Net Banking,none
+TXN000331,ACC0009,9/28/2024 22:12,Starbucks,Food & Dining,637.37,completed,UPI,none
+TXN000405,ACC0012,9/28/2024 23:01,Paytm Mall,Online Shopping,5097.82,completed,Debit Card,none
+TXN001998,ACC0010,9/29/2024 1:21,Amazon,Retail,668.98,failed,Debit Card,none
+TXN001565,ACC0038,9/29/2024 8:23,Axis ATM,ATM Withdrawal,4761.73,completed,UPI,none
+TXN000527,ACC0018,9/29/2024 13:17,Amazon,Retail,3429.78,reversed,Net Banking,none
+TXN001420,ACC0047,9/30/2024 4:02,Starbucks,Food & Dining,419.29,completed,UPI,none
+TXN001165,ACC0030,9/30/2024 5:41,Flipkart,Retail,1736.29,completed,UPI,none
+TXN001610,ACC0018,9/30/2024 9:22,Reliance Digital,Retail,2451.49,completed,UPI,none
+TXN001000,ACC0011,9/30/2024 18:50,Myntra,Retail,2759.88,completed,Net Banking,none
+TXN000834,ACC0016,9/30/2024 19:06,Flipkart,Retail,500.03,completed,Debit Card,none
+TXN000096,ACC0027,10/2/2024 2:57,MedPlus,Healthcare,3259.5,failed,UPI,none
+TXN001508,ACC0022,10/2/2024 4:01,DMart,Retail,4346.89,failed,UPI,none
+TXN001120,ACC0015,10/2/2024 11:52,Reliance Digital,Retail,3452.87,completed,Debit Card,none
+TXN000616,ACC0021,10/2/2024 22:21,Zomato,Food & Dining,338.99,completed,UPI,none
+TXN000462,ACC0011,10/3/2024 10:15,Snapdeal,Online Shopping,3596.3,completed,Debit Card,none
+TXN000836,ACC0020,10/3/2024 13:59,Indraprastha Gas,Utilities,567.17,completed,Debit Card,none
+TXN000729,ACC0021,10/3/2024 14:55,Fortis Hospital,Healthcare,7863.67,completed,UPI,none
+TXN000289,ACC0032,10/3/2024 22:02,Starbucks,Food & Dining,1292.03,completed,Debit Card,none
+TXN001483,ACC0020,10/4/2024 10:29,Zomato,Food & Dining,1103.28,completed,Debit Card,none
+TXN000398,ACC0049,10/4/2024 13:45,Café Coffee Day,Food & Dining,272.2,completed,Debit Card,none
+TXN001013,ACC0003,10/4/2024 15:40,BSES Yamuna,Utilities,2509.23,reversed,Debit Card,none
+TXN001039,ACC0023,10/4/2024 20:35,Reliance Digital,Retail,276.09,failed,UPI,none
+TXN001262,ACC0010,10/4/2024 21:50,Uber,Travel,13514.6,completed,UPI,none
+TXN001334,ACC0043,10/4/2024 22:27,Nykaa,Online Shopping,3105.63,completed,Debit Card,none
+TXN001958,ACC0035,10/4/2024 23:13,McDonald's,Food & Dining,222.83,completed,Net Banking,none
+TXN001845,ACC0045,10/5/2024 6:26,Flipkart,Retail,2507.56,completed,UPI,none
+TXN000128,ACC0037,10/5/2024 14:18,Amazon Pay,Online Shopping,2076.82,completed,UPI,none
+TXN000378,ACC0009,10/5/2024 18:15,DMart,Retail,2721.15,completed,UPI,none
+TXN001632,ACC0019,10/5/2024 20:32,Snapdeal,Online Shopping,3235.98,completed,UPI,none
+TXN000166,ACC0040,10/5/2024 20:44,MakeMyTrip,Travel,14246.05,completed,UPI,none
+TXN000531,ACC0043,10/5/2024 23:02,Paytm Mall,Online Shopping,3892.41,completed,UPI,none
+TXN001223,ACC0027,10/6/2024 3:53,Starbucks,Food & Dining,844.71,completed,Debit Card,none
+TXN000417,ACC0005,10/6/2024 6:40,Myntra,Retail,2836.75,completed,Debit Card,none
+TXN000135,ACC0031,10/6/2024 11:54,Flipkart,Retail,3901.98,completed,UPI,none
+TXN001761,ACC0030,10/6/2024 16:00,Paytm Mall,Online Shopping,1177.89,completed,Debit Card,none
+TXN001689,ACC0048,10/6/2024 17:04,ICICI ATM,ATM Withdrawal,7866.54,failed,Debit Card,none
+TXN001606,ACC0044,10/6/2024 23:37,Reliance Digital,Retail,1747.22,failed,Debit Card,none
+TXN000237,ACC0037,10/7/2024 8:11,Starbucks,Food & Dining,151.34,completed,Debit Card,none
+TXN000367,ACC0014,10/7/2024 9:07,DMart,Retail,2159.87,completed,Net Banking,none
+TXN001579,ACC0019,10/8/2024 4:42,IRCTC,Travel,10641.61,completed,UPI,none
+TXN001412,ACC0024,10/8/2024 6:49,Zomato,Food & Dining,488.29,completed,UPI,none
+TXN000328,ACC0036,10/8/2024 7:42,Snapdeal,Online Shopping,2809.13,completed,UPI,none
+TXN000083,ACC0012,10/8/2024 12:50,Axis ATM,ATM Withdrawal,9012.37,completed,UPI,none
+TXN001654,ACC0025,10/8/2024 15:20,Nykaa,Online Shopping,2958.44,completed,UPI,none
+TXN001214,ACC0008,10/9/2024 0:08,Swiggy,Food & Dining,456.67,completed,Net Banking,none
+TXN001014,ACC0050,10/9/2024 0:26,Swiggy,Food & Dining,285.46,completed,UPI,none
+TXN000668,ACC0035,10/9/2024 14:19,Amazon,Retail,246.5,completed,NEFT,none
+TXN001085,ACC0012,10/9/2024 21:17,IRCTC,Travel,17691.89,completed,Debit Card,none
+TXN000539,ACC0039,10/9/2024 21:40,MakeMyTrip,Travel,10359.87,completed,UPI,none
+TXN000807,ACC0042,10/10/2024 18:05,SBI ATM,ATM Withdrawal,7636.69,completed,UPI,none
+TXN001167,ACC0032,10/11/2024 10:44,Café Coffee Day,Food & Dining,197.57,failed,Debit Card,none
+TXN000880,ACC0023,10/12/2024 10:38,Amazon,Retail,1826.93,completed,UPI,none
+TXN000798,ACC0001,10/12/2024 18:31,MakeMyTrip,Travel,14618.57,completed,UPI,none
+TXN000183,ACC0011,10/13/2024 3:40,ICICI ATM,ATM Withdrawal,9502.59,completed,UPI,none
+TXN000568,ACC0001,10/13/2024 4:13,Ola,Travel,12909.3,completed,UPI,none
+TXN000591,ACC0020,10/13/2024 7:17,BSES Yamuna,Utilities,2993.09,failed,Debit Card,none
+TXN001684,ACC0022,10/13/2024 18:57,Myntra,Retail,2070.92,completed,UPI,none
+TXN000254,ACC0029,10/14/2024 8:08,Paytm Mall,Online Shopping,3031.34,completed,UPI,none
+TXN001947,ACC0012,10/14/2024 8:51,Zomato,Food & Dining,202.28,completed,Debit Card,none
+TXN000770,ACC0037,10/14/2024 11:05,Meesho,Online Shopping,305.3,completed,UPI,none
+TXN001870,ACC0003,10/14/2024 15:29,Starbucks,Food & Dining,758.33,completed,Net Banking,none
+TXN001066,ACC0010,10/14/2024 17:59,MedPlus,Healthcare,5252.22,completed,Debit Card,none
+TXN001646,ACC0012,10/14/2024 18:02,Snapdeal,Online Shopping,1563.39,completed,NEFT,none
+TXN000930,ACC0037,10/15/2024 4:09,Indraprastha Gas,Utilities,2097.41,completed,UPI,none
+TXN001170,ACC0048,10/15/2024 4:30,Starbucks,Food & Dining,494.51,completed,Debit Card,none
+TXN001723,ACC0029,10/15/2024 5:39,Apollo Pharmacy,Healthcare,7816.62,completed,UPI,none
+TXN000907,ACC0039,10/15/2024 10:32,Snapdeal,Online Shopping,4329.65,completed,Net Banking,none
+TXN001144,ACC0001,10/15/2024 16:45,HDFC ATM,ATM Withdrawal,2244.55,completed,Debit Card,none
+TXN001909,ACC0031,10/15/2024 17:54,IRCTC,Travel,17281.73,completed,UPI,none
+TXN001612,ACC0033,10/16/2024 16:15,Indraprastha Gas,Utilities,1121.17,completed,Debit Card,none
+TXN000060,ACC0012,10/16/2024 16:20,Fortis Hospital,Healthcare,6447.4,completed,UPI,none
+TXN000984,ACC0040,10/16/2024 23:48,HDFC ATM,ATM Withdrawal,2298.81,completed,Net Banking,none
+TXN000759,ACC0038,10/17/2024 8:53,BSES Yamuna,Utilities,1740.6,completed,Debit Card,none
+TXN001366,ACC0001,10/17/2024 15:41,DMart,Retail,3791.52,completed,NEFT,none
+TXN000554,ACC0011,10/18/2024 3:53,Meesho,Online Shopping,3060.76,completed,Debit Card,none
+TXN001956,ACC0049,10/18/2024 9:40,Snapdeal,Online Shopping,3235.38,completed,Debit Card,none
+TXN000496,ACC0021,10/19/2024 0:08,ICICI ATM,ATM Withdrawal,7429.82,completed,Debit Card,none
+TXN000754,ACC0043,10/19/2024 10:39,McDonald's,Food & Dining,1036.91,completed,UPI,none
+TXN001811,ACC0020,10/19/2024 12:38,Café Coffee Day,Food & Dining,331.56,completed,Debit Card,none
+TXN001479,ACC0031,10/20/2024 11:17,Swiggy,Food & Dining,1370.66,completed,UPI,none
+TXN000032,ACC0009,10/20/2024 11:30,Max Healthcare,Healthcare,5138.19,completed,Debit Card,none
+TXN001846,ACC0003,10/21/2024 1:57,ICICI ATM,ATM Withdrawal,4055.45,completed,NEFT,none
+TXN001430,ACC0009,10/21/2024 8:13,HDFC ATM,ATM Withdrawal,5410.04,failed,Debit Card,none
+TXN001692,ACC0012,10/21/2024 23:03,MakeMyTrip,Travel,5942.16,completed,UPI,none
+TXN000384,ACC0045,10/22/2024 16:50,BSES Yamuna,Utilities,1626.16,completed,Debit Card,none
+TXN001496,ACC0011,10/22/2024 23:49,Flipkart,Retail,220.93,completed,UPI,none
+TXN000760,ACC0033,10/22/2024 23:56,ICICI ATM,ATM Withdrawal,6164.66,completed,Debit Card,none
+TXN000612,ACC0013,10/23/2024 10:22,Paytm Mall,Online Shopping,605.03,completed,Debit Card,none
+TXN000196,ACC0031,10/23/2024 23:30,Myntra,Retail,4814.31,completed,Net Banking,none
+TXN001089,ACC0038,10/24/2024 11:04,BSES Yamuna,Utilities,2303.06,completed,UPI,none
+TXN001963,ACC0017,10/24/2024 21:47,Uber,Travel,9893.15,reversed,Net Banking,none
+TXN000272,ACC0002,10/25/2024 18:17,Starbucks,Food & Dining,719.37,completed,UPI,none
+TXN000344,ACC0034,10/25/2024 18:36,BSES Yamuna,Utilities,1808.48,completed,UPI,none
+TXN001105,ACC0020,10/25/2024 19:08,Amazon Pay,Online Shopping,3274.44,completed,Net Banking,none
+TXN000926,ACC0045,10/26/2024 3:25,McDonald's,Food & Dining,728.98,failed,UPI,none
+TXN000099,ACC0011,10/26/2024 7:04,Airtel,Utilities,1949.12,completed,Debit Card,none
+TXN000861,ACC0013,10/26/2024 9:53,Axis ATM,ATM Withdrawal,5649.65,completed,Net Banking,none
+TXN000372,ACC0019,10/27/2024 1:34,Apollo Pharmacy,Healthcare,2577.06,completed,UPI,none
+TXN001766,ACC0026,10/28/2024 1:30,Amazon Pay,Online Shopping,1053.61,completed,Debit Card,none
+TXN001006,ACC0002,10/28/2024 16:21,Axis ATM,ATM Withdrawal,8323.39,completed,NEFT,none
+TXN001531,ACC0032,10/29/2024 15:18,SBI ATM,ATM Withdrawal,4041.73,completed,Net Banking,none
+TXN000813,ACC0050,10/29/2024 18:46,Snapdeal,Online Shopping,4295.33,completed,Net Banking,none
+TXN000136,ACC0023,10/29/2024 21:30,Amazon,Retail,4642.73,completed,NEFT,none
+TXN000500,ACC0047,10/30/2024 13:32,Amazon,Retail,3689.87,failed,Debit Card,none
+TXN000919,ACC0040,11/1/2024 3:49,Starbucks,Food & Dining,438.32,completed,UPI,none
+TXN000769,ACC0008,11/1/2024 12:44,IndiGo Airlines,Travel,6100.81,completed,UPI,none
+TXN001101,ACC0008,11/1/2024 14:44,Myntra,Retail,584.09,completed,UPI,none
+TXN001157,ACC0049,11/1/2024 22:20,McDonald's,Food & Dining,1193.81,completed,Debit Card,none
+TXN001436,ACC0018,11/2/2024 10:39,NDMC,Utilities,2889.8,completed,Net Banking,none
+TXN001856,ACC0031,11/3/2024 21:51,Flipkart,Retail,2628.63,failed,Debit Card,none
+TXN001129,ACC0032,11/4/2024 3:25,Zomato,Food & Dining,1224.5,completed,Debit Card,none
+TXN000476,ACC0027,11/4/2024 7:32,McDonald's,Food & Dining,455.35,completed,Net Banking,none
+TXN001401,ACC0018,11/4/2024 8:36,McDonald's,Food & Dining,963.05,completed,NEFT,none
+TXN001240,ACC0030,11/4/2024 10:03,Amazon Pay,Online Shopping,3221.68,completed,Debit Card,none
+TXN000973,ACC0016,11/4/2024 13:34,Swiggy,Food & Dining,1252.21,completed,UPI,none
+TXN001506,ACC0039,11/4/2024 15:13,Axis ATM,ATM Withdrawal,4787.9,completed,Debit Card,none
+TXN000179,ACC0010,11/5/2024 18:49,Max Healthcare,Healthcare,7875.85,completed,UPI,none
+TXN001830,ACC0041,11/5/2024 22:58,HDFC ATM,ATM Withdrawal,7407.58,completed,Net Banking,none
+TXN001709,ACC0018,11/6/2024 8:11,Max Healthcare,Healthcare,3591.45,completed,UPI,none
+TXN001002,ACC0023,11/7/2024 4:21,Ola,Travel,7100.88,completed,Net Banking,none
+TXN001314,ACC0019,11/7/2024 7:55,SBI ATM,ATM Withdrawal,7110.11,completed,UPI,none
+TXN000860,ACC0010,11/7/2024 21:17,NDMC,Utilities,2712.02,completed,NEFT,none
+TXN001542,ACC0003,11/8/2024 1:44,DMart,Retail,3722.82,completed,UPI,none
+TXN000992,ACC0050,11/8/2024 13:18,Apollo Pharmacy,Healthcare,6977.88,completed,Debit Card,none
+TXN000432,ACC0031,11/8/2024 18:22,DMart,Retail,3400.9,completed,UPI,none
+TXN000741,ACC0025,11/8/2024 21:39,Max Healthcare,Healthcare,2513.58,reversed,Net Banking,none
+TXN001379,ACC0006,11/9/2024 1:48,Myntra,Retail,1632.56,completed,Debit Card,none
+TXN001075,ACC0023,11/9/2024 10:43,Nykaa,Online Shopping,3808.07,completed,Debit Card,none
+TXN000869,ACC0023,11/10/2024 13:15,Flipkart,Retail,4732.2,completed,UPI,none
+TXN001804,ACC0001,11/10/2024 19:27,Reliance Digital,Retail,2326.76,reversed,UPI,none
+TXN000159,ACC0021,11/11/2024 5:24,IndiGo Airlines,Travel,714.42,failed,Net Banking,none
+TXN001982,ACC0050,11/11/2024 10:13,DMart,Retail,226.85,completed,UPI,none
+TXN001422,ACC0024,11/11/2024 11:14,Amazon,Retail,4339.68,completed,Debit Card,none
+TXN000576,ACC0011,11/11/2024 23:00,Meesho,Online Shopping,4767.31,completed,Debit Card,none
+TXN001491,ACC0036,11/12/2024 6:15,Meesho,Online Shopping,5294.87,completed,Debit Card,none
+TXN001575,ACC0006,11/13/2024 7:42,Café Coffee Day,Food & Dining,1110.94,completed,UPI,none
+TXN000870,ACC0016,11/14/2024 1:22,Café Coffee Day,Food & Dining,282.49,completed,UPI,none
+TXN000882,ACC0024,11/14/2024 16:05,McDonald's,Food & Dining,820.29,completed,Debit Card,none
+TXN000033,ACC0011,11/15/2024 0:18,Amazon Pay,Online Shopping,3959.58,completed,Net Banking,none
+TXN001293,ACC0030,11/15/2024 4:17,IndiGo Airlines,Travel,6330.75,completed,UPI,none
+TXN001109,ACC0046,11/16/2024 9:55,Meesho,Online Shopping,5856.19,completed,UPI,none
+TXN000397,ACC0012,11/16/2024 12:57,Zomato,Food & Dining,116.39,completed,UPI,none
+TXN001186,ACC0045,11/17/2024 2:58,Meesho,Online Shopping,3741.68,completed,NEFT,none
+TXN000551,ACC0003,11/17/2024 3:58,Amazon Pay,Online Shopping,5186.66,failed,UPI,none
+TXN001868,ACC0014,11/18/2024 20:43,HDFC ATM,ATM Withdrawal,1409.95,completed,UPI,none
+TXN000439,ACC0050,11/19/2024 3:20,Amazon,Retail,500.91,completed,UPI,none
+TXN000181,ACC0046,11/19/2024 12:30,Amazon,Retail,1530.88,completed,UPI,none
+TXN001582,ACC0036,11/19/2024 13:18,Ola,Travel,17588.12,completed,UPI,none
+TXN000766,ACC0031,11/20/2024 2:10,Jio,Utilities,1400.94,completed,Net Banking,none
+TXN000362,ACC0021,11/20/2024 10:02,Flipkart,Retail,683.06,completed,UPI,none
+TXN000252,ACC0032,11/20/2024 19:39,Swiggy,Food & Dining,935.08,completed,UPI,none
+TXN000689,ACC0020,11/21/2024 3:24,NDMC,Utilities,2014.99,completed,Debit Card,none
+TXN001876,ACC0021,11/21/2024 4:34,Myntra,Retail,3302.01,completed,Net Banking,none
+TXN000206,ACC0020,11/21/2024 6:54,Flipkart,Retail,3909.55,completed,Net Banking,none
+TXN000939,ACC0002,11/21/2024 11:47,HDFC ATM,ATM Withdrawal,6295.29,completed,Debit Card,none
+TXN000683,ACC0021,11/21/2024 13:26,MakeMyTrip,Travel,3018.9,completed,Debit Card,none
+TXN000805,ACC0001,11/21/2024 19:36,Airtel,Utilities,501.49,completed,UPI,none
+TXN001344,ACC0026,11/22/2024 2:13,NDMC,Utilities,1550.84,completed,UPI,none
+TXN001086,ACC0029,11/22/2024 9:37,Apollo Pharmacy,Healthcare,7644.5,completed,Debit Card,none
+TXN001529,ACC0009,11/22/2024 11:45,NDMC,Utilities,2825.92,failed,Net Banking,none
+TXN001554,ACC0024,11/23/2024 2:46,McDonald's,Food & Dining,561.18,failed,Net Banking,none
+TXN001096,ACC0030,11/23/2024 17:52,Flipkart,Retail,3946.26,completed,Debit Card,none
+TXN000317,ACC0030,11/24/2024 8:30,Airtel,Utilities,878.92,completed,Net Banking,none
+TXN000129,ACC0010,11/24/2024 19:02,MedPlus,Healthcare,4053.06,completed,Debit Card,none
+TXN001411,ACC0030,11/24/2024 22:42,DMart,Retail,2297.76,completed,Debit Card,none
+TXN000691,ACC0020,11/25/2024 3:04,Apollo Pharmacy,Healthcare,2217.01,completed,UPI,none
+TXN001972,ACC0044,11/25/2024 10:06,Amazon Pay,Online Shopping,2174.42,completed,UPI,none
+TXN000516,ACC0020,11/25/2024 11:09,Jio,Utilities,1997.61,completed,UPI,none
+TXN001481,ACC0045,11/25/2024 14:52,Starbucks,Food & Dining,547.33,completed,Debit Card,none
+TXN001799,ACC0007,11/26/2024 0:49,DMart,Retail,553.04,completed,UPI,none
+TXN000792,ACC0014,11/26/2024 10:10,DMart,Retail,2196.13,completed,Debit Card,none
+TXN000140,ACC0024,11/26/2024 14:01,Myntra,Retail,876.11,completed,UPI,none
+TXN001864,ACC0032,11/26/2024 18:27,Flipkart,Retail,3797.34,completed,UPI,none
+TXN001308,ACC0042,11/26/2024 22:57,Nykaa,Online Shopping,3260.57,completed,NEFT,none
+TXN000850,ACC0008,11/27/2024 12:09,Reliance Digital,Retail,2550.97,completed,Debit Card,none
+TXN001402,ACC0027,11/27/2024 17:12,ICICI ATM,ATM Withdrawal,8802.47,completed,UPI,none
+TXN000122,ACC0011,11/27/2024 19:18,Max Healthcare,Healthcare,6295.81,completed,Net Banking,none
+TXN000414,ACC0018,11/28/2024 11:35,DMart,Retail,4970.47,completed,Net Banking,none
+TXN001498,ACC0038,11/28/2024 19:03,Starbucks,Food & Dining,1065.58,completed,UPI,none
+TXN001190,ACC0049,11/28/2024 19:48,Myntra,Retail,3701.7,completed,Debit Card,none
+TXN001004,ACC0021,11/29/2024 22:28,BSES Yamuna,Utilities,2059.36,completed,Net Banking,none
+TXN001690,ACC0031,11/30/2024 21:41,ICICI ATM,ATM Withdrawal,1289.49,completed,Debit Card,none
+TXN001635,ACC0024,12/1/2024 7:53,McDonald's,Food & Dining,114.1,completed,Debit Card,none
+TXN001160,ACC0013,12/1/2024 8:02,DMart,Retail,2614.75,completed,UPI,none
+TXN001991,ACC0040,12/1/2024 9:05,Swiggy,Food & Dining,506.79,completed,Net Banking,none
+TXN000703,ACC0024,12/1/2024 22:01,Myntra,Retail,4182.67,completed,Net Banking,none
+TXN001163,ACC0016,12/2/2024 3:38,Axis ATM,ATM Withdrawal,4223.97,completed,Debit Card,none
+TXN001228,ACC0007,12/2/2024 11:23,Jio,Utilities,808.21,completed,Net Banking,none
+TXN001752,ACC0021,12/2/2024 13:16,Amazon,Retail,4084.85,failed,Net Banking,none
+TXN000133,ACC0013,12/2/2024 17:16,McDonald's,Food & Dining,314.69,completed,Debit Card,none
+TXN001455,ACC0019,12/2/2024 17:27,Indraprastha Gas,Utilities,1208.65,completed,UPI,none
+TXN001026,ACC0002,12/3/2024 0:40,Myntra,Retail,3845.7,completed,UPI,none
+TXN000932,ACC0013,12/3/2024 16:54,Reliance Digital,Retail,2716.14,completed,NEFT,none
+TXN000137,ACC0040,12/4/2024 2:55,Amazon Pay,Online Shopping,2193.23,completed,UPI,none
+TXN001814,ACC0017,12/4/2024 20:25,Myntra,Retail,1827.62,completed,UPI,none
+TXN001560,ACC0023,12/4/2024 22:25,Amazon,Retail,4196.52,completed,UPI,none
+TXN001233,ACC0036,12/5/2024 3:51,MakeMyTrip,Travel,8891.17,failed,UPI,none
+TXN001976,ACC0014,12/5/2024 18:49,Myntra,Retail,763.82,completed,UPI,none
+TXN001017,ACC0049,12/6/2024 23:26,Zomato,Food & Dining,1075.46,completed,UPI,none
+TXN000573,ACC0033,12/7/2024 0:07,Paytm Mall,Online Shopping,4563.63,completed,NEFT,none
+TXN000176,ACC0044,12/7/2024 8:34,Max Healthcare,Healthcare,3529.17,completed,Debit Card,none
+TXN000278,ACC0020,12/7/2024 10:00,Swiggy,Food & Dining,1040.18,completed,Net Banking,none
+TXN001107,ACC0022,12/7/2024 16:49,Apollo Pharmacy,Healthcare,1633.74,completed,Net Banking,none
+TXN001880,ACC0044,12/8/2024 6:55,Amazon,Retail,2452.55,completed,Net Banking,none
+TXN001152,ACC0050,12/8/2024 8:32,HDFC ATM,ATM Withdrawal,7729.3,completed,Debit Card,none
+TXN000868,ACC0048,12/8/2024 12:06,Snapdeal,Online Shopping,2015.51,completed,Debit Card,none
+TXN001736,ACC0028,12/8/2024 16:51,Nykaa,Online Shopping,3401.84,completed,Debit Card,none
+TXN001774,ACC0030,12/9/2024 3:41,Uber,Travel,8929.29,completed,UPI,none
+TXN001137,ACC0048,12/9/2024 10:49,Myntra,Retail,2321.16,completed,Debit Card,none
+TXN001400,ACC0044,12/9/2024 15:41,IndiGo Airlines,Travel,1286.44,completed,UPI,none
+TXN000743,ACC0028,12/9/2024 18:31,DMart,Retail,637.48,completed,UPI,none
+TXN001693,ACC0045,12/10/2024 12:28,McDonald's,Food & Dining,1328.97,completed,UPI,none
+TXN001441,ACC0015,12/10/2024 15:05,Max Healthcare,Healthcare,4206.34,completed,UPI,none
+TXN001541,ACC0040,12/11/2024 3:38,Café Coffee Day,Food & Dining,603.84,completed,Debit Card,none
+TXN000514,ACC0034,12/11/2024 8:16,McDonald's,Food & Dining,947.68,completed,Debit Card,none
+TXN001142,ACC0015,12/11/2024 20:16,HDFC ATM,ATM Withdrawal,5681.04,completed,UPI,none
+TXN000598,ACC0024,12/11/2024 20:56,Paytm Mall,Online Shopping,2253.08,completed,UPI,none
+TXN000425,ACC0024,12/11/2024 21:58,Uber,Travel,16186.53,completed,NEFT,none
+TXN000857,ACC0042,12/12/2024 6:00,Starbucks,Food & Dining,629.19,completed,Net Banking,none
+TXN001505,ACC0023,12/12/2024 15:21,McDonald's,Food & Dining,932.06,completed,UPI,none
+TXN001370,ACC0039,12/12/2024 15:46,Meesho,Online Shopping,4171.2,completed,UPI,none
+TXN000900,ACC0036,12/13/2024 0:34,Flipkart,Retail,2359.73,completed,NEFT,none
+TXN000908,ACC0036,12/13/2024 1:49,MedPlus,Healthcare,5347.95,completed,UPI,none
+TXN000380,ACC0029,12/13/2024 10:38,Amazon Pay,Online Shopping,2242.65,completed,Debit Card,none
+TXN001323,ACC0047,12/13/2024 10:43,McDonald's,Food & Dining,284.44,completed,Net Banking,none
+TXN000156,ACC0039,12/14/2024 15:27,IRCTC,Travel,12852.83,completed,UPI,none
+TXN000622,ACC0045,12/14/2024 18:26,Paytm Mall,Online Shopping,2112.88,completed,UPI,none
+TXN000132,ACC0010,12/16/2024 18:58,NDMC,Utilities,2567,completed,UPI,none
+TXN000359,ACC0028,12/18/2024 4:09,DMart,Retail,4872.6,completed,NEFT,none
+TXN000534,ACC0001,12/18/2024 20:27,Starbucks,Food & Dining,394.04,completed,UPI,none
+TXN001795,ACC0039,12/19/2024 6:21,SBI ATM,ATM Withdrawal,4532,completed,Net Banking,none
+TXN000174,ACC0045,12/19/2024 11:20,Fortis Hospital,Healthcare,4573.28,failed,Debit Card,none
+TXN000079,ACC0038,12/19/2024 20:26,Swiggy,Food & Dining,1316.04,reversed,UPI,none
+TXN000046,ACC0008,12/20/2024 3:39,Café Coffee Day,Food & Dining,371.98,completed,UPI,none
+TXN001691,ACC0008,12/20/2024 9:41,Zomato,Food & Dining,347.86,failed,UPI,none
+TXN000018,ACC0013,12/20/2024 19:12,McDonald's,Food & Dining,384.29,completed,Debit Card,none
+TXN000368,ACC0033,12/20/2024 22:04,Meesho,Online Shopping,5423.43,completed,UPI,none
+TXN000613,ACC0008,12/21/2024 6:49,Swiggy,Food & Dining,511.53,failed,NEFT,none
+TXN000737,ACC0013,12/24/2024 0:00,Max Healthcare,Healthcare,3302.79,failed,UPI,none
+TXN000828,ACC0004,12/24/2024 21:40,Amazon,Retail,751.55,completed,Debit Card,none
+TXN001079,ACC0048,12/24/2024 22:47,Amazon Pay,Online Shopping,5946.66,completed,UPI,none
+TXN001290,ACC0017,12/25/2024 8:01,Café Coffee Day,Food & Dining,330.6,completed,Debit Card,none
+TXN001843,ACC0033,12/25/2024 15:33,Myntra,Retail,4631.4,completed,UPI,none
+TXN001435,ACC0050,12/26/2024 4:46,SBI ATM,ATM Withdrawal,2669.73,completed,Debit Card,none
+TXN000846,ACC0044,12/26/2024 6:19,Zomato,Food & Dining,1402.23,completed,UPI,none
+TXN001090,ACC0035,12/26/2024 7:40,MakeMyTrip,Travel,18989.87,completed,Net Banking,none
+TXN000646,ACC0047,12/26/2024 17:07,ICICI ATM,ATM Withdrawal,2991.15,completed,Net Banking,none
+TXN000956,ACC0011,12/26/2024 23:08,Fortis Hospital,Healthcare,6353.63,completed,Debit Card,none
+TXN000820,ACC0010,12/27/2024 15:44,Nykaa,Online Shopping,1053.93,completed,UPI,none
+TXN001112,ACC0049,12/27/2024 23:08,McDonald's,Food & Dining,637.63,completed,NEFT,none
+TXN000569,ACC0007,12/28/2024 12:16,IndiGo Airlines,Travel,13266.83,completed,Net Banking,none
+TXN000401,ACC0040,12/29/2024 8:33,Apollo Pharmacy,Healthcare,3561.68,completed,UPI,none
+TXN001533,ACC0010,12/29/2024 23:13,Zomato,Food & Dining,242.9,completed,UPI,none
+TXN000072,ACC0023,12/30/2024 0:57,Zomato,Food & Dining,718.14,completed,UPI,none
+TXN000610,ACC0029,12/30/2024 13:37,Amazon,Retail,3701.43,completed,NEFT,none
+TXN000745,ACC0003,12/30/2024 15:13,Amazon,Retail,672.44,completed,Debit Card,none

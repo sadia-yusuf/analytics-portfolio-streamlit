@@ -1,0 +1,759 @@
+month,service_setting,context_type,national_category,count_of_appointments
+2021-08,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,229
+2021-08,Extended Access Provision,Care Related Encounter,Care Home Visit,624
+2021-08,Extended Access Provision,Care Related Encounter,Clinical Triage,29480
+2021-08,Extended Access Provision,Care Related Encounter,General Consultation Acute,28825
+2021-08,Extended Access Provision,Care Related Encounter,General Consultation Routine,32657
+2021-08,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,67
+2021-08,Extended Access Provision,Care Related Encounter,Home Visit,398
+2021-08,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,130
+2021-08,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,82
+2021-08,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,13901
+2021-08,Extended Access Provision,Care Related Encounter,Planned Clinics,15616
+2021-08,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2819
+2021-08,Extended Access Provision,Care Related Encounter,Social Prescribing Service,251
+2021-08,Extended Access Provision,Care Related Encounter,Structured Medication Review,572
+2021-08,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,2755
+2021-08,Extended Access Provision,Care Related Encounter,Walk-in,1326
+2021-08,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,31195
+2021-08,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,23550
+2021-08,General Practice,Care Related Encounter,Care Home Visit,41119
+2021-08,General Practice,Care Related Encounter,Clinical Triage,3590287
+2021-08,General Practice,Care Related Encounter,General Consultation Acute,4162475
+2021-08,General Practice,Care Related Encounter,General Consultation Routine,7466104
+2021-08,General Practice,Care Related Encounter,Group Consultation and Group Education,5005
+2021-08,General Practice,Care Related Encounter,Home Visit,157651
+2021-08,General Practice,Care Related Encounter,Non-contractual chargeable work,9225
+2021-08,General Practice,Care Related Encounter,Patient contact during Care Home Round,23753
+2021-08,General Practice,Care Related Encounter,Planned Clinical Procedure,1647555
+2021-08,General Practice,Care Related Encounter,Planned Clinics,1899327
+2021-08,General Practice,Care Related Encounter,Service provided by organisation external to the practice,40085
+2021-08,General Practice,Care Related Encounter,Social Prescribing Service,12117
+2021-08,General Practice,Care Related Encounter,Structured Medication Review,99838
+2021-08,General Practice,Care Related Encounter,Unplanned Clinical Activity,231584
+2021-08,General Practice,Care Related Encounter,Walk-in,29424
+2021-08,General Practice,Inconsistent Mapping,Inconsistent Mapping,2136753
+2021-08,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,1102
+2021-08,Other,Care Related Encounter,Care Home Visit,1374
+2021-08,Other,Care Related Encounter,Clinical Triage,54498
+2021-08,Other,Care Related Encounter,General Consultation Acute,51344
+2021-08,Other,Care Related Encounter,General Consultation Routine,105116
+2021-08,Other,Care Related Encounter,Group Consultation and Group Education,35
+2021-08,Other,Care Related Encounter,Home Visit,2565
+2021-08,Other,Care Related Encounter,Non-contractual chargeable work,1184
+2021-08,Other,Care Related Encounter,Patient contact during Care Home Round,1250
+2021-08,Other,Care Related Encounter,Planned Clinical Procedure,24961
+2021-08,Other,Care Related Encounter,Planned Clinics,36755
+2021-08,Other,Care Related Encounter,Service provided by organisation external to the practice,14845
+2021-08,Other,Care Related Encounter,Social Prescribing Service,658
+2021-08,Other,Care Related Encounter,Structured Medication Review,2174
+2021-08,Other,Care Related Encounter,Unplanned Clinical Activity,4865
+2021-08,Other,Care Related Encounter,Walk-in,2641
+2021-08,Other,Inconsistent Mapping,Inconsistent Mapping,143734
+2021-08,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,4795
+2021-08,Primary Care Network,Care Related Encounter,Care Home Visit,4466
+2021-08,Primary Care Network,Care Related Encounter,Clinical Triage,29942
+2021-08,Primary Care Network,Care Related Encounter,General Consultation Acute,38276
+2021-08,Primary Care Network,Care Related Encounter,General Consultation Routine,152168
+2021-08,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,54
+2021-08,Primary Care Network,Care Related Encounter,Home Visit,4447
+2021-08,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,236
+2021-08,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,6231
+2021-08,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,15397
+2021-08,Primary Care Network,Care Related Encounter,Planned Clinics,56182
+2021-08,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,11457
+2021-08,Primary Care Network,Care Related Encounter,Social Prescribing Service,18460
+2021-08,Primary Care Network,Care Related Encounter,Structured Medication Review,35986
+2021-08,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,2319
+2021-08,Primary Care Network,Care Related Encounter,Walk-in,621
+2021-08,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,51411
+2021-08,Unmapped,Unmapped,Unmapped,1233843
+2021-09,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,312
+2021-09,Extended Access Provision,Care Related Encounter,Care Home Visit,586
+2021-09,Extended Access Provision,Care Related Encounter,Clinical Triage,33939
+2021-09,Extended Access Provision,Care Related Encounter,General Consultation Acute,33209
+2021-09,Extended Access Provision,Care Related Encounter,General Consultation Routine,34197
+2021-09,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,63
+2021-09,Extended Access Provision,Care Related Encounter,Home Visit,445
+2021-09,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,155
+2021-09,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,104
+2021-09,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,15857
+2021-09,Extended Access Provision,Care Related Encounter,Planned Clinics,23537
+2021-09,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2795
+2021-09,Extended Access Provision,Care Related Encounter,Social Prescribing Service,332
+2021-09,Extended Access Provision,Care Related Encounter,Structured Medication Review,663
+2021-09,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,2985
+2021-09,Extended Access Provision,Care Related Encounter,Walk-in,674
+2021-09,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,38053
+2021-09,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,26425
+2021-09,General Practice,Care Related Encounter,Care Home Visit,46533
+2021-09,General Practice,Care Related Encounter,Clinical Triage,3989708
+2021-09,General Practice,Care Related Encounter,General Consultation Acute,4700182
+2021-09,General Practice,Care Related Encounter,General Consultation Routine,8722591
+2021-09,General Practice,Care Related Encounter,Group Consultation and Group Education,5636
+2021-09,General Practice,Care Related Encounter,Home Visit,180751
+2021-09,General Practice,Care Related Encounter,Non-contractual chargeable work,11157
+2021-09,General Practice,Care Related Encounter,Patient contact during Care Home Round,26956
+2021-09,General Practice,Care Related Encounter,Planned Clinical Procedure,2696705
+2021-09,General Practice,Care Related Encounter,Planned Clinics,2548688
+2021-09,General Practice,Care Related Encounter,Service provided by organisation external to the practice,44767
+2021-09,General Practice,Care Related Encounter,Social Prescribing Service,13797
+2021-09,General Practice,Care Related Encounter,Structured Medication Review,118629
+2021-09,General Practice,Care Related Encounter,Unplanned Clinical Activity,262708
+2021-09,General Practice,Care Related Encounter,Walk-in,36971
+2021-09,General Practice,Inconsistent Mapping,Inconsistent Mapping,2508617
+2021-09,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,1166
+2021-09,Other,Care Related Encounter,Care Home Visit,1491
+2021-09,Other,Care Related Encounter,Clinical Triage,61146
+2021-09,Other,Care Related Encounter,General Consultation Acute,57342
+2021-09,Other,Care Related Encounter,General Consultation Routine,122134
+2021-09,Other,Care Related Encounter,Group Consultation and Group Education,23
+2021-09,Other,Care Related Encounter,Home Visit,2652
+2021-09,Other,Care Related Encounter,Non-contractual chargeable work,1451
+2021-09,Other,Care Related Encounter,Patient contact during Care Home Round,1463
+2021-09,Other,Care Related Encounter,Planned Clinical Procedure,32864
+2021-09,Other,Care Related Encounter,Planned Clinics,47563
+2021-09,Other,Care Related Encounter,Service provided by organisation external to the practice,15650
+2021-09,Other,Care Related Encounter,Social Prescribing Service,830
+2021-09,Other,Care Related Encounter,Structured Medication Review,2755
+2021-09,Other,Care Related Encounter,Unplanned Clinical Activity,5395
+2021-09,Other,Care Related Encounter,Walk-in,3028
+2021-09,Other,Inconsistent Mapping,Inconsistent Mapping,170221
+2021-09,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,5600
+2021-09,Primary Care Network,Care Related Encounter,Care Home Visit,4909
+2021-09,Primary Care Network,Care Related Encounter,Clinical Triage,34069
+2021-09,Primary Care Network,Care Related Encounter,General Consultation Acute,43680
+2021-09,Primary Care Network,Care Related Encounter,General Consultation Routine,181321
+2021-09,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,170
+2021-09,Primary Care Network,Care Related Encounter,Home Visit,4908
+2021-09,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,375
+2021-09,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,6443
+2021-09,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,24870
+2021-09,Primary Care Network,Care Related Encounter,Planned Clinics,76803
+2021-09,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,13249
+2021-09,Primary Care Network,Care Related Encounter,Social Prescribing Service,21118
+2021-09,Primary Care Network,Care Related Encounter,Structured Medication Review,41120
+2021-09,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,4438
+2021-09,Primary Care Network,Care Related Encounter,Walk-in,2168
+2021-09,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,65244
+2021-09,Unmapped,Unmapped,Unmapped,1336115
+2021-10,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,554
+2021-10,Extended Access Provision,Care Related Encounter,Care Home Visit,741
+2021-10,Extended Access Provision,Care Related Encounter,Clinical Triage,33571
+2021-10,Extended Access Provision,Care Related Encounter,General Consultation Acute,33624
+2021-10,Extended Access Provision,Care Related Encounter,General Consultation Routine,32844
+2021-10,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,64
+2021-10,Extended Access Provision,Care Related Encounter,Home Visit,368
+2021-10,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,149
+2021-10,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,155
+2021-10,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,22413
+2021-10,Extended Access Provision,Care Related Encounter,Planned Clinics,33944
+2021-10,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2626
+2021-10,Extended Access Provision,Care Related Encounter,Social Prescribing Service,372
+2021-10,Extended Access Provision,Care Related Encounter,Structured Medication Review,530
+2021-10,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3707
+2021-10,Extended Access Provision,Care Related Encounter,Walk-in,782
+2021-10,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,43095
+2021-10,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,25738
+2021-10,General Practice,Care Related Encounter,Care Home Visit,46411
+2021-10,General Practice,Care Related Encounter,Clinical Triage,3846619
+2021-10,General Practice,Care Related Encounter,General Consultation Acute,4703911
+2021-10,General Practice,Care Related Encounter,General Consultation Routine,8922515
+2021-10,General Practice,Care Related Encounter,Group Consultation and Group Education,5361
+2021-10,General Practice,Care Related Encounter,Home Visit,193250
+2021-10,General Practice,Care Related Encounter,Non-contractual chargeable work,11506
+2021-10,General Practice,Care Related Encounter,Patient contact during Care Home Round,30175
+2021-10,General Practice,Care Related Encounter,Planned Clinical Procedure,3754171
+2021-10,General Practice,Care Related Encounter,Planned Clinics,3063114
+2021-10,General Practice,Care Related Encounter,Service provided by organisation external to the practice,45983
+2021-10,General Practice,Care Related Encounter,Social Prescribing Service,14232
+2021-10,General Practice,Care Related Encounter,Structured Medication Review,112701
+2021-10,General Practice,Care Related Encounter,Unplanned Clinical Activity,269855
+2021-10,General Practice,Care Related Encounter,Walk-in,42028
+2021-10,General Practice,Inconsistent Mapping,Inconsistent Mapping,2518601
+2021-10,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,995
+2021-10,Other,Care Related Encounter,Care Home Visit,1466
+2021-10,Other,Care Related Encounter,Clinical Triage,56764
+2021-10,Other,Care Related Encounter,General Consultation Acute,58267
+2021-10,Other,Care Related Encounter,General Consultation Routine,124856
+2021-10,Other,Care Related Encounter,Group Consultation and Group Education,14
+2021-10,Other,Care Related Encounter,Home Visit,2779
+2021-10,Other,Care Related Encounter,Non-contractual chargeable work,1208
+2021-10,Other,Care Related Encounter,Patient contact during Care Home Round,1422
+2021-10,Other,Care Related Encounter,Planned Clinical Procedure,49243
+2021-10,Other,Care Related Encounter,Planned Clinics,58015
+2021-10,Other,Care Related Encounter,Service provided by organisation external to the practice,15465
+2021-10,Other,Care Related Encounter,Social Prescribing Service,760
+2021-10,Other,Care Related Encounter,Structured Medication Review,2515
+2021-10,Other,Care Related Encounter,Unplanned Clinical Activity,5674
+2021-10,Other,Care Related Encounter,Walk-in,3667
+2021-10,Other,Inconsistent Mapping,Inconsistent Mapping,173377
+2021-10,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,5154
+2021-10,Primary Care Network,Care Related Encounter,Care Home Visit,5095
+2021-10,Primary Care Network,Care Related Encounter,Clinical Triage,29607
+2021-10,Primary Care Network,Care Related Encounter,General Consultation Acute,47507
+2021-10,Primary Care Network,Care Related Encounter,General Consultation Routine,176573
+2021-10,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,89
+2021-10,Primary Care Network,Care Related Encounter,Home Visit,4965
+2021-10,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,102
+2021-10,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,8312
+2021-10,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,44816
+2021-10,Primary Care Network,Care Related Encounter,Planned Clinics,82169
+2021-10,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,12873
+2021-10,Primary Care Network,Care Related Encounter,Social Prescribing Service,21278
+2021-10,Primary Care Network,Care Related Encounter,Structured Medication Review,39747
+2021-10,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,8922
+2021-10,Primary Care Network,Care Related Encounter,Walk-in,868
+2021-10,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,76904
+2021-10,Unmapped,Unmapped,Unmapped,1366656
+2021-11,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,553
+2021-11,Extended Access Provision,Care Related Encounter,Care Home Visit,820
+2021-11,Extended Access Provision,Care Related Encounter,Clinical Triage,36320
+2021-11,Extended Access Provision,Care Related Encounter,General Consultation Acute,38137
+2021-11,Extended Access Provision,Care Related Encounter,General Consultation Routine,34776
+2021-11,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,66
+2021-11,Extended Access Provision,Care Related Encounter,Home Visit,429
+2021-11,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,277
+2021-11,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,241
+2021-11,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,18411
+2021-11,Extended Access Provision,Care Related Encounter,Planned Clinics,27895
+2021-11,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2748
+2021-11,Extended Access Provision,Care Related Encounter,Social Prescribing Service,418
+2021-11,Extended Access Provision,Care Related Encounter,Structured Medication Review,414
+2021-11,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,4718
+2021-11,Extended Access Provision,Care Related Encounter,Walk-in,713
+2021-11,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,40641
+2021-11,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,30790
+2021-11,General Practice,Care Related Encounter,Care Home Visit,52413
+2021-11,General Practice,Care Related Encounter,Clinical Triage,4069629
+2021-11,General Practice,Care Related Encounter,General Consultation Acute,5109725
+2021-11,General Practice,Care Related Encounter,General Consultation Routine,9409659
+2021-11,General Practice,Care Related Encounter,Group Consultation and Group Education,5758
+2021-11,General Practice,Care Related Encounter,Home Visit,213759
+2021-11,General Practice,Care Related Encounter,Non-contractual chargeable work,11719
+2021-11,General Practice,Care Related Encounter,Patient contact during Care Home Round,43150
+2021-11,General Practice,Care Related Encounter,Planned Clinical Procedure,2931728
+2021-11,General Practice,Care Related Encounter,Planned Clinics,2808464
+2021-11,General Practice,Care Related Encounter,Service provided by organisation external to the practice,45387
+2021-11,General Practice,Care Related Encounter,Social Prescribing Service,15820
+2021-11,General Practice,Care Related Encounter,Structured Medication Review,125125
+2021-11,General Practice,Care Related Encounter,Unplanned Clinical Activity,286724
+2021-11,General Practice,Care Related Encounter,Walk-in,40512
+2021-11,General Practice,Inconsistent Mapping,Inconsistent Mapping,2567527
+2021-11,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,943
+2021-11,Other,Care Related Encounter,Care Home Visit,1779
+2021-11,Other,Care Related Encounter,Clinical Triage,51948
+2021-11,Other,Care Related Encounter,General Consultation Acute,59263
+2021-11,Other,Care Related Encounter,General Consultation Routine,139759
+2021-11,Other,Care Related Encounter,Group Consultation and Group Education,52
+2021-11,Other,Care Related Encounter,Home Visit,3607
+2021-11,Other,Care Related Encounter,Non-contractual chargeable work,1576
+2021-11,Other,Care Related Encounter,Patient contact during Care Home Round,1773
+2021-11,Other,Care Related Encounter,Planned Clinical Procedure,35674
+2021-11,Other,Care Related Encounter,Planned Clinics,53943
+2021-11,Other,Care Related Encounter,Service provided by organisation external to the practice,16770
+2021-11,Other,Care Related Encounter,Social Prescribing Service,890
+2021-11,Other,Care Related Encounter,Structured Medication Review,2785
+2021-11,Other,Care Related Encounter,Unplanned Clinical Activity,5625
+2021-11,Other,Care Related Encounter,Walk-in,3662
+2021-11,Other,Inconsistent Mapping,Inconsistent Mapping,178735
+2021-11,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,6541
+2021-11,Primary Care Network,Care Related Encounter,Care Home Visit,6804
+2021-11,Primary Care Network,Care Related Encounter,Clinical Triage,31340
+2021-11,Primary Care Network,Care Related Encounter,General Consultation Acute,58389
+2021-11,Primary Care Network,Care Related Encounter,General Consultation Routine,194488
+2021-11,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,31
+2021-11,Primary Care Network,Care Related Encounter,Home Visit,6072
+2021-11,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,337
+2021-11,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,17455
+2021-11,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,34131
+2021-11,Primary Care Network,Care Related Encounter,Planned Clinics,81908
+2021-11,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,16898
+2021-11,Primary Care Network,Care Related Encounter,Social Prescribing Service,24910
+2021-11,Primary Care Network,Care Related Encounter,Structured Medication Review,45792
+2021-11,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,10031
+2021-11,Primary Care Network,Care Related Encounter,Walk-in,304
+2021-11,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,78893
+2021-11,Unmapped,Unmapped,Unmapped,1256496
+2021-12,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,168
+2021-12,Extended Access Provision,Care Related Encounter,Care Home Visit,792
+2021-12,Extended Access Provision,Care Related Encounter,Clinical Triage,32172
+2021-12,Extended Access Provision,Care Related Encounter,General Consultation Acute,35097
+2021-12,Extended Access Provision,Care Related Encounter,General Consultation Routine,29628
+2021-12,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,53
+2021-12,Extended Access Provision,Care Related Encounter,Home Visit,366
+2021-12,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,163
+2021-12,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,179
+2021-12,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,13166
+2021-12,Extended Access Provision,Care Related Encounter,Planned Clinics,20648
+2021-12,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2526
+2021-12,Extended Access Provision,Care Related Encounter,Social Prescribing Service,402
+2021-12,Extended Access Provision,Care Related Encounter,Structured Medication Review,260
+2021-12,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3508
+2021-12,Extended Access Provision,Care Related Encounter,Walk-in,857
+2021-12,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,33519
+2021-12,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,27522
+2021-12,General Practice,Care Related Encounter,Care Home Visit,47306
+2021-12,General Practice,Care Related Encounter,Clinical Triage,3518845
+2021-12,General Practice,Care Related Encounter,General Consultation Acute,4548672
+2021-12,General Practice,Care Related Encounter,General Consultation Routine,7813672
+2021-12,General Practice,Care Related Encounter,Group Consultation and Group Education,4721
+2021-12,General Practice,Care Related Encounter,Home Visit,186437
+2021-12,General Practice,Care Related Encounter,Non-contractual chargeable work,8276
+2021-12,General Practice,Care Related Encounter,Patient contact during Care Home Round,47215
+2021-12,General Practice,Care Related Encounter,Planned Clinical Procedure,2034369
+2021-12,General Practice,Care Related Encounter,Planned Clinics,2185729
+2021-12,General Practice,Care Related Encounter,Service provided by organisation external to the practice,40188
+2021-12,General Practice,Care Related Encounter,Social Prescribing Service,13659
+2021-12,General Practice,Care Related Encounter,Structured Medication Review,109609
+2021-12,General Practice,Care Related Encounter,Unplanned Clinical Activity,256572
+2021-12,General Practice,Care Related Encounter,Walk-in,30866
+2021-12,General Practice,Inconsistent Mapping,Inconsistent Mapping,2135160
+2021-12,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,776
+2021-12,Other,Care Related Encounter,Care Home Visit,1686
+2021-12,Other,Care Related Encounter,Clinical Triage,43885
+2021-12,Other,Care Related Encounter,General Consultation Acute,53205
+2021-12,Other,Care Related Encounter,General Consultation Routine,116666
+2021-12,Other,Care Related Encounter,Group Consultation and Group Education,14
+2021-12,Other,Care Related Encounter,Home Visit,2961
+2021-12,Other,Care Related Encounter,Non-contractual chargeable work,1521
+2021-12,Other,Care Related Encounter,Patient contact during Care Home Round,1988
+2021-12,Other,Care Related Encounter,Planned Clinical Procedure,24473
+2021-12,Other,Care Related Encounter,Planned Clinics,44971
+2021-12,Other,Care Related Encounter,Service provided by organisation external to the practice,14675
+2021-12,Other,Care Related Encounter,Social Prescribing Service,694
+2021-12,Other,Care Related Encounter,Structured Medication Review,2745
+2021-12,Other,Care Related Encounter,Unplanned Clinical Activity,4926
+2021-12,Other,Care Related Encounter,Walk-in,3157
+2021-12,Other,Inconsistent Mapping,Inconsistent Mapping,146375
+2021-12,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,6187
+2021-12,Primary Care Network,Care Related Encounter,Care Home Visit,5446
+2021-12,Primary Care Network,Care Related Encounter,Clinical Triage,26513
+2021-12,Primary Care Network,Care Related Encounter,General Consultation Acute,52399
+2021-12,Primary Care Network,Care Related Encounter,General Consultation Routine,163972
+2021-12,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,2
+2021-12,Primary Care Network,Care Related Encounter,Home Visit,5746
+2021-12,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,280
+2021-12,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,20665
+2021-12,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,30951
+2021-12,Primary Care Network,Care Related Encounter,Planned Clinics,67915
+2021-12,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,13604
+2021-12,Primary Care Network,Care Related Encounter,Social Prescribing Service,21365
+2021-12,Primary Care Network,Care Related Encounter,Structured Medication Review,40889
+2021-12,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,10375
+2021-12,Primary Care Network,Care Related Encounter,Walk-in,317
+2021-12,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,72853
+2021-12,Unmapped,Unmapped,Unmapped,954257
+2022-01,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,163
+2022-01,Extended Access Provision,Care Related Encounter,Care Home Visit,690
+2022-01,Extended Access Provision,Care Related Encounter,Clinical Triage,33986
+2022-01,Extended Access Provision,Care Related Encounter,General Consultation Acute,37630
+2022-01,Extended Access Provision,Care Related Encounter,General Consultation Routine,33680
+2022-01,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,54
+2022-01,Extended Access Provision,Care Related Encounter,Home Visit,622
+2022-01,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,150
+2022-01,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,286
+2022-01,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,13955
+2022-01,Extended Access Provision,Care Related Encounter,Planned Clinics,21035
+2022-01,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2447
+2022-01,Extended Access Provision,Care Related Encounter,Social Prescribing Service,703
+2022-01,Extended Access Provision,Care Related Encounter,Structured Medication Review,239
+2022-01,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,2858
+2022-01,Extended Access Provision,Care Related Encounter,Walk-in,682
+2022-01,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,37195
+2022-01,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,29727
+2022-01,General Practice,Care Related Encounter,Care Home Visit,48138
+2022-01,General Practice,Care Related Encounter,Clinical Triage,3666106
+2022-01,General Practice,Care Related Encounter,General Consultation Acute,4640404
+2022-01,General Practice,Care Related Encounter,General Consultation Routine,8302026
+2022-01,General Practice,Care Related Encounter,Group Consultation and Group Education,5031
+2022-01,General Practice,Care Related Encounter,Home Visit,175320
+2022-01,General Practice,Care Related Encounter,Non-contractual chargeable work,10021
+2022-01,General Practice,Care Related Encounter,Patient contact during Care Home Round,49101
+2022-01,General Practice,Care Related Encounter,Planned Clinical Procedure,1902291
+2022-01,General Practice,Care Related Encounter,Planned Clinics,2196436
+2022-01,General Practice,Care Related Encounter,Service provided by organisation external to the practice,39300
+2022-01,General Practice,Care Related Encounter,Social Prescribing Service,15827
+2022-01,General Practice,Care Related Encounter,Structured Medication Review,118798
+2022-01,General Practice,Care Related Encounter,Unplanned Clinical Activity,242770
+2022-01,General Practice,Care Related Encounter,Walk-in,28280
+2022-01,General Practice,Inconsistent Mapping,Inconsistent Mapping,2113477
+2022-01,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,720
+2022-01,Other,Care Related Encounter,Care Home Visit,1577
+2022-01,Other,Care Related Encounter,Clinical Triage,47486
+2022-01,Other,Care Related Encounter,General Consultation Acute,51578
+2022-01,Other,Care Related Encounter,General Consultation Routine,123599
+2022-01,Other,Care Related Encounter,Group Consultation and Group Education,23
+2022-01,Other,Care Related Encounter,Home Visit,2626
+2022-01,Other,Care Related Encounter,Non-contractual chargeable work,1682
+2022-01,Other,Care Related Encounter,Patient contact during Care Home Round,1859
+2022-01,Other,Care Related Encounter,Planned Clinical Procedure,23395
+2022-01,Other,Care Related Encounter,Planned Clinics,42440
+2022-01,Other,Care Related Encounter,Service provided by organisation external to the practice,15246
+2022-01,Other,Care Related Encounter,Social Prescribing Service,763
+2022-01,Other,Care Related Encounter,Structured Medication Review,3077
+2022-01,Other,Care Related Encounter,Unplanned Clinical Activity,4652
+2022-01,Other,Care Related Encounter,Walk-in,2901
+2022-01,Other,Inconsistent Mapping,Inconsistent Mapping,133816
+2022-01,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,7378
+2022-01,Primary Care Network,Care Related Encounter,Care Home Visit,5455
+2022-01,Primary Care Network,Care Related Encounter,Clinical Triage,29909
+2022-01,Primary Care Network,Care Related Encounter,General Consultation Acute,58031
+2022-01,Primary Care Network,Care Related Encounter,General Consultation Routine,186258
+2022-01,Primary Care Network,Care Related Encounter,Home Visit,5711
+2022-01,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,268
+2022-01,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,23614
+2022-01,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,17440
+2022-01,Primary Care Network,Care Related Encounter,Planned Clinics,69330
+2022-01,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,16141
+2022-01,Primary Care Network,Care Related Encounter,Social Prescribing Service,25240
+2022-01,Primary Care Network,Care Related Encounter,Structured Medication Review,43776
+2022-01,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,10730
+2022-01,Primary Care Network,Care Related Encounter,Walk-in,286
+2022-01,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,69477
+2022-01,Unmapped,Unmapped,Unmapped,839562
+2022-02,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,138
+2022-02,Extended Access Provision,Care Related Encounter,Care Home Visit,785
+2022-02,Extended Access Provision,Care Related Encounter,Clinical Triage,35148
+2022-02,Extended Access Provision,Care Related Encounter,General Consultation Acute,40632
+2022-02,Extended Access Provision,Care Related Encounter,General Consultation Routine,35534
+2022-02,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,25
+2022-02,Extended Access Provision,Care Related Encounter,Home Visit,472
+2022-02,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,228
+2022-02,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,291
+2022-02,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,14446
+2022-02,Extended Access Provision,Care Related Encounter,Planned Clinics,22655
+2022-02,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2353
+2022-02,Extended Access Provision,Care Related Encounter,Social Prescribing Service,619
+2022-02,Extended Access Provision,Care Related Encounter,Structured Medication Review,286
+2022-02,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,2954
+2022-02,Extended Access Provision,Care Related Encounter,Walk-in,506
+2022-02,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,39555
+2022-02,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,28697
+2022-02,General Practice,Care Related Encounter,Care Home Visit,47478
+2022-02,General Practice,Care Related Encounter,Clinical Triage,3530627
+2022-02,General Practice,Care Related Encounter,General Consultation Acute,4614884
+2022-02,General Practice,Care Related Encounter,General Consultation Routine,8215172
+2022-02,General Practice,Care Related Encounter,Group Consultation and Group Education,5342
+2022-02,General Practice,Care Related Encounter,Home Visit,173921
+2022-02,General Practice,Care Related Encounter,Non-contractual chargeable work,10317
+2022-02,General Practice,Care Related Encounter,Patient contact during Care Home Round,48996
+2022-02,General Practice,Care Related Encounter,Planned Clinical Procedure,1905042
+2022-02,General Practice,Care Related Encounter,Planned Clinics,2185968
+2022-02,General Practice,Care Related Encounter,Service provided by organisation external to the practice,40323
+2022-02,General Practice,Care Related Encounter,Social Prescribing Service,16677
+2022-02,General Practice,Care Related Encounter,Structured Medication Review,117178
+2022-02,General Practice,Care Related Encounter,Unplanned Clinical Activity,247512
+2022-02,General Practice,Care Related Encounter,Walk-in,28263
+2022-02,General Practice,Inconsistent Mapping,Inconsistent Mapping,2089537
+2022-02,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,563
+2022-02,Other,Care Related Encounter,Care Home Visit,1795
+2022-02,Other,Care Related Encounter,Clinical Triage,49792
+2022-02,Other,Care Related Encounter,General Consultation Acute,53452
+2022-02,Other,Care Related Encounter,General Consultation Routine,119187
+2022-02,Other,Care Related Encounter,Group Consultation and Group Education,15
+2022-02,Other,Care Related Encounter,Home Visit,3149
+2022-02,Other,Care Related Encounter,Non-contractual chargeable work,1729
+2022-02,Other,Care Related Encounter,Patient contact during Care Home Round,1564
+2022-02,Other,Care Related Encounter,Planned Clinical Procedure,22636
+2022-02,Other,Care Related Encounter,Planned Clinics,42002
+2022-02,Other,Care Related Encounter,Service provided by organisation external to the practice,15188
+2022-02,Other,Care Related Encounter,Social Prescribing Service,647
+2022-02,Other,Care Related Encounter,Structured Medication Review,2755
+2022-02,Other,Care Related Encounter,Unplanned Clinical Activity,4477
+2022-02,Other,Care Related Encounter,Walk-in,2657
+2022-02,Other,Inconsistent Mapping,Inconsistent Mapping,134545
+2022-02,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,7821
+2022-02,Primary Care Network,Care Related Encounter,Care Home Visit,5020
+2022-02,Primary Care Network,Care Related Encounter,Clinical Triage,31105
+2022-02,Primary Care Network,Care Related Encounter,General Consultation Acute,58997
+2022-02,Primary Care Network,Care Related Encounter,General Consultation Routine,195822
+2022-02,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,15
+2022-02,Primary Care Network,Care Related Encounter,Home Visit,5876
+2022-02,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,376
+2022-02,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,26787
+2022-02,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,14602
+2022-02,Primary Care Network,Care Related Encounter,Planned Clinics,71356
+2022-02,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,16195
+2022-02,Primary Care Network,Care Related Encounter,Social Prescribing Service,25697
+2022-02,Primary Care Network,Care Related Encounter,Structured Medication Review,45692
+2022-02,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,10344
+2022-02,Primary Care Network,Care Related Encounter,Walk-in,239
+2022-02,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,69356
+2022-02,Unmapped,Unmapped,Unmapped,811246
+2022-03,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,200
+2022-03,Extended Access Provision,Care Related Encounter,Care Home Visit,1024
+2022-03,Extended Access Provision,Care Related Encounter,Clinical Triage,40492
+2022-03,Extended Access Provision,Care Related Encounter,General Consultation Acute,49397
+2022-03,Extended Access Provision,Care Related Encounter,General Consultation Routine,43150
+2022-03,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,70
+2022-03,Extended Access Provision,Care Related Encounter,Home Visit,560
+2022-03,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,145
+2022-03,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,361
+2022-03,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,15912
+2022-03,Extended Access Provision,Care Related Encounter,Planned Clinics,25620
+2022-03,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2856
+2022-03,Extended Access Provision,Care Related Encounter,Social Prescribing Service,846
+2022-03,Extended Access Provision,Care Related Encounter,Structured Medication Review,328
+2022-03,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3562
+2022-03,Extended Access Provision,Care Related Encounter,Walk-in,668
+2022-03,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,46714
+2022-03,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,33431
+2022-03,General Practice,Care Related Encounter,Care Home Visit,55734
+2022-03,General Practice,Care Related Encounter,Clinical Triage,4020184
+2022-03,General Practice,Care Related Encounter,General Consultation Acute,5399800
+2022-03,General Practice,Care Related Encounter,General Consultation Routine,9656280
+2022-03,General Practice,Care Related Encounter,Group Consultation and Group Education,5970
+2022-03,General Practice,Care Related Encounter,Home Visit,203614
+2022-03,General Practice,Care Related Encounter,Non-contractual chargeable work,12178
+2022-03,General Practice,Care Related Encounter,Patient contact during Care Home Round,60590
+2022-03,General Practice,Care Related Encounter,Planned Clinical Procedure,2224965
+2022-03,General Practice,Care Related Encounter,Planned Clinics,2548777
+2022-03,General Practice,Care Related Encounter,Service provided by organisation external to the practice,46480
+2022-03,General Practice,Care Related Encounter,Social Prescribing Service,20052
+2022-03,General Practice,Care Related Encounter,Structured Medication Review,137899
+2022-03,General Practice,Care Related Encounter,Unplanned Clinical Activity,291157
+2022-03,General Practice,Care Related Encounter,Walk-in,33918
+2022-03,General Practice,Inconsistent Mapping,Inconsistent Mapping,2436339
+2022-03,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,647
+2022-03,Other,Care Related Encounter,Care Home Visit,2343
+2022-03,Other,Care Related Encounter,Clinical Triage,57932
+2022-03,Other,Care Related Encounter,General Consultation Acute,60953
+2022-03,Other,Care Related Encounter,General Consultation Routine,141980
+2022-03,Other,Care Related Encounter,Group Consultation and Group Education,14
+2022-03,Other,Care Related Encounter,Home Visit,3083
+2022-03,Other,Care Related Encounter,Non-contractual chargeable work,1891
+2022-03,Other,Care Related Encounter,Patient contact during Care Home Round,1812
+2022-03,Other,Care Related Encounter,Planned Clinical Procedure,24456
+2022-03,Other,Care Related Encounter,Planned Clinics,49077
+2022-03,Other,Care Related Encounter,Service provided by organisation external to the practice,18890
+2022-03,Other,Care Related Encounter,Social Prescribing Service,768
+2022-03,Other,Care Related Encounter,Structured Medication Review,3402
+2022-03,Other,Care Related Encounter,Unplanned Clinical Activity,4835
+2022-03,Other,Care Related Encounter,Walk-in,3170
+2022-03,Other,Inconsistent Mapping,Inconsistent Mapping,155424
+2022-03,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,8911
+2022-03,Primary Care Network,Care Related Encounter,Care Home Visit,6312
+2022-03,Primary Care Network,Care Related Encounter,Clinical Triage,37238
+2022-03,Primary Care Network,Care Related Encounter,General Consultation Acute,71354
+2022-03,Primary Care Network,Care Related Encounter,General Consultation Routine,232839
+2022-03,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,60
+2022-03,Primary Care Network,Care Related Encounter,Home Visit,7486
+2022-03,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,449
+2022-03,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,35575
+2022-03,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,16574
+2022-03,Primary Care Network,Care Related Encounter,Planned Clinics,85078
+2022-03,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,19316
+2022-03,Primary Care Network,Care Related Encounter,Social Prescribing Service,30520
+2022-03,Primary Care Network,Care Related Encounter,Structured Medication Review,53600
+2022-03,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,11751
+2022-03,Primary Care Network,Care Related Encounter,Walk-in,314
+2022-03,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,84799
+2022-03,Unmapped,Unmapped,Unmapped,942912
+2022-04,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,182
+2022-04,Extended Access Provision,Care Related Encounter,Care Home Visit,763
+2022-04,Extended Access Provision,Care Related Encounter,Clinical Triage,33597
+2022-04,Extended Access Provision,Care Related Encounter,General Consultation Acute,36558
+2022-04,Extended Access Provision,Care Related Encounter,General Consultation Routine,36361
+2022-04,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,49
+2022-04,Extended Access Provision,Care Related Encounter,Home Visit,502
+2022-04,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,116
+2022-04,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,317
+2022-04,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,13988
+2022-04,Extended Access Provision,Care Related Encounter,Planned Clinics,22540
+2022-04,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2405
+2022-04,Extended Access Provision,Care Related Encounter,Social Prescribing Service,732
+2022-04,Extended Access Provision,Care Related Encounter,Structured Medication Review,400
+2022-04,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3232
+2022-04,Extended Access Provision,Care Related Encounter,Walk-in,590
+2022-04,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,39952
+2022-04,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,27402
+2022-04,General Practice,Care Related Encounter,Care Home Visit,45980
+2022-04,General Practice,Care Related Encounter,Clinical Triage,3191251
+2022-04,General Practice,Care Related Encounter,General Consultation Acute,4404770
+2022-04,General Practice,Care Related Encounter,General Consultation Routine,7648635
+2022-04,General Practice,Care Related Encounter,Group Consultation and Group Education,4810
+2022-04,General Practice,Care Related Encounter,Home Visit,174606
+2022-04,General Practice,Care Related Encounter,Non-contractual chargeable work,9749
+2022-04,General Practice,Care Related Encounter,Patient contact during Care Home Round,52192
+2022-04,General Practice,Care Related Encounter,Planned Clinical Procedure,1820469
+2022-04,General Practice,Care Related Encounter,Planned Clinics,2082074
+2022-04,General Practice,Care Related Encounter,Service provided by organisation external to the practice,40399
+2022-04,General Practice,Care Related Encounter,Social Prescribing Service,17778
+2022-04,General Practice,Care Related Encounter,Structured Medication Review,114852
+2022-04,General Practice,Care Related Encounter,Unplanned Clinical Activity,246328
+2022-04,General Practice,Care Related Encounter,Walk-in,28549
+2022-04,General Practice,Inconsistent Mapping,Inconsistent Mapping,2006947
+2022-04,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,515
+2022-04,Other,Care Related Encounter,Care Home Visit,1945
+2022-04,Other,Care Related Encounter,Clinical Triage,47582
+2022-04,Other,Care Related Encounter,General Consultation Acute,50401
+2022-04,Other,Care Related Encounter,General Consultation Routine,115361
+2022-04,Other,Care Related Encounter,Group Consultation and Group Education,11
+2022-04,Other,Care Related Encounter,Home Visit,2359
+2022-04,Other,Care Related Encounter,Non-contractual chargeable work,1578
+2022-04,Other,Care Related Encounter,Patient contact during Care Home Round,1637
+2022-04,Other,Care Related Encounter,Planned Clinical Procedure,20046
+2022-04,Other,Care Related Encounter,Planned Clinics,40480
+2022-04,Other,Care Related Encounter,Service provided by organisation external to the practice,16249
+2022-04,Other,Care Related Encounter,Social Prescribing Service,678
+2022-04,Other,Care Related Encounter,Structured Medication Review,2933
+2022-04,Other,Care Related Encounter,Unplanned Clinical Activity,3193
+2022-04,Other,Care Related Encounter,Walk-in,2961
+2022-04,Other,Inconsistent Mapping,Inconsistent Mapping,129473
+2022-04,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,7183
+2022-04,Primary Care Network,Care Related Encounter,Care Home Visit,5027
+2022-04,Primary Care Network,Care Related Encounter,Clinical Triage,28855
+2022-04,Primary Care Network,Care Related Encounter,General Consultation Acute,57234
+2022-04,Primary Care Network,Care Related Encounter,General Consultation Routine,198020
+2022-04,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,51
+2022-04,Primary Care Network,Care Related Encounter,Home Visit,6483
+2022-04,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,442
+2022-04,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,33611
+2022-04,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,13637
+2022-04,Primary Care Network,Care Related Encounter,Planned Clinics,83640
+2022-04,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,15866
+2022-04,Primary Care Network,Care Related Encounter,Social Prescribing Service,26502
+2022-04,Primary Care Network,Care Related Encounter,Structured Medication Review,47961
+2022-04,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,9330
+2022-04,Primary Care Network,Care Related Encounter,Walk-in,246
+2022-04,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,72182
+2022-04,Unmapped,Unmapped,Unmapped,760313
+2022-05,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,163
+2022-05,Extended Access Provision,Care Related Encounter,Care Home Visit,956
+2022-05,Extended Access Provision,Care Related Encounter,Clinical Triage,39162
+2022-05,Extended Access Provision,Care Related Encounter,General Consultation Acute,40766
+2022-05,Extended Access Provision,Care Related Encounter,General Consultation Routine,43505
+2022-05,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,76
+2022-05,Extended Access Provision,Care Related Encounter,Home Visit,455
+2022-05,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,137
+2022-05,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,373
+2022-05,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,15512
+2022-05,Extended Access Provision,Care Related Encounter,Planned Clinics,24526
+2022-05,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2902
+2022-05,Extended Access Provision,Care Related Encounter,Social Prescribing Service,843
+2022-05,Extended Access Provision,Care Related Encounter,Structured Medication Review,847
+2022-05,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3577
+2022-05,Extended Access Provision,Care Related Encounter,Walk-in,751
+2022-05,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,45960
+2022-05,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,32910
+2022-05,General Practice,Care Related Encounter,Care Home Visit,54559
+2022-05,General Practice,Care Related Encounter,Clinical Triage,3549842
+2022-05,General Practice,Care Related Encounter,General Consultation Acute,5046576
+2022-05,General Practice,Care Related Encounter,General Consultation Routine,8906711
+2022-05,General Practice,Care Related Encounter,Group Consultation and Group Education,5975
+2022-05,General Practice,Care Related Encounter,Home Visit,198227
+2022-05,General Practice,Care Related Encounter,Non-contractual chargeable work,11264
+2022-05,General Practice,Care Related Encounter,Patient contact during Care Home Round,66123
+2022-05,General Practice,Care Related Encounter,Planned Clinical Procedure,2087816
+2022-05,General Practice,Care Related Encounter,Planned Clinics,2469849
+2022-05,General Practice,Care Related Encounter,Service provided by organisation external to the practice,44980
+2022-05,General Practice,Care Related Encounter,Social Prescribing Service,21138
+2022-05,General Practice,Care Related Encounter,Structured Medication Review,131070
+2022-05,General Practice,Care Related Encounter,Unplanned Clinical Activity,277799
+2022-05,General Practice,Care Related Encounter,Walk-in,33507
+2022-05,General Practice,Inconsistent Mapping,Inconsistent Mapping,2300274
+2022-05,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,661
+2022-05,Other,Care Related Encounter,Care Home Visit,2274
+2022-05,Other,Care Related Encounter,Clinical Triage,52856
+2022-05,Other,Care Related Encounter,General Consultation Acute,56893
+2022-05,Other,Care Related Encounter,General Consultation Routine,139222
+2022-05,Other,Care Related Encounter,Group Consultation and Group Education,15
+2022-05,Other,Care Related Encounter,Home Visit,2645
+2022-05,Other,Care Related Encounter,Non-contractual chargeable work,1770
+2022-05,Other,Care Related Encounter,Patient contact during Care Home Round,1930
+2022-05,Other,Care Related Encounter,Planned Clinical Procedure,22958
+2022-05,Other,Care Related Encounter,Planned Clinics,50685
+2022-05,Other,Care Related Encounter,Service provided by organisation external to the practice,18074
+2022-05,Other,Care Related Encounter,Social Prescribing Service,817
+2022-05,Other,Care Related Encounter,Structured Medication Review,3702
+2022-05,Other,Care Related Encounter,Unplanned Clinical Activity,3849
+2022-05,Other,Care Related Encounter,Walk-in,3188
+2022-05,Other,Inconsistent Mapping,Inconsistent Mapping,141788
+2022-05,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,9170
+2022-05,Primary Care Network,Care Related Encounter,Care Home Visit,7017
+2022-05,Primary Care Network,Care Related Encounter,Clinical Triage,32369
+2022-05,Primary Care Network,Care Related Encounter,General Consultation Acute,64556
+2022-05,Primary Care Network,Care Related Encounter,General Consultation Routine,231100
+2022-05,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,81
+2022-05,Primary Care Network,Care Related Encounter,Home Visit,8256
+2022-05,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,452
+2022-05,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,45277
+2022-05,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,14825
+2022-05,Primary Care Network,Care Related Encounter,Planned Clinics,96819
+2022-05,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,19450
+2022-05,Primary Care Network,Care Related Encounter,Social Prescribing Service,31552
+2022-05,Primary Care Network,Care Related Encounter,Structured Medication Review,56935
+2022-05,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,8707
+2022-05,Primary Care Network,Care Related Encounter,Walk-in,241
+2022-05,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,85473
+2022-05,Unmapped,Unmapped,Unmapped,820770
+2022-06,Extended Access Provision,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,136
+2022-06,Extended Access Provision,Care Related Encounter,Care Home Visit,547
+2022-06,Extended Access Provision,Care Related Encounter,Clinical Triage,35009
+2022-06,Extended Access Provision,Care Related Encounter,General Consultation Acute,39191
+2022-06,Extended Access Provision,Care Related Encounter,General Consultation Routine,42850
+2022-06,Extended Access Provision,Care Related Encounter,Group Consultation and Group Education,61
+2022-06,Extended Access Provision,Care Related Encounter,Home Visit,454
+2022-06,Extended Access Provision,Care Related Encounter,Non-contractual chargeable work,180
+2022-06,Extended Access Provision,Care Related Encounter,Patient contact during Care Home Round,820
+2022-06,Extended Access Provision,Care Related Encounter,Planned Clinical Procedure,15455
+2022-06,Extended Access Provision,Care Related Encounter,Planned Clinics,23402
+2022-06,Extended Access Provision,Care Related Encounter,Service provided by organisation external to the practice,2666
+2022-06,Extended Access Provision,Care Related Encounter,Social Prescribing Service,734
+2022-06,Extended Access Provision,Care Related Encounter,Structured Medication Review,1277
+2022-06,Extended Access Provision,Care Related Encounter,Unplanned Clinical Activity,3502
+2022-06,Extended Access Provision,Care Related Encounter,Walk-in,892
+2022-06,Extended Access Provision,Inconsistent Mapping,Inconsistent Mapping,42476
+2022-06,General Practice,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,30394
+2022-06,General Practice,Care Related Encounter,Care Home Visit,50711
+2022-06,General Practice,Care Related Encounter,Clinical Triage,3273478
+2022-06,General Practice,Care Related Encounter,General Consultation Acute,4728541
+2022-06,General Practice,Care Related Encounter,General Consultation Routine,8295097
+2022-06,General Practice,Care Related Encounter,Group Consultation and Group Education,5476
+2022-06,General Practice,Care Related Encounter,Home Visit,182961
+2022-06,General Practice,Care Related Encounter,Non-contractual chargeable work,10641
+2022-06,General Practice,Care Related Encounter,Patient contact during Care Home Round,69398
+2022-06,General Practice,Care Related Encounter,Planned Clinical Procedure,1981227
+2022-06,General Practice,Care Related Encounter,Planned Clinics,2387932
+2022-06,General Practice,Care Related Encounter,Service provided by organisation external to the practice,42082
+2022-06,General Practice,Care Related Encounter,Social Prescribing Service,20274
+2022-06,General Practice,Care Related Encounter,Structured Medication Review,126807
+2022-06,General Practice,Care Related Encounter,Unplanned Clinical Activity,259864
+2022-06,General Practice,Care Related Encounter,Walk-in,31248
+2022-06,General Practice,Inconsistent Mapping,Inconsistent Mapping,2184243
+2022-06,Other,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,685
+2022-06,Other,Care Related Encounter,Care Home Visit,2034
+2022-06,Other,Care Related Encounter,Clinical Triage,51194
+2022-06,Other,Care Related Encounter,General Consultation Acute,53417
+2022-06,Other,Care Related Encounter,General Consultation Routine,129689
+2022-06,Other,Care Related Encounter,Group Consultation and Group Education,22
+2022-06,Other,Care Related Encounter,Home Visit,2406
+2022-06,Other,Care Related Encounter,Non-contractual chargeable work,1606
+2022-06,Other,Care Related Encounter,Patient contact during Care Home Round,1883
+2022-06,Other,Care Related Encounter,Planned Clinical Procedure,21827
+2022-06,Other,Care Related Encounter,Planned Clinics,49549
+2022-06,Other,Care Related Encounter,Service provided by organisation external to the practice,17527
+2022-06,Other,Care Related Encounter,Social Prescribing Service,996
+2022-06,Other,Care Related Encounter,Structured Medication Review,3574
+2022-06,Other,Care Related Encounter,Unplanned Clinical Activity,3809
+2022-06,Other,Care Related Encounter,Walk-in,3551
+2022-06,Other,Inconsistent Mapping,Inconsistent Mapping,135044
+2022-06,Primary Care Network,Care Related Encounter,Care Home Needs Assessment & Personalised Care and Support Planning,9007
+2022-06,Primary Care Network,Care Related Encounter,Care Home Visit,8254
+2022-06,Primary Care Network,Care Related Encounter,Clinical Triage,31482
+2022-06,Primary Care Network,Care Related Encounter,General Consultation Acute,61606
+2022-06,Primary Care Network,Care Related Encounter,General Consultation Routine,223748
+2022-06,Primary Care Network,Care Related Encounter,Group Consultation and Group Education,108
+2022-06,Primary Care Network,Care Related Encounter,Home Visit,8102
+2022-06,Primary Care Network,Care Related Encounter,Non-contractual chargeable work,515
+2022-06,Primary Care Network,Care Related Encounter,Patient contact during Care Home Round,46921
+2022-06,Primary Care Network,Care Related Encounter,Planned Clinical Procedure,13564
+2022-06,Primary Care Network,Care Related Encounter,Planned Clinics,95292
+2022-06,Primary Care Network,Care Related Encounter,Service provided by organisation external to the practice,19388
+2022-06,Primary Care Network,Care Related Encounter,Social Prescribing Service,33062
+2022-06,Primary Care Network,Care Related Encounter,Structured Medication Review,56142
+2022-06,Primary Care Network,Care Related Encounter,Unplanned Clinical Activity,7316
+2022-06,Primary Care Network,Care Related Encounter,Walk-in,244
+2022-06,Primary Care Network,Inconsistent Mapping,Inconsistent Mapping,85848
+2022-06,Unmapped,Unmapped,Unmapped,758640
