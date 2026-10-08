@@ -1555,8 +1555,21 @@ def page_dmart() -> None:
             fig.update_yaxes(title="₹ per share", range=[0, 6200])
             show(fig, 470, "Valuation summary: every method against the market")
         with c2:
-            st.image("assets/dmart_football_field.png", caption="Football field exactly as built in the Excel model")
-            how("Each bar is the range of values one method produces. **DCF** bars come from bear, base and bull forecasts. **Comps** applies peer multiples to DMart's own sales, EBITDA and profit. **52-week** is where the share has actually traded. The dashed line is today's price.", "How to read a football field")
+            ig = implied_growth(0.10107)
+            need = DM_PRICE / 1127.13
+            pos = (DM_PRICE - 3340) / (5484.85 - 3340) * 100
+            kpis([("Market price vs top of DCF bull", f"{DM_PRICE / 1411.14:.1f}x"), ("Cash flows needed to justify price", f"{need:.1f}x"),
+                  ("Position in 52-week range", f"{pos:.0f}%")])
+            callout("<b>What the price assumes.</b> To reach ₹4,348 on the model's cash flows, DMart would need about "
+                    f"<b>{need:.1f} times</b> the forecast free cash flow every year, or terminal growth of "
+                    + (f"<b>{ig:.1%}</b> forever." if ig else "more than any rate below the discount rate allows."))
+            callout("<b>Only one lens reaches the price.</b> EV/EBITDA (₹1,159) and EV/Revenue (₹1,801) sit far below it. P/E (₹4,215) comes close because DMart already trades at about the same earnings multiple as its peers (100.6x), while its EV/EBITDA is 58x against a peer median of 16x.")
+            callout("<b>The market has been paying less.</b> The 52-week low was ₹3,340, still more than 2.4 times the top of the DCF bull case (₹1,411).")
+        rows = [(n, lo, hi, (lo + hi) / 2, DM_PRICE / hi - 1) for n, lo, hi in FOOTBALL[:4]]
+        tdf = pd.DataFrame(rows, columns=["Method", "Low (₹)", "High (₹)", "Midpoint (₹)", "Market above top of range"])
+        tdf["Market above top of range"] = tdf["Market above top of range"].map(lambda v: "within range" if v <= 0 else f"+{v:.0%}")
+        table(tdf.round(0))
+        how("Each bar is the range of values one method gives. **DCF** bars come from bear, base and bull forecasts. **Comps** applies peer multiples to DMart's own sales, EBITDA and profit. **52-week** is where the share has actually traded. The dashed line is today's price.", "How to read a football field")
 
     with tabs[1]:
         tab_note("dmart", 1)
