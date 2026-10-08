@@ -227,8 +227,8 @@ def show(fig: go.Figure, height: int = 380, title: str | None = None) -> None:
         font=dict(family="DM Sans, sans-serif", size=13, color=INK),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
         colorway=PALETTE,
-        margin=dict(l=12, r=12, t=58 if title else 20, b=12),
-        legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0, title_text=""),
+        margin=dict(l=12, r=12, t=58 if title else 20, b=64 if len(fig.data) > 1 else 12),
+        legend=dict(orientation="h", yanchor="top", y=-0.22, xanchor="left", x=0, title_text=""),
         hoverlabel=dict(font_family="DM Sans", bgcolor="white"),
     )
     if title:
@@ -1442,7 +1442,7 @@ def page_overview() -> None:
         share = (modes.div(modes.sum(axis=1), axis=0) * 100).drop(columns=[c for c in ["Unknown"] if c in modes.columns])
         d = share.reset_index().melt("appointment_month", var_name="Mode", value_name="%")
         fig = px.area(d, x="appointment_month", y="%", color="Mode")
-        fig.update_xaxes(title="", nticks=6); fig.update_yaxes(title="% of month")
+        fig.update_xaxes(title="", nticks=4, tickangle=0); fig.update_yaxes(title="% of month")
         show(fig, 300, "NHS: how care is delivered")
     with c3:
         Ks = np.linspace(1000, 1800, 60)
